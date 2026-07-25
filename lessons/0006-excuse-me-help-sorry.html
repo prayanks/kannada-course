@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0006 · Excuse me, help, sorry (survival politeness)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0006</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~10 min</span>
+        </div>
+        <h1>Excuse me, help, sorry</h1>
+        <p class="lede">
+          Survival politeness for crowded Bengaluru: get attention, ask for help, apologise, ask someone to wait — without freezing into English only.
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          You can use
+          <strong>Kshamisi · Dayavittu · Sahaya maadi · Swalpa wait maadi · Tumba thanks</strong>
+          in real micro-moments (queue, bump, ask a stranger).
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        Coffee ondu kodri · Bill kodri · elli ide? · balakke · Idhu eshtu? · Gothaytu · Dhanyavadagalu
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        You’ve covered scripts (greet, go, price, path, food). Real life is messy interruptions.
+        These phrases are the <strong>glue</strong> between scripts — shops, metro, society lobby, wrong turn.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>maadi</em> = polite “please do”</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          You already used <strong>maadi</strong> in <em>swalpa kammi maadi</em> and <em>parcel maadi</em>.<br />
+          Stack it: <strong>[request] maadi</strong> ≈ please do X.<br />
+          Softener: <strong>dayavittu</strong> ≈ please / kindly (≈ kripya).
+        </p>
+      </div>
+
+      <h2><span class="num">03</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Kshamisi</p>
+        <div class="audio-block" data-slug="kshamisi"><audio controls preload="none" src="../assets/audio/kshamisi.mp3"></audio></div>
+        <p class="en">Excuse me / sorry (getting attention or mild apology)</p>
+        <p class="hi">≈ Maaf kijiye / excuse me</p>
+        <div class="meta">Default opener before asking a stranger. Also after a small bump.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Dayavittu</p>
+        <div class="audio-block" data-slug="dayavittu"><audio controls preload="none" src="../assets/audio/dayavittu.mp3"></audio></div>
+        <p class="en">Please / kindly</p>
+        <p class="hi">≈ Kripya</p>
+        <div class="meta">Put before a request: <em>Dayavittu, elli ide?</em></div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Sahaya maadi</p>
+        <div class="audio-block" data-slug="sahaya_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sahaya_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sahaya_maadi_nat.mp3"></audio></span></div>
+        <p class="en">Please help</p>
+        <p class="hi">≈ Madad kijiye</p>
+        <div class="meta"><strong>sahaya</strong> = help. Full: <em>Dayavittu sahaya maadi</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa wait maadi · Innu ondu nimisha</p>
+        <div class="audio-block" data-slug="swalpa_wait_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_wait_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_wait_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="innu_ondu_nimisha"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/innu_ondu_nimisha_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/innu_ondu_nimisha_nat.mp3"></audio></span></div>
+        <p class="en">Please wait a bit · One more minute</p>
+        <p class="hi">≈ Thoda wait kijiye · Ek minute aur</p>
+        <div class="meta">Reuses <strong>swalpa</strong>, <strong>innu</strong>, <strong>ondu</strong>. EN “wait” is fully normal in Bengaluru Kannada mix.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Tumba sorry · Kshamisi maadi</p>
+        <div class="audio-block" data-slug="tumba_sorry"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_sorry_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_sorry_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="kshamisi_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kshamisi_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kshamisi_maadi_nat.mp3"></audio></span></div>
+        <p class="en">So sorry · Please forgive me</p>
+        <p class="hi">≈ Bahut sorry · Maaf kardo</p>
+        <div class="meta"><strong>tumba</strong> = very/a lot. Stronger apology than plain kshamisi.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Tumba dhanyavadagalu · Tumba thanks</p>
+        <div class="audio-block" data-slug="tumba_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="tumba_thanks_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_thanks_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_thanks_2_nat.mp3"></audio></span></div>
+        <p class="en">Thank you very much</p>
+        <p class="hi">≈ Bahut dhanyavaad</p>
+        <div class="meta">Upgrade from L1 thanks. Mix with English “thanks” is natural.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Gothilla / Gottila · Nanage gothilla</p>
+        <div class="audio-block" data-slug="gothilla"><audio controls preload="none" src="../assets/audio/gothilla.mp3"></audio></div>
+        <div class="audio-block" data-slug="gottila"><audio controls preload="none" src="../assets/audio/gottila.mp3"></audio></div>
+        <div class="audio-block" data-slug="nanage_gothilla"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanage_gothilla_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanage_gothilla_nat.mp3"></audio></span></div>
+        <p class="en">I don’t know</p>
+        <p class="hi">≈ Mujhe nahi pata</p>
+        <div class="meta">You met <strong>gottila</strong> in L4. <strong>Nanage</strong> ≈ to me (like mujhe).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Kannada swalpa swalpa barutte · English OK?</p>
+        <div class="audio-block" data-slug="kannada_swalpa_swalpa_barutte"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kannada_swalpa_swalpa_barutte_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kannada_swalpa_swalpa_barutte_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="english_ok"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/english_ok_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/english_ok_nat.mp3"></audio></span></div>
+        <p class="en">I know a little Kannada · English OK?</p>
+        <p class="hi">≈ Thodi Kannada aati hai</p>
+        <div class="meta">
+          Honesty line when stuck. <strong>barutte</strong> ≈ comes (it comes to me).
+          People usually switch or slow down — that’s a win.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Matte sigona · Sari hogi</p>
+        <div class="audio-block" data-slug="matte_sigona"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/matte_sigona_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/matte_sigona_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="sari_hogi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_hogi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_hogi_nat.mp3"></audio></span></div>
+        <p class="en">See you again · Okay, go ahead</p>
+        <p class="hi">≈ Phir milte hain · Theek, jaao</p>
+        <div class="meta">Soft closers. <strong>matte</strong> ≈ again. Related to L2 nodona energy.</div>
+      </div>
+
+      <h2><span class="num">04</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">kshamisi</span><div class="audio-block" data-slug="kshamisi"><audio controls preload="none" src="../assets/audio/kshamisi.mp3"></audio></div>
+<span>excuse me / sorry</span><span>maaf kijiye</span></div>
+        <div class="row"><span class="kn">dayavittu</span><div class="audio-block" data-slug="dayavittu"><audio controls preload="none" src="../assets/audio/dayavittu.mp3"></audio></div>
+<span>please / kindly</span><span>kripya</span></div>
+        <div class="row"><span class="kn">sahaya</span><div class="audio-block" data-slug="sahaya"><audio controls preload="none" src="../assets/audio/sahaya.mp3"></audio></div>
+<span>help</span><span>madad</span></div>
+        <div class="row"><span class="kn">tumba</span><div class="audio-block" data-slug="tumba"><audio controls preload="none" src="../assets/audio/tumba.mp3"></audio></div>
+<span>very / a lot</span><span>bahut</span></div>
+        <div class="row"><span class="kn">nanage</span><div class="audio-block" data-slug="nanage"><audio controls preload="none" src="../assets/audio/nanage.mp3"></audio></div>
+<span>to me</span><span>mujhe</span></div>
+        <div class="row"><span class="kn">gothilla</span><div class="audio-block" data-slug="gothilla"><audio controls preload="none" src="../assets/audio/gothilla.mp3"></audio></div>
+<span>don’t know</span><span>nahi pata</span></div>
+        <div class="row"><span class="kn">matte</span><div class="audio-block" data-slug="matte"><audio controls preload="none" src="../assets/audio/matte.mp3"></audio></div>
+<span>again</span><span>phir</span></div>
+        <div class="row"><span class="kn">sigona</span><div class="audio-block" data-slug="sigona"><audio controls preload="none" src="../assets/audio/sigona.mp3"></audio></div>
+<span>we’ll meet</span><span>milte hain</span></div>
+        <div class="row"><span class="kn">nimisha</span><div class="audio-block" data-slug="nimisha"><audio controls preload="none" src="../assets/audio/nimisha.mp3"></audio></div>
+<span>minute</span><span>minute</span></div>
+        <div class="row"><span class="kn">swalpa barutte</span><div class="audio-block" data-slug="swalpa_barutte"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_barutte_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_barutte_nat.mp3"></audio></span></div>
+<span>a little comes / I know a bit</span><span>thodi aati hai</span></div>
+      </div>
+
+      <h2><span class="num">05</span> Model dialogues</h2>
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">A · Ask a stranger</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Kshamisi. Dayavittu, metro gate elli ide?</span>
+        <div class="audio-block" data-slug="kshamisi_dayavittu_metro_gate_elli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kshamisi_dayavittu_metro_gate_elli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kshamisi_dayavittu_metro_gate_elli_ide_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Excuse me. Please, where is the metro gate?</span></p>
+        <p><span class="who">Stranger</span><br /><span class="line">Eduru hogi…</span>
+        <div class="audio-block" data-slug="eduru_hogi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eduru_hogi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eduru_hogi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Go straight…</span></p>
+        <p><span class="who">You</span><br /><span class="line">Gothaytu. Tumba dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="gothaytu_tumba_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gothaytu_tumba_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gothaytu_tumba_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Got it. Thank you very much.</span></p>
+      </div>
+
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">B · Bump + help</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Tumba sorry! Kshamisi.</span>
+        <div class="audio-block" data-slug="tumba_sorry_kshamisi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_sorry_kshamisi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_sorry_kshamisi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">So sorry! Excuse me.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Dayavittu sahaya maadi — bag beelitu.</span>
+        <div class="audio-block" data-slug="dayavittu_sahaya_maadi_bag_beelitu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/dayavittu_sahaya_maadi_bag_beelitu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/dayavittu_sahaya_maadi_bag_beelitu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Please help — the bag fell. (beelitu ≈ fell; bonus recognition)</span></p>
+        <p><span class="who">Other</span><br /><span class="line">Sari sari.</span>
+        <div class="audio-block" data-slug="sari_sari"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_sari_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_sari_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">It’s fine.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Tumba thanks.</span>
+        <div class="audio-block" data-slug="tumba_thanks_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_thanks_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_thanks_2_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Thanks a lot.</span></p>
+      </div>
+
+      <h2><span class="num">06</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Excuse me / sorry” (default)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Kshamisi</button>
+          <button type="button" data-answer="wrong">Balakke</button>
+          <button type="button" data-answer="wrong">Hogtidini</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “Please / kindly”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Jaasti</button>
+          <button type="button" data-answer="correct">Dayavittu</button>
+          <button type="button" data-answer="wrong">Nantara</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “Please help”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Parcel maadi</button>
+          <button type="button" data-answer="correct">Sahaya maadi</button>
+          <button type="button" data-answer="wrong">Meter haki</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “Very / a lot”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Tumba</button>
+          <button type="button" data-answer="wrong">Elli</button>
+          <button type="button" data-answer="wrong">On du</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “I don’t know”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Gothaytu</button>
+          <button type="button" data-answer="correct">Nanage gothilla</button>
+          <button type="button" data-answer="wrong">Haudu sari</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “please give” at counter (L5)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">sahaya</button>
+          <button type="button" data-answer="correct">kodri</button>
+          <button type="button" data-answer="wrong">thirgi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">07</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Excuse me. Please, where is the gate?</li>
+          <li>Please help.</li>
+          <li>Please wait a bit.</li>
+          <li>So sorry.</li>
+          <li>Thank you very much.</li>
+          <li>I don’t know. I know a little Kannada.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">08</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>Use <strong>Kshamisi</strong> once before asking anyone anything.</li>
+          <li>End one favour with <strong>Tumba dhanyavadagalu</strong>.</li>
+          <li>If stuck mid-conversation: <strong>Kannada swalpa swalpa barutte</strong>.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Primary source</h2>
+      <p class="cite">
+        Compare courtesy phrases on
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks Kannada phrases</a>
+        and
+        <a href="https://www.omniglot.com/language/phrases/kannada.php">Omniglot</a>.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Not sure if a situation needed <em>kshamisi</em> vs stronger sorry? Describe it — we’ll pick the register.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0005-ordering-food-darshini.html">← Lesson 0005</a>
+        <a href="../reference/survival-politeness-cheatsheet.html">Reference · survival politeness</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

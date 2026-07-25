@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0001 · Greet a neighbour (polite check-in)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn {
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: 0.01em;
+      color: var(--accent);
+      margin: 0 0 0.35rem;
+    }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--rule);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); font-weight: 600; }
+    .dialogue {
+      border-left: 3px solid var(--accent);
+      padding: 0.25rem 0 0.25rem 1rem;
+      margin: 1.25rem 0;
+    }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .dialogue .line {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid {
+      display: grid;
+      gap: 0.5rem;
+      margin: 1rem 0 1.5rem;
+    }
+    .vocab-grid .row {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 0.5rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-elevated);
+      border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0001</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~10 min</span>
+        </div>
+        <h1>Greet a neighbour (polite check-in)</h1>
+        <p class="lede">
+          One skill: open a polite hello with someone in your society, ask how they are, answer about yourself, and close cleanly — in Bengaluru spoken Kannada (Roman only).
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          By the end you can run this loop out loud without looking:
+          <strong>Namaskara → Hegiddiri? → Chennagidini → Nimma hesaru enu? → Nanna hesaru … → Dhanyavadagalu</strong>.
+        </p>
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        Your mission is everyday Bengaluru speech with neighbours — not exams, not script.
+        The first real social move is a <strong>polite check-in</strong>. Get this smooth and every later lesson (prices, directions, small talk) attaches to a face you’ve already greeted.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: polite <em>you</em></h2>
+      <p>
+        Hindi has <em>tu / tum / aap</em>. In neighbour life, default like Hindi <strong>aap</strong>:
+      </p>
+      <div class="callout accent">
+        <div class="label">Register</div>
+        <p>
+          <strong>Neevu / nimma</strong> = polite / plural “you / your” (use with neighbours, staff, strangers).<br />
+          <strong>Neenu / ninna</strong> = intimate “you / your” (close friends, kids — <em>not</em> today).
+        </p>
+      </div>
+      <p>
+        Word order is SOV, like Hindi: <em>Nanna hesaru Prayank</em> ≈ “My name Prayank [is].”
+      </p>
+
+      <h2><span class="num">03</span> Phrase cards <span class="muted" style="font-weight:400;font-size:0.85em">(≤10 new items)</span></h2>
+
+      <div class="phrase">
+        <p class="kn">Namaskara</p>
+        <div class="audio-block" data-slug="namaskara"><audio controls preload="none" src="../assets/audio/namaskara.mp3"></audio></div>
+        <p class="en">Hello / greetings</p>
+        <p class="hi">≈ Namaste</p>
+        <div class="meta"><strong>Word-by-word:</strong> greeting formula · <strong>Register:</strong> safe everywhere · You already know this — keep it as the opener.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Hegiddiri?</p>
+        <div class="audio-block" data-slug="hegiddiri_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hegiddiri_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hegiddiri_2_nat.mp3"></audio></span></div>
+        <p class="en">How are you? (polite)</p>
+        <p class="hi">≈ Aap kaise hain?</p>
+        <div class="meta"><strong>Word-by-word:</strong> hege (how) + iddiri (are-you, polite) · <strong>Also hear:</strong> <em>Hegiddeera?</em> / <em>Hegiddira?</em> — same idea, slightly different shape. Use <strong>Hegiddiri?</strong> as your default.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Chennagidini</p>
+        <div class="audio-block" data-slug="chennagidini"><audio controls preload="none" src="../assets/audio/chennagidini.mp3"></audio></div>
+        <p class="en">I’m fine / I’m well</p>
+        <p class="hi">≈ Main theek hoon</p>
+        <div class="meta"><strong>Word-by-word:</strong> chennagi (well) + idini (I-am) · <strong>Also hear:</strong> <em>Chennagiddeeni</em>. Short reply after they ask about you.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Neevu?</p>
+        <div class="audio-block" data-slug="neevu_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/neevu_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/neevu_2_nat.mp3"></audio></span></div>
+        <p class="en">And you? (polite)</p>
+        <p class="hi">≈ Aap?</p>
+        <div class="meta"><strong>Use after</strong> answering about yourself — bounce the check-in back.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nimma hesaru enu?</p>
+        <div class="audio-block" data-slug="nimma_hesaru_enu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nimma_hesaru_enu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nimma_hesaru_enu_nat.mp3"></audio></span></div>
+        <p class="en">What is your name? (polite)</p>
+        <p class="hi">≈ Aapka naam kya hai?</p>
+        <div class="meta"><strong>Word-by-word:</strong> nimma (your-polite) · hesaru (name) · enu (what)</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanna hesaru Prayank</p>
+        <div class="audio-block" data-slug="nanna_hesaru_prayank"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_nat.mp3"></audio></span></div>
+        <p class="en">My name is Prayank</p>
+        <p class="hi">≈ Mera naam Prayank hai</p>
+        <div class="meta"><strong>Word-by-word:</strong> nanna (my) · hesaru (name) · Prayank · Swap in any name after <em>hesaru</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Dhanyavadagalu</p>
+        <div class="audio-block" data-slug="dhanyavadagalu"><audio controls preload="none" src="../assets/audio/dhanyavadagalu.mp3"></audio></div>
+        <p class="en">Thank you</p>
+        <p class="hi">≈ Dhanyavaad / shukriya</p>
+        <div class="meta"><strong>Register:</strong> polite, slightly full form — perfect for neighbours. Casual shortenings exist; learn the full one first.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Sari</p>
+        <div class="audio-block" data-slug="sari"><audio controls preload="none" src="../assets/audio/sari.mp3"></audio></div>
+        <p class="en">Okay / alright</p>
+        <p class="hi">≈ Theek / accha</p>
+        <div class="meta">Glue word for acknowledging — “sari, sari” is very Bengaluru.</div>
+      </div>
+
+      <h2><span class="num">04</span> Mini vocab bank</h2>
+      <div class="vocab-grid" aria-label="Vocabulary">
+        <div class="row head"><span>Kannada (Roman)</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">Namaskara</span><div class="audio-block" data-slug="namaskara"><audio controls preload="none" src="../assets/audio/namaskara.mp3"></audio></div>
+<span>Hello</span><span>Namaste</span></div>
+        <div class="row"><span class="kn">Hegiddiri?</span><div class="audio-block" data-slug="hegiddiri"><audio controls preload="none" src="../assets/audio/hegiddiri.mp3"></audio></div>
+<span>How are you?</span><span>Aap kaise hain?</span></div>
+        <div class="row"><span class="kn">Chennagidini</span><div class="audio-block" data-slug="chennagidini"><audio controls preload="none" src="../assets/audio/chennagidini.mp3"></audio></div>
+<span>I’m fine</span><span>Main theek hoon</span></div>
+        <div class="row"><span class="kn">Neevu?</span><div class="audio-block" data-slug="neevu"><audio controls preload="none" src="../assets/audio/neevu.mp3"></audio></div>
+<span>And you?</span><span>Aap?</span></div>
+        <div class="row"><span class="kn">nimma</span><div class="audio-block" data-slug="nimma"><audio controls preload="none" src="../assets/audio/nimma.mp3"></audio></div>
+<span>your (polite)</span><span>aapka</span></div>
+        <div class="row"><span class="kn">nanna</span><div class="audio-block" data-slug="nanna"><audio controls preload="none" src="../assets/audio/nanna.mp3"></audio></div>
+<span>my</span><span>mera</span></div>
+        <div class="row"><span class="kn">hesaru</span><div class="audio-block" data-slug="hesaru"><audio controls preload="none" src="../assets/audio/hesaru.mp3"></audio></div>
+<span>name</span><span>naam</span></div>
+        <div class="row"><span class="kn">enu?</span><div class="audio-block" data-slug="enu"><audio controls preload="none" src="../assets/audio/enu.mp3"></audio></div>
+<span>what?</span><span>kya?</span></div>
+        <div class="row"><span class="kn">Dhanyavadagalu</span><div class="audio-block" data-slug="dhanyavadagalu"><audio controls preload="none" src="../assets/audio/dhanyavadagalu.mp3"></audio></div>
+<span>Thank you</span><span>Dhanyavaad</span></div>
+        <div class="row"><span class="kn">Sari</span><div class="audio-block" data-slug="sari"><audio controls preload="none" src="../assets/audio/sari.mp3"></audio></div>
+<span>Okay</span><span>Theek</span></div>
+      </div>
+
+      <h2><span class="num">05</span> Model dialogue</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara.</span>
+        <div class="audio-block" data-slug="namaskara_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_2_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello.</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Namaskara. Hegiddiri?</span>
+        <div class="audio-block" data-slug="namaskara_hegiddiri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_hegiddiri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_hegiddiri_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. How are you?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Chennagidini. Neevu?</span>
+        <div class="audio-block" data-slug="chennagidini_neevu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chennagidini_neevu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chennagidini_neevu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">I’m fine. And you?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Chennagidini.</span>
+        <div class="audio-block" data-slug="chennagidini_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chennagidini_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chennagidini_2_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">I’m fine.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Nimma hesaru enu?</span>
+        <div class="audio-block" data-slug="nimma_hesaru_enu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nimma_hesaru_enu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nimma_hesaru_enu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">What is your name?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Nanna hesaru Ravi. Nimma?</span>
+        <div class="audio-block" data-slug="nanna_hesaru_ravi_nimma"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_ravi_nimma_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_ravi_nimma_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">My name is Ravi. Yours?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Nanna hesaru Prayank. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="nanna_hesaru_prayank_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">My name is Prayank. Thank you.</span></p>
+      </div>
+      <p>
+        Say it <strong>out loud three times</strong> — cover the glosses on the second pass.
+      </p>
+
+      <h2><span class="num">06</span> Retrieval practice</h2>
+      <p class="muted" style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">Equal-length options so wording doesn’t leak the answer.</p>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. Polite “How are you?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Neenu hegidiya?</button>
+          <button type="button" data-answer="correct">Hegiddiri?</button>
+          <button type="button" data-answer="wrong">Hesaru enu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “I’m fine” (your reply)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Chennagidini</button>
+          <button type="button" data-answer="wrong">Dhanyavadagalu</button>
+          <button type="button" data-answer="wrong">Nimma hesaru</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. Polite “What is your name?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Nanna hesaru enu?</button>
+          <button type="button" data-answer="wrong">Neevu sari enu?</button>
+          <button type="button" data-answer="correct">Nimma hesaru enu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “My name is Prayank”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Nimma hesaru Prayank</button>
+          <button type="button" data-answer="correct">Nanna hesaru Prayank</button>
+          <button type="button" data-answer="wrong">Hesaru nanna Prayank</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. Default register with a neighbour</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">neenu / ninna only</button>
+          <button type="button" data-answer="correct">neevu / nimma (polite)</button>
+          <button type="button" data-answer="wrong">no pronoun ever used</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">07</span> Production (cover + speak)</h2>
+      <div class="card">
+        <p>Without looking up, say in Kannada:</p>
+        <ol>
+          <li>Hello.</li>
+          <li>How are you? (polite)</li>
+          <li>I’m fine. And you?</li>
+          <li>What is your name?</li>
+          <li>My name is Prayank. Thank you.</li>
+        </ol>
+        <p style="margin-top:0.75rem">Then flip back and score yourself honestly. Redo any miss out loud twice.</p>
+      </div>
+
+      <h2><span class="num">08</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>Use <strong>Namaskara + Hegiddiri?</strong> with one neighbour, guard, or society staff.</li>
+          <li>If they reply, answer <strong>Chennagidini</strong> (even if the rest stays English).</li>
+          <li>Note one new word you <em>heard</em> — paste it to me in chat for Lesson 2.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Primary source</h2>
+      <p class="cite">
+        Skim the greeting / “how are you” section of
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks: Kannada conversational phrases</a>
+        and compare forms to this lesson’s polite set. Prefer what you actually hear in your building over any single page.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>
+          Stuck on pronunciation, a reply you heard, or whether something felt too formal?
+          Ask in this Hermes chat — I’m your teacher for this course. Follow-ups welcome anytime.
+        </p>
+      </div>
+
+      <div class="nav-links">
+        <a href="../index.html">← Course index</a>
+        <a href="../reference/polite-checkin-cheatsheet.html">Reference · polite check-in</a>
+        <a href="0002-where-are-you-going.html">Next · Lesson 0002 →</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok
+            ? "Nice — locked in."
+            : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0002 · Where are you going? (neighbour small talk)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn {
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: 0.01em;
+      color: var(--accent);
+      margin: 0 0 0.35rem;
+    }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--rule);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); font-weight: 600; }
+    .dialogue {
+      border-left: 3px solid var(--accent);
+      padding: 0.25rem 0 0.25rem 1rem;
+      margin: 1.25rem 0;
+    }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .dialogue .line {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 0.5rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-elevated);
+      border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0002</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~10 min</span>
+        </div>
+        <h1>Where are you going?</h1>
+        <p class="lede">
+          Extend the neighbour hello into real small talk: ask where someone’s headed, answer about yourself, and close politely — still Roman only, polite register.
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          After <strong>Namaskara + Hegiddiri?</strong>, you can run:
+          <strong>Elli hogtiddiri? → Naanu manege / office-ge hogtidini → Sari, nodona → Olle dinagalu</strong>.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review (Lesson 1):</strong>
+        Say out loud before scrolling —
+        Namaskara · Hegiddiri? · Chennagidini · Neevu? · Nimma hesaru enu? · Nanna hesaru Prayank · Dhanyavadagalu · Sari
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        In a society corridor, the greeting alone feels stiff. Locals almost always add
+        <em>“where are you going?”</em> — same social role as Hindi <em>kahaan jaa rahe ho?</em>
+        Answer short, then exit cleanly. That’s fluent neighbour life.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: <em>-ge</em> = “to”</h2>
+      <p>
+        Hindi uses <strong>-ko / ki taraf</strong> for destination. Kannada stacks
+        <strong>-ge</strong> (or <strong>-kke</strong> after some words) on the place:
+      </p>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>mane + ge → manege</strong> (to home)<br />
+          <strong>office + ge → office-ge</strong> (to office) — English nouns are fine in Bengaluru speech<br />
+          Verb bit you’ll hear: <strong>hogtidini</strong> (I’m going) · <strong>hogtiddiri</strong> (you’re going, polite)
+        </p>
+      </div>
+      <p>
+        Rough map to Hindi continuous: <em>jaa raha/rahi hoon</em> ≈ <strong>hogtidini</strong>;
+        polite “you are going” ≈ <strong>hogtiddiri</strong>.
+      </p>
+
+      <h2><span class="num">03</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Elli hogtiddiri?</p>
+        <div class="audio-block" data-slug="elli_hogtiddiri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/elli_hogtiddiri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/elli_hogtiddiri_nat.mp3"></audio></span></div>
+        <p class="en">Where are you going? (polite)</p>
+        <p class="hi">≈ Aap kahaan jaa rahe hain?</p>
+        <div class="meta">
+          <strong>Word-by-word:</strong> elli (where) · hogtiddiri (are-going-you, polite) ·
+          <strong>Also hear:</strong> <em>Elli hogtaiddira?</em> / <em>Elli hogtiddeera?</em> — same intent. Default: <strong>Elli hogtiddiri?</strong>
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Naanu manege hogtidini</p>
+        <div class="audio-block" data-slug="naanu_manege_hogtidini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_manege_hogtidini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_manege_hogtidini_nat.mp3"></audio></span></div>
+        <p class="en">I’m going home</p>
+        <p class="hi">≈ Main ghar jaa raha/rahi hoon</p>
+        <div class="meta">
+          <strong>Word-by-word:</strong> naanu (I) · mane-ge (home-to) · hogtidini (am-going) ·
+          <strong>mane</strong> = home/house.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Office-ge hogtidini</p>
+        <div class="audio-block" data-slug="office-ge_hogtidini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/office-ge_hogtidini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/office-ge_hogtidini_nat.mp3"></audio></span></div>
+        <p class="en">I’m going to the office</p>
+        <p class="hi">≈ Main office jaa raha/rahi hoon</p>
+        <div class="meta">
+          Swap the place: <strong>market-ge</strong>, <strong>shop-ge</strong>, <strong>gym-ge</strong> — Bengaluru mixes English place names freely.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Kelasa-ge hogtidini</p>
+        <div class="audio-block" data-slug="kelasa-ge_hogtidini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kelasa-ge_hogtidini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kelasa-ge_hogtidini_nat.mp3"></audio></span></div>
+        <p class="en">I’m going to work</p>
+        <p class="hi">≈ Main kaam pe jaa raha/rahi hoon</p>
+        <div class="meta"><strong>kelasa</strong> = work / job. Slightly more “Kannada” than saying only office.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Illi / Alli</p>
+        <div class="audio-block" data-slug="illi"><audio controls preload="none" src="../assets/audio/illi.mp3"></audio></div>
+        <div class="audio-block" data-slug="alli"><audio controls preload="none" src="../assets/audio/alli.mp3"></audio></div>
+        <p class="en">Here / There</p>
+        <p class="hi">≈ Yahaan / Wahaan</p>
+        <div class="meta">Useful fragments: <em>Illi barri</em> (come here, polite — later). For now, recognition only if you hear them.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Sari, nodona</p>
+        <div class="audio-block" data-slug="sari_nodona"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_nodona_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_nodona_nat.mp3"></audio></span></div>
+        <p class="en">Okay, see you / we’ll see</p>
+        <p class="hi">≈ Theek, milte hain</p>
+        <div class="meta">
+          <strong>nodona</strong> ≈ “let’s see / see you” — very common exit. Soft, friendly close after small talk.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Olle dinagalu</p>
+        <div class="audio-block" data-slug="olle_dinagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/olle_dinagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/olle_dinagalu_nat.mp3"></audio></span></div>
+        <p class="en">Have a good day</p>
+        <p class="hi">≈ Accha din ho / have a nice day</p>
+        <div class="meta"><strong>olle</strong> = good · <strong>dinagalu</strong> = day(s). Polite exit line after nodona.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Hogtini, sari</p>
+        <div class="audio-block" data-slug="hogtini_sari"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hogtini_sari_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hogtini_sari_nat.mp3"></audio></span></div>
+        <p class="en">I’ll get going, okay</p>
+        <p class="hi">≈ Main chalta/chalti hoon, theek hai</p>
+        <div class="meta">Short leave-taking if you’re the one walking away. Pair with Namaskara or Dhanyavadagalu.</div>
+      </div>
+
+      <h2><span class="num">04</span> Mini vocab bank</h2>
+      <div class="vocab-grid" aria-label="Vocabulary">
+        <div class="row head"><span>Kannada (Roman)</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">elli?</span><div class="audio-block" data-slug="elli"><audio controls preload="none" src="../assets/audio/elli.mp3"></audio></div>
+<span>where?</span><span>kahaan?</span></div>
+        <div class="row"><span class="kn">hogtiddiri?</span><div class="audio-block" data-slug="hogtiddiri"><audio controls preload="none" src="../assets/audio/hogtiddiri.mp3"></audio></div>
+<span>are you going? (polite)</span><span>jaa rahe hain?</span></div>
+        <div class="row"><span class="kn">hogtidini</span><div class="audio-block" data-slug="hogtidini"><audio controls preload="none" src="../assets/audio/hogtidini.mp3"></audio></div>
+<span>I’m going</span><span>jaa raha/rahi hoon</span></div>
+        <div class="row"><span class="kn">naanu</span><div class="audio-block" data-slug="naanu"><audio controls preload="none" src="../assets/audio/naanu.mp3"></audio></div>
+<span>I</span><span>main</span></div>
+        <div class="row"><span class="kn">mane</span><div class="audio-block" data-slug="mane"><audio controls preload="none" src="../assets/audio/mane.mp3"></audio></div>
+<span>home / house</span><span>ghar</span></div>
+        <div class="row"><span class="kn">-ge</span><div class="audio-block" data-slug="particle_ge"><audio controls preload="none" src="../assets/audio/particle_ge.mp3"></audio></div>
+<span>to (destination)</span><span>-ko / ki taraf</span></div>
+        <div class="row"><span class="kn">manege</span><div class="audio-block" data-slug="manege"><audio controls preload="none" src="../assets/audio/manege.mp3"></audio></div>
+<span>to home</span><span>ghar</span></div>
+        <div class="row"><span class="kn">kelasa</span><div class="audio-block" data-slug="kelasa"><audio controls preload="none" src="../assets/audio/kelasa.mp3"></audio></div>
+<span>work</span><span>kaam</span></div>
+        <div class="row"><span class="kn">illi / alli</span><div class="audio-block" data-slug="illi"><audio controls preload="none" src="../assets/audio/illi.mp3"></audio></div><div class="audio-block" data-slug="alli"><audio controls preload="none" src="../assets/audio/alli.mp3"></audio></div>
+
+<span>here / there</span><span>yahaan / wahaan</span></div>
+        <div class="row"><span class="kn">nodona</span><div class="audio-block" data-slug="nodona"><audio controls preload="none" src="../assets/audio/nodona.mp3"></audio></div>
+<span>see you / we’ll see</span><span>milte hain</span></div>
+        <div class="row"><span class="kn">Olle dinagalu</span><div class="audio-block" data-slug="olle_dinagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/olle_dinagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/olle_dinagalu_nat.mp3"></audio></span></div>
+<span>Have a good day</span><span>accha din</span></div>
+      </div>
+
+      <h2><span class="num">05</span> Model dialogue</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Hegiddiri?</span>
+        <div class="audio-block" data-slug="namaskara_hegiddiri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_hegiddiri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_hegiddiri_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. How are you?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Chennagidini. Neevu?</span>
+        <div class="audio-block" data-slug="chennagidini_neevu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chennagidini_neevu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chennagidini_neevu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">I’m fine. And you?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Chennagidini. Elli hogtiddiri?</span>
+        <div class="audio-block" data-slug="chennagidini_elli_hogtiddiri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chennagidini_elli_hogtiddiri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chennagidini_elli_hogtiddiri_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">I’m fine. Where are you going?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Market-ge. Neevu?</span>
+        <div class="audio-block" data-slug="market-ge_neevu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/market-ge_neevu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/market-ge_neevu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">To the market. You?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Naanu office-ge hogtidini. Sari, nodona. Olle dinagalu.</span>
+        <div class="audio-block" data-slug="naanu_office-ge_hogtidini_sari_nodona_olle_dinagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_office-ge_hogtidini_sari_nodona_olle_dinagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_office-ge_hogtidini_sari_nodona_olle_dinagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">I’m going to the office. Okay, see you. Have a good day.</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+      <p>Speak it <strong>three times</strong>. Second pass: cover the English glosses.</p>
+
+      <h2><span class="num">06</span> Retrieval practice</h2>
+      <p class="muted" style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">Equal-length options where possible.</p>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. Polite “Where are you going?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Manege hogtidini?</button>
+          <button type="button" data-answer="correct">Elli hogtiddiri?</button>
+          <button type="button" data-answer="wrong">Hesaru enu alli?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “I’m going home”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Naanu manege hogtidini</button>
+          <button type="button" data-answer="wrong">Nimma manege hogtiddiri</button>
+          <button type="button" data-answer="wrong">Naanu elli hogtiddiri</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. What does the ending <em>-ge</em> mainly mark here?</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Past tense only</button>
+          <button type="button" data-answer="correct">Destination “to”</button>
+          <button type="button" data-answer="wrong">Polite your-name</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. Friendly exit: “Okay, see you”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Chennagidini naanu</button>
+          <button type="button" data-answer="wrong">Nimma hesaru enu</button>
+          <button type="button" data-answer="correct">Sari, nodona</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Have a good day”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Olle dinagalu</button>
+          <button type="button" data-answer="wrong">Olle hesaru enu</button>
+          <button type="button" data-answer="wrong">Elli dinagalu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: polite “How are you?” (Lesson 1)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Chennagidini?</button>
+          <button type="button" data-answer="correct">Hegiddiri?</button>
+          <button type="button" data-answer="wrong">Dhanyavadagalu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">07</span> Production (cover + speak)</h2>
+      <div class="card">
+        <p>Without looking, say in Kannada:</p>
+        <ol>
+          <li>Hello. How are you?</li>
+          <li>I’m fine. Where are you going?</li>
+          <li>I’m going home.</li>
+          <li>I’m going to the office.</li>
+          <li>Okay, see you. Have a good day.</li>
+        </ol>
+        <p style="margin-top:0.75rem">Miss any line? Repeat it twice out loud, then rerun the full set.</p>
+      </div>
+
+      <h2><span class="num">08</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>With one person in your building: full L1 open, then add <strong>Elli hogtiddiri?</strong> if it feels natural.</li>
+          <li>When someone asks you: answer <strong>Naanu manege hogtidini</strong> or <strong>office-ge hogtidini</strong>.</li>
+          <li>Close with <strong>Sari, nodona</strong> (bonus: <strong>Olle dinagalu</strong>).</li>
+          <li>Tell me in chat what they said back — even one word helps shape Lesson 3.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Primary source</h2>
+      <p class="cite">
+        Compare place / movement phrases on
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks: Kannada conversational phrases</a>
+        with what you hear in the corridor. Trust local ears over any single page.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>
+          Unsure about a reply you heard, or whether <em>office-ge</em> vs <em>kelasa-ge</em> fits?
+          Ask here — follow-ups are part of the course.
+        </p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0001-greet-a-neighbour-polite-checkin.html">← Lesson 0001</a>
+        <a href="../reference/where-going-cheatsheet.html">Reference · where going</a>
+        <a href="0003-how-much-eshtu-numbers.html">Next · Lesson 0003 →</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok
+            ? "Nice — locked in."
+            : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

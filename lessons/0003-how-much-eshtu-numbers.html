@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0003 · How much? (Eshtu + numbers)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn {
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 1.35rem;
+      letter-spacing: 0.01em;
+      color: var(--accent);
+      margin: 0 0 0.35rem;
+    }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--rule);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); font-weight: 600; }
+    .dialogue {
+      border-left: 3px solid var(--accent);
+      padding: 0.25rem 0 0.25rem 1rem;
+      margin: 1.25rem 0;
+    }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .dialogue .line {
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .num-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.45rem;
+      margin: 1rem 0 1.25rem;
+      font-family: var(--sans);
+    }
+    .num-grid .cell {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem 0.4rem;
+      text-align: center;
+    }
+    .num-grid .n {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .num-grid .kn {
+      display: block;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 0.2rem;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 640px) {
+      .num-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 0.5rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-elevated);
+      border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0003</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~12 min</span>
+        </div>
+        <h1>How much? (Eshtu + numbers)</h1>
+        <p class="lede">
+          Street skill: ask the price, catch numbers 1–10 (and a few money anchors), and push back politely — shops, stalls, and autos in Bengaluru.
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          You can run:
+          <strong>Idhu eshtu? → … rupayi → Swalpa kammi maadi → Sari / Beda</strong>
+          and recognise <strong>ondu → hattu</strong> when you hear them.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        Hegiddiri? · Chennagidini · Elli hogtiddiri? · Naanu manege hogtidini · Sari, nodona · Olle dinagalu
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        Neighbour chat gets you into the building. <strong>Eshtu?</strong> gets you through the city —
+        fruit cart, medical store, auto meter arguments. This is the highest-ROI street phrase after hello.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: question word <em>eshtu</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Eshtu?</strong> = how much / how many (≈ Hindi <em>kitna/kitne?</em>)<br />
+          Point + ask: <strong>Idhu eshtu?</strong> = How much is this?<br />
+          Ride: <strong>Alli eshtu?</strong> / <strong>… ge eshtu?</strong> = How much to there / to X?
+        </p>
+      </div>
+      <p>
+        Answers usually land as a number + <strong>rupayi</strong> (rupees). You don’t need perfect production of every number yet —
+        first goal is <strong>hearing</strong> 1–10 and saying the price question confidently.
+      </p>
+
+      <h2><span class="num">03</span> Numbers 1–10 (Roman · Bengaluru speech)</h2>
+      <div class="num-grid" aria-label="Numbers 1 to 10">
+        <div class="cell"><span class="n">1</span><span class="kn">ondu</span><div class="audio-block" data-slug="ondu"><audio controls preload="none" src="../assets/audio/ondu.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">2</span><span class="kn">eradu</span><div class="audio-block" data-slug="eradu"><audio controls preload="none" src="../assets/audio/eradu.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">3</span><span class="kn">mooru</span><div class="audio-block" data-slug="mooru"><audio controls preload="none" src="../assets/audio/mooru.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">4</span><span class="kn">naalku</span><div class="audio-block" data-slug="naalku"><audio controls preload="none" src="../assets/audio/naalku.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">5</span><span class="kn">aidu</span><div class="audio-block" data-slug="aidu"><audio controls preload="none" src="../assets/audio/aidu.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">6</span><span class="kn">aaru</span><div class="audio-block" data-slug="aaru"><audio controls preload="none" src="../assets/audio/aaru.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">7</span><span class="kn">elu</span><div class="audio-block" data-slug="elu"><audio controls preload="none" src="../assets/audio/elu.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">8</span><span class="kn">entu</span><div class="audio-block" data-slug="entu"><audio controls preload="none" src="../assets/audio/entu.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">9</span><span class="kn">ombattu</span><div class="audio-block" data-slug="ombattu"><audio controls preload="none" src="../assets/audio/ombattu.mp3"></audio></div>
+</div>
+        <div class="cell"><span class="n">10</span><span class="kn">hattu</span><div class="audio-block" data-slug="hattu"><audio controls preload="none" src="../assets/audio/hattu.mp3"></audio></div>
+</div>
+      </div>
+      <div class="card">
+        <p><strong>Money anchors you’ll hear (recognition):</strong></p>
+        <p style="margin:0.4rem 0 0;font-family:var(--sans);font-size:0.95rem">
+          <strong>hadinaru</strong> 16 · <strong>ippatthu</strong> 20 · <strong>moovattu</strong> 30 ·
+          <strong>nalavattu</strong> 40 · <strong>aivattu</strong> 50 · <strong>nooru</strong> 100
+        </p>
+        <p style="margin:0.6rem 0 0;color:var(--muted);font-family:var(--sans);font-size:0.88rem">
+          Don’t memorise the full set today. Drill 1–10 hard; treat 20/50/100 as “spot in the wild.”
+        </p>
+      </div>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Idhu eshtu?</p>
+        <div class="audio-block" data-slug="idhu_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idhu_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idhu_eshtu_nat.mp3"></audio></span></div>
+        <p class="en">How much is this?</p>
+        <p class="hi">≈ Yeh kitna hai?</p>
+        <div class="meta">
+          <strong>Word-by-word:</strong> idhu (this) · eshtu (how much) · Point with your hand/chin while asking — universal.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Adhu eshtu?</p>
+        <div class="audio-block" data-slug="adhu_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/adhu_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/adhu_eshtu_nat.mp3"></audio></span></div>
+        <p class="en">How much is that?</p>
+        <p class="hi">≈ Woh kitna hai?</p>
+        <div class="meta"><strong>idhu</strong> = this (near) · <strong>adhu</strong> = that (far) — like yeh / woh.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">… rupayi</p>
+        <div class="audio-block" data-slug="rupayi"><audio controls preload="none" src="../assets/audio/rupayi.mp3"></audio></div>
+        <p class="en">… rupees</p>
+        <p class="hi">≈ … rupaye</p>
+        <div class="meta">
+          You’ll hear: <em>aidu rupayi</em> (₹5), <em>hattu rupayi</em> (₹10), <em>nooru rupayi</em> (₹100).
+          English “rupees” is also understood; locals still say <strong>rupayi</strong> a lot.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa kammi maadi</p>
+        <div class="audio-block" data-slug="swalpa_kammi_maadi_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_kammi_maadi_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_kammi_maadi_2_nat.mp3"></audio></span></div>
+        <p class="en">Please reduce a little</p>
+        <p class="hi">≈ Thoda kam kijiye</p>
+        <div class="meta">
+          <strong>swalpa</strong> = a little · <strong>kammi</strong> = less · <strong>maadi</strong> = do (polite).
+          Soft bargain line for shops/autos — not aggressive.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Jaasti aytu</p>
+        <div class="audio-block" data-slug="jaasti_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/jaasti_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/jaasti_aytu_nat.mp3"></audio></span></div>
+        <p class="en">That’s too much</p>
+        <p class="hi">≈ Zyada ho gaya</p>
+        <div class="meta"><strong>jaasti</strong> = more/too much · <strong>aytu</strong> ≈ it became / it is. Common pushback.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Sari · Beda</p>
+        <div class="audio-block" data-slug="sari"><audio controls preload="none" src="../assets/audio/sari.mp3"></audio></div>
+        <div class="audio-block" data-slug="beda"><audio controls preload="none" src="../assets/audio/beda.mp3"></audio></div>
+        <p class="en">Okay · Don’t want / no need</p>
+        <p class="hi">≈ Theek · Nahi chahiye</p>
+        <div class="meta">
+          <strong>Beda</strong> is the clean no. Soften with Namaskara + smile if walking away.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Meter haki · Fix a?</p>
+        <div class="audio-block" data-slug="meter_haki"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/meter_haki_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/meter_haki_nat.mp3"></audio></span></div>
+        <p class="en">Put the meter · Is it a fixed fare?</p>
+        <p class="hi">≈ Meter lagaao · Fix hai kya?</p>
+        <div class="meta">
+          Bengaluru auto reality: mix of Kannada + English. <strong>Meter haki</strong> (put meter) is gold.
+          You’ll also hear pure English numbers — still answer with <em>Eshtu?</em> first.
+        </div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Alli eshtu? / Koramangala-ge eshtu?</p>
+        <div class="audio-block" data-slug="alli_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/alli_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/alli_eshtu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="koramangala-ge_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/koramangala-ge_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/koramangala-ge_eshtu_nat.mp3"></audio></span></div>
+        <p class="en">How much to there? / How much to Koramangala?</p>
+        <p class="hi">≈ Wahaan kitna? / Koramangala kitna?</p>
+        <div class="meta">Reuse L2 <strong>-ge</strong>: place-ge + eshtu.</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid" aria-label="Vocabulary">
+        <div class="row head"><span>Kannada (Roman)</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">eshtu?</span><div class="audio-block" data-slug="eshtu"><audio controls preload="none" src="../assets/audio/eshtu.mp3"></audio></div>
+<span>how much/many?</span><span>kitna?</span></div>
+        <div class="row"><span class="kn">idhu / adhu</span><div class="audio-block" data-slug="idhu"><audio controls preload="none" src="../assets/audio/idhu.mp3"></audio></div><div class="audio-block" data-slug="adhu"><audio controls preload="none" src="../assets/audio/adhu.mp3"></audio></div>
+
+<span>this / that</span><span>yeh / woh</span></div>
+        <div class="row"><span class="kn">rupayi</span><div class="audio-block" data-slug="rupayi"><audio controls preload="none" src="../assets/audio/rupayi.mp3"></audio></div>
+<span>rupees</span><span>rupaye</span></div>
+        <div class="row"><span class="kn">swalpa</span><div class="audio-block" data-slug="swalpa"><audio controls preload="none" src="../assets/audio/swalpa.mp3"></audio></div>
+<span>a little</span><span>thoda</span></div>
+        <div class="row"><span class="kn">kammi</span><div class="audio-block" data-slug="kammi"><audio controls preload="none" src="../assets/audio/kammi.mp3"></audio></div>
+<span>less</span><span>kam</span></div>
+        <div class="row"><span class="kn">maadi</span><div class="audio-block" data-slug="maadi"><audio controls preload="none" src="../assets/audio/maadi.mp3"></audio></div>
+<span>please do (polite)</span><span>kijiye</span></div>
+        <div class="row"><span class="kn">jaasti</span><div class="audio-block" data-slug="jaasti"><audio controls preload="none" src="../assets/audio/jaasti.mp3"></audio></div>
+<span>too much / more</span><span>zyada</span></div>
+        <div class="row"><span class="kn">beda</span><div class="audio-block" data-slug="beda"><audio controls preload="none" src="../assets/audio/beda.mp3"></audio></div>
+<span>don’t want</span><span>nahi chahiye</span></div>
+        <div class="row"><span class="kn">ondu…hattu</span><span>1…10</span><span>ek…das</span></div>
+        <div class="row"><span class="kn">nooru</span><div class="audio-block" data-slug="nooru"><audio controls preload="none" src="../assets/audio/nooru.mp3"></audio></div>
+<span>100</span><span>sau</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogues</h2>
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">A · Shop</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Idhu eshtu?</span>
+        <div class="audio-block" data-slug="namaskara_idhu_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_idhu_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_idhu_eshtu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. How much is this?</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Hattu rupayi.</span>
+        <div class="audio-block" data-slug="hattu_rupayi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hattu_rupayi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hattu_rupayi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Ten rupees.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Swalpa kammi maadi.</span>
+        <div class="audio-block" data-slug="swalpa_kammi_maadi_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_kammi_maadi_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_kammi_maadi_2_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Please reduce a little.</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Entu rupayi sari.</span>
+        <div class="audio-block" data-slug="entu_rupayi_sari"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/entu_rupayi_sari_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/entu_rupayi_sari_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Eight rupees, okay.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">B · Auto</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Indiranagar-ge eshtu?</span>
+        <div class="audio-block" data-slug="indiranagar-ge_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/indiranagar-ge_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/indiranagar-ge_eshtu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">How much to Indiranagar?</span></p>
+        <p><span class="who">Driver</span><br /><span class="line">Nooru.</span>
+        <div class="audio-block" data-slug="nooru_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nooru_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nooru_2_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hundred.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Jaasti aytu. Meter haki.</span>
+        <div class="audio-block" data-slug="jaasti_aytu_meter_haki"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/jaasti_aytu_meter_haki_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/jaasti_aytu_meter_haki_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Too much. Put the meter.</span></p>
+        <p><span class="who">Driver</span><br /><span class="line">Sari, haki.</span>
+        <div class="audio-block" data-slug="sari_haki"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_haki_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_haki_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay, I’ll put it.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Hogona.</span>
+        <div class="audio-block" data-slug="sari_hogona"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_hogona_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_hogona_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Let’s go.</span></p>
+      </div>
+      <p><strong>Hogona</strong> ≈ let’s go (bonus exit into motion — related to L2 <em>hogu</em>).</p>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “How much is this?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Elli hogtiddiri?</button>
+          <button type="button" data-answer="correct">Idhu eshtu?</button>
+          <button type="button" data-answer="wrong">Nanna hesaru enu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. Number for 5</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">eradu</button>
+          <button type="button" data-answer="correct">aidu</button>
+          <button type="button" data-answer="wrong">hattu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. Number for 10</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">hattu</button>
+          <button type="button" data-answer="wrong">ondu</button>
+          <button type="button" data-answer="wrong">mooru</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. Soft bargain: “Please reduce a little”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Olle dinagalu maadi</button>
+          <button type="button" data-answer="correct">Swalpa kammi maadi</button>
+          <button type="button" data-answer="wrong">Naanu manege maadi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “That’s too much”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Jaasti aytu</button>
+          <button type="button" data-answer="wrong">Chennagidini</button>
+          <button type="button" data-answer="wrong">Sari nodona</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Clean “no / don’t want”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Sari</button>
+          <button type="button" data-answer="wrong">Eshtu</button>
+          <button type="button" data-answer="correct">Beda</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">7. Spaced: “I’m going home” (L2)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Idhu manege eshtu</button>
+          <button type="button" data-answer="correct">Naanu manege hogtidini</button>
+          <button type="button" data-answer="wrong">Nimma manege beda</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <p>Cover the page. Say:</p>
+        <ol>
+          <li>Numbers 1→10 in order (ondu…hattu).</li>
+          <li>How much is this?</li>
+          <li>Please reduce a little.</li>
+          <li>That’s too much. Put the meter.</li>
+          <li>No need. Thank you.</li>
+          <li>How much to Koramangala?</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>At one shop/stall: ask <strong>Idhu eshtu?</strong> (even if you pay the asked price).</li>
+          <li>Drill numbers out loud once a day while walking — 1–10 forward and back.</li>
+          <li>Optional auto: open with destination + <strong>eshtu?</strong> or <strong>Meter haki</strong>.</li>
+          <li>Note any number word you heard and didn’t catch — send it to me.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Cross-check numbers and shopping phrases on
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks: Kannada conversational phrases</a>
+        and
+        <a href="https://www.omniglot.com/language/phrases/kannada.php">Omniglot Kannada phrases</a>.
+        Trust what auto drivers actually say in your neighbourhood.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>
+          Heard a price you can’t parse? Paste the sound-as-you-heard-it (even wrong spelling) —
+          we’ll decode it into the number system.
+        </p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0002-where-are-you-going.html">← Lesson 0002</a>
+        <a href="../reference/eshtu-numbers-cheatsheet.html">Reference · Eshtu + numbers</a>
+        <a href="0004-directions-left-right-straight.html">Next · Lesson 0004 →</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok
+            ? "Nice — locked in."
+            : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

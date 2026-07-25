@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Reference · Directions</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    table.ref { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 0.92rem; }
+    table.ref th, table.ref td { text-align: left; padding: 0.5rem 0.4rem; border-bottom: 1px solid var(--rule); }
+    table.ref th { color: var(--muted); font-size: 0.72rem; letter-spacing: 0.05em; text-transform: uppercase; }
+    table.ref td.kn { font-weight: 700; color: var(--accent); }
+    .dirs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; font-family: var(--sans); margin: 1rem 0; }
+    .dirs div { border: 1px solid var(--rule); border-radius: 8px; padding: 0.75rem; text-align: center; background: var(--bg-elevated); }
+    .dirs b { display: block; color: var(--accent); font-size: 1.05rem; }
+    @media (max-width: 640px) { .dirs { grid-template-columns: 1fr; } }
+    @media print { .nav-links { display: none; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row"><span class="badge">Reference</span><span class="dot" aria-hidden="true"></span><span>Spoken Kannada</span></div>
+        <h1>Directions</h1>
+        <p class="lede">Pocket sheet for Lesson 0004.</p>
+      </header>
+
+      <div class="dirs">
+        <div>↑ straight <b>eduru</b></div>
+        <div>→ right <b>balakke</b></div>
+        <div>← left <b>yedakke</b></div>
+      </div>
+
+      <h2>Ask / confirm</h2>
+      <ol>
+        <li><strong>… elli ide?</strong> — where is …?</li>
+        <li><strong>Heghe hogbeku?</strong> — which way?</li>
+        <li><strong>Eduru hogi</strong> — go straight</li>
+        <li><strong>Balakke thirgi</strong> — turn right</li>
+        <li><strong>Yedakke thirgi</strong> — turn left</li>
+        <li><strong>Swalpa eduru, nantara balakke</strong> — a bit straight, then right</li>
+        <li><strong>Hattira / dooradalli</strong> — near / far</li>
+        <li><strong>Idhe na? / Alli na?</strong> — this way? / there?</li>
+        <li><strong>Gothaytu / Gottila</strong> — got it / don’t know</li>
+      </ol>
+
+      <table class="ref">
+        <thead><tr><th>Kannada</th><th>English</th><th>Hindi</th></tr></thead>
+        <tbody>
+          <tr><td class="kn">elli ide?</td><td>where is it?</td><td>kahaan hai?</td></tr>
+          <tr><td class="kn">eduru</td><td>straight</td><td>seedha</td></tr>
+          <tr><td class="kn">balakke</td><td>right</td><td>dayein</td></tr>
+          <tr><td class="kn">yedakke</td><td>left</td><td>baayein</td></tr>
+          <tr><td class="kn">thirgi</td><td>turn</td><td>mudo</td></tr>
+          <tr><td class="kn">nantara</td><td>then</td><td>phir</td></tr>
+          <tr><td class="kn">gothaytu</td><td>got it</td><td>samajh gaya</td></tr>
+        </tbody>
+      </table>
+
+      <div class="nav-links">
+        <a href="../lessons/0004-directions-left-right-straight.html">← Lesson 0004</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

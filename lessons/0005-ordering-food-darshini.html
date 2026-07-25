@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0005 · Ordering food (darshini / cafe)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .menu-chip {
+      display: inline-block; font-family: var(--sans); font-size: 0.85rem;
+      border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.25rem 0.2rem 0; background: var(--bg-elevated);
+    }
+    .menu-chip b { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0005</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~11 min</span>
+        </div>
+        <h1>Ordering food (darshini / cafe)</h1>
+        <p class="lede">
+          Order tea, coffee, and a simple plate; say how many; ask for the bill — Bengaluru counter culture, Roman only.
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Run a full counter loop:
+          <strong>Namaskara → … kodri / beku → … eshtu? → Bill kodri → Dhanyavadagalu</strong>
+          with tea/coffee and one food item.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        Idhu eshtu? · ondu…hattu · balakke / yedakke / eduru · elli ide? · Swalpa kammi maadi · Beda
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        Darshinis and filter-coffee counters are daily Bengaluru. You already have prices (L3) and politeness (L1).
+        This lesson glues them into <strong>ordering</strong> — the most repeated public script after auto talk.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: <em>beku / beda</em> + polite <em>kodri</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>beku</strong> = want / need (≈ chahiye)<br />
+          <strong>beda</strong> = don’t want (you know from L3)<br />
+          <strong>kodri</strong> = please give (polite; ≈ dijiye)<br />
+          Order shape: <strong>[item] [number] kodri</strong> or <strong>[item] beku</strong>
+        </p>
+      </div>
+      <p>
+        Examples: <em>Coffee ondu kodri</em> · <em>Idli eradu beku</em> · <em>Bill kodri</em>.
+      </p>
+
+      <h2><span class="num">03</span> High-frequency items (recognition + production)</h2>
+      <p>
+        <span class="menu-chip"><b>coffee</b> / kaafi</span>
+        <span class="menu-chip"><b>tea</b> / cha</span>
+        <span class="menu-chip"><b>filter coffee</b></span>
+        <span class="menu-chip"><b>idli</b></span>
+        <span class="menu-chip"><b>vada</b></span>
+        <span class="menu-chip"><b>dosa</b></span>
+        <span class="menu-chip"><b>upma</b></span>
+        <span class="menu-chip"><b>poori</b></span>
+        <span class="menu-chip"><b>meals</b> / oota</span>
+        <span class="menu-chip"><b>water</b> / neeru</span>
+      </p>
+      <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+        English item names are normal at counters. Still learn <strong>neeru</strong> (water) and <strong>oota</strong> (meal/food).
+      </p>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Coffee ondu kodri</p>
+        <div class="audio-block" data-slug="coffee_ondu_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/coffee_ondu_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/coffee_ondu_kodri_nat.mp3"></audio></span></div>
+        <p class="en">One coffee, please</p>
+        <p class="hi">≈ Ek coffee dijiye</p>
+        <div class="meta"><strong>ondu</strong> = one (L3). Swap: tea, filter coffee, water.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Idli eradu beku</p>
+        <div class="audio-block" data-slug="idli_eradu_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idli_eradu_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idli_eradu_beku_nat.mp3"></audio></span></div>
+        <p class="en">I want two idlis</p>
+        <p class="hi">≈ Mujhe do idli chahiye</p>
+        <div class="meta"><strong>beku</strong> is direct and common at counters — not rude in this context.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Masala dosa ondu kodri</p>
+        <div class="audio-block" data-slug="masala_dosa_ondu_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/masala_dosa_ondu_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/masala_dosa_ondu_kodri_nat.mp3"></audio></span></div>
+        <p class="en">One masala dosa, please</p>
+        <p class="hi">≈ Ek masala dosa dijiye</p>
+        <div class="meta">Food name stays English/Kannada hybrid — that’s authentic.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Neeru kodri</p>
+        <div class="audio-block" data-slug="neeru_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/neeru_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/neeru_kodri_nat.mp3"></audio></span></div>
+        <p class="en">Water, please</p>
+        <p class="hi">≈ Paani dijiye</p>
+        <div class="meta"><strong>neeru</strong> = water. Also hear: “water bottle”.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa less sweet · Strong maadi</p>
+        <div class="audio-block" data-slug="swalpa_less_sweet"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_less_sweet_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_less_sweet_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="strong_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/strong_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/strong_maadi_nat.mp3"></audio></span></div>
+        <p class="en">A little less sweet · Make it strong</p>
+        <p class="hi">≈ Thodi kam meethi · Strong banana</p>
+        <div class="meta">Coffee/tea tweaks. Reuses <strong>swalpa</strong> (L3). Mix of EN + KN is normal.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Parcel maadi · Iggade</p>
+        <div class="audio-block" data-slug="parcel_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/parcel_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/parcel_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="iggade"><audio controls preload="none" src="../assets/audio/iggade.mp3"></audio></div>
+        <p class="en">Pack it / parcel · Here (for here)</p>
+        <p class="hi">≈ Parcel kar do · Yahi pe</p>
+        <div class="meta"><strong>Parcel maadi</strong> = pack. <strong>Iggade</strong> ≈ here (for sitting/eating here). You’ll also hear plain “parcel” / “here only”.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Bill kodri · Eshtu aytu?</p>
+        <div class="audio-block" data-slug="bill_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bill_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bill_kodri_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="eshtu_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_nat.mp3"></audio></span></div>
+        <p class="en">Bill please · How much did it come to?</p>
+        <p class="hi">≈ Bill dijiye · Kitna hua?</p>
+        <div class="meta">Combines L3 <strong>eshtu</strong> with bill close. <strong>aytu</strong> you saw in <em>jaasti aytu</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Innu eradu nimisha · Gottu</p>
+        <div class="audio-block" data-slug="innu_eradu_nimisha"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/innu_eradu_nimisha_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/innu_eradu_nimisha_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="gottu"><audio controls preload="none" src="../assets/audio/gottu.mp3"></audio></div>
+        <p class="en">Two more minutes · Okay/understood</p>
+        <p class="hi">≈ Do minute aur · Theek</p>
+        <div class="meta">Optional wait language. <strong>innu</strong> ≈ more/still. <strong>Gottu</strong> ≈ okay (related to gothaytu).</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">beku</span><div class="audio-block" data-slug="beku"><audio controls preload="none" src="../assets/audio/beku.mp3"></audio></div>
+<span>want / need</span><span>chahiye</span></div>
+        <div class="row"><span class="kn">kodri</span><div class="audio-block" data-slug="kodri"><audio controls preload="none" src="../assets/audio/kodri.mp3"></audio></div>
+<span>please give</span><span>dijiye</span></div>
+        <div class="row"><span class="kn">neeru</span><div class="audio-block" data-slug="neeru"><audio controls preload="none" src="../assets/audio/neeru.mp3"></audio></div>
+<span>water</span><span>paani</span></div>
+        <div class="row"><span class="kn">oota</span><div class="audio-block" data-slug="oota"><audio controls preload="none" src="../assets/audio/oota.mp3"></audio></div>
+<span>meal / food</span><span>khana</span></div>
+        <div class="row"><span class="kn">cha / coffee</span><div class="audio-block" data-slug="cha"><audio controls preload="none" src="../assets/audio/cha.mp3"></audio></div>
+<span>tea / coffee</span><span>chai / coffee</span></div>
+        <div class="row"><span class="kn">parcel maadi</span><div class="audio-block" data-slug="parcel_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/parcel_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/parcel_maadi_nat.mp3"></audio></span></div>
+<span>pack it</span><span>parcel karo</span></div>
+        <div class="row"><span class="kn">iggade</span><div class="audio-block" data-slug="iggade"><audio controls preload="none" src="../assets/audio/iggade.mp3"></audio></div>
+<span>here (for here)</span><span>yahin</span></div>
+        <div class="row"><span class="kn">bill kodri</span><div class="audio-block" data-slug="bill_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bill_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bill_kodri_nat.mp3"></audio></span></div>
+<span>bill please</span><span>bill dijiye</span></div>
+        <div class="row"><span class="kn">eshtu aytu?</span><div class="audio-block" data-slug="eshtu_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_nat.mp3"></audio></span></div>
+<span>how much is it?</span><span>kitna hua?</span></div>
+        <div class="row"><span class="kn">innu</span><div class="audio-block" data-slug="innu"><audio controls preload="none" src="../assets/audio/innu.mp3"></audio></div>
+<span>more / still</span><span>aur / abhi bhi</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogue — darshini counter</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Filter coffee ondu kodri. Idli eradu beku.</span>
+        <div class="audio-block" data-slug="namaskara_filter_coffee_ondu_kodri_idli_eradu_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_filter_coffee_ondu_kodri_idli_eradu_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_filter_coffee_ondu_kodri_idli_eradu_beku_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. One filter coffee please. Two idlis.</span></p>
+        <p><span class="who">Counter</span><br /><span class="line">Iggade na? Parcel na?</span>
+        <div class="audio-block" data-slug="iggade_na_parcel_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/iggade_na_parcel_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/iggade_na_parcel_na_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Here or parcel?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Iggade. Neeru kodri.</span>
+        <div class="audio-block" data-slug="iggade_neeru_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/iggade_neeru_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/iggade_neeru_kodri_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Here. Water please.</span></p>
+        <p><span class="who">Counter</span><br /><span class="line">Sari… Coffee ready.</span>
+        <div class="audio-block" data-slug="sari_coffee_ready"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_coffee_ready_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_coffee_ready_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay… coffee ready.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Bill kodri. Eshtu aytu?</span>
+        <div class="audio-block" data-slug="bill_kodri_eshtu_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bill_kodri_eshtu_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bill_kodri_eshtu_aytu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Bill please. How much?</span></p>
+        <p><span class="who">Counter</span><br /><span class="line">Aivattu rupayi.</span>
+        <div class="audio-block" data-slug="aivattu_rupayi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/aivattu_rupayi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/aivattu_rupayi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Fifty rupees.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. Polite “please give”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">hogtidini</button>
+          <button type="button" data-answer="correct">kodri</button>
+          <button type="button" data-answer="wrong">balakke</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “I want / need”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">beku</button>
+          <button type="button" data-answer="wrong">beda</button>
+          <button type="button" data-answer="wrong">eduru</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “One coffee, please”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Coffee elli ide kodri</button>
+          <button type="button" data-answer="correct">Coffee ondu kodri</button>
+          <button type="button" data-answer="wrong">Coffee hattu beda</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. Water</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">oota</button>
+          <button type="button" data-answer="correct">neeru</button>
+          <button type="button" data-answer="wrong">rupayi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Bill please”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Bill kodri</button>
+          <button type="button" data-answer="wrong">Bill hogtiddiri</button>
+          <button type="button" data-answer="wrong">Bill yedakke</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Pack it / takeaway</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Meter haki</button>
+          <button type="button" data-answer="correct">Parcel maadi</button>
+          <button type="button" data-answer="wrong">Olle dinagalu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">7. Spaced: number 2 (L3)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">aidu</button>
+          <button type="button" data-answer="correct">eradu</button>
+          <button type="button" data-answer="wrong">hattu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>One filter coffee, please.</li>
+          <li>Two idlis. Here (not parcel).</li>
+          <li>Water, please.</li>
+          <li>Pack the dosa.</li>
+          <li>Bill please. How much is it?</li>
+          <li>No need (if offered extra). Thank you.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>At any counter: order with <strong>… ondu/eradu kodri</strong> or <strong>… beku</strong>.</li>
+          <li>Close with <strong>Bill kodri</strong> and listen for the number.</li>
+          <li>Optional: ask <strong>Eshtu aytu?</strong> even if the bill is written.</li>
+          <li>Note one menu word you couldn’t catch — send it here.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Browse food/drink phrases on
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks Kannada phrases</a>.
+        Your best textbook is the next darshini queue.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Counter replied too fast? Type the sounds you heard — we’ll map them to words.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0004-directions-left-right-straight.html">← Lesson 0004</a>
+        <a href="../reference/food-ordering-cheatsheet.html">Reference · food ordering</a>
+        <a href="0006-excuse-me-help-sorry.html">Next · Lesson 0006 →</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

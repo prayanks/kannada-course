@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0004 · Directions (left, right, straight)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn {
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 1.35rem;
+      color: var(--accent);
+      margin: 0 0 0.35rem;
+    }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px dashed var(--rule);
+      font-family: var(--sans);
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue {
+      border-left: 3px solid var(--accent);
+      padding: 0.25rem 0 0.25rem 1rem;
+      margin: 1.25rem 0;
+    }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .dir-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin: 1rem 0;
+      font-family: var(--sans);
+    }
+    .dir-grid .cell {
+      border: 1px solid var(--rule);
+      background: var(--bg-elevated);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 0.5rem;
+      text-align: center;
+    }
+    .dir-grid .arrow { font-size: 1.4rem; line-height: 1; }
+    .dir-grid .kn { display: block; font-weight: 700; color: var(--accent); margin-top: 0.35rem; }
+    .dir-grid .en { display: block; font-size: 0.8rem; color: var(--muted); margin-top: 0.15rem; }
+    @media (max-width: 640px) { .dir-grid { grid-template-columns: 1fr; } }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr 1fr;
+      gap: 0.5rem;
+      font-family: var(--sans);
+      font-size: 0.9rem;
+      padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm);
+      background: var(--bg-elevated);
+      border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans);
+      font-size: 0.92rem;
+      color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0004</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~10 min</span>
+        </div>
+        <h1>Directions (left, right, straight)</h1>
+        <p class="lede">
+          Ask where a place is, catch the three core direction words, and confirm before you walk or tell an auto — still Roman only.
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          You can ask <strong>… elli ide?</strong> / <strong>Heghe hogbeku?</strong>, understand
+          <strong>eduru · balakke · yedakke</strong>, and check with <strong>Idhe na?</strong> / <strong>Alli na?</strong>
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        Elli hogtiddiri? · manege · Idhu eshtu? · Swalpa kammi maadi · ondu eradu mooru … hattu · Meter haki
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        You already ask <em>where someone is going</em> (L2) and <em>how much</em> (L3).
+        Directions close the loop: society gate, shop inside a complex, “which way to the clubhouse?”
+        Three words unlock most answers — left, right, straight.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: <em>elli ide?</em> = where is it?</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Elli?</strong> = where? (you know this)<br />
+          <strong>Ide / ideya?</strong> ≈ is / is it? (existence)<br />
+          <strong>Clubhouse elli ide?</strong> ≈ Where is the clubhouse?<br />
+          Hindi bridge: <em>Clubhouse kahaan hai?</em>
+        </p>
+      </div>
+      <p>
+        Path question: <strong>Heghe hogbeku?</strong> ≈ How should I go? / Which way?
+        (You’ll also hear English “which way?” — answer words below still matter.)
+      </p>
+
+      <h2><span class="num">03</span> The three direction words</h2>
+      <div class="dir-grid" aria-label="Core directions">
+        <div class="cell">
+          <span class="arrow" aria-hidden="true">↑</span>
+          <span class="kn">eduru / nera</span><div class="audio-block" data-slug="eduru"><audio controls preload="none" src="../assets/audio/eduru.mp3"></audio></div><div class="audio-block" data-slug="nera"><audio controls preload="none" src="../assets/audio/nera.mp3"></audio></div>
+
+<span class="en">straight ahead</span>
+        </div>
+        <div class="cell">
+          <span class="arrow" aria-hidden="true">→</span>
+          <span class="kn">balakke</span><div class="audio-block" data-slug="balakke"><audio controls preload="none" src="../assets/audio/balakke.mp3"></audio></div>
+<span class="en">to the right</span>
+        </div>
+        <div class="cell">
+          <span class="arrow" aria-hidden="true">←</span>
+          <span class="kn">yedakke</span><div class="audio-block" data-slug="yedakke"><audio controls preload="none" src="../assets/audio/yedakke.mp3"></audio></div>
+<span class="en">to the left</span>
+        </div>
+      </div>
+      <div class="card">
+        <p style="margin:0;font-family:var(--sans);font-size:0.95rem">
+          <strong>Memory hook (Hindi):</strong>
+          <em>bal</em>-akkе feels like stronger/right side for many learners;
+          <em>yeda</em> = left. You’ll also hear <strong>right / left / straight</strong> in English mixed in — still learn Kannada so you catch pure answers.
+        </p>
+        <p style="margin:0.6rem 0 0;font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+          Variants: <em>balagade / yedagade</em>, <em>nedage</em> (straight). Default production: <strong>balakke · yedakke · eduru</strong>.
+        </p>
+      </div>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">… elli ide?</p>
+        <div class="audio-block" data-slug="elli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/elli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/elli_ide_nat.mp3"></audio></span></div>
+        <p class="en">Where is …?</p>
+        <p class="hi">≈ … kahaan hai?</p>
+        <div class="meta"><strong>Examples:</strong> Restroom elli ide? · Gate elli ide? · Medical elli ide?</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Heghe hogbeku?</p>
+        <div class="audio-block" data-slug="heghe_hogbeku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/heghe_hogbeku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/heghe_hogbeku_nat.mp3"></audio></span></div>
+        <p class="en">Which way should I go? / How do I go?</p>
+        <p class="hi">≈ Kaise jaana hai? / Kidhar se?</p>
+        <div class="meta"><strong>heghe</strong> ≈ how/which way · <strong>hogbeku</strong> ≈ must go / should go.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Eduru hogi</p>
+        <div class="audio-block" data-slug="eduru_hogi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eduru_hogi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eduru_hogi_nat.mp3"></audio></span></div>
+        <p class="en">Go straight</p>
+        <p class="hi">≈ Seedha jaao</p>
+        <div class="meta">Polite-ish instruction form you’ll hear. Also: <em>Eduru hogi ri</em> / just <em>Straight hogi</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Balakke thirgi</p>
+        <div class="audio-block" data-slug="balakke_thirgi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/balakke_thirgi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/balakke_thirgi_nat.mp3"></audio></span></div>
+        <p class="en">Turn right</p>
+        <p class="hi">≈ Right mudo / dayein mudiye</p>
+        <div class="meta"><strong>thirgi</strong> ≈ turn. Pair: <strong>Yedakke thirgi</strong> = turn left.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa eduru, nantara balakke</p>
+        <div class="audio-block" data-slug="swalpa_eduru_nantara_balakke"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nantara_balakke_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nantara_balakke_nat.mp3"></audio></span></div>
+        <p class="en">A little straight, then right</p>
+        <p class="hi">≈ Thoda seedha, phir right</p>
+        <div class="meta">Reuses L3 <strong>swalpa</strong>. <strong>nantara</strong> ≈ then/after that.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Hattira / Dooradalli</p>
+        <div class="audio-block" data-slug="hattira"><audio controls preload="none" src="../assets/audio/hattira.mp3"></audio></div>
+        <div class="audio-block" data-slug="dooradalli"><audio controls preload="none" src="../assets/audio/dooradalli.mp3"></audio></div>
+        <p class="en">Nearby / Far</p>
+        <p class="hi">≈ Paas mein / Door</p>
+        <div class="meta">Distance glue when someone answers without a turn.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Idhe na? · Alli na?</p>
+        <div class="audio-block" data-slug="idhe_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idhe_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idhe_na_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="alli_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/alli_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/alli_na_nat.mp3"></audio></span></div>
+        <p class="en">Is it this? · Is it there?</p>
+        <p class="hi">≈ Yeh wala? · Wahaan?</p>
+        <div class="meta">Confirmation tag <strong>na?</strong> ≈ right?/no? — very Bengaluru. Point while asking.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Gothaytu · Gottila</p>
+        <div class="audio-block" data-slug="gothaytu"><audio controls preload="none" src="../assets/audio/gothaytu.mp3"></audio></div>
+        <div class="audio-block" data-slug="gottila"><audio controls preload="none" src="../assets/audio/gottila.mp3"></audio></div>
+        <p class="en">Got it / I understand · I don’t know</p>
+        <p class="hi">≈ Samajh gaya · Pata nahi</p>
+        <div class="meta">
+          <strong>Gothaytu</strong> when directions land.
+          <strong>Gottila</strong> if you’re the one asked and don’t know — honest and common.
+        </div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">elli ide?</span><div class="audio-block" data-slug="elli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/elli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/elli_ide_nat.mp3"></audio></span></div>
+<span>where is it?</span><span>kahaan hai?</span></div>
+        <div class="row"><span class="kn">heghe hogbeku?</span><div class="audio-block" data-slug="heghe_hogbeku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/heghe_hogbeku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/heghe_hogbeku_nat.mp3"></audio></span></div>
+<span>which way?</span><span>kaise jaana?</span></div>
+        <div class="row"><span class="kn">eduru</span><div class="audio-block" data-slug="eduru"><audio controls preload="none" src="../assets/audio/eduru.mp3"></audio></div>
+<span>straight</span><span>seedha</span></div>
+        <div class="row"><span class="kn">balakke</span><div class="audio-block" data-slug="balakke"><audio controls preload="none" src="../assets/audio/balakke.mp3"></audio></div>
+<span>right</span><span>dayein / right</span></div>
+        <div class="row"><span class="kn">yedakke</span><div class="audio-block" data-slug="yedakke"><audio controls preload="none" src="../assets/audio/yedakke.mp3"></audio></div>
+<span>left</span><span>baayein / left</span></div>
+        <div class="row"><span class="kn">thirgi</span><div class="audio-block" data-slug="thirgi"><audio controls preload="none" src="../assets/audio/thirgi.mp3"></audio></div>
+<span>turn</span><span>mudo</span></div>
+        <div class="row"><span class="kn">nantara</span><div class="audio-block" data-slug="nantara"><audio controls preload="none" src="../assets/audio/nantara.mp3"></audio></div>
+<span>then</span><span>phir</span></div>
+        <div class="row"><span class="kn">hattira</span><div class="audio-block" data-slug="hattira"><audio controls preload="none" src="../assets/audio/hattira.mp3"></audio></div>
+<span>nearby</span><span>paas</span></div>
+        <div class="row"><span class="kn">dooradalli</span><div class="audio-block" data-slug="dooradalli"><audio controls preload="none" src="../assets/audio/dooradalli.mp3"></audio></div>
+<span>far</span><span>door</span></div>
+        <div class="row"><span class="kn">idhe na? / alli na?</span><div class="audio-block" data-slug="idhe_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idhe_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idhe_na_nat.mp3"></audio></span></div><div class="audio-block" data-slug="alli_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/alli_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/alli_na_nat.mp3"></audio></span></div>
+
+<span>this? / there?</span><span>yeh? / wahaan?</span></div>
+        <div class="row"><span class="kn">gothaytu / gottila</span><div class="audio-block" data-slug="gothaytu"><audio controls preload="none" src="../assets/audio/gothaytu.mp3"></audio></div><div class="audio-block" data-slug="gottila"><audio controls preload="none" src="../assets/audio/gottila.mp3"></audio></div>
+
+<span>got it / don’t know</span><span>samajh gaya / pata nahi</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogue</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Clubhouse elli ide?</span>
+        <div class="audio-block" data-slug="namaskara_clubhouse_elli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_clubhouse_elli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_clubhouse_elli_ide_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. Where is the clubhouse?</span></p>
+        <p><span class="who">Guard</span><br /><span class="line">Eduru hogi. Nantara balakke.</span>
+        <div class="audio-block" data-slug="eduru_hogi_nantara_balakke"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eduru_hogi_nantara_balakke_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eduru_hogi_nantara_balakke_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Go straight. Then right.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Swalpa eduru, nantara balakke — idhe na?</span>
+        <div class="audio-block" data-slug="swalpa_eduru_nantara_balakke_idhe_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nantara_balakke_idhe_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nantara_balakke_idhe_na_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">A little straight, then right — this way?</span></p>
+        <p><span class="who">Guard</span><br /><span class="line">Haudu. Hattira ide.</span>
+        <div class="audio-block" data-slug="haudu_hattira_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_hattira_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_hattira_ide_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Yes. It’s nearby.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Gothaytu. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="gothaytu_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Got it. Thank you.</span></p>
+      </div>
+      <p><strong>Haudu</strong> ≈ yes (bonus; you’ll also hear <em>yes / sari</em>).</p>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Where is the gate?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Gate eshtu ide?</button>
+          <button type="button" data-answer="correct">Gate elli ide?</button>
+          <button type="button" data-answer="wrong">Gate hogtidini?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “To the right”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">balakke</button>
+          <button type="button" data-answer="wrong">yedakke</button>
+          <button type="button" data-answer="wrong">hattira</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “To the left”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">eduru</button>
+          <button type="button" data-answer="wrong">balakke</button>
+          <button type="button" data-answer="correct">yedakke</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “Go straight”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Yedakke thirgi</button>
+          <button type="button" data-answer="correct">Eduru hogi</button>
+          <button type="button" data-answer="wrong">Jaasti aytu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Got it / I understand”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Gottila</button>
+          <button type="button" data-answer="correct">Gothaytu</button>
+          <button type="button" data-answer="wrong">Beda</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “How much is this?” (L3)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Idhu eshtu?</button>
+          <button type="button" data-answer="wrong">Idhu elli ide?</button>
+          <button type="button" data-answer="wrong">Idhu hogtidini?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Where is the clubhouse?</li>
+          <li>Which way should I go?</li>
+          <li>Go straight. Then turn right.</li>
+          <li>Turn left.</li>
+          <li>Is it this way? It’s nearby.</li>
+          <li>Got it. Thank you. / I don’t know.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>Ask one person: <strong>… elli ide?</strong> (clubhouse, waste room, exit, medical — anything real).</li>
+          <li>Repeat their answer back with direction words: <em>eduru / balakke / yedakke</em>.</li>
+          <li>Confirm once: <strong>Idhe na?</strong> then <strong>Gothaytu, dhanyavadagalu</strong>.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Skim direction / location phrases on
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks Kannada phrases</a>.
+        Prefer the exact words your guard or delivery person uses.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Someone gave you a long direction string? Paste it as you heard it — we’ll break it into turns.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0003-how-much-eshtu-numbers.html">← Lesson 0003</a>
+        <a href="../reference/directions-cheatsheet.html">Reference · directions</a>
+        <a href="0005-ordering-food-darshini.html">Next · Lesson 0005 →</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
