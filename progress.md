@@ -2,7 +2,7 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A1 — public scripts + politeness + time greetings + numbers through 20.
+A1 — public scripts + politeness + time greetings + numbers through 20 + clock time.
 
 ## Lessons
 | # | Outcome | Status | File |
@@ -14,10 +14,11 @@ A1 — public scripts + politeness + time greetings + numbers through 20.
 | 5 | Ordering food | Ready | `0005-ordering-food-darshini.html` |
 | 6 | Excuse me / help / sorry | Ready | `0006-excuse-me-help-sorry.html` |
 | 7 | Time-of-day greetings | Ready | `0007-time-of-day-greetings.html` |
-| 8 | Numbers 11–20 + money stretch | **Ready** | `0008-numbers-11-20.html` |
+| 8 | Numbers 11–20 + money stretch | Ready | `0008-numbers-11-20.html` |
+| 9 | Clock time (eshtu gante) | **Ready** | `0009-what-time-clock.html` |
 
-## L8 core
-hannondu · hanneradu · hadimooru · hadinaalku · hadinaidu · hadinaru · hadinelu · hadinentu · hattombattu · ippatthu · alla (not) · recycle tens/nooru
+## L9 core
+gante · eshtu gante (aytu)? · N gante aytu · N gante-ge · ardha · eega · banni · late aytu · yaavaaga + schedule
 
 ## Next candidates
-Clock time · phone/calling · weather/small talk · society staff scripts  
+Phone/calling · weather/small talk · society staff scripts · minutes past the hour

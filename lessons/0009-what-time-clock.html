@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0009 · What time? (clock time)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .clock-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem;
+      margin: 1rem 0; font-family: var(--sans);
+    }
+    .clock-grid .cell {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius-sm);
+      padding: 0.7rem 0.4rem; text-align: center;
+    }
+    .clock-grid .t { display: block; font-size: 0.75rem; font-weight: 700; color: var(--muted); }
+    .clock-grid .kn { display: block; font-weight: 700; color: var(--accent); margin-top: 0.25rem; font-size: 0.9rem; }
+    @media (max-width: 640px) { .clock-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0009</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~11 min</span>
+        </div>
+        <h1>What time? (clock time)</h1>
+        <p class="lede">
+          Ask and say the hour — meetings, autos, darshini rush — using numbers you already know plus <strong>gante</strong> and a few clock glue words.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          You can ask <strong>Eshtu gante?</strong>, answer <strong>Aidu gante aytu</strong>, schedule
+          <strong>Naale hattu gante-ge</strong>, and catch half-hour <strong>ardha</strong>.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        ondu…ippatthu · ivattu · naale · shubhodaya · Idhu eshtu? · naale nodona
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        L7 gave day-parts (morning/evening). Real life needs the <strong>clock</strong>:
+        “meeting at 10,” “come by 7,” “what time is it?”
+        Bengaluru mixes English “o’clock / AM / PM” with Kannada — still learn the Kannada spine.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: <em>number + gante</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>gante</strong> = hour / o’clock (≈ baje / ghanta)<br />
+          <strong>Aidu gante</strong> = 5 o’clock<br />
+          <strong>Aidu gante aytu</strong> = it’s 5 o’clock<br />
+          <strong>Aidu gante-ge</strong> = at 5 (destination-ish <em>-ge</em> from L2 = “for/at that time”)
+        </p>
+      </div>
+      <p>
+        Ask: <strong>Eshtu gante?</strong> or <strong>Eshtu gante aytu?</strong> ≈ What time is it?
+      </p>
+
+      <h2><span class="num">03</span> Core clock set</h2>
+      <div class="clock-grid" aria-label="Sample clock phrases">
+        <div class="cell"><span class="t">ask</span><span class="kn">Eshtu gante?</span><div class="audio-block" data-slug="eshtu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_gante_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">3:00</span><span class="kn">Mooru gante</span><div class="audio-block" data-slug="mooru_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/mooru_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/mooru_gante_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">5:00</span><span class="kn">Aidu gante</span><div class="audio-block" data-slug="aidu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/aidu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/aidu_gante_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">7:00</span><span class="kn">Elu gante</span><div class="audio-block" data-slug="elu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/elu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/elu_gante_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">10:00</span><span class="kn">Hattu gante</span><div class="audio-block" data-slug="hattu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hattu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hattu_gante_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">12:00</span><span class="kn">Hanneradu gante</span><div class="audio-block" data-slug="hanneradu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hanneradu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hanneradu_gante_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">half past</span><span class="kn">ardha</span><div class="audio-block" data-slug="ardha"><audio controls preload="none" src="../assets/audio/ardha.mp3"></audio></div></div>
+        <div class="cell"><span class="t">now</span><span class="kn">eega</span><div class="audio-block" data-slug="eega"><audio controls preload="none" src="../assets/audio/eega.mp3"></audio></div></div>
+        <div class="cell"><span class="t">later</span><span class="kn">nantara / baadige</span><div class="audio-block" data-slug="nantara"><audio controls preload="none" src="../assets/audio/nantara.mp3"></audio></div><div class="audio-block" data-slug="baadige"><audio controls preload="none" src="../assets/audio/baadige.mp3"></audio></div></div>
+      </div>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Eshtu gante? · Eshtu gante aytu?</p>
+        <div class="audio-block" data-slug="eshtu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_gante_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="eshtu_gante_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_gante_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_gante_aytu_nat.mp3"></audio></span></div>
+        <p class="en">What time is it?</p>
+        <p class="hi">≈ Kitne baje hain?</p>
+        <div class="meta"><strong>eshtu</strong> (L3) + <strong>gante</strong>. Full form with <em>aytu</em> is very common.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Aidu gante aytu</p>
+        <div class="audio-block" data-slug="aidu_gante_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/aidu_gante_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/aidu_gante_aytu_nat.mp3"></audio></span></div>
+        <p class="en">It’s five o’clock</p>
+        <p class="hi">≈ Paanch baje hain</p>
+        <div class="meta">Swap any number you know: mooru, elu, hattu, hanneradu, ippatthu…</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Hattu gante-ge banni</p>
+        <div class="audio-block" data-slug="hattu_gante-ge_banni"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hattu_gante-ge_banni_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hattu_gante-ge_banni_nat.mp3"></audio></span></div>
+        <p class="en">Come at ten</p>
+        <p class="hi">≈ Das baje aana</p>
+        <div class="meta"><strong>banni</strong> = come (polite; you met in <em>hogi banni</em> L7). Time + <em>-ge</em> + verb.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Naale elu gante-ge</p>
+        <div class="audio-block" data-slug="naale_elu_gante-ge"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naale_elu_gante-ge_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naale_elu_gante-ge_nat.mp3"></audio></span></div>
+        <p class="en">Tomorrow at seven</p>
+        <p class="hi">≈ Kal subah/shaam saat baje — context from day-part</p>
+        <div class="meta">Stack L7 <strong>naale</strong> + clock. Add <em>beligge</em> / <em>sayankala</em> if needed.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Aidu gante ardha</p>
+        <div class="audio-block" data-slug="aidu_gante_ardha"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/aidu_gante_ardha_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/aidu_gante_ardha_nat.mp3"></audio></span></div>
+        <p class="en">Five-thirty / half past five</p>
+        <p class="hi">≈ Saadhe paanch</p>
+        <div class="meta"><strong>ardha</strong> = half. You’ll also hear English “five-thirty” constantly — still lock <em>ardha</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Eega · Tumba late aytu</p>
+        <div class="audio-block" data-slug="eega"><audio controls preload="none" src="../assets/audio/eega.mp3"></audio></div>
+        <div class="audio-block" data-slug="tumba_late_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_late_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_late_aytu_nat.mp3"></audio></span></div>
+        <p class="en">Now · It’s very late</p>
+        <p class="hi">≈ Abhi · Bahut late ho gaya</p>
+        <div class="meta"><strong>eega</strong> = now. <strong>tumba</strong> (L6) + late + aytu — mix is natural.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa early · Time ide na?</p>
+        <div class="audio-block" data-slug="swalpa_early"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_early_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_early_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="time_ide_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/time_ide_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/time_ide_na_nat.mp3"></audio></span></div>
+        <p class="en">A bit early · Is there time? / Do we have time?</p>
+        <p class="hi">≈ Thoda early · Time hai na?</p>
+        <div class="meta">EN time words + Kannada glue. <strong>ide na?</strong> recycles L4 existence + tag.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Yaavaaga meeting? · Hattu gante-ge</p>
+        <div class="audio-block" data-slug="yaavaaga_meeting"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yaavaaga_meeting_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yaavaaga_meeting_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="hattu_gante-ge"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hattu_gante-ge_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hattu_gante-ge_nat.mp3"></audio></span></div>
+        <p class="en">When is the meeting? · At ten</p>
+        <p class="hi">≈ Meeting kab hai?</p>
+        <div class="meta">Reuse L7 <strong>yaavaaga?</strong> for schedule questions.</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">gante</span><div class="audio-block" data-slug="gante"><audio controls preload="none" src="../assets/audio/gante.mp3"></audio></div><span>hour / o’clock</span><span>baje / ghanta</span></div>
+        <div class="row"><span class="kn">eshtu gante?</span><div class="audio-block" data-slug="eshtu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_gante_nat.mp3"></audio></span></div><span>what time?</span><span>kitne baje?</span></div>
+        <div class="row"><span class="kn">ardha</span><div class="audio-block" data-slug="ardha"><audio controls preload="none" src="../assets/audio/ardha.mp3"></audio></div><span>half</span><span>aadha / saadhe</span></div>
+        <div class="row"><span class="kn">eega</span><div class="audio-block" data-slug="eega"><audio controls preload="none" src="../assets/audio/eega.mp3"></audio></div><span>now</span><span>abhi</span></div>
+        <div class="row"><span class="kn">banni</span><div class="audio-block" data-slug="banni"><audio controls preload="none" src="../assets/audio/banni.mp3"></audio></div><span>come (polite)</span><span>aaiye</span></div>
+        <div class="row"><span class="kn">nimisha</span><div class="audio-block" data-slug="nimisha"><audio controls preload="none" src="../assets/audio/nimisha.mp3"></audio></div><span>minute</span><span>minute</span></div>
+        <div class="row"><span class="kn">late aytu</span><div class="audio-block" data-slug="late_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/late_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/late_aytu_nat.mp3"></audio></span></div><span>became late</span><span>late ho gaya</span></div>
+        <div class="row"><span class="kn">… gante-ge</span><span>at … o’clock</span><span>… baje</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogues</h2>
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">A · What time is it?</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Kshamisi. Eshtu gante aytu?</span>
+        <div class="audio-block" data-slug="kshamisi_eshtu_gante_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kshamisi_eshtu_gante_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kshamisi_eshtu_gante_aytu_nat.mp3"></audio></span></div><br /><span class="gloss">Excuse me. What time is it?</span></p>
+        <p><span class="who">Other</span><br /><span class="line">Hattu gante aytu.</span>
+        <div class="audio-block" data-slug="hattu_gante_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hattu_gante_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hattu_gante_aytu_nat.mp3"></audio></span></div><br /><span class="gloss">It’s ten o’clock.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Gothaytu. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="gothaytu_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_nat.mp3"></audio></span></div><br /><span class="gloss">Got it. Thank you.</span></p>
+      </div>
+
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">B · Fix a time</h3>
+      <div class="dialogue">
+        <p><span class="who">Neighbour</span><br /><span class="line">Yaavaaga meeting?</span>
+        <div class="audio-block" data-slug="yaavaaga_meeting"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yaavaaga_meeting_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yaavaaga_meeting_nat.mp3"></audio></span></div><br /><span class="gloss">When is the meeting?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Naale beligge elu gante-ge.</span>
+        <div class="audio-block" data-slug="naale_beligge_elu_gante-ge"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naale_beligge_elu_gante-ge_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naale_beligge_elu_gante-ge_nat.mp3"></audio></span></div><br /><span class="gloss">Tomorrow morning at seven.</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Sari. Elu gante ardha OK na?</span>
+        <div class="audio-block" data-slug="sari_elu_gante_ardha_ok_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_elu_gante_ardha_ok_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_elu_gante_ardha_ok_na_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. 7:30 OK?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Naale nodona.</span>
+        <div class="audio-block" data-slug="sari_naale_nodona"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_naale_nodona_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_naale_nodona_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. See you tomorrow.</span></p>
+      </div>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “What time is it?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Elli gante?</button>
+          <button type="button" data-answer="correct">Eshtu gante?</button>
+          <button type="button" data-answer="wrong">Hegiddiri gante?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “hour / o’clock”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">gante</button>
+          <button type="button" data-answer="wrong">manege</button>
+          <button type="button" data-answer="wrong">rupayi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “It’s five o’clock”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Aidu eshtu aytu</button>
+          <button type="button" data-answer="correct">Aidu gante aytu</button>
+          <button type="button" data-answer="wrong">Aidu hogtidini</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “half” (half past)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">swalpa</button>
+          <button type="button" data-answer="correct">ardha</button>
+          <button type="button" data-answer="wrong">tumba</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “now”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">naale</button>
+          <button type="button" data-answer="wrong">ninne</button>
+          <button type="button" data-answer="correct">eega</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “tomorrow” (L7)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">naale</button>
+          <button type="button" data-answer="wrong">ivattu</button>
+          <button type="button" data-answer="wrong">eega</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>What time is it?</li>
+          <li>It’s ten o’clock.</li>
+          <li>Come at seven.</li>
+          <li>Tomorrow at five.</li>
+          <li>Five-thirty.</li>
+          <li>It’s very late now.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>Once today: ask someone <strong>Eshtu gante aytu?</strong> (or check your phone and say the answer out loud in Kannada).</li>
+          <li>Put one real plan on your calendar using <strong>… gante-ge</strong> (even if the other person speaks English).</li>
+          <li>Say three times: 7:00, 10:00, 5:30 in Kannada.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Compare time phrases with
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks Kannada phrases</a>
+        and what receptionists / drivers actually say in Bengaluru (often EN+KN mix).
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Heard a time you can’t parse (e.g. “kaalu” / minutes)? Paste it — we’ll decode.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0008-numbers-11-20.html">← Lesson 0008</a>
+        <a href="../reference/clock-time-cheatsheet.html">Reference · clock time</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
