@@ -108,6 +108,18 @@
       ]
     },
     {
+      "slug": "beligge",
+      "type": "word",
+      "roman": "beligge",
+      "kannada": "ಬೆಳಿಗ್ಗೆ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "beligge.mp3"
+      ]
+    },
+    {
       "slug": "cha",
       "type": "word",
       "roman": "cha",
@@ -421,6 +433,18 @@
       ]
     },
     {
+      "slug": "ivattu",
+      "type": "word",
+      "roman": "Ivattu",
+      "kannada": "ಇವತ್ತು",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "ivattu.mp3"
+      ]
+    },
+    {
       "slug": "jaasti",
       "type": "word",
       "roman": "jaasti",
@@ -493,6 +517,18 @@
       ]
     },
     {
+      "slug": "madhyahna",
+      "type": "word",
+      "roman": "madhyahna",
+      "kannada": "ಮಧ್ಯಾಹ್ನ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "madhyahna.mp3"
+      ]
+    },
+    {
       "slug": "mane",
       "type": "word",
       "roman": "mane",
@@ -538,6 +574,18 @@
       ],
       "files": [
         "mooru.mp3"
+      ]
+    },
+    {
+      "slug": "naale",
+      "type": "word",
+      "roman": "Naale",
+      "kannada": "ನಾಳೆ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "naale.mp3"
       ]
     },
     {
@@ -673,6 +721,18 @@
       ]
     },
     {
+      "slug": "ninne",
+      "type": "word",
+      "roman": "Ninne",
+      "kannada": "ನಿನ್ನೆ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "ninne.mp3"
+      ]
+    },
+    {
       "slug": "nodona",
       "type": "word",
       "roman": "nodona",
@@ -694,6 +754,18 @@
       ],
       "files": [
         "nooru.mp3"
+      ]
+    },
+    {
+      "slug": "olleyadagali",
+      "type": "word",
+      "roman": "Olleyadagali",
+      "kannada": "ಒಳ್ಳೆಯದಾಗಲಿ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "olleyadagali.mp3"
       ]
     },
     {
@@ -733,6 +805,18 @@
       ]
     },
     {
+      "slug": "ratri",
+      "type": "word",
+      "roman": "ratri",
+      "kannada": "ರಾತ್ರಿ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "ratri.mp3"
+      ]
+    },
+    {
       "slug": "rupayi",
       "type": "word",
       "roman": "rupayi",
@@ -767,6 +851,54 @@
       ],
       "files": [
         "sari.mp3"
+      ]
+    },
+    {
+      "slug": "sayankala",
+      "type": "word",
+      "roman": "sayankala",
+      "kannada": "ಸಾಯಂಕಾಲ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "sayankala.mp3"
+      ]
+    },
+    {
+      "slug": "shubha",
+      "type": "word",
+      "roman": "shubha",
+      "kannada": "ಶುಭ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubha.mp3"
+      ]
+    },
+    {
+      "slug": "shubharatri",
+      "type": "word",
+      "roman": "Shubharatri",
+      "kannada": "ಶುಭರಾತ್ರಿ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubharatri.mp3"
+      ]
+    },
+    {
+      "slug": "shubhodaya",
+      "type": "word",
+      "roman": "Shubhodaya",
+      "kannada": "ಶುಭೋದಯ",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubhodaya.mp3"
       ]
     },
     {
@@ -815,6 +947,18 @@
       ],
       "files": [
         "tumba.mp3"
+      ]
+    },
+    {
+      "slug": "yaavaaga",
+      "type": "word",
+      "roman": "yaavaaga?",
+      "kannada": "ಯಾವಾಗ?",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "yaavaaga.mp3"
       ]
     },
     {
@@ -963,11 +1107,26 @@
       "kind": "dialogue",
       "lessons": [
         "0001",
-        "0002"
+        "0002",
+        "0007"
       ],
       "files": [
         "chennagidini_neevu_slow.mp3",
         "chennagidini_neevu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "chennagidini_sari_hogi_banni_shubha_dinavagali",
+      "type": "sentence",
+      "roman": "Chennagidini. Sari, hogi banni. Shubha dinavagali.",
+      "kannada": "ಚೆನ್ನಾಗಿದ್ದೀನಿ. ಸರಿ, ಹೋಗಿ ಬನ್ನಿ. ಶುಭ ದಿನವಾಗಲಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "chennagidini_sari_hogi_banni_shubha_dinavagali_slow.mp3",
+        "chennagidini_sari_hogi_banni_shubha_dinavagali_nat.mp3"
       ]
     },
     {
@@ -1221,6 +1380,20 @@
       "files": [
         "hegiddiri_2_slow.mp3",
         "hegiddiri_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hogi_banni",
+      "type": "sentence",
+      "roman": "Hogi banni",
+      "kannada": "ಹೋಗಿ ಬನ್ನಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "hogi_banni_slow.mp3",
+        "hogi_banni_nat.mp3"
       ]
     },
     {
@@ -1518,6 +1691,20 @@
       ]
     },
     {
+      "slug": "naale_nodona",
+      "type": "sentence",
+      "roman": "Naale nodona",
+      "kannada": "ನಾಳೆ ನೋಡೋಣ",
+      "kind": "phrase",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "naale_nodona_slow.mp3",
+        "naale_nodona_nat.mp3"
+      ]
+    },
+    {
       "slug": "naanu_manege_hogtidini",
       "type": "sentence",
       "roman": "Naanu manege hogtidini",
@@ -1529,6 +1716,20 @@
       "files": [
         "naanu_manege_hogtidini_slow.mp3",
         "naanu_manege_hogtidini_nat.mp3"
+      ]
+    },
+    {
+      "slug": "naanu_manege_hogtidini_naale_nodona",
+      "type": "sentence",
+      "roman": "Naanu manege hogtidini. Naale nodona.",
+      "kannada": "ನಾನು ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ. ನಾಳೆ ನೋಡೋಣ",
+      "kind": "dialogue",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "naanu_manege_hogtidini_naale_nodona_slow.mp3",
+        "naanu_manege_hogtidini_naale_nodona_nat.mp3"
       ]
     },
     {
@@ -1614,6 +1815,20 @@
       "files": [
         "namaskara_idhu_eshtu_slow.mp3",
         "namaskara_idhu_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "namaskara_shubha_sayankala",
+      "type": "sentence",
+      "roman": "Namaskara. Shubha sayankala.",
+      "kannada": "ನಮಸ್ಕಾರ. ಶುಭ ಸಾಯಂಕಾಲ",
+      "kind": "dialogue",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "namaskara_shubha_sayankala_slow.mp3",
+        "namaskara_shubha_sayankala_nat.mp3"
       ]
     },
     {
@@ -1885,6 +2100,90 @@
       ]
     },
     {
+      "slug": "sari_shubharatri",
+      "type": "sentence",
+      "roman": "Sari. Shubharatri.",
+      "kannada": "ಸರಿ. ಶುಭರಾತ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "sari_shubharatri_slow.mp3",
+        "sari_shubharatri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "shubha_dinavagali",
+      "type": "sentence",
+      "roman": "Shubha dinavagali",
+      "kannada": "ಶುಭ ದಿನವಾಗಲಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubha_dinavagali_slow.mp3",
+        "shubha_dinavagali_nat.mp3"
+      ]
+    },
+    {
+      "slug": "shubha_madhyahna",
+      "type": "sentence",
+      "roman": "Shubha madhyahna",
+      "kannada": "ಶುಭ ಮಧ್ಯಾಹ್ನ",
+      "kind": "phrase",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubha_madhyahna_slow.mp3",
+        "shubha_madhyahna_nat.mp3"
+      ]
+    },
+    {
+      "slug": "shubha_sayankala",
+      "type": "sentence",
+      "roman": "Shubha sayankala",
+      "kannada": "ಶುಭ ಸಾಯಂಕಾಲ",
+      "kind": "phrase",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubha_sayankala_slow.mp3",
+        "shubha_sayankala_nat.mp3"
+      ]
+    },
+    {
+      "slug": "shubha_sayankala_elli_hogtiddiri",
+      "type": "sentence",
+      "roman": "Shubha sayankala. Elli hogtiddiri?",
+      "kannada": "ಶುಭ ಸಾಯಂಕಾಲ. ಎಲ್ಲಿ ಹೋಗ್ತಿದ್ದೀರಿ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubha_sayankala_elli_hogtiddiri_slow.mp3",
+        "shubha_sayankala_elli_hogtiddiri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "shubhodaya_hegiddiri",
+      "type": "sentence",
+      "roman": "Shubhodaya. Hegiddiri?",
+      "kannada": "ಶುಭೋದಯ. ಹೇಗಿದ್ದೀರಿ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "shubhodaya_hegiddiri_slow.mp3",
+        "shubhodaya_hegiddiri_nat.mp3"
+      ]
+    },
+    {
       "slug": "strong_maadi",
       "type": "sentence",
       "roman": "Strong maadi",
@@ -2064,6 +2363,20 @@
       "files": [
         "tumba_thanks_2_slow.mp3",
         "tumba_thanks_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yaavaaga_2",
+      "type": "sentence",
+      "roman": "yaavaaga?",
+      "kannada": "ಯಾವಾಗ?",
+      "kind": "phrase",
+      "lessons": [
+        "0007"
+      ],
+      "files": [
+        "yaavaaga_2_slow.mp3",
+        "yaavaaga_2_nat.mp3"
       ]
     }
   ]

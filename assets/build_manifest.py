@@ -227,6 +227,35 @@ KN: dict[str, str] = {
     # grammar particles learners hear
     "-ge": "ಗೆ",
     "ge": "ಗೆ",
+    # L7 time-of-day
+    "shubhodaya": "ಶುಭೋದಯ",
+    "shubha": "ಶುಭ",
+    "shubha madhyahna": "ಶುಭ ಮಧ್ಯಾಹ್ನ",
+    "shubha sayankala": "ಶುಭ ಸಾಯಂಕಾಲ",
+    "shubharatri": "ಶುಭರಾತ್ರಿ",
+    "beligge": "ಬೆಳಿಗ್ಗೆ",
+    "madhyahna": "ಮಧ್ಯಾಹ್ನ",
+    "sayankala": "ಸಾಯಂಕಾಲ",
+    "ratri": "ರಾತ್ರಿ",
+    "ivattu": "ಇವತ್ತು",
+    "naale": "ನಾಳೆ",
+    "ninne": "ನಿನ್ನೆ",
+    "naale nodona": "ನಾಳೆ ನೋಡೋಣ",
+    "hogi banni": "ಹೋಗಿ ಬನ್ನಿ",
+    "shubha dinavagali": "ಶುಭ ದಿನವಾಗಲಿ",
+    "olleyadagali": "ಒಳ್ಳೆಯದಾಗಲಿ",
+    "yaavaaga": "ಯಾವಾಗ",
+    "yaavaaga?": "ಯಾವಾಗ?",
+    "shubhodaya. hegiddiri": "ಶುಭೋದಯ. ಹೇಗಿದ್ದೀರಿ",
+    "shubhodaya. hegiddiri?": "ಶುಭೋದಯ. ಹೇಗಿದ್ದೀರಿ?",
+    "chennagidini. sari, hogi banni. shubha dinavagali": (
+        "ಚೆನ್ನಾಗಿದ್ದೀನಿ. ಸರಿ, ಹೋಗಿ ಬನ್ನಿ. ಶುಭ ದಿನವಾಗಲಿ"
+    ),
+    "namaskara. shubha sayankala": "ನಮಸ್ಕಾರ. ಶುಭ ಸಾಯಂಕಾಲ",
+    "shubha sayankala. elli hogtiddiri": "ಶುಭ ಸಾಯಂಕಾಲ. ಎಲ್ಲಿ ಹೋಗ್ತಿದ್ದೀರಿ",
+    "shubha sayankala. elli hogtiddiri?": "ಶುಭ ಸಾಯಂಕಾಲ. ಎಲ್ಲಿ ಹೋಗ್ತಿದ್ದೀರಿ?",
+    "naanu manege hogtidini. naale nodona": "ನಾನು ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ. ನಾಳೆ ನೋಡೋಣ",
+    "sari. shubharatri": "ಸರಿ. ಶುಭರಾತ್ರಿ",
 }
 
 # Pure English / non-spoken chrome to skip when standalone
