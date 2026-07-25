@@ -60,6 +60,30 @@
       ]
     },
     {
+      "slug": "aivattu",
+      "type": "word",
+      "roman": "aivattu",
+      "kannada": "ಐವತ್ತು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "aivattu.mp3"
+      ]
+    },
+    {
+      "slug": "alla",
+      "type": "word",
+      "roman": "alla",
+      "kannada": "ಅಲ್ಲ",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "alla.mp3"
+      ]
+    },
+    {
       "slug": "alli",
       "type": "word",
       "roman": "Alli",
@@ -313,6 +337,102 @@
       ]
     },
     {
+      "slug": "hadimooru",
+      "type": "word",
+      "roman": "hadimooru",
+      "kannada": "ಹದಿಮೂರು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadimooru.mp3"
+      ]
+    },
+    {
+      "slug": "hadinaalku",
+      "type": "word",
+      "roman": "hadinaalku",
+      "kannada": "ಹದಿನಾಲ್ಕು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinaalku.mp3"
+      ]
+    },
+    {
+      "slug": "hadinaidu",
+      "type": "word",
+      "roman": "hadinaidu",
+      "kannada": "ಹದಿನೈದು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinaidu.mp3"
+      ]
+    },
+    {
+      "slug": "hadinaru",
+      "type": "word",
+      "roman": "hadinaru",
+      "kannada": "ಹದಿನಾರು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinaru.mp3"
+      ]
+    },
+    {
+      "slug": "hadinelu",
+      "type": "word",
+      "roman": "hadinelu",
+      "kannada": "ಹದಿನೇಳು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinelu.mp3"
+      ]
+    },
+    {
+      "slug": "hadinentu",
+      "type": "word",
+      "roman": "hadinentu",
+      "kannada": "ಹದಿನೆಂಟು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinentu.mp3"
+      ]
+    },
+    {
+      "slug": "hanneradu",
+      "type": "word",
+      "roman": "hanneradu",
+      "kannada": "ಹನ್ನೆರಡು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hanneradu.mp3"
+      ]
+    },
+    {
+      "slug": "hannondu",
+      "type": "word",
+      "roman": "hannondu",
+      "kannada": "ಹನ್ನೊಂದು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hannondu.mp3"
+      ]
+    },
+    {
       "slug": "hattira",
       "type": "word",
       "roman": "Hattira",
@@ -322,6 +442,18 @@
       ],
       "files": [
         "hattira.mp3"
+      ]
+    },
+    {
+      "slug": "hattombattu",
+      "type": "word",
+      "roman": "hattombattu",
+      "kannada": "ಹತ್ತೊಂಬತ್ತು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hattombattu.mp3"
       ]
     },
     {
@@ -430,6 +562,18 @@
       ],
       "files": [
         "innu.mp3"
+      ]
+    },
+    {
+      "slug": "ippatthu",
+      "type": "word",
+      "roman": "ippatthu",
+      "kannada": "ಇಪ್ಪತ್ತು",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "ippatthu.mp3"
       ]
     },
     {
@@ -750,7 +894,8 @@
       "roman": "nooru",
       "kannada": "ನೂರು",
       "lessons": [
-        "0003"
+        "0003",
+        "0008"
       ],
       "files": [
         "nooru.mp3"
@@ -1299,6 +1444,20 @@
       ]
     },
     {
+      "slug": "eshtu_hadinaru",
+      "type": "sentence",
+      "roman": "Eshtu? — Hadinaru.",
+      "kannada": "ಎಷ್ಟು? ಹದಿನಾರು",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "eshtu_hadinaru_slow.mp3",
+        "eshtu_hadinaru_nat.mp3"
+      ]
+    },
+    {
       "slug": "gothaytu_dhanyavadagalu",
       "type": "sentence",
       "roman": "Gothaytu. Dhanyavadagalu.",
@@ -1324,6 +1483,76 @@
       "files": [
         "gothaytu_tumba_dhanyavadagalu_slow.mp3",
         "gothaytu_tumba_dhanyavadagalu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hadimooru_coffee",
+      "type": "sentence",
+      "roman": "Hadimooru coffee",
+      "kannada": "ಹದಿಮೂರು ಕಾಫಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadimooru_coffee_slow.mp3",
+        "hadimooru_coffee_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hadinaidu_rupayi",
+      "type": "sentence",
+      "roman": "Hadinaidu rupayi",
+      "kannada": "ಹದಿನೈದು ರೂಪಾಯಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinaidu_rupayi_slow.mp3",
+        "hadinaidu_rupayi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hadinentu_rupayi",
+      "type": "sentence",
+      "roman": "Hadinentu rupayi.",
+      "kannada": "ಹದಿನೆಂಟು ರೂಪಾಯಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinentu_rupayi_slow.mp3",
+        "hadinentu_rupayi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hadinentu_swalpa_kammi_maadi_hadinaru_sari_na",
+      "type": "sentence",
+      "roman": "Hadinentu. swalpa kammi maadi. Hadinaru sari na?",
+      "kannada": "ಹದಿನೆಂಟು. ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ. ಹದಿನಾರು ಸರಿ ನಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hadinentu_swalpa_kammi_maadi_hadinaru_sari_na_slow.mp3",
+        "hadinentu_swalpa_kammi_maadi_hadinaru_sari_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hanneradu_idli",
+      "type": "sentence",
+      "roman": "Hanneradu idli",
+      "kannada": "ಹನ್ನೆರಡು ಇಡ್ಲಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "hanneradu_idli_slow.mp3",
+        "hanneradu_idli_nat.mp3"
       ]
     },
     {
@@ -1534,6 +1763,34 @@
       "files": [
         "innu_ondu_nimisha_slow.mp3",
         "innu_ondu_nimisha_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ippatthu_rupayi_sari_na",
+      "type": "sentence",
+      "roman": "Ippatthu rupayi sari na?",
+      "kannada": "ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಸರಿ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "ippatthu_rupayi_sari_na_slow.mp3",
+        "ippatthu_rupayi_sari_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ippatthu-ge_swalpa_kammi_maadi",
+      "type": "sentence",
+      "roman": "Ippatthu-ge swalpa kammi maadi",
+      "kannada": "ಇಪ್ಪತ್ತಕ್ಕೆ ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "ippatthu-ge_swalpa_kammi_maadi_slow.mp3",
+        "ippatthu-ge_swalpa_kammi_maadi_nat.mp3"
       ]
     },
     {
@@ -1810,7 +2067,8 @@
       "kannada": "ನಮಸ್ಕಾರ. ಇದು ಎಷ್ಟು?",
       "kind": "dialogue",
       "lessons": [
-        "0003"
+        "0003",
+        "0008"
       ],
       "files": [
         "namaskara_idhu_eshtu_slow.mp3",
@@ -1930,6 +2188,20 @@
       ]
     },
     {
+      "slug": "nooru_alla_aivattu",
+      "type": "sentence",
+      "roman": "Nooru alla — aivattu",
+      "kannada": "ನೂರು ಅಲ್ಲ — ಐವತ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "nooru_alla_aivattu_slow.mp3",
+        "nooru_alla_aivattu_nat.mp3"
+      ]
+    },
+    {
       "slug": "nooru_2",
       "type": "sentence",
       "roman": "Nooru.",
@@ -2028,6 +2300,20 @@
       ]
     },
     {
+      "slug": "sari_hadinaidu",
+      "type": "sentence",
+      "roman": "Sari, hadinaidu.",
+      "kannada": "ಸರಿ, ಹದಿನೈದು",
+      "kind": "dialogue",
+      "lessons": [
+        "0008"
+      ],
+      "files": [
+        "sari_hadinaidu_slow.mp3",
+        "sari_hadinaidu_nat.mp3"
+      ]
+    },
+    {
       "slug": "sari_haki",
       "type": "sentence",
       "roman": "Sari, haki.",
@@ -2078,7 +2364,8 @@
       "lessons": [
         "0002",
         "0003",
-        "0005"
+        "0005",
+        "0008"
       ],
       "files": [
         "sari_dhanyavadagalu_slow.mp3",

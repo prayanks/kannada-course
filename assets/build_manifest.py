@@ -256,6 +256,44 @@ KN: dict[str, str] = {
     "shubha sayankala. elli hogtiddiri?": "ಶುಭ ಸಾಯಂಕಾಲ. ಎಲ್ಲಿ ಹೋಗ್ತಿದ್ದೀರಿ?",
     "naanu manege hogtidini. naale nodona": "ನಾನು ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ. ನಾಳೆ ನೋಡೋಣ",
     "sari. shubharatri": "ಸರಿ. ಶುಭರಾತ್ರಿ",
+    # L8 numbers 11–20 + money stretch
+    "hannondu": "ಹನ್ನೊಂದು",
+    "hanneradu": "ಹನ್ನೆರಡು",
+    "hadimooru": "ಹದಿಮೂರು",
+    "hadinaalku": "ಹದಿನಾಲ್ಕು",
+    "hadinaidu": "ಹದಿನೈದು",
+    "hadinaru": "ಹದಿನಾರು",
+    "hadinelu": "ಹದಿನೇಳು",
+    "hadinentu": "ಹದಿನೆಂಟು",
+    "hattombattu": "ಹತ್ತೊಂಬತ್ತು",
+    "ippatthu": "ಇಪ್ಪತ್ತು",
+    "alla": "ಅಲ್ಲ",
+    "hadinaidu rupayi": "ಹದಿನೈದು ರೂಪಾಯಿ",
+    "ippatthu rupayi sari na": "ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಸರಿ ನಾ",
+    "ippatthu rupayi sari na?": "ಇಪ್ಪತ್ತು ರೂಪಾಯಿ ಸರಿ ನಾ?",
+    "hanneradu idli": "ಹನ್ನೆರಡು ಇಡ್ಲಿ",
+    "hadimooru coffee": "ಹದಿಮೂರು ಕಾಫಿ",
+    "eshtu? — hadinaru": "ಎಷ್ಟು? ಹದಿನಾರು",
+    "eshtu? — hadinaru.": "ಎಷ್ಟು? ಹದಿನಾರು",
+    "eshtu — hadinaru": "ಎಷ್ಟು? ಹದಿನಾರು",
+    "ippatthu-ge swalpa kammi maadi": "ಇಪ್ಪತ್ತಕ್ಕೆ ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ",
+    "nooru alla — aivattu": "ನೂರು ಅಲ್ಲ — ಐವತ್ತು",
+    "nooru alla": "ನೂರು ಅಲ್ಲ",
+    "hadinentu rupayi": "ಹದಿನೆಂಟು ರೂಪಾಯಿ",
+    "hadinentu rupayi.": "ಹದಿನೆಂಟು ರೂಪಾಯಿ",
+    "hadinentu… swalpa kammi maadi. hadinaru sari na": (
+        "ಹದಿನೆಂಟು. ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ. ಹದಿನಾರು ಸರಿ ನಾ"
+    ),
+    "hadinentu. swalpa kammi maadi. hadinaru sari na": (
+        "ಹದಿನೆಂಟು. ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ. ಹದಿನಾರು ಸರಿ ನಾ"
+    ),
+    "hadinentu. swalpa kammi maadi. hadinaru sari na?": (
+        "ಹದಿನೆಂಟು. ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ. ಹದಿನಾರು ಸರಿ ನಾ?"
+    ),
+    "sari, hadinaidu": "ಸರಿ, ಹದಿನೈದು",
+    "sari, hadinaidu.": "ಸರಿ, ಹದಿನೈದು",
+    "hadinaru sari na": "ಹದಿನಾರು ಸರಿ ನಾ",
+    "hadinaru sari na?": "ಹದಿನಾರು ಸರಿ ನಾ?",
 }
 
 # Pure English / non-spoken chrome to skip when standalone
