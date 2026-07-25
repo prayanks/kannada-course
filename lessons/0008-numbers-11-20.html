@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0008 · Numbers 11–20 (+ money stretch)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .num-grid {
+      display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.45rem;
+      margin: 1rem 0 1.25rem; font-family: var(--sans);
+    }
+    .num-grid .cell {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius-sm);
+      padding: 0.65rem 0.35rem; text-align: center;
+    }
+    .num-grid .n { display: block; font-size: 0.72rem; font-weight: 700; color: var(--muted); }
+    .num-grid .kn { display: block; font-weight: 700; color: var(--accent); margin-top: 0.2rem; font-size: 0.88rem; }
+    @media (max-width: 640px) { .num-grid { grid-template-columns: repeat(2, 1fr); } }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0008</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~12 min</span>
+        </div>
+        <h1>Numbers 11–20 (+ money stretch)</h1>
+        <p class="lede">
+          Extend L3 so shop and auto prices above ten don’t go blank — lock 11–20, recycle tens, and hear money in the wild.
+        </p>
+      </header>
+
+      <div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Count <strong>hannondu → ippatthu</strong> out loud, catch prices like
+          <strong>hadinaru / hadinentu / ippatthu rupayi</strong>, and still run <strong>Idhu eshtu?</strong> without freezing.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review (1–10):</strong>
+        ondu eradu mooru naalku aidu aaru elu entu ombattu hattu · Idhu eshtu? · Swalpa kammi maadi
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        Auto minimums, snacks, and society payments live in the teens and twenties.
+        L3 gave you 1–10 and a few anchors; this lesson makes the <strong>teen band</strong> automatic so you can hear the bill.
+      </p>
+
+      <h2><span class="num">02</span> One pattern: teens ≈ “hadi-” + digit</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          Many teens start with a <strong>hadi-</strong> sound (think “ten-and…”):
+          11 hannondu · 12 hanneradu · 13 hadimooru · … · 18 hadinentu · 19 hattombattu · 20 <strong>ippatthu</strong>.
+        </p>
+        <p style="margin-bottom:0">
+          Don’t overfit the rule — drill the list as chunks. Hindi bridge: 11–19 feel like gyarah–unnees inventory, not math.
+        </p>
+      </div>
+
+      <h2><span class="num">03</span> Numbers 11–20</h2>
+      <div class="num-grid" aria-label="Numbers 11 to 20">
+        <div class="cell"><span class="n">11</span><span class="kn">hannondu</span></div>
+        <div class="cell"><span class="n">12</span><span class="kn">hanneradu</span></div>
+        <div class="cell"><span class="n">13</span><span class="kn">hadimooru</span></div>
+        <div class="cell"><span class="n">14</span><span class="kn">hadinaalku</span></div>
+        <div class="cell"><span class="n">15</span><span class="kn">hadinaidu</span></div>
+        <div class="cell"><span class="n">16</span><span class="kn">hadinaru</span></div>
+        <div class="cell"><span class="n">17</span><span class="kn">hadinelu</span></div>
+        <div class="cell"><span class="n">18</span><span class="kn">hadinentu</span></div>
+        <div class="cell"><span class="n">19</span><span class="kn">hattombattu</span></div>
+        <div class="cell"><span class="n">20</span><span class="kn">ippatthu</span></div>
+      </div>
+      <div class="card">
+        <p style="margin:0;font-family:var(--sans);font-size:0.95rem">
+          <strong>Recycle tens (recognition → light production):</strong>
+          30 moovattu · 40 nalavattu · 50 aivattu · 60 aravattu · 70 eppattu · 80 embattu · 90 tombattu · 100 nooru
+        </p>
+        <p style="margin:0.55rem 0 0;font-family:var(--sans);font-size:0.88rem;color:var(--muted)">
+          Goal today: <em>own</em> 11–20. Tens stay “spot when shouted at the counter.”
+        </p>
+      </div>
+
+      <h2><span class="num">04</span> Phrase cards (numbers in use)</h2>
+
+      <div class="phrase">
+        <p class="kn">Hadinaidu rupayi</p>
+        <p class="en">Fifteen rupees</p>
+        <p class="hi">≈ Pandrah rupaye</p>
+        <div class="meta">Number + <strong>rupayi</strong> (L3). Swap any teen.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Ippatthu rupayi sari na?</p>
+        <p class="en">Twenty rupees, okay?</p>
+        <p class="hi">≈ Bees rupaye, theek hai?</p>
+        <div class="meta">Confirm a quoted price. <strong>na?</strong> tag from L4.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Hanneradu idli · Hadimooru coffee</p>
+        <p class="en">Twelve idlis · Thirteen coffees (party order energy)</p>
+        <p class="hi">≈ Barah idli…</p>
+        <div class="meta">Number before item works; for 1–2 you already use ondu/eradu after or before — both heard.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Eshtu? — Hadinaru.</p>
+        <p class="en">How much? — Sixteen.</p>
+        <p class="hi">≈ Kitna? — Solah.</p>
+        <div class="meta">Train your ear: answer may be bare number, no “rupayi.”</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Ippatthu-ge swalpa kammi maadi</p>
+        <p class="en">Please reduce a bit from twenty</p>
+        <p class="hi">≈ Bees se thoda kam</p>
+        <div class="meta">Compose L3 bargain + new number. <strong>-ge</strong> can mark the amount you’re pushing on.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nooru alla — aivattu</p>
+        <p class="en">Not hundred — fifty</p>
+        <p class="hi">≈ Sau nahi — pachaas</p>
+        <div class="meta"><strong>alla</strong> ≈ not (negation particle). Useful when you misheard.</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">hannondu…ippatthu</span><span>11…20</span><span>gyarah…bees</span></div>
+        <div class="row"><span class="kn">hadinaidu</span><span>15</span><span>pandrah</span></div>
+        <div class="row"><span class="kn">hadinaru</span><span>16</span><span>solah</span></div>
+        <div class="row"><span class="kn">ippatthu</span><span>20</span><span>bees</span></div>
+        <div class="row"><span class="kn">aivattu / nooru</span><span>50 / 100</span><span>pachaas / sau</span></div>
+        <div class="row"><span class="kn">alla</span><span>not</span><span>nahi (particle)</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogue — snack counter</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Idhu eshtu?</span><br /><span class="gloss">Hello. How much is this?</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Hadinentu rupayi.</span><br /><span class="gloss">Eighteen rupees.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Hadinentu… swalpa kammi maadi. Hadinaru sari na?</span><br /><span class="gloss">Eighteen… please reduce a bit. Sixteen okay?</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Sari, hadinaidu.</span><br /><span class="gloss">Okay, fifteen.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Dhanyavadagalu.</span><br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. Number 12</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">hannondu</button>
+          <button type="button" data-answer="correct">hanneradu</button>
+          <button type="button" data-answer="wrong">hadimooru</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. Number 15</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">hadinaidu</button>
+          <button type="button" data-answer="wrong">hadinaru</button>
+          <button type="button" data-answer="wrong">hattombattu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. Number 20</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">hattu</button>
+          <button type="button" data-answer="wrong">nooru</button>
+          <button type="button" data-answer="correct">ippatthu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. Number 18</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">hadinelu</button>
+          <button type="button" data-answer="correct">hadinentu</button>
+          <button type="button" data-answer="wrong">hadinaalku</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Not hundred”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Nooru alla</button>
+          <button type="button" data-answer="wrong">Nooru beku</button>
+          <button type="button" data-answer="wrong">Nooru eduru</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: number 5 (L3)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">aaru</button>
+          <button type="button" data-answer="correct">aidu</button>
+          <button type="button" data-answer="wrong">elu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Count 11→20 slowly, then 20→11.</li>
+          <li>Say: 15 rupees, 16 rupees, 20 rupees.</li>
+          <li>How much? — Eighteen.</li>
+          <li>Twenty — please reduce a little.</li>
+          <li>Not 100 — 50.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>Once a day: recite 11–20 while walking (forward + back).</li>
+          <li>At one purchase: ask <strong>Eshtu?</strong> and try to catch if the answer is a teen.</li>
+          <li>Write down any number you heard and couldn’t parse — send it here.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Cross-check cardinal numbers on
+        <a href="https://en.wikibooks.org/wiki/Kannada/Numbers">WikiBooks Kannada numbers</a>
+        (and conversational price use from earlier lessons). Local speech may blur vowels — trust ears over spelling.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Heard something like “had-n-aidu” at speed? Type the sound — we’ll map it to the grid.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0007-time-of-day-greetings.html">← Lesson 0007</a>
+        <a href="../reference/numbers-11-20-cheatsheet.html">Reference · numbers 11–20</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
