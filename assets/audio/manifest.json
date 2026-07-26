@@ -24,6 +24,18 @@
       ]
     },
     {
+      "slug": "aagide",
+      "type": "word",
+      "roman": "aagide",
+      "kannada": "ಆಗಿದೆ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "aagide.mp3"
+      ]
+    },
+    {
       "slug": "aaru",
       "type": "word",
       "roman": "aaru",
@@ -105,6 +117,18 @@
       ],
       "files": [
         "ardha.mp3"
+      ]
+    },
+    {
+      "slug": "avaru",
+      "type": "word",
+      "roman": "avaru",
+      "kannada": "ಅವರು",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "avaru.mp3"
       ]
     },
     {
@@ -469,6 +493,18 @@
       ]
     },
     {
+      "slug": "halo",
+      "type": "word",
+      "roman": "Halo",
+      "kannada": "ಹಲೋ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "halo.mp3"
+      ]
+    },
+    {
       "slug": "hanneradu",
       "type": "word",
       "roman": "hanneradu",
@@ -601,6 +637,18 @@
       ]
     },
     {
+      "slug": "illa",
+      "type": "word",
+      "roman": "illa",
+      "kannada": "ಇಲ್ಲ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "illa.mp3"
+      ]
+    },
+    {
       "slug": "illi",
       "type": "word",
       "roman": "Illi",
@@ -661,6 +709,18 @@
       ]
     },
     {
+      "slug": "kaayri",
+      "type": "word",
+      "roman": "kaayri",
+      "kannada": "ಕಾಯ್ರಿ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "kaayri.mp3"
+      ]
+    },
+    {
       "slug": "kammi",
       "type": "word",
       "roman": "kammi",
@@ -670,6 +730,18 @@
       ],
       "files": [
         "kammi.mp3"
+      ]
+    },
+    {
+      "slug": "kare",
+      "type": "word",
+      "roman": "kare",
+      "kannada": "ಕರೆ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "kare.mp3"
       ]
     },
     {
@@ -718,6 +790,30 @@
       ],
       "files": [
         "maadi.mp3"
+      ]
+    },
+    {
+      "slug": "maatadtiddira",
+      "type": "word",
+      "roman": "maatadtiddira",
+      "kannada": "ಮಾತಾಡ್ತಿದ್ದೀರಾ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "maatadtiddira.mp3"
+      ]
+    },
+    {
+      "slug": "maatadu",
+      "type": "word",
+      "roman": "maatadu",
+      "kannada": "ಮಾತಾಡು",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "maatadu.mp3"
       ]
     },
     {
@@ -964,6 +1060,18 @@
       ]
     },
     {
+      "slug": "number",
+      "type": "word",
+      "roman": "number",
+      "kannada": "ನಂಬರ್",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "number.mp3"
+      ]
+    },
+    {
       "slug": "olleyadagali",
       "type": "word",
       "roman": "Olleyadagali",
@@ -1009,6 +1117,18 @@
       ],
       "files": [
         "oota.mp3"
+      ]
+    },
+    {
+      "slug": "phone",
+      "type": "word",
+      "roman": "phone",
+      "kannada": "ಫೋನ್",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "phone.mp3"
       ]
     },
     {
@@ -1133,6 +1253,18 @@
       ]
     },
     {
+      "slug": "tappa",
+      "type": "word",
+      "roman": "tappa",
+      "kannada": "ತಪ್ಪ",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "tappa.mp3"
+      ]
+    },
+    {
       "slug": "thirgi",
       "type": "word",
       "roman": "thirgi",
@@ -1154,6 +1286,18 @@
       ],
       "files": [
         "tumba.mp3"
+      ]
+    },
+    {
+      "slug": "yaaru",
+      "type": "word",
+      "roman": "yaaru",
+      "kannada": "ಯಾರು",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "yaaru.mp3"
       ]
     },
     {
@@ -1276,6 +1420,34 @@
       "files": [
         "alli_na_slow.mp3",
         "alli_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "avaru_eega_illa",
+      "type": "sentence",
+      "roman": "Avaru eega illa",
+      "kannada": "ಅವರು ಈಗ ಇಲ್ಲ",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "avaru_eega_illa_slow.mp3",
+        "avaru_eega_illa_nat.mp3"
+      ]
+    },
+    {
+      "slug": "avaru_eega_illa_2",
+      "type": "sentence",
+      "roman": "Avaru eega illa.",
+      "kannada": "ಅವರು ಈಗ ಇಲ್ಲ",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "avaru_eega_illa_2_slow.mp3",
+        "avaru_eega_illa_2_nat.mp3"
       ]
     },
     {
@@ -1611,7 +1783,8 @@
       "kind": "dialogue",
       "lessons": [
         "0004",
-        "0009"
+        "0009",
+        "0010"
       ],
       "files": [
         "gothaytu_dhanyavadagalu_slow.mp3",
@@ -1686,6 +1859,34 @@
       "files": [
         "hadinentu_swalpa_kammi_maadi_hadinaru_sari_na_slow.mp3",
         "hadinentu_swalpa_kammi_maadi_hadinaru_sari_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "halo_nanna_hesaru_prayank",
+      "type": "sentence",
+      "roman": "Halo. Nanna hesaru Prayank.",
+      "kannada": "ಹಲೋ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "halo_nanna_hesaru_prayank_slow.mp3",
+        "halo_nanna_hesaru_prayank_nat.mp3"
+      ]
+    },
+    {
+      "slug": "halo_ravi_avaru_iddara",
+      "type": "sentence",
+      "roman": "Halo. Ravi avaru iddara?",
+      "kannada": "ಹಲೋ. ರವಿ ಅವರು ಇದ್ದಾರಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "halo_ravi_avaru_iddara_slow.mp3",
+        "halo_ravi_avaru_iddara_nat.mp3"
       ]
     },
     {
@@ -2137,6 +2338,20 @@
       ]
     },
     {
+      "slug": "line_busy_aagide",
+      "type": "sentence",
+      "roman": "Line busy aagide",
+      "kannada": "ಲೈನ್ ಬಿಸಿ ಆಗಿದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "line_busy_aagide_slow.mp3",
+        "line_busy_aagide_nat.mp3"
+      ]
+    },
+    {
       "slug": "market-ge_neevu",
       "type": "sentence",
       "roman": "Market-ge. Neevu?",
@@ -2291,6 +2506,20 @@
       ]
     },
     {
+      "slug": "naanu_phone_maadtini",
+      "type": "sentence",
+      "roman": "Naanu phone maadtini",
+      "kannada": "ನಾನು ಫೋನ್ ಮಾಡ್ತೀನಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "naanu_phone_maadtini_slow.mp3",
+        "naanu_phone_maadtini_nat.mp3"
+      ]
+    },
+    {
       "slug": "namaskara_2",
       "type": "sentence",
       "roman": "Namaskara.",
@@ -2391,13 +2620,28 @@
       ]
     },
     {
+      "slug": "nanage_kare_maadi",
+      "type": "sentence",
+      "roman": "Nanage kare maadi",
+      "kannada": "ನನಗೆ ಕರೆ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "nanage_kare_maadi_slow.mp3",
+        "nanage_kare_maadi_nat.mp3"
+      ]
+    },
+    {
       "slug": "nanna_hesaru_prayank",
       "type": "sentence",
       "roman": "Nanna hesaru Prayank",
       "kannada": "ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್",
       "kind": "phrase",
       "lessons": [
-        "0001"
+        "0001",
+        "0010"
       ],
       "files": [
         "nanna_hesaru_prayank_slow.mp3",
@@ -2419,6 +2663,20 @@
       ]
     },
     {
+      "slug": "nanna_hesaru_prayank_nanage_kare_maadi_swalpa_help_beku",
+      "type": "sentence",
+      "roman": "Nanna hesaru Prayank. Nanage kare maadi. Swalpa help beku.",
+      "kannada": "ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್. ನನಗೆ ಕರೆ ಮಾಡಿ. ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕು",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "nanna_hesaru_prayank_nanage_kare_maadi_swalpa_help_beku_slow.mp3",
+        "nanna_hesaru_prayank_nanage_kare_maadi_swalpa_help_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "nanna_hesaru_ravi_nimma",
       "type": "sentence",
       "roman": "Nanna hesaru Ravi. Nimma?",
@@ -2430,6 +2688,20 @@
       "files": [
         "nanna_hesaru_ravi_nimma_slow.mp3",
         "nanna_hesaru_ravi_nimma_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nantara_nanage_kare_maadi",
+      "type": "sentence",
+      "roman": "Nantara nanage kare maadi",
+      "kannada": "ನಂತರ ನನಗೆ ಕರೆ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "nantara_nanage_kare_maadi_slow.mp3",
+        "nantara_nanage_kare_maadi_nat.mp3"
       ]
     },
     {
@@ -2472,6 +2744,20 @@
       "files": [
         "nimma_hesaru_enu_slow.mp3",
         "nimma_hesaru_enu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nimma_phone_number_eshtu",
+      "type": "sentence",
+      "roman": "Nimma phone number eshtu?",
+      "kannada": "ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಎಷ್ಟು?",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "nimma_phone_number_eshtu_slow.mp3",
+        "nimma_phone_number_eshtu_nat.mp3"
       ]
     },
     {
@@ -2528,6 +2814,20 @@
       "files": [
         "olle_dinagalu_slow.mp3",
         "olle_dinagalu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_nimisha_kaayri",
+      "type": "sentence",
+      "roman": "Ondu nimisha kaayri",
+      "kannada": "ಒಂದು ನಿಮಿಷ ಕಾಯ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "ondu_nimisha_kaayri_slow.mp3",
+        "ondu_nimisha_kaayri_nat.mp3"
       ]
     },
     {
@@ -2652,7 +2952,8 @@
         "0002",
         "0003",
         "0005",
-        "0008"
+        "0008",
+        "0010"
       ],
       "files": [
         "sari_dhanyavadagalu_slow.mp3",
@@ -2702,6 +3003,48 @@
       ]
     },
     {
+      "slug": "sari_naanu_phone_maadtini",
+      "type": "sentence",
+      "roman": "Sari. Naanu phone maadtini.",
+      "kannada": "ಸರಿ. ನಾನು ಫೋನ್ ಮಾಡ್ತೀನಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "sari_naanu_phone_maadtini_slow.mp3",
+        "sari_naanu_phone_maadtini_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu",
+      "type": "sentence",
+      "roman": "Sari. Nantara nanage kare maadi. Nimma phone number eshtu?",
+      "kannada": "ಸರಿ. ನಂತರ ನನಗೆ ಕರೆ ಮಾಡಿ. ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಎಷ್ಟು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu_slow.mp3",
+        "sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_ondu_nimisha_kaayri",
+      "type": "sentence",
+      "roman": "Sari. Ondu nimisha kaayri.",
+      "kannada": "ಸರಿ. ಒಂದು ನಿಮಿಷ ಕಾಯ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "sari_ondu_nimisha_kaayri_slow.mp3",
+        "sari_ondu_nimisha_kaayri_nat.mp3"
+      ]
+    },
+    {
       "slug": "sari_shubharatri",
       "type": "sentence",
       "roman": "Sari. Shubharatri.",
@@ -2713,6 +3056,20 @@
       "files": [
         "sari_shubharatri_slow.mp3",
         "sari_shubharatri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_yaaru_maatadtiddira",
+      "type": "sentence",
+      "roman": "Sari. Yaaru maatadtiddira?",
+      "kannada": "ಸರಿ. ಯಾರು ಮಾತಾಡ್ತಿದ್ದೀರಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "sari_yaaru_maatadtiddira_slow.mp3",
+        "sari_yaaru_maatadtiddira_nat.mp3"
       ]
     },
     {
@@ -2912,6 +3269,20 @@
       ]
     },
     {
+      "slug": "tappa_number",
+      "type": "sentence",
+      "roman": "Tappa number",
+      "kannada": "ತಪ್ಪ ನಂಬರ್",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "tappa_number_slow.mp3",
+        "tappa_number_nat.mp3"
+      ]
+    },
+    {
       "slug": "time_ide_na",
       "type": "sentence",
       "roman": "Time ide na?",
@@ -3007,6 +3378,20 @@
       "files": [
         "tumba_thanks_2_slow.mp3",
         "tumba_thanks_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yaaru_maatadtiddira",
+      "type": "sentence",
+      "roman": "Yaaru maatadtiddira?",
+      "kannada": "ಯಾರು ಮಾತಾಡ್ತಿದ್ದೀರಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0010"
+      ],
+      "files": [
+        "yaaru_maatadtiddira_slow.mp3",
+        "yaaru_maatadtiddira_nat.mp3"
       ]
     },
     {

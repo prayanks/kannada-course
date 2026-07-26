@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0010 · Phone call basics</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .phone-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem;
+      margin: 1rem 0; font-family: var(--sans);
+    }
+    .phone-grid .cell {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius-sm);
+      padding: 0.7rem 0.4rem; text-align: center;
+    }
+    .phone-grid .t { display: block; font-size: 0.75rem; font-weight: 700; color: var(--muted); }
+    .phone-grid .kn { display: block; font-weight: 700; color: var(--accent); margin-top: 0.25rem; font-size: 0.9rem; }
+    @media (max-width: 640px) { .phone-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0010</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~11 min</span>
+        </div>
+        <h1>Phone call basics</h1>
+        <p class="lede">
+          Open a call, say who you are, ask someone to call you, wait a minute, and handle
+          “not here / wrong number / busy” — the spine for society staff, shops, and neighbours.
+        </p>
+      </header>
+      <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          You can say <strong>Nanage kare maadi</strong>, answer
+          <strong>Yaaru maatadtiddira?</strong> with your name, hold with
+          <strong>Ondu nimisha kaayri</strong>, and recover with
+          <strong>Avaru eega illa</strong> / <strong>Tappa number</strong>.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        maadi · nanage · nimisha · eega · nanna hesaru · eshtu · kshamisi · dhanyavadagalu · naale · gante-ge
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        L9 gave you clock time for meetings. Real life still runs on <strong>phone calls</strong>:
+        society office, plumber, auto driver, neighbour who isn’t at the door.
+        Bengaluru speech mixes English <em>phone / call / number / busy / line</em> with Kannada glue —
+        learn the Kannada spine so the mix still lands.
+      </p>
+
+      <h2><span class="num">02</span> One grammar lever: <em>kare / phone + maadi</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>kare</strong> = call (noun/verb root; ≈ call / phone karo)<br />
+          <strong>maadi</strong> = do (polite — you locked this in L6)<br />
+          <strong>kare maadi</strong> = please call<br />
+          <strong>phone maadi</strong> = please phone / make a call<br />
+          <strong>nanage kare maadi</strong> = call me (to-me call do)
+        </p>
+      </div>
+      <p>
+        Same SOV feel as Hindi <em>mujhe call karo</em> — object first, polite verb last.
+        You’ll also hear pure English “call me” constantly; still lock the Kannada form.
+      </p>
+
+      <h2><span class="num">03</span> Core phone set</h2>
+      <div class="phone-grid" aria-label="Sample phone phrases">
+        <div class="cell"><span class="t">call me</span><span class="kn">Nanage kare maadi</span><div class="audio-block" data-slug="nanage_kare_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanage_kare_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanage_kare_maadi_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">I’ll call</span><span class="kn">Naanu phone maadtini</span><div class="audio-block" data-slug="naanu_phone_maadtini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_phone_maadtini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_phone_maadtini_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">one minute</span><span class="kn">Ondu nimisha kaayri</span><div class="audio-block" data-slug="ondu_nimisha_kaayri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_nimisha_kaayri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_nimisha_kaayri_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">who’s speaking?</span><span class="kn">Yaaru maatadtiddira?</span><div class="audio-block" data-slug="yaaru_maatadtiddira"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yaaru_maatadtiddira_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yaaru_maatadtiddira_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">not here now</span><span class="kn">Avaru eega illa</span><div class="audio-block" data-slug="avaru_eega_illa_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/avaru_eega_illa_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/avaru_eega_illa_2_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">wrong number</span><span class="kn">Tappa number</span><div class="audio-block" data-slug="tappa_number"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tappa_number_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tappa_number_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">line busy</span><span class="kn">Line busy aagide</span><div class="audio-block" data-slug="line_busy_aagide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/line_busy_aagide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/line_busy_aagide_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">your number?</span><span class="kn">Nimma phone number eshtu?</span><div class="audio-block" data-slug="nimma_phone_number_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nimma_phone_number_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nimma_phone_number_eshtu_nat.mp3"></audio></span></div></div>
+        <div class="cell"><span class="t">call later</span><span class="kn">Nantara nanage kare maadi</span><div class="audio-block" data-slug="nantara_nanage_kare_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nantara_nanage_kare_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nantara_nanage_kare_maadi_nat.mp3"></audio></span></div></div>
+      </div>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Halo</p>
+        <div class="audio-block" data-slug="halo"><audio controls preload="none" src="../assets/audio/halo.mp3"></audio></div>
+        <p class="en">Hello (phone only)</p>
+        <p class="hi">≈ Hello (phone)</p>
+        <div class="meta">Phone-only greeting. Face-to-face you still open with <strong>Namaskara</strong> (L1).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanage kare maadi</p>
+        <div class="audio-block" data-slug="nanage_kare_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanage_kare_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanage_kare_maadi_nat.mp3"></audio></span></div>
+        <p class="en">Call me / Please call me</p>
+        <p class="hi">≈ Mujhe call karo / phone kariye</p>
+        <div class="meta"><strong>nanage</strong> (to me, L6) + <strong>kare</strong> + <strong>maadi</strong>. Core ask of the lesson.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Naanu phone maadtini</p>
+        <div class="audio-block" data-slug="naanu_phone_maadtini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_phone_maadtini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_phone_maadtini_nat.mp3"></audio></span></div>
+        <p class="en">I’ll call / I’m calling</p>
+        <p class="hi">≈ Main phone karta hoon / karunga</p>
+        <div class="meta"><strong>naanu</strong> (I) + phone + <em>maadtini</em> (I do / will do). Swap in a time: <em>naale phone maadtini</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Ondu nimisha kaayri</p>
+        <div class="audio-block" data-slug="ondu_nimisha_kaayri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_nimisha_kaayri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_nimisha_kaayri_nat.mp3"></audio></span></div>
+        <p class="en">Wait one minute, please</p>
+        <p class="hi">≈ Ek minute rukiye</p>
+        <div class="meta"><strong>nimisha</strong> from L9. <strong>kaayri</strong> = wait (polite). Short form you’ll also hear: <em>Ondu nimisha</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Yaaru maatadtiddira?</p>
+        <div class="audio-block" data-slug="yaaru_maatadtiddira"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yaaru_maatadtiddira_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yaaru_maatadtiddira_nat.mp3"></audio></span></div>
+        <p class="en">Who is speaking? / Who’s this?</p>
+        <p class="hi">≈ Kaun bol rahe hain?</p>
+        <div class="meta"><strong>yaaru</strong> = who. <strong>maatadu</strong> = speak/talk. Polite continuous <em>-tiddira</em> matches L2 <em>hogtiddiri</em> vibe.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanna hesaru Prayank</p>
+        <div class="audio-block" data-slug="nanna_hesaru_prayank"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_nat.mp3"></audio></span></div>
+        <p class="en">My name is Prayank</p>
+        <p class="hi">≈ Mera naam Prayank hai</p>
+        <div class="meta">L1 recycle — answer to “who’s speaking?” before you dive into the request.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Avaru eega illa</p>
+        <div class="audio-block" data-slug="avaru_eega_illa_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/avaru_eega_illa_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/avaru_eega_illa_2_nat.mp3"></audio></span></div>
+        <p class="en">They’re not here now</p>
+        <p class="hi">≈ Woh abhi nahi hain</p>
+        <div class="meta"><strong>avaru</strong> = he/she/they (respectful). <strong>eega</strong> (L9) + <strong>illa</strong> = not present. Soften: <em>swalpa nantara kare maadi</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Tappa number · Line busy aagide</p>
+        <div class="audio-block" data-slug="tappa_number"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tappa_number_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tappa_number_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="line_busy_aagide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/line_busy_aagide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/line_busy_aagide_nat.mp3"></audio></span></div>
+        <p class="en">Wrong number · The line is busy</p>
+        <p class="hi">≈ Galat number · Line busy hai</p>
+        <div class="meta"><strong>tappa</strong> = wrong/mistake. EN <em>line / busy</em> + Kannada <strong>aagide</strong> (has become / is) is very natural Bengaluru speech.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nimma phone number eshtu? · Nantara nanage kare maadi</p>
+        <div class="audio-block" data-slug="nimma_phone_number_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nimma_phone_number_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nimma_phone_number_eshtu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="nantara_nanage_kare_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nantara_nanage_kare_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nantara_nanage_kare_maadi_nat.mp3"></audio></span></div>
+        <p class="en">What’s your phone number? · Call me later</p>
+        <p class="hi">≈ Aapka number kya hai? · Baad mein call kariye</p>
+        <div class="meta">L3 <strong>eshtu</strong> for the number ask. <strong>nantara</strong> (L4/L9 later) stacks cleanly onto <em>kare maadi</em>.</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">kare</span><div class="audio-block" data-slug="kare"><audio controls preload="none" src="../assets/audio/kare.mp3"></audio></div><span>call</span><span>call / phone</span></div>
+        <div class="row"><span class="kn">phone</span><div class="audio-block" data-slug="phone"><audio controls preload="none" src="../assets/audio/phone.mp3"></audio></div><span>phone</span><span>phone</span></div>
+        <div class="row"><span class="kn">number</span><div class="audio-block" data-slug="number"><audio controls preload="none" src="../assets/audio/number.mp3"></audio></div><span>number</span><span>number</span></div>
+        <div class="row"><span class="kn">yaaru</span><div class="audio-block" data-slug="yaaru"><audio controls preload="none" src="../assets/audio/yaaru.mp3"></audio></div><span>who</span><span>kaun</span></div>
+        <div class="row"><span class="kn">maatadu / maatadtiddira</span><div class="audio-block" data-slug="maatadu"><audio controls preload="none" src="../assets/audio/maatadu.mp3"></audio></div><div class="audio-block" data-slug="maatadtiddira"><audio controls preload="none" src="../assets/audio/maatadtiddira.mp3"></audio></div><span>speak / speaking (polite)</span><span>bolna / bol rahe hain</span></div>
+        <div class="row"><span class="kn">kaayri</span><div class="audio-block" data-slug="kaayri"><audio controls preload="none" src="../assets/audio/kaayri.mp3"></audio></div><span>wait (polite)</span><span>rukiye</span></div>
+        <div class="row"><span class="kn">avaru</span><div class="audio-block" data-slug="avaru"><audio controls preload="none" src="../assets/audio/avaru.mp3"></audio></div><span>he/she/they (respect)</span><span>woh (aap form)</span></div>
+        <div class="row"><span class="kn">illa</span><div class="audio-block" data-slug="illa"><audio controls preload="none" src="../assets/audio/illa.mp3"></audio></div><span>not / isn’t there</span><span>nahi hai</span></div>
+        <div class="row"><span class="kn">tappa</span><div class="audio-block" data-slug="tappa"><audio controls preload="none" src="../assets/audio/tappa.mp3"></audio></div><span>wrong / mistake</span><span>galat</span></div>
+        <div class="row"><span class="kn">aagide</span><div class="audio-block" data-slug="aagide"><audio controls preload="none" src="../assets/audio/aagide.mp3"></audio></div><span>has become / is</span><span>ho gaya / hai</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogues</h2>
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">A · Call a neighbour</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Halo. Nanna hesaru Prayank.</span>
+        <div class="audio-block" data-slug="halo_nanna_hesaru_prayank"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/halo_nanna_hesaru_prayank_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/halo_nanna_hesaru_prayank_nat.mp3"></audio></span></div><br /><span class="gloss">Hello. My name is Prayank.</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Sari. Yaaru maatadtiddira?</span>
+        <div class="audio-block" data-slug="sari_yaaru_maatadtiddira"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_yaaru_maatadtiddira_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_yaaru_maatadtiddira_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Who’s speaking? (they may still confirm)</span></p>
+        <p><span class="who">You</span><br /><span class="line">Nanna hesaru Prayank. Nanage kare maadi. Swalpa help beku.</span>
+        <div class="audio-block" data-slug="nanna_hesaru_prayank_nanage_kare_maadi_swalpa_help_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_nanage_kare_maadi_swalpa_help_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_nanage_kare_maadi_swalpa_help_beku_nat.mp3"></audio></span></div><br /><span class="gloss">My name is Prayank. Call me — I need a little help.</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Sari. Ondu nimisha kaayri.</span>
+        <div class="audio-block" data-slug="sari_ondu_nimisha_kaayri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_ondu_nimisha_kaayri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_ondu_nimisha_kaayri_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Wait one minute.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">B · Not available / try later</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Halo. Ravi avaru iddara?</span>
+        <div class="audio-block" data-slug="halo_ravi_avaru_iddara"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/halo_ravi_avaru_iddara_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/halo_ravi_avaru_iddara_nat.mp3"></audio></span></div><br /><span class="gloss">Hello. Is Ravi there?</span></p>
+        <p><span class="who">Other</span><br /><span class="line">Avaru eega illa.</span>
+        <div class="audio-block" data-slug="avaru_eega_illa_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/avaru_eega_illa_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/avaru_eega_illa_2_nat.mp3"></audio></span></div><br /><span class="gloss">They’re not here now.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Nantara nanage kare maadi. Nimma phone number eshtu?</span>
+        <div class="audio-block" data-slug="sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Call me later. What’s your phone number?</span></p>
+        <p><span class="who">Other</span><br /><span class="line">Sari. Naanu phone maadtini.</span>
+        <div class="audio-block" data-slug="sari_naanu_phone_maadtini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_naanu_phone_maadtini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_naanu_phone_maadtini_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. I’ll call.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Gothaytu. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="gothaytu_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_nat.mp3"></audio></span></div><br /><span class="gloss">Got it. Thank you.</span></p>
+      </div>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Call me”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Nanage nodona maadi</button>
+          <button type="button" data-answer="correct">Nanage kare maadi</button>
+          <button type="button" data-answer="wrong">Nanage manege maadi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “Who is speaking?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Yaaru maatadtiddira?</button>
+          <button type="button" data-answer="wrong">Elli hogtiddiri?</button>
+          <button type="button" data-answer="wrong">Eshtu gante aytu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “Wait one minute”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Ondu gante banni</button>
+          <button type="button" data-answer="wrong">Ondu rupayi kaayri</button>
+          <button type="button" data-answer="correct">Ondu nimisha kaayri</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “They’re not here now”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Avaru eega ide</button>
+          <button type="button" data-answer="correct">Avaru eega illa</button>
+          <button type="button" data-answer="wrong">Avaru eega aytu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Wrong number”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Tappa number</button>
+          <button type="button" data-answer="wrong">Tumba number</button>
+          <button type="button" data-answer="wrong">Swalpa number</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “do (polite)” (L6)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">banni</button>
+          <button type="button" data-answer="correct">maadi</button>
+          <button type="button" data-answer="wrong">hogtini</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Call me.</li>
+          <li>Who is speaking?</li>
+          <li>My name is Prayank.</li>
+          <li>Wait one minute.</li>
+          <li>They’re not here now.</li>
+          <li>Call me later. What’s your phone number?</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>Save one real contact note with <strong>Nanage kare maadi</strong> / <strong>Nantara kare maadi</strong> said out loud once.</li>
+          <li>Practice a 20-second fake call: Halo → name → one request → dhanyavadagalu.</li>
+          <li>If someone texts first, reply once with a voice note using at least two phrases from this lesson.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Ground phone lines in
+        <a href="https://wikitravel.org/en/Kannada_phrasebook#On_the_phone">Wikitravel · On the phone</a>
+        and what society staff / shops actually say in Bengaluru (heavy EN+KN mix: phone, number, busy, call).
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Heard a phone line you can’t parse (missed call, WhatsApp call, “ring aytu”)? Paste it — we’ll decode.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0009-what-time-clock.html">← Lesson 0009</a>
+        <a href="../reference/phone-call-cheatsheet.html">Reference · phone call</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

@@ -335,6 +335,76 @@ KN: dict[str, str] = {
     "nantara / baadige": "ನಂತರ",
     "baadige": "ಬಾದಿಗೆ",
     "nimisha": "ನಿಮಿಷ",
+    # L10 phone call
+    "halo": "ಹಲೋ",
+    "kare": "ಕರೆ",
+    "phone": "ಫೋನ್",
+    "number": "ನಂಬರ್",
+    "yaaru": "ಯಾರು",
+    "maatadu": "ಮಾತಾಡು",
+    "maatadtiddira": "ಮಾತಾಡ್ತಿದ್ದೀರಾ",
+    "kaayri": "ಕಾಯ್ರಿ",
+    "avaru": "ಅವರು",
+    "illa": "ಇಲ್ಲ",
+    "tappa": "ತಪ್ಪ",
+    "aagide": "ಆಗಿದೆ",
+    "iddara": "ಇದ್ದಾರಾ",
+    "help": "ಹೆಲ್ಪ್",
+    "line": "ಲೈನ್",
+    "busy": "ಬಿಸಿ",
+    "nanage kare maadi": "ನನಗೆ ಕರೆ ಮಾಡಿ",
+    "naanu phone maadtini": "ನಾನು ಫೋನ್ ಮಾಡ್ತೀನಿ",
+    "ondu nimisha kaayri": "ಒಂದು ನಿಮಿಷ ಕಾಯ್ರಿ",
+    "ondu nimisha": "ಒಂದು ನಿಮಿಷ",
+    "yaaru maatadtiddira": "ಯಾರು ಮಾತಾಡ್ತಿದ್ದೀರಾ",
+    "yaaru maatadtiddira?": "ಯಾರು ಮಾತಾಡ್ತಿದ್ದೀರಾ?",
+    "avaru eega illa": "ಅವರು ಈಗ ಇಲ್ಲ",
+    "tappa number": "ತಪ್ಪ ನಂಬರ್",
+    "line busy aagide": "ಲೈನ್ ಬಿಸಿ ಆಗಿದೆ",
+    "line busy": "ಲೈನ್ ಬಿಸಿ",
+    "nimma phone number eshtu": "ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಎಷ್ಟು",
+    "nimma phone number eshtu?": "ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಎಷ್ಟು?",
+    "phone number": "ಫೋನ್ ನಂಬರ್",
+    "nantara nanage kare maadi": "ನಂತರ ನನಗೆ ಕರೆ ಮಾಡಿ",
+    "nantara kare maadi": "ನಂತರ ಕರೆ ಮಾಡಿ",
+    "kare maadi": "ಕರೆ ಮಾಡಿ",
+    "phone maadi": "ಫೋನ್ ಮಾಡಿ",
+    "phone maadtini": "ಫೋನ್ ಮಾಡ್ತೀನಿ",
+    "halo. nanna hesaru prayank": "ಹಲೋ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್",
+    "halo. nanna hesaru prayank.": "ಹಲೋ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್",
+    "sari. yaaru maatadtiddira": "ಸರಿ. ಯಾರು ಮಾತಾಡ್ತಿದ್ದೀರಾ",
+    "sari. yaaru maatadtiddira?": "ಸರಿ. ಯಾರು ಮಾತಾಡ್ತಿದ್ದೀರಾ?",
+    "nanna hesaru prayank. nanage kare maadi — swalpa help beku": (
+        "ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್. ನನಗೆ ಕರೆ ಮಾಡಿ. ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕು"
+    ),
+    "nanna hesaru prayank. nanage kare maadi - swalpa help beku": (
+        "ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್. ನನಗೆ ಕರೆ ಮಾಡಿ. ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕು"
+    ),
+    "nanna hesaru prayank. nanage kare maadi. swalpa help beku": (
+        "ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್. ನನಗೆ ಕರೆ ಮಾಡಿ. ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕು"
+    ),
+    "swalpa help beku": "ಸ್ವಲ್ಪ ಹೆಲ್ಪ್ ಬೇಕು",
+    "help beku": "ಹೆಲ್ಪ್ ಬೇಕು",
+    "sari. ondu nimisha kaayri": "ಸರಿ. ಒಂದು ನಿಮಿಷ ಕಾಯ್ರಿ",
+    "sari. ondu nimisha kaayri.": "ಸರಿ. ಒಂದು ನಿಮಿಷ ಕಾಯ್ರಿ",
+    "sari. dhanyavadagalu": "ಸರಿ. ಧನ್ಯವಾದಗಳು",
+    "sari. dhanyavadagalu.": "ಸರಿ. ಧನ್ಯವಾದಗಳು",
+    "halo. ravi avaru iddara": "ಹಲೋ. ರವಿ ಅವರು ಇದ್ದಾರಾ",
+    "halo. ravi avaru iddara?": "ಹಲೋ. ರವಿ ಅವರು ಇದ್ದಾರಾ?",
+    "ravi avaru iddara": "ರವಿ ಅವರು ಇದ್ದಾರಾ",
+    "ravi avaru iddara?": "ರವಿ ಅವರು ಇದ್ದಾರಾ?",
+    "avaru iddara": "ಅವರು ಇದ್ದಾರಾ",
+    "avaru iddara?": "ಅವರು ಇದ್ದಾರಾ?",
+    "sari. nantara nanage kare maadi. nimma phone number eshtu": (
+        "ಸರಿ. ನಂತರ ನನಗೆ ಕರೆ ಮಾಡಿ. ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಎಷ್ಟು"
+    ),
+    "sari. nantara nanage kare maadi. nimma phone number eshtu?": (
+        "ಸರಿ. ನಂತರ ನನಗೆ ಕರೆ ಮಾಡಿ. ನಿಮ್ಮ ಫೋನ್ ನಂಬರ್ ಎಷ್ಟು?"
+    ),
+    "sari. naanu phone maadtini": "ಸರಿ. ನಾನು ಫೋನ್ ಮಾಡ್ತೀನಿ",
+    "sari. naanu phone maadtini.": "ಸರಿ. ನಾನು ಫೋನ್ ಮಾಡ್ತೀನಿ",
+    "maatadu / maatadtiddira": "ಮಾತಾಡು",
+    "call me": "ನನಗೆ ಕರೆ ಮಾಡಿ",
 }
 
 # Pure English / non-spoken chrome to skip when standalone

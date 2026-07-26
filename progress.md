@@ -2,7 +2,7 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A1 — public scripts + politeness + time greetings + numbers through 20 + clock time.
+A1 — public scripts + politeness + time greetings + numbers through 20 + clock time + phone call spine.
 
 ## Lessons
 | # | Outcome | Status | File |
@@ -15,10 +15,11 @@ A1 — public scripts + politeness + time greetings + numbers through 20 + clock
 | 6 | Excuse me / help / sorry | Ready | `0006-excuse-me-help-sorry.html` |
 | 7 | Time-of-day greetings | Ready | `0007-time-of-day-greetings.html` |
 | 8 | Numbers 11–20 + money stretch | Ready | `0008-numbers-11-20.html` |
-| 9 | Clock time (eshtu gante) | **Ready** | `0009-what-time-clock.html` |
+| 9 | Clock time (eshtu gante) | Ready | `0009-what-time-clock.html` |
+| 10 | Phone call basics | **Ready** | `0010-phone-call-basics.html` |
 
-## L9 core
-gante · eshtu gante (aytu)? · N gante aytu · N gante-ge · ardha · eega · banni · late aytu · yaavaaga + schedule
+## L10 core
+kare · phone · Nanage kare maadi · Naanu phone maadtini · Ondu nimisha kaayri · Yaaru maatadtiddira? · Avaru eega illa · Tappa number · Line busy aagide · Nimma phone number eshtu?
 
 ## Next candidates
-Phone/calling · weather/small talk · society staff scripts · minutes past the hour
+Weather/small talk · society staff scripts · minutes past the hour · auto destination confirm
