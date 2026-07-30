@@ -340,6 +340,30 @@
       ]
     },
     {
+      "slug": "cold",
+      "type": "word",
+      "roman": "cold",
+      "kannada": "ಕೋಲ್ಡ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "cold.mp3"
+      ]
+    },
+    {
+      "slug": "cough",
+      "type": "word",
+      "roman": "cough",
+      "kannada": "ಕಫ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "cough.mp3"
+      ]
+    },
+    {
       "slug": "dayavittu",
       "type": "word",
       "roman": "Dayavittu",
@@ -349,6 +373,18 @@
       ],
       "files": [
         "dayavittu.mp3"
+      ]
+    },
+    {
+      "slug": "days",
+      "type": "word",
+      "roman": "days",
+      "kannada": "ಡೇಸ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "days.mp3"
       ]
     },
     {
@@ -469,6 +505,18 @@
       ],
       "files": [
         "eshtu.mp3"
+      ]
+    },
+    {
+      "slug": "fever",
+      "type": "word",
+      "roman": "fever",
+      "kannada": "ಫೀವರ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "fever.mp3"
       ]
     },
     {
@@ -1039,6 +1087,18 @@
       ]
     },
     {
+      "slug": "kudi",
+      "type": "word",
+      "roman": "kudi",
+      "kannada": "ಕುಡಿ",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "kudi.mp3"
+      ]
+    },
+    {
       "slug": "lift",
       "type": "word",
       "roman": "lift",
@@ -1156,6 +1216,18 @@
       ],
       "files": [
         "matte.mp3"
+      ]
+    },
+    {
+      "slug": "medicine",
+      "type": "word",
+      "roman": "medicine",
+      "kannada": "ಮೆಡಿಸಿನ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "medicine.mp3"
       ]
     },
     {
@@ -1466,6 +1538,18 @@
       ]
     },
     {
+      "slug": "pain",
+      "type": "word",
+      "roman": "pain",
+      "kannada": "ಪೇನ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "pain.mp3"
+      ]
+    },
+    {
       "slug": "parking",
       "type": "word",
       "roman": "Parking",
@@ -1499,6 +1583,18 @@
       ],
       "files": [
         "piece.mp3"
+      ]
+    },
+    {
+      "slug": "prescription",
+      "type": "word",
+      "roman": "prescription",
+      "kannada": "ಪ್ರಿಸ್ಕ್ರಿಪ್ಶನ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "prescription.mp3"
       ]
     },
     {
@@ -1625,6 +1721,18 @@
       ]
     },
     {
+      "slug": "tablet",
+      "type": "word",
+      "roman": "tablet",
+      "kannada": "ಟ್ಯಾಬ್ಲೆಟ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "tablet.mp3"
+      ]
+    },
+    {
       "slug": "tappa",
       "type": "word",
       "roman": "tappa",
@@ -1658,6 +1766,18 @@
       ],
       "files": [
         "thirgi.mp3"
+      ]
+    },
+    {
+      "slug": "times",
+      "type": "word",
+      "roman": "times",
+      "kannada": "ಟೈಮ್ಸ್",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "times.mp3"
       ]
     },
     {
@@ -1758,6 +1878,34 @@
       "files": [
         "adhu_eshtu_slow.mp3",
         "adhu_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "after_food",
+      "type": "sentence",
+      "roman": "after food",
+      "kannada": "ಆಫ್ಟರ್ ಫುಡ್",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "after_food_slow.mp3",
+        "after_food_nat.mp3"
+      ]
+    },
+    {
+      "slug": "after_food_na",
+      "type": "sentence",
+      "roman": "After food na?",
+      "kannada": "ಆಫ್ಟರ್ ಫುಡ್ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "after_food_na_slow.mp3",
+        "after_food_na_nat.mp3"
       ]
     },
     {
@@ -1881,7 +2029,8 @@
       "kannada": "ಐವತ್ತು ರೂಪಾಯಿ",
       "kind": "dialogue",
       "lessons": [
-        "0005"
+        "0005",
+        "0017"
       ],
       "files": [
         "aivattu_rupayi_slow.mp3",
@@ -2214,6 +2363,20 @@
       ]
     },
     {
+      "slug": "cold_ide",
+      "type": "sentence",
+      "roman": "Cold ide",
+      "kannada": "ಕೋಲ್ಡ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "cold_ide_slow.mp3",
+        "cold_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "correct_alla",
       "type": "sentence",
       "roman": "correct alla",
@@ -2228,6 +2391,20 @@
       ]
     },
     {
+      "slug": "cough_ide",
+      "type": "sentence",
+      "roman": "Cough ide",
+      "kannada": "ಕಫ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "cough_ide_slow.mp3",
+        "cough_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "dayavittu_door_open_maadi",
       "type": "sentence",
       "roman": "Dayavittu door open maadi",
@@ -2239,6 +2416,20 @@
       "files": [
         "dayavittu_door_open_maadi_slow.mp3",
         "dayavittu_door_open_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "dayavittu_idhu_kodri",
+      "type": "sentence",
+      "roman": "Dayavittu idhu kodri",
+      "kannada": "ದಯವಿಟ್ಟು ಇದು ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "dayavittu_idhu_kodri_slow.mp3",
+        "dayavittu_idhu_kodri_nat.mp3"
       ]
     },
     {
@@ -2268,6 +2459,34 @@
       "files": [
         "dhanyavadagalu_2_slow.mp3",
         "dhanyavadagalu_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "doctor_nodidira",
+      "type": "sentence",
+      "roman": "Doctor nodidira?",
+      "kannada": "ಡಾಕ್ಟರ್ ನೋಡಿದೀರಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "doctor_nodidira_slow.mp3",
+        "doctor_nodidira_nat.mp3"
+      ]
+    },
+    {
+      "slug": "doctor_prescription_illa",
+      "type": "sentence",
+      "roman": "Doctor prescription illa",
+      "kannada": "ಡಾಕ್ಟರ್ ಪ್ರಿಸ್ಕ್ರಿಪ್ಶನ್ ಇಲ್ಲ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "doctor_prescription_illa_slow.mp3",
+        "doctor_prescription_illa_nat.mp3"
       ]
     },
     {
@@ -2510,6 +2729,20 @@
       ]
     },
     {
+      "slug": "eradu_times",
+      "type": "sentence",
+      "roman": "Eradu times",
+      "kannada": "ಎರಡು ಟೈಮ್ಸ್",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "eradu_times_slow.mp3",
+        "eradu_times_nat.mp3"
+      ]
+    },
+    {
       "slug": "eshtu_aytu",
       "type": "sentence",
       "roman": "Eshtu aytu?",
@@ -2517,7 +2750,8 @@
       "kind": "dialogue",
       "lessons": [
         "0005",
-        "0013"
+        "0013",
+        "0017"
       ],
       "files": [
         "eshtu_aytu_slow.mp3",
@@ -3087,6 +3321,20 @@
       ]
     },
     {
+      "slug": "haudu_neeru_jasti_kudi_rest_maadi",
+      "type": "sentence",
+      "roman": "Haudu. Neeru jasti kudi. Rest maadi.",
+      "kannada": "ಹೌದು. ನೀರು ಜಾಸ್ತಿ ಕುಡಿ. ರೆಸ್ಟ್ ಮಾಡಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "haudu_neeru_jasti_kudi_rest_maadi_slow.mp3",
+        "haudu_neeru_jasti_kudi_rest_maadi_nat.mp3"
+      ]
+    },
+    {
       "slug": "haudu_nimma_hesaru",
       "type": "sentence",
       "roman": "Haudu. Nimma hesaru?",
@@ -3126,6 +3374,34 @@
       "files": [
         "heghe_hogbeku_slow.mp3",
         "heghe_hogbeku_nat.mp3"
+      ]
+    },
+    {
+      "slug": "heghe_tagobeku",
+      "type": "sentence",
+      "roman": "Heghe tagobeku?",
+      "kannada": "ಹೇಗೆ ತಗೊಬೇಕು?",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "heghe_tagobeku_slow.mp3",
+        "heghe_tagobeku_nat.mp3"
+      ]
+    },
+    {
+      "slug": "heghe_tagobeku_ondu_tablet_na",
+      "type": "sentence",
+      "roman": "Heghe tagobeku? Ondu tablet na?",
+      "kannada": "ಹೇಗೆ ತಗೊಬೇಕು? ಒಂದು ಟ್ಯಾಬ್ಲೆಟ್ ನಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "heghe_tagobeku_ondu_tablet_na_slow.mp3",
+        "heghe_tagobeku_ondu_tablet_na_nat.mp3"
       ]
     },
     {
@@ -3283,6 +3559,20 @@
       ]
     },
     {
+      "slug": "idhu_tablet_after_food_eradu_times",
+      "type": "sentence",
+      "roman": "Idhu tablet. After food, eradu times.",
+      "kannada": "ಇದು ಟ್ಯಾಬ್ಲೆಟ್. ಆಫ್ಟರ್ ಫುಡ್, ಎರಡು ಟೈಮ್ಸ್",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "idhu_tablet_after_food_eradu_times_slow.mp3",
+        "idhu_tablet_after_food_eradu_times_nat.mp3"
+      ]
+    },
+    {
       "slug": "idli_eradu_beku",
       "type": "sentence",
       "roman": "Idli eradu beku",
@@ -3336,6 +3626,20 @@
       "files": [
         "iggade_neeru_kodri_slow.mp3",
         "iggade_neeru_kodri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "illave_medicine_beku_swalpa_soft",
+      "type": "sentence",
+      "roman": "Illave. Medicine beku — swalpa soft.",
+      "kannada": "ಇಲ್ಲವೇ. ಮೆಡಿಸಿನ್ ಬೇಕು — ಸ್ವಲ್ಪ ಸಾಫ್ಟ್",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "illave_medicine_beku_swalpa_soft_slow.mp3",
+        "illave_medicine_beku_swalpa_soft_nat.mp3"
       ]
     },
     {
@@ -3927,6 +4231,20 @@
       ]
     },
     {
+      "slug": "medicine_beku",
+      "type": "sentence",
+      "roman": "Medicine beku",
+      "kannada": "ಮೆಡಿಸಿನ್ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "medicine_beku_slow.mp3",
+        "medicine_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "mele_hogi",
       "type": "sentence",
       "roman": "Mele hogi",
@@ -3966,6 +4284,20 @@
       "files": [
         "milk_eradu_packet_beku_bread_ondu_slow.mp3",
         "milk_eradu_packet_beku_bread_ondu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "moodu_days",
+      "type": "sentence",
+      "roman": "Moodu days",
+      "kannada": "ಮೂರು ಡೇಸ್",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "moodu_days_slow.mp3",
+        "moodu_days_nat.mp3"
       ]
     },
     {
@@ -4137,6 +4469,20 @@
       ]
     },
     {
+      "slug": "namaskara_dayavittu_nanage_fever_ide_cold_ide",
+      "type": "sentence",
+      "roman": "Namaskara. Dayavittu — nanage fever ide, cold ide.",
+      "kannada": "ನಮಸ್ಕಾರ. ದಯವಿಟ್ಟು — ನನಗೆ ಫೀವರ್ ಇದೆ, ಕೋಲ್ಡ್ ಇದೆ",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "namaskara_dayavittu_nanage_fever_ide_cold_ide_slow.mp3",
+        "namaskara_dayavittu_nanage_fever_ide_cold_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "namaskara_filter_coffee_ondu_kodri_idli_eradu_beku",
       "type": "sentence",
       "roman": "Namaskara. Filter coffee ondu kodri. Idli eradu beku.",
@@ -4249,6 +4595,20 @@
       "files": [
         "namaskara_yaaru_slow.mp3",
         "namaskara_yaaru_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nanage_fever_ide",
+      "type": "sentence",
+      "roman": "Nanage fever ide",
+      "kannada": "ನನಗೆ ಫೀವರ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "nanage_fever_ide_slow.mp3",
+        "nanage_fever_ide_nat.mp3"
       ]
     },
     {
@@ -4405,6 +4765,20 @@
       "files": [
         "nantara_nanage_kare_maadi_slow.mp3",
         "nantara_nanage_kare_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "neeru_jasti_kudi",
+      "type": "sentence",
+      "roman": "Neeru jasti kudi",
+      "kannada": "ನೀರು ಜಾಸ್ತಿ ಕುಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "neeru_jasti_kudi_slow.mp3",
+        "neeru_jasti_kudi_nat.mp3"
       ]
     },
     {
@@ -4619,6 +4993,34 @@
       ]
     },
     {
+      "slug": "ondu_tablet",
+      "type": "sentence",
+      "roman": "Ondu tablet",
+      "kannada": "ಒಂದು ಟ್ಯಾಬ್ಲೆಟ್",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "ondu_tablet_slow.mp3",
+        "ondu_tablet_nat.mp3"
+      ]
+    },
+    {
+      "slug": "pain_ide",
+      "type": "sentence",
+      "roman": "Pain ide",
+      "kannada": "ಪೇನ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "pain_ide_slow.mp3",
+        "pain_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "parcel_ide_na",
       "type": "sentence",
       "roman": "Parcel ide na?",
@@ -4658,6 +5060,20 @@
       "files": [
         "prayank_nanna_flat-ge_kodri_mele_hogi_302_slow.mp3",
         "prayank_nanna_flat-ge_kodri_mele_hogi_302_nat.mp3"
+      ]
+    },
+    {
+      "slug": "rest_maadi",
+      "type": "sentence",
+      "roman": "Rest maadi",
+      "kannada": "ರೆಸ್ಟ್ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "rest_maadi_slow.mp3",
+        "rest_maadi_nat.mp3"
       ]
     },
     {
@@ -4886,7 +5302,8 @@
         "0012",
         "0013",
         "0015",
-        "0016"
+        "0016",
+        "0017"
       ],
       "files": [
         "sari_dhanyavadagalu_slow.mp3",
@@ -4905,6 +5322,20 @@
       "files": [
         "sari_elu_gante_ardha_ok_na_slow.mp3",
         "sari_elu_gante_ardha_ok_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_eshtu_aytu",
+      "type": "sentence",
+      "roman": "Sari. Eshtu aytu?",
+      "kannada": "ಸರಿ. ಎಷ್ಟು ಆಯ್ತು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "sari_eshtu_aytu_slow.mp3",
+        "sari_eshtu_aytu_nat.mp3"
       ]
     },
     {
@@ -5132,6 +5563,20 @@
       ]
     },
     {
+      "slug": "side_effect_ide_na",
+      "type": "sentence",
+      "roman": "Side effect ide na?",
+      "kannada": "ಸೈಡ್ ಎಫೆಕ್ಟ್ ಇದೆ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "side_effect_ide_na_slow.mp3",
+        "side_effect_ide_na_nat.mp3"
+      ]
+    },
+    {
       "slug": "soft_aagilla",
       "type": "sentence",
       "roman": "Soft aagilla",
@@ -5157,6 +5602,20 @@
       "files": [
         "strong_maadi_slow.mp3",
         "strong_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "strong_medicine_alla_na",
+      "type": "sentence",
+      "roman": "Strong medicine alla na?",
+      "kannada": "ಸ್ಟ್ರಾಂಗ್ ಮೆಡಿಸಿನ್ ಅಲ್ಲ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "strong_medicine_alla_na_slow.mp3",
+        "strong_medicine_alla_na_nat.mp3"
       ]
     },
     {
@@ -5354,6 +5813,20 @@
       "files": [
         "swalpa_wait_maadi_slow.mp3",
         "swalpa_wait_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "tablet_beku",
+      "type": "sentence",
+      "roman": "Tablet beku",
+      "kannada": "ಟ್ಯಾಬ್ಲೆಟ್ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "tablet_beku_slow.mp3",
+        "tablet_beku_nat.mp3"
       ]
     },
     {
@@ -5579,6 +6052,20 @@
       "files": [
         "weight_kammi_slow.mp3",
         "weight_kammi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "without_prescription_sari_na",
+      "type": "sentence",
+      "roman": "Without prescription sari na?",
+      "kannada": "ವಿದೌಟ್ ಪ್ರಿಸ್ಕ್ರಿಪ್ಶನ್ ಸರಿ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0017"
+      ],
+      "files": [
+        "without_prescription_sari_na_slow.mp3",
+        "without_prescription_sari_na_nat.mp3"
       ]
     },
     {
