@@ -48,6 +48,18 @@
       ]
     },
     {
+      "slug": "aaytu",
+      "type": "word",
+      "roman": "aaytu",
+      "kannada": "ಆಯ್ತು",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "aaytu.mp3"
+      ]
+    },
+    {
       "slug": "adhu",
       "type": "word",
       "roman": "adhu",
@@ -113,7 +125,8 @@
       "roman": "ardha",
       "kannada": "ಅರ್ಧ",
       "lessons": [
-        "0009"
+        "0009",
+        "0014"
       ],
       "files": [
         "ardha.mp3"
@@ -877,6 +890,18 @@
       ]
     },
     {
+      "slug": "kaalu",
+      "type": "word",
+      "roman": "kaalu",
+      "kannada": "ಕಾಲು",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "kaalu.mp3"
+      ]
+    },
+    {
       "slug": "kaayri",
       "type": "word",
       "roman": "kaayri",
@@ -1105,6 +1130,18 @@
       ]
     },
     {
+      "slug": "munche",
+      "type": "word",
+      "roman": "munche",
+      "kannada": "ಮುಂಚೆ",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "munche.mp3"
+      ]
+    },
+    {
       "slug": "naale",
       "type": "word",
       "roman": "Naale",
@@ -1183,7 +1220,8 @@
       "kannada": "ನಂತರ",
       "lessons": [
         "0004",
-        "0009"
+        "0009",
+        "0014"
       ],
       "files": [
         "nantara.mp3"
@@ -1244,7 +1282,8 @@
       "kannada": "ನಿಮಿಷ",
       "lessons": [
         "0006",
-        "0009"
+        "0009",
+        "0014"
       ],
       "files": [
         "nimisha.mp3"
@@ -1621,7 +1660,8 @@
       "kannada": "ಐದು ಗಂಟೆ",
       "kind": "vocab_phrase",
       "lessons": [
-        "0009"
+        "0009",
+        "0014"
       ],
       "files": [
         "aidu_gante_slow.mp3",
@@ -1635,7 +1675,8 @@
       "kannada": "ಐದು ಗಂಟೆ ಅರ್ಧ",
       "kind": "phrase",
       "lessons": [
-        "0009"
+        "0009",
+        "0014"
       ],
       "files": [
         "aidu_gante_ardha_slow.mp3",
@@ -1654,6 +1695,76 @@
       "files": [
         "aidu_gante_aytu_slow.mp3",
         "aidu_gante_aytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "aidu_gante_hattu_nimisha",
+      "type": "sentence",
+      "roman": "Aidu gante hattu nimisha",
+      "kannada": "ಐದು ಗಂಟೆ ಹತ್ತು ನಿಮಿಷ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "aidu_gante_hattu_nimisha_slow.mp3",
+        "aidu_gante_hattu_nimisha_nat.mp3"
+      ]
+    },
+    {
+      "slug": "aidu_gante_kaalu",
+      "type": "sentence",
+      "roman": "Aidu gante kaalu",
+      "kannada": "ಐದು ಗಂಟೆ ಕಾಲು",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "aidu_gante_kaalu_slow.mp3",
+        "aidu_gante_kaalu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "aidu_gante-ge_munche",
+      "type": "sentence",
+      "roman": "Aidu gante-ge munche",
+      "kannada": "ಐದು ಗಂಟೆಗೆ ಮುಂಚೆ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "aidu_gante-ge_munche_slow.mp3",
+        "aidu_gante-ge_munche_nat.mp3"
+      ]
+    },
+    {
+      "slug": "aidu_gante-ge_nantara",
+      "type": "sentence",
+      "roman": "Aidu gante-ge nantara",
+      "kannada": "ಐದು ಗಂಟೆಗೆ ನಂತರ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "aidu_gante-ge_nantara_slow.mp3",
+        "aidu_gante-ge_nantara_nat.mp3"
+      ]
+    },
+    {
+      "slug": "aidu_nimisha_late",
+      "type": "sentence",
+      "roman": "Aidu nimisha late",
+      "kannada": "ಐದು ನಿಮಿಷ ಲೇಟ್",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "aidu_nimisha_late_slow.mp3",
+        "aidu_nimisha_late_nat.mp3"
       ]
     },
     {
@@ -1997,6 +2108,20 @@
       ]
     },
     {
+      "slug": "eega_eshtu_gante",
+      "type": "sentence",
+      "roman": "Eega eshtu gante?",
+      "kannada": "ಈಗ ಎಷ್ಟು ಗಂಟೆ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "eega_eshtu_gante_slow.mp3",
+        "eega_eshtu_gante_nat.mp3"
+      ]
+    },
+    {
       "slug": "elli_hogtiddiri",
       "type": "sentence",
       "roman": "Elli hogtiddiri?",
@@ -2050,6 +2175,48 @@
       "files": [
         "elu_gante_slow.mp3",
         "elu_gante_nat.mp3"
+      ]
+    },
+    {
+      "slug": "elu_gante_aaytu",
+      "type": "sentence",
+      "roman": "Elu gante aaytu",
+      "kannada": "ಏಳು ಗಂಟೆ ಆಯ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "elu_gante_aaytu_slow.mp3",
+        "elu_gante_aaytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "elu_gante-ge_munche",
+      "type": "sentence",
+      "roman": "Elu gante-ge munche",
+      "kannada": "ಏಳು ಗಂಟೆಗೆ ಮುಂಚೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "elu_gante-ge_munche_slow.mp3",
+        "elu_gante-ge_munche_nat.mp3"
+      ]
+    },
+    {
+      "slug": "elu_gante-ge_nantara",
+      "type": "sentence",
+      "roman": "Elu gante-ge nantara",
+      "kannada": "ಏಳು ಗಂಟೆಗೆ ನಂತರ",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "elu_gante-ge_nantara_slow.mp3",
+        "elu_gante-ge_nantara_nat.mp3"
       ]
     },
     {
@@ -2420,6 +2587,48 @@
       ]
     },
     {
+      "slug": "hattu_gante_ippatthu_nimisha",
+      "type": "sentence",
+      "roman": "Hattu gante ippatthu nimisha",
+      "kannada": "ಹತ್ತು ಗಂಟೆ ಇಪ್ಪತ್ತು ನಿಮಿಷ",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "hattu_gante_ippatthu_nimisha_slow.mp3",
+        "hattu_gante_ippatthu_nimisha_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hattu_gante_kaalu-ge",
+      "type": "sentence",
+      "roman": "Hattu gante kaalu-ge",
+      "kannada": "ಹತ್ತು ಗಂಟೆ ಕಾಲುಗೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "hattu_gante_kaalu-ge_slow.mp3",
+        "hattu_gante_kaalu-ge_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hattu_gante_kaalu-ge_2",
+      "type": "sentence",
+      "roman": "Hattu gante kaalu-ge.",
+      "kannada": "ಹತ್ತು ಗಂಟೆ ಕಾಲುಗೆ",
+      "kind": "dialogue",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "hattu_gante_kaalu-ge_2_slow.mp3",
+        "hattu_gante_kaalu-ge_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "hattu_gante-ge",
       "type": "sentence",
       "roman": "Hattu gante-ge",
@@ -2445,6 +2654,20 @@
       "files": [
         "hattu_gante-ge_banni_slow.mp3",
         "hattu_gante-ge_banni_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hattu_gante_innu_hattu_nimisha_ide",
+      "type": "sentence",
+      "roman": "Hattu gante. Innu hattu nimisha ide.",
+      "kannada": "ಹತ್ತು ಗಂಟೆ. ಇನ್ನೂ ಹತ್ತು ನಿಮಿಷ ಇದೆ",
+      "kind": "dialogue",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "hattu_gante_innu_hattu_nimisha_ide_slow.mp3",
+        "hattu_gante_innu_hattu_nimisha_ide_nat.mp3"
       ]
     },
     {
@@ -2851,6 +3074,20 @@
       "files": [
         "innu_eradu_nimisha_slow.mp3",
         "innu_eradu_nimisha_nat.mp3"
+      ]
+    },
+    {
+      "slug": "innu_hattu_nimisha_ide",
+      "type": "sentence",
+      "roman": "Innu hattu nimisha ide",
+      "kannada": "ಇನ್ನೂ ಹತ್ತು ನಿಮಿಷ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "innu_hattu_nimisha_ide_slow.mp3",
+        "innu_hattu_nimisha_ide_nat.mp3"
       ]
     },
     {
@@ -3938,6 +4175,20 @@
       ]
     },
     {
+      "slug": "sari_sari_elu_gante_ardha-ge_banni",
+      "type": "sentence",
+      "roman": "Sari sari. Elu gante ardha-ge banni.",
+      "kannada": "ಸರಿ ಸರಿ. ಏಳು ಗಂಟೆ ಅರ್ಧಕ್ಕೆ ಬನ್ನಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "sari_sari_elu_gante_ardha-ge_banni_slow.mp3",
+        "sari_sari_elu_gante_ardha-ge_banni_nat.mp3"
+      ]
+    },
+    {
       "slug": "sari_hadinaidu",
       "type": "sentence",
       "roman": "Sari, hadinaidu.",
@@ -4081,6 +4332,20 @@
       "files": [
         "sari_gotha_slow.mp3",
         "sari_gotha_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_gothaytu",
+      "type": "sentence",
+      "roman": "Sari. Gothaytu.",
+      "kannada": "ಸರಿ. ಗೊತ್ತಾಯ್ತು",
+      "kind": "dialogue",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "sari_gothaytu_slow.mp3",
+        "sari_gothaytu_nat.mp3"
       ]
     },
     {
@@ -4406,6 +4671,34 @@
       ]
     },
     {
+      "slug": "swalpa_late_aytu",
+      "type": "sentence",
+      "roman": "Swalpa late aytu",
+      "kannada": "ಸ್ವಲ್ಪ ಲೇಟ್ ಆಯ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "swalpa_late_aytu_slow.mp3",
+        "swalpa_late_aytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "swalpa_late_aytu_aidu_nimisha",
+      "type": "sentence",
+      "roman": "Swalpa late aytu — aidu nimisha.",
+      "kannada": "ಸ್ವಲ್ಪ ಲೇಟ್ ಆಯ್ತು — ಐದು ನಿಮಿಷ",
+      "kind": "dialogue",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "swalpa_late_aytu_aidu_nimisha_slow.mp3",
+        "swalpa_late_aytu_aidu_nimisha_nat.mp3"
+      ]
+    },
+    {
       "slug": "swalpa_less_sweet",
       "type": "sentence",
       "roman": "Swalpa less sweet",
@@ -4473,6 +4766,20 @@
       "files": [
         "time_ide_na_slow.mp3",
         "time_ide_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "time_sari_ide",
+      "type": "sentence",
+      "roman": "Time sari ide",
+      "kannada": "ಟೈಮ್ ಸರಿ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "time_sari_ide_slow.mp3",
+        "time_sari_ide_nat.mp3"
       ]
     },
     {
@@ -4665,11 +4972,26 @@
       "kannada": "ಯಾವಾಗ ಮೀಟಿಂಗ್?",
       "kind": "dialogue",
       "lessons": [
-        "0009"
+        "0009",
+        "0014"
       ],
       "files": [
         "yaavaaga_meeting_slow.mp3",
         "yaavaaga_meeting_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yaavaaga_start",
+      "type": "sentence",
+      "roman": "Yaavaaga start?",
+      "kannada": "ಯಾವಾಗ ಸ್ಟಾರ್ಟ್?",
+      "kind": "phrase",
+      "lessons": [
+        "0014"
+      ],
+      "files": [
+        "yaavaaga_start_slow.mp3",
+        "yaavaaga_start_nat.mp3"
       ]
     },
     {

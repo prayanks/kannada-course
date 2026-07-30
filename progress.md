@@ -2,16 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A1+ — street + society + auto ride spine.
+A1+ — clock through minutes; street + society scripts.
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–12 | Prior lessons | Ready | `0001`…`0012` |
-| 13 | Auto ride destination confirm | **Ready** | `0013-auto-ride-destination.html` |
+| 1–13 | Prior lessons | Ready | `0001`…`0013` |
+| 14 | Minutes past the hour | **Ready** | `0014-minutes-past-the-hour.html` |
 
-## L13 core
-hogona · gotha? · map nodri · illi nilsi · iggade bilisi · correct alla · innondu road · change ide na? · fare close eshtu aytu
+## L14 core
+kaalu (:15) · ardha (:30) · N nimisha · munche / nantara · late · innu … nimisha ide · schedule -ge
 
 ## Next candidates
-Minutes past the hour · shopping quantities · doctor/pharmacy
+Shopping quantities · doctor/pharmacy · hotel/check-in
