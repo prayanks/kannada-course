@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0013 · Auto ride (destination confirm)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0013</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~11 min</span>
+        </div>
+        <h1>Auto ride (destination confirm)</h1>
+        <p class="lede">
+          Get in, name the place, confirm the drop, steer left/right if needed, and pay — stitching L2–L4 + L3 money into one auto script.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Run:
+          <strong>…-ge hogona → Iggade bilisi · Illi nilsi · Eduru / balakke → Eshtu aytu? → Sari</strong>
+          without switching fully to English.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        …-ge eshtu? · Meter haki · Jaasti aytu · Eduru · Balakke · Yedakke · Hogona · Rupayi
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        Autos are daily Bengaluru. Drivers often start in Kannada even if they speak English.
+        A short, clear destination + stop/confirm vocabulary prevents wrong drops and awkward silence.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>place-ge + hogona / hogi</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Koramangala-ge hogona</strong> ≈ Let’s go to Koramangala<br />
+          <strong>Illi nilsi</strong> ≈ Stop here<br />
+          <strong>Iggade bilisi</strong> ≈ Drop (me) here<br />
+          Reuse direction words from L4 while moving.
+        </p>
+      </div>
+
+      <h2><span class="num">03</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Indiranagar-ge hogona</p>
+        <div class="audio-block" data-slug="indiranagar-ge_hogona"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/indiranagar-ge_hogona_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/indiranagar-ge_hogona_nat.mp3"></audio></span></div>
+        <p class="en">Let’s go to Indiranagar</p>
+        <p class="hi">≈ Indiranagar chalo</p>
+        <div class="meta">Any place + <strong>-ge</strong> + <strong>hogona</strong>. English place names are normal.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Gotha? · Map nodri</p>
+        <div class="audio-block" data-slug="gotha_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gotha_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gotha_2_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="map_nodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/map_nodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/map_nodri_nat.mp3"></audio></span></div>
+        <p class="en">Do you know it? · Please look at the map</p>
+        <p class="hi">≈ Pata hai? · Map dekho</p>
+        <div class="meta"><strong>Gotha?</strong> ≈ do you know? Show phone pin while saying <em>map nodri</em>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Illi nilsi · Iggade bilisi</p>
+        <div class="audio-block" data-slug="illi_nilsi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/illi_nilsi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/illi_nilsi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="iggade_bilisi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/iggade_bilisi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/iggade_bilisi_nat.mp3"></audio></span></div>
+        <p class="en">Stop here · Drop here</p>
+        <p class="hi">≈ Yahaan ruk jao · Yahi utaaro</p>
+        <div class="meta"><strong>nilsi</strong> = stop (polite-ish command). <strong>bilisi</strong> ≈ drop/let down.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa eduru · Nantara balakke</p>
+        <div class="audio-block" data-slug="swalpa_eduru"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="nantara_balakke"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nantara_balakke_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nantara_balakke_nat.mp3"></audio></span></div>
+        <p class="en">A bit straight · Then right</p>
+        <p class="hi">≈ Thoda seedha · Phir right</p>
+        <div class="meta">Live navigation — same L4 pack, used while seated.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Left side · Right side · Gate hattira</p>
+        <div class="audio-block" data-slug="left_side"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/left_side_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/left_side_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="right_side"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/right_side_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/right_side_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="gate_hattira"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gate_hattira_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gate_hattira_nat.mp3"></audio></span></div>
+        <p class="en">Left side · Right side · Near the gate</p>
+        <p class="hi">≈ Left / right · Gate ke paas</p>
+        <div class="meta">EN side words + <strong>hattira</strong> (L4 nearby).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Incorrect route · Wrong road</p>
+        <div class="audio-block" data-slug="incorrect_route"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/incorrect_route_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/incorrect_route_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="wrong_road"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/wrong_road_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/wrong_road_nat.mp3"></audio></span></div>
+        <p class="en">(you’ll say in EN often)</p>
+        <p class="hi">Galat rasta</p>
+        <div class="meta">Kannada rescue: <strong>Idhu correct alla</strong> · <strong>Innondu road hogi</strong>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Idhu correct alla · Innondu road hogi</p>
+        <div class="audio-block" data-slug="idhu_correct_alla"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idhu_correct_alla_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idhu_correct_alla_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="innondu_road_hogi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/innondu_road_hogi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/innondu_road_hogi_nat.mp3"></audio></span></div>
+        <p class="en">This is not correct · Take another road</p>
+        <p class="hi">≈ Yeh sahi nahi · Doosri road lo</p>
+        <div class="meta"><strong>alla</strong> (L8). <strong>innondu</strong> ≈ another one.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Illi sari · Eshtu aytu?</p>
+        <div class="audio-block" data-slug="illi_sari"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/illi_sari_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/illi_sari_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="eshtu_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_nat.mp3"></audio></span></div>
+        <p class="en">Here is fine · How much is it?</p>
+        <p class="hi">≈ Yahi theek · Kitna hua?</p>
+        <div class="meta">Close the trip: stop + L3/L5 bill ask. Then <strong>Sari</strong> + pay.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Change ide na? · Keep change</p>
+        <div class="audio-block" data-slug="change_ide_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/change_ide_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/change_ide_na_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="keep_change"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/keep_change_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/keep_change_nat.mp3"></audio></span></div>
+        <p class="en">Do you have change? · Keep the change</p>
+        <p class="hi">≈ Khulla hai? · Change rakh lo</p>
+        <div class="meta">EN “change/keep” is universal; Kannada ask uses <strong>ide na?</strong></div>
+      </div>
+
+      <h2><span class="num">04</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">hogona</span><div class="audio-block" data-slug="hogona"><audio controls preload="none" src="../assets/audio/hogona.mp3"></audio></div><span>let’s go</span><span>chalo</span></div>
+        <div class="row"><span class="kn">gotha?</span><div class="audio-block" data-slug="gotha"><audio controls preload="none" src="../assets/audio/gotha.mp3"></audio></div><span>do you know?</span><span>pata hai?</span></div>
+        <div class="row"><span class="kn">nilsi</span><div class="audio-block" data-slug="nilsi"><audio controls preload="none" src="../assets/audio/nilsi.mp3"></audio></div><span>stop</span><span>ruko</span></div>
+        <div class="row"><span class="kn">bilisi</span><div class="audio-block" data-slug="bilisi"><audio controls preload="none" src="../assets/audio/bilisi.mp3"></audio></div><span>drop (me)</span><span>utaaro</span></div>
+        <div class="row"><span class="kn">illi nilsi</span><div class="audio-block" data-slug="illi_nilsi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/illi_nilsi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/illi_nilsi_nat.mp3"></audio></span></div><span>stop here</span><span>yahaan ruko</span></div>
+        <div class="row"><span class="kn">iggade bilisi</span><div class="audio-block" data-slug="iggade_bilisi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/iggade_bilisi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/iggade_bilisi_nat.mp3"></audio></span></div><span>drop here</span><span>yahi utaaro</span></div>
+        <div class="row"><span class="kn">map nodri</span><div class="audio-block" data-slug="map_nodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/map_nodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/map_nodri_nat.mp3"></audio></span></div><span>look at map</span><span>map dekho</span></div>
+        <div class="row"><span class="kn">correct alla</span><div class="audio-block" data-slug="correct_alla"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/correct_alla_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/correct_alla_nat.mp3"></audio></span></div><span>not correct</span><span>sahi nahi</span></div>
+        <div class="row"><span class="kn">innondu</span><div class="audio-block" data-slug="innondu"><audio controls preload="none" src="../assets/audio/innondu.mp3"></audio></div><span>another</span><span>doosra</span></div>
+        <div class="row"><span class="kn">change ide na?</span><div class="audio-block" data-slug="change_ide_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/change_ide_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/change_ide_na_nat.mp3"></audio></span></div><span>have change?</span><span>khulla hai?</span></div>
+      </div>
+
+      <h2><span class="num">05</span> Model dialogue</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Koramangala-ge hogona. Meter haki.</span>
+        <div class="audio-block" data-slug="namaskara_koramangala-ge_hogona_meter_haki"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_koramangala-ge_hogona_meter_haki_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_koramangala-ge_hogona_meter_haki_nat.mp3"></audio></span></div><br /><span class="gloss">Hello. Let’s go to Koramangala. Put the meter.</span></p>
+        <p><span class="who">Driver</span><br /><span class="line">Sari. Gotha.</span>
+        <div class="audio-block" data-slug="sari_gotha"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_gotha_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_gotha_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. I know it.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Swalpa eduru… nantara balakke. Gate hattira.</span>
+        <div class="audio-block" data-slug="swalpa_eduru_nantara_balakke_gate_hattira"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nantara_balakke_gate_hattira_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_eduru_nantara_balakke_gate_hattira_nat.mp3"></audio></span></div><br /><span class="gloss">A bit straight… then right. Near the gate.</span></p>
+        <p><span class="who">Driver</span><br /><span class="line">Illi na?</span>
+        <div class="audio-block" data-slug="illi_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/illi_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/illi_na_nat.mp3"></audio></span></div><br /><span class="gloss">Here?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Haudu. Illi nilsi. Iggade bilisi.</span>
+        <div class="audio-block" data-slug="haudu_illi_nilsi_iggade_bilisi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_illi_nilsi_iggade_bilisi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_illi_nilsi_iggade_bilisi_nat.mp3"></audio></span></div><br /><span class="gloss">Yes. Stop here. Drop here.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Eshtu aytu?</span>
+        <div class="audio-block" data-slug="eshtu_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_nat.mp3"></audio></span></div><br /><span class="gloss">How much?</span></p>
+        <p><span class="who">Driver</span><br /><span class="line">Nooru.</span>
+        <div class="audio-block" data-slug="nooru_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nooru_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nooru_2_nat.mp3"></audio></span></div><br /><span class="gloss">Hundred.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+
+      <h2><span class="num">06</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Let’s go to Indiranagar”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Indiranagar-ge nilsi</button>
+          <button type="button" data-answer="correct">Indiranagar-ge hogona</button>
+          <button type="button" data-answer="wrong">Indiranagar-ge beda</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “Stop here”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Illi nilsi</button>
+          <button type="button" data-answer="wrong">Illi hogona</button>
+          <button type="button" data-answer="wrong">Illi bisi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “Drop here”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Iggade kare maadi</button>
+          <button type="button" data-answer="correct">Iggade bilisi</button>
+          <button type="button" data-answer="wrong">Iggade male</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “Do you know (the place)?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Gothaytu?</button>
+          <button type="button" data-answer="correct">Gotha?</button>
+          <button type="button" data-answer="wrong">Gottila?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “This is not correct”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Idhu correct alla</button>
+          <button type="button" data-answer="wrong">Idhu correct beku</button>
+          <button type="button" data-answer="wrong">Idhu correct gante</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “Put the meter” (L3)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Meter bilisi</button>
+          <button type="button" data-answer="correct">Meter haki</button>
+          <button type="button" data-answer="wrong">Meter hogona</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">07</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Let’s go to Koramangala. Put the meter.</li>
+          <li>Do you know it? Look at the map.</li>
+          <li>A bit straight, then right. Near the gate.</li>
+          <li>Stop here. Drop here.</li>
+          <li>This is not correct — take another road.</li>
+          <li>How much is it? Okay, thank you.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">08</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>On your next auto/cab: say destination with <strong>…-ge hogona</strong> (even if the rest is English).</li>
+          <li>At drop: try <strong>Illi nilsi</strong> or <strong>Iggade bilisi</strong>.</li>
+          <li>Ask <strong>Eshtu aytu?</strong> before paying once.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Primary source</h2>
+      <p class="cite">
+        Best textbook: your next ride. Support:
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks Kannada phrases</a>.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Driver used a phrase you missed at the drop pin? Type what you heard — we’ll decode it.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0012-weather-small-talk.html">← Lesson 0012</a>
+        <a href="../reference/auto-ride-cheatsheet.html">Reference · auto ride</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
