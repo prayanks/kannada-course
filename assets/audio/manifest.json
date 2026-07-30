@@ -228,6 +228,18 @@
       ]
     },
     {
+      "slug": "bisi",
+      "type": "word",
+      "roman": "bisi",
+      "kannada": "ಬಿಸಿ",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "bisi.mp3"
+      ]
+    },
+    {
       "slug": "cha",
       "type": "word",
       "roman": "cha",
@@ -240,6 +252,18 @@
       ]
     },
     {
+      "slug": "chali",
+      "type": "word",
+      "roman": "chali",
+      "kannada": "ಚಳಿ",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "chali.mp3"
+      ]
+    },
+    {
       "slug": "chennagidini",
       "type": "word",
       "roman": "Chennagidini",
@@ -249,6 +273,18 @@
       ],
       "files": [
         "chennagidini.mp3"
+      ]
+    },
+    {
+      "slug": "climate",
+      "type": "word",
+      "roman": "climate",
+      "kannada": "ಕ್ಲೈಮೇಟ್",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "climate.mp3"
       ]
     },
     {
@@ -685,6 +721,18 @@
       ]
     },
     {
+      "slug": "hottu",
+      "type": "word",
+      "roman": "hottu",
+      "kannada": "ಹೊತ್ತು",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "hottu.mp3"
+      ]
+    },
+    {
       "slug": "idhu",
       "type": "word",
       "roman": "idhu",
@@ -913,6 +961,18 @@
       ]
     },
     {
+      "slug": "mabbu",
+      "type": "word",
+      "roman": "mabbu",
+      "kannada": "ಮಬ್ಬು",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "mabbu.mp3"
+      ]
+    },
+    {
       "slug": "madhyahna",
       "type": "word",
       "roman": "madhyahna",
@@ -922,6 +982,18 @@
       ],
       "files": [
         "madhyahna.mp3"
+      ]
+    },
+    {
+      "slug": "male",
+      "type": "word",
+      "roman": "male",
+      "kannada": "ಮಳೆ",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "male.mp3"
       ]
     },
     {
@@ -1385,6 +1457,18 @@
       ]
     },
     {
+      "slug": "thandi",
+      "type": "word",
+      "roman": "thandi",
+      "kannada": "ತಣ್ಣಿ",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "thandi.mp3"
+      ]
+    },
+    {
       "slug": "thirgi",
       "type": "word",
       "roman": "thirgi",
@@ -1406,6 +1490,18 @@
       ],
       "files": [
         "tumba.mp3"
+      ]
+    },
+    {
+      "slug": "umba",
+      "type": "word",
+      "roman": "Umba",
+      "kannada": "ಅಲ್ವಾ",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "umba.mp3"
       ]
     },
     {
@@ -1599,6 +1695,20 @@
       ]
     },
     {
+      "slug": "bartha_ide",
+      "type": "sentence",
+      "roman": "bartha ide",
+      "kannada": "ಬರ್ತಾ ಇದೆ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "bartha_ide_slow.mp3",
+        "bartha_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "bill_kodri",
       "type": "sentence",
       "roman": "Bill kodri",
@@ -1624,6 +1734,20 @@
       "files": [
         "bill_kodri_eshtu_aytu_slow.mp3",
         "bill_kodri_eshtu_aytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "chali_bartha_ide",
+      "type": "sentence",
+      "roman": "Chali bartha ide",
+      "kannada": "ಚಳಿ ಬರ್ತಾ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "chali_bartha_ide_slow.mp3",
+        "chali_bartha_ide_nat.mp3"
       ]
     },
     {
@@ -1655,6 +1779,20 @@
       ]
     },
     {
+      "slug": "chennagidini_ivattu_tumba_bisi_sari_na",
+      "type": "sentence",
+      "roman": "Chennagidini. Ivattu tumba bisi, sari na?",
+      "kannada": "ಚೆನ್ನಾಗಿದ್ದೀನಿ. ಇವತ್ತು ತುಂಬಾ ಬಿಸಿ, ಸರಿ ನಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "chennagidini_ivattu_tumba_bisi_sari_na_slow.mp3",
+        "chennagidini_ivattu_tumba_bisi_sari_na_nat.mp3"
+      ]
+    },
+    {
       "slug": "chennagidini_neevu",
       "type": "sentence",
       "roman": "Chennagidini. Neevu?",
@@ -1663,7 +1801,8 @@
       "lessons": [
         "0001",
         "0002",
-        "0007"
+        "0007",
+        "0012"
       ],
       "files": [
         "chennagidini_neevu_slow.mp3",
@@ -1938,6 +2077,20 @@
       ]
     },
     {
+      "slug": "fresh_ide",
+      "type": "sentence",
+      "roman": "Fresh ide",
+      "kannada": "ಫ್ರೆಶ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "fresh_ide_slow.mp3",
+        "fresh_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "friend_barthidare",
       "type": "sentence",
       "roman": "Friend barthidare",
@@ -2192,6 +2345,34 @@
       ]
     },
     {
+      "slug": "haudu_sari",
+      "type": "sentence",
+      "roman": "Haudu sari",
+      "kannada": "ಹೌದು ಸರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "haudu_sari_slow.mp3",
+        "haudu_sari_nat.mp3"
+      ]
+    },
+    {
+      "slug": "haudu_sir_careful",
+      "type": "sentence",
+      "roman": "Haudu sir. Careful.",
+      "kannada": "ಹೌದು ಸರ್. ಕೇರ್ಫುಲ್",
+      "kind": "dialogue",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "haudu_sir_careful_slow.mp3",
+        "haudu_sir_careful_nat.mp3"
+      ]
+    },
+    {
       "slug": "haudu_hattira_ide",
       "type": "sentence",
       "roman": "Haudu. Hattira ide.",
@@ -2203,6 +2384,20 @@
       "files": [
         "haudu_hattira_ide_slow.mp3",
         "haudu_hattira_ide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "haudu_male_bartha_ide_anta",
+      "type": "sentence",
+      "roman": "Haudu. Male bartha ide anta.",
+      "kannada": "ಹೌದು. ಮಳೆ ಬರ್ತಾ ಇದೆ ಅಂತ",
+      "kind": "dialogue",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "haudu_male_bartha_ide_anta_slow.mp3",
+        "haudu_male_bartha_ide_anta_nat.mp3"
       ]
     },
     {
@@ -2301,6 +2496,20 @@
       "files": [
         "hogtini_sari_slow.mp3",
         "hogtini_sari_nat.mp3"
+      ]
+    },
+    {
+      "slug": "hottu_jaasti",
+      "type": "sentence",
+      "roman": "Hottu jaasti",
+      "kannada": "ಹೊತ್ತು ಜಾಸ್ತಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "hottu_jaasti_slow.mp3",
+        "hottu_jaasti_nat.mp3"
       ]
     },
     {
@@ -2441,6 +2650,20 @@
       "files": [
         "ippatthu-ge_swalpa_kammi_maadi_slow.mp3",
         "ippatthu-ge_swalpa_kammi_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ivattu_tumba_bisi",
+      "type": "sentence",
+      "roman": "Ivattu tumba bisi",
+      "kannada": "ಇವತ್ತು ತುಂಬಾ ಬಿಸಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "ivattu_tumba_bisi_slow.mp3",
+        "ivattu_tumba_bisi_nat.mp3"
       ]
     },
     {
@@ -2623,6 +2846,62 @@
       "files": [
         "line_busy_aagide_slow.mp3",
         "line_busy_aagide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "mabbu_ide",
+      "type": "sentence",
+      "roman": "Mabbu ide",
+      "kannada": "ಮಬ್ಬು ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "mabbu_ide_slow.mp3",
+        "mabbu_ide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "male_bandide",
+      "type": "sentence",
+      "roman": "Male bandide",
+      "kannada": "ಮಳೆ ಬಂದಿದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "male_bandide_slow.mp3",
+        "male_bandide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "male_bandide_traffic_jaasti",
+      "type": "sentence",
+      "roman": "Male bandide! Traffic jaasti.",
+      "kannada": "ಮಳೆ ಬಂದಿದೆ! ಟ್ರಾಫಿಕ್ ಜಾಸ್ತಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "male_bandide_traffic_jaasti_slow.mp3",
+        "male_bandide_traffic_jaasti_nat.mp3"
+      ]
+    },
+    {
+      "slug": "male_bartha_ide",
+      "type": "sentence",
+      "roman": "Male bartha ide",
+      "kannada": "ಮಳೆ ಬರ್ತಾ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "male_bartha_ide_slow.mp3",
+        "male_bartha_ide_nat.mp3"
       ]
     },
     {
@@ -2857,7 +3136,8 @@
       "kind": "dialogue",
       "lessons": [
         "0001",
-        "0002"
+        "0002",
+        "0012"
       ],
       "files": [
         "namaskara_hegiddiri_slow.mp3",
@@ -3036,6 +3316,20 @@
       ]
     },
     {
+      "slug": "nantara_male_barabahudu",
+      "type": "sentence",
+      "roman": "Nantara male barabahudu",
+      "kannada": "ನಂತರ ಮಳೆ ಬರಬಹುದು",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "nantara_male_barabahudu_slow.mp3",
+        "nantara_male_barabahudu_nat.mp3"
+      ]
+    },
+    {
       "slug": "nantara_nanage_kare_maadi",
       "type": "sentence",
       "roman": "Nantara nanage kare maadi",
@@ -3148,6 +3442,34 @@
       ]
     },
     {
+      "slug": "olle_climate",
+      "type": "sentence",
+      "roman": "olle climate",
+      "kannada": "ಒಳ್ಳೆ ಕ್ಲೈಮೇಟ್",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "olle_climate_slow.mp3",
+        "olle_climate_nat.mp3"
+      ]
+    },
+    {
+      "slug": "olle_climate_ivattu",
+      "type": "sentence",
+      "roman": "Olle climate ivattu",
+      "kannada": "ಒಳ್ಳೆ ಕ್ಲೈಮೇಟ್ ಇವತ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "olle_climate_ivattu_slow.mp3",
+        "olle_climate_ivattu_nat.mp3"
+      ]
+    },
+    {
       "slug": "olle_dinagalu",
       "type": "sentence",
       "roman": "Olle dinagalu",
@@ -3218,6 +3540,20 @@
       ]
     },
     {
+      "slug": "road_block_ide",
+      "type": "sentence",
+      "roman": "Road block ide",
+      "kannada": "ರೋಡ್ ಬ್ಲಾಕ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "road_block_ide_slow.mp3",
+        "road_block_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "sahaya_maadi",
       "type": "sentence",
       "roman": "Sahaya maadi",
@@ -3243,6 +3579,20 @@
       "files": [
         "sari_hogi_slow.mp3",
         "sari_hogi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_na",
+      "type": "sentence",
+      "roman": "Sari na?",
+      "kannada": "ಸರಿ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "sari_na_slow.mp3",
+        "sari_na_nat.mp3"
       ]
     },
     {
@@ -3368,7 +3718,8 @@
         "0003",
         "0005",
         "0008",
-        "0010"
+        "0010",
+        "0012"
       ],
       "files": [
         "sari_dhanyavadagalu_slow.mp3",
@@ -3443,6 +3794,20 @@
       "files": [
         "sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu_slow.mp3",
         "sari_nantara_nanage_kare_maadi_nimma_phone_number_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_olle_dinagalu",
+      "type": "sentence",
+      "roman": "Sari. Olle dinagalu.",
+      "kannada": "ಸರಿ. ಒಳ್ಳೆ ದಿನಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "sari_olle_dinagalu_slow.mp3",
+        "sari_olle_dinagalu_nat.mp3"
       ]
     },
     {
@@ -3684,6 +4049,20 @@
       ]
     },
     {
+      "slug": "swalpa_thandi_ide",
+      "type": "sentence",
+      "roman": "Swalpa thandi ide",
+      "kannada": "ಸ್ವಲ್ಪ ತಣ್ಣಿ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "swalpa_thandi_ide_slow.mp3",
+        "swalpa_thandi_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "swalpa_wait_maadi",
       "type": "sentence",
       "roman": "Swalpa wait maadi",
@@ -3723,6 +4102,20 @@
       "files": [
         "time_ide_na_slow.mp3",
         "time_ide_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "traffic_jaasti",
+      "type": "sentence",
+      "roman": "Traffic jaasti",
+      "kannada": "ಟ್ರಾಫಿಕ್ ಜಾಸ್ತಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "traffic_jaasti_slow.mp3",
+        "traffic_jaasti_nat.mp3"
       ]
     },
     {
@@ -3836,6 +4229,20 @@
       "files": [
         "tumba_thanks_2_slow.mp3",
         "tumba_thanks_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "umbrella_beku",
+      "type": "sentence",
+      "roman": "Umbrella beku",
+      "kannada": "ಅಂಬ್ರೆಲ್ಲಾ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0012"
+      ],
+      "files": [
+        "umbrella_beku_slow.mp3",
+        "umbrella_beku_nat.mp3"
       ]
     },
     {

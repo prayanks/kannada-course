@@ -2,17 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A1 — society & street scripts through phone + staff.
+A1+ — society/street scripts + weather small talk.
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–9 | Prior lessons | Ready | `0001`…`0009` |
-| 10 | Phone call basics | Ready | `0010-phone-call-basics.html` |
-| 11 | Society staff (guard, delivery) | **Ready** | `0011-society-staff-guard-delivery.html` |
+| 1–11 | Prior lessons | Ready | `0001`…`0011` |
+| 12 | Weather & small talk | **Ready** | `0012-weather-small-talk.html` |
 
-## L11 core
-barthidare · parcel ide na? · nanna flat-ge kodri · mele / kelage · bandide · key beku · lift elli ide? · tumba help aytu · guest barthidare + nanage kare maadi
+## L12 core
+bisi · male · hottu · mabbu · thandi/chali · bartha ide · traffic jaasti · olle climate · sari na? · umbrella beku
 
 ## Next candidates
-Weather/small talk · minutes past the hour · auto destination confirm
+Minutes past the hour · auto destination confirm · shopping quantities

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0012 · Weather & small talk</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .wx-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.45rem;
+      margin: 1rem 0; font-family: var(--sans);
+    }
+    .wx-grid .cell {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius-sm);
+      padding: 0.7rem 0.4rem; text-align: center;
+    }
+    .wx-grid .t { display: block; font-size: 0.72rem; font-weight: 700; color: var(--muted); }
+    .wx-grid .kn { display: block; font-weight: 700; color: var(--accent); margin-top: 0.25rem; font-size: 0.92rem; }
+    @media (max-width: 640px) { .wx-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0012</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~10 min</span>
+        </div>
+        <h1>Weather & small talk</h1>
+        <p class="lede">
+          Corridor and lift filler after hello — rain, heat, traffic — so you aren’t stuck after <em>Hegiddiri?</em>
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          After a greeting you can add
+          <strong>Ivattu tumba bisi · Male bartha ide · Traffic jaasti · Sari na?</strong>
+          and keep the chat alive for 10 more seconds.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        Hegiddiri? · Chennagidini · Ivattu · Tumba · Jaasti · Sari, nodona · Olle dinagalu
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        Neighbour talk dies without a second beat. Weather and traffic are safe, endless topics in Bengaluru —
+        same social job as Hindi <em>aaj bahut garmi / barish / traffic</em>.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>ide / bartha ide</em> for “it’s …-ing”</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Bisi ide</strong> ≈ it is hot<br />
+          <strong>Male bartha ide</strong> ≈ rain is coming / it’s raining<br />
+          Tag agreement: <strong>Sari na? · Illa na?</strong>
+        </p>
+      </div>
+
+      <h2><span class="num">03</span> Weather snapshot</h2>
+      <div class="wx-grid" aria-label="Weather words">
+        <div class="cell"><span class="t">hot</span><span class="kn">bisi</span><div class="audio-block" data-slug="bisi"><audio controls preload="none" src="../assets/audio/bisi.mp3"></audio></div></div>
+        <div class="cell"><span class="t">cold</span><span class="kn">chali / thandi</span><div class="audio-block" data-slug="chali"><audio controls preload="none" src="../assets/audio/chali.mp3"></audio></div><div class="audio-block" data-slug="thandi"><audio controls preload="none" src="../assets/audio/thandi.mp3"></audio></div></div>
+        <div class="cell"><span class="t">rain</span><span class="kn">male</span><div class="audio-block" data-slug="male"><audio controls preload="none" src="../assets/audio/male.mp3"></audio></div></div>
+        <div class="cell"><span class="t">sun</span><span class="kn">hottu</span><div class="audio-block" data-slug="hottu"><audio controls preload="none" src="../assets/audio/hottu.mp3"></audio></div></div>
+        <div class="cell"><span class="t">cloud / overcast</span><span class="kn">mabbu</span><div class="audio-block" data-slug="mabbu"><audio controls preload="none" src="../assets/audio/mabbu.mp3"></audio></div></div>
+        <div class="cell"><span class="t">nice weather</span><span class="kn">olle climate</span><div class="audio-block" data-slug="olle_climate"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/olle_climate_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/olle_climate_nat.mp3"></audio></span></div></div>
+      </div>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Ivattu tumba bisi</p>
+        <div class="audio-block" data-slug="ivattu_tumba_bisi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ivattu_tumba_bisi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ivattu_tumba_bisi_nat.mp3"></audio></span></div>
+        <p class="en">Today is very hot</p>
+        <p class="hi">≈ Aaj bahut garmi hai</p>
+        <div class="meta"><strong>ivattu</strong> (L7) + <strong>tumba</strong> (L6) + <strong>bisi</strong> = hot.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Male bartha ide · Male bandide</p>
+        <div class="audio-block" data-slug="male_bartha_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/male_bartha_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/male_bartha_ide_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="male_bandide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/male_bandide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/male_bandide_nat.mp3"></audio></span></div>
+        <p class="en">It’s raining / rain is coming · Rain has come / started</p>
+        <p class="hi">≈ Baarish ho rahi hai</p>
+        <div class="meta"><strong>male</strong> = rain. You’ll also hear plain English “raining.”</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Hottu jaasti · Mabbu ide</p>
+        <div class="audio-block" data-slug="hottu_jaasti"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/hottu_jaasti_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/hottu_jaasti_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="mabbu_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/mabbu_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/mabbu_ide_nat.mp3"></audio></span></div>
+        <p class="en">Sun is strong · It’s cloudy</p>
+        <p class="hi">≈ Dhoop zyada · Baadal hai</p>
+        <div class="meta"><strong>hottu</strong> ≈ sun/heat of sun · <strong>mabbu</strong> = clouds.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa thandi ide · Chali bartha ide</p>
+        <div class="audio-block" data-slug="swalpa_thandi_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_thandi_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_thandi_ide_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="chali_bartha_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chali_bartha_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chali_bartha_ide_nat.mp3"></audio></span></div>
+        <p class="en">It’s a bit cool · Cold is coming (cooler air)</p>
+        <p class="hi">≈ Thodi thand hai</p>
+        <div class="meta">Bengaluru “cold” is relative. EN <em>thandi</em> is widely used too.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Traffic jaasti · Road block ide</p>
+        <div class="audio-block" data-slug="traffic_jaasti"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/traffic_jaasti_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/traffic_jaasti_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="road_block_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/road_block_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/road_block_ide_nat.mp3"></audio></span></div>
+        <p class="en">Traffic is heavy · There’s a road block</p>
+        <p class="hi">≈ Traffic zyada hai</p>
+        <div class="meta">English nouns + Kannada glue — authentic city speech.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Olle climate ivattu · Fresh ide</p>
+        <div class="audio-block" data-slug="olle_climate_ivattu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/olle_climate_ivattu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/olle_climate_ivattu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="fresh_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/fresh_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/fresh_ide_nat.mp3"></audio></span></div>
+        <p class="en">Nice weather today · It’s fresh/pleasant</p>
+        <p class="hi">≈ Aaj mausam accha hai</p>
+        <div class="meta">Positive small talk after rain or winter mornings.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Umba / Sari na? · Haudu sari</p>
+        <div class="audio-block" data-slug="umba"><audio controls preload="none" src="../assets/audio/umba.mp3"></audio></div>
+        <div class="audio-block" data-slug="sari_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_na_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="haudu_sari"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_sari_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_sari_nat.mp3"></audio></span></div>
+        <p class="en">Isn’t it? / Right? · Yes, right</p>
+        <p class="hi">≈ Hai na? · Haan theek</p>
+        <div class="meta">Agreement tags keep the ball in play. <strong>Sari na?</strong> is enough.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nantara male barabahudu · Umbrella beku</p>
+        <div class="audio-block" data-slug="nantara_male_barabahudu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nantara_male_barabahudu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nantara_male_barabahudu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="umbrella_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/umbrella_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/umbrella_beku_nat.mp3"></audio></span></div>
+        <p class="en">It might rain later · Need an umbrella</p>
+        <p class="hi">≈ Baad mein baarish ho sakti hai</p>
+        <div class="meta"><strong>barabahudu</strong> ≈ may come. EN umbrella is fine.</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">bisi</span><div class="audio-block" data-slug="bisi"><audio controls preload="none" src="../assets/audio/bisi.mp3"></audio></div><span>hot</span><span>garm</span></div>
+        <div class="row"><span class="kn">male</span><div class="audio-block" data-slug="male"><audio controls preload="none" src="../assets/audio/male.mp3"></audio></div><span>rain</span><span>baarish</span></div>
+        <div class="row"><span class="kn">hottu</span><div class="audio-block" data-slug="hottu"><audio controls preload="none" src="../assets/audio/hottu.mp3"></audio></div><span>sun</span><span>dhoop / sooraj</span></div>
+        <div class="row"><span class="kn">mabbu</span><div class="audio-block" data-slug="mabbu"><audio controls preload="none" src="../assets/audio/mabbu.mp3"></audio></div><span>cloud</span><span>baadal</span></div>
+        <div class="row"><span class="kn">thandi / chali</span><div class="audio-block" data-slug="thandi"><audio controls preload="none" src="../assets/audio/thandi.mp3"></audio></div><div class="audio-block" data-slug="chali"><audio controls preload="none" src="../assets/audio/chali.mp3"></audio></div><span>cold / cool</span><span>thand</span></div>
+        <div class="row"><span class="kn">bartha ide</span><div class="audio-block" data-slug="bartha_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bartha_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bartha_ide_nat.mp3"></audio></span></div><span>is coming</span><span>aa raha hai</span></div>
+        <div class="row"><span class="kn">traffic jaasti</span><div class="audio-block" data-slug="traffic_jaasti"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/traffic_jaasti_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/traffic_jaasti_nat.mp3"></audio></span></div><span>heavy traffic</span><span>traffic zyada</span></div>
+        <div class="row"><span class="kn">sari na?</span><div class="audio-block" data-slug="sari_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_na_nat.mp3"></audio></span></div><span>right?</span><span>hai na?</span></div>
+        <div class="row"><span class="kn">climate</span><div class="audio-block" data-slug="climate"><audio controls preload="none" src="../assets/audio/climate.mp3"></audio></div><span>weather (loan)</span><span>mausam</span></div>
+        <div class="row"><span class="kn">umbrella beku</span><div class="audio-block" data-slug="umbrella_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/umbrella_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/umbrella_beku_nat.mp3"></audio></span></div><span>need umbrella</span><span>chhata chahiye</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogues</h2>
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">A · Lift / corridor</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Hegiddiri?</span>
+        <div class="audio-block" data-slug="namaskara_hegiddiri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_hegiddiri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_hegiddiri_nat.mp3"></audio></span></div><br /><span class="gloss">Hello. How are you?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Chennagidini. Neevu?</span>
+        <div class="audio-block" data-slug="chennagidini_neevu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chennagidini_neevu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chennagidini_neevu_nat.mp3"></audio></span></div><br /><span class="gloss">I’m fine. You?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Chennagidini. Ivattu tumba bisi, sari na?</span>
+        <div class="audio-block" data-slug="chennagidini_ivattu_tumba_bisi_sari_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chennagidini_ivattu_tumba_bisi_sari_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chennagidini_ivattu_tumba_bisi_sari_na_nat.mp3"></audio></span></div><br /><span class="gloss">I’m fine. Today is very hot, right?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Haudu. Male bartha ide anta.</span>
+        <div class="audio-block" data-slug="haudu_male_bartha_ide_anta"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_male_bartha_ide_anta_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_male_bartha_ide_anta_nat.mp3"></audio></span></div><br /><span class="gloss">Yes. Looks like rain is coming.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Olle dinagalu.</span>
+        <div class="audio-block" data-slug="sari_olle_dinagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_olle_dinagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_olle_dinagalu_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Have a good day.</span></p>
+      </div>
+
+      <h3 style="font-family:var(--sans);font-size:1rem;color:var(--muted)">B · Gate after rain</h3>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Male bandide! Traffic jaasti.</span>
+        <div class="audio-block" data-slug="male_bandide_traffic_jaasti"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/male_bandide_traffic_jaasti_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/male_bandide_traffic_jaasti_nat.mp3"></audio></span></div><br /><span class="gloss">Rain has started! Traffic is heavy.</span></p>
+        <p><span class="who">Guard</span><br /><span class="line">Haudu sir. Careful.</span>
+        <div class="audio-block" data-slug="haudu_sir_careful"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_sir_careful_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_sir_careful_nat.mp3"></audio></span></div><br /><span class="gloss">Yes sir. Careful.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_dhanyavadagalu_nat.mp3"></audio></span></div><br /><span class="gloss">Okay. Thank you.</span></p>
+      </div>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “hot”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">bisi</button>
+          <button type="button" data-answer="wrong">male</button>
+          <button type="button" data-answer="wrong">mele</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “rain”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">hottu</button>
+          <button type="button" data-answer="correct">male</button>
+          <button type="button" data-answer="wrong">mabbu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “Today is very hot”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Ivattu tumba male</button>
+          <button type="button" data-answer="correct">Ivattu tumba bisi</button>
+          <button type="button" data-answer="wrong">Naale tumba bisi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “It’s raining / rain is coming”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Male bartha ide</button>
+          <button type="button" data-answer="wrong">Male kodri</button>
+          <button type="button" data-answer="wrong">Male balakke</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Heavy traffic”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Traffic beda</button>
+          <button type="button" data-answer="correct">Traffic jaasti</button>
+          <button type="button" data-answer="wrong">Traffic gante</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “today” (L7)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">naale</button>
+          <button type="button" data-answer="correct">ivattu</button>
+          <button type="button" data-answer="wrong">eega</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Today is very hot, right?</li>
+          <li>It’s raining.</li>
+          <li>Sun is strong.</li>
+          <li>Traffic is heavy.</li>
+          <li>Nice weather today.</li>
+          <li>Might rain later — need umbrella.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">Before next lesson</div>
+        <ol>
+          <li>After one real <strong>Namaskara</strong>, add one weather line (<em>bisi / male / traffic</em>).</li>
+          <li>End with <strong>Sari na?</strong> and listen for their agreement word.</li>
+          <li>Note any weather word they used that isn’t on this page.</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Weather talk is mostly local ears + TV Kannada.
+        Optional backup:
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks conversational phrases</a>.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Heard a rain slang or traffic phrase? Send the sound — we’ll add it to your bank.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0011-society-staff-guard-delivery.html">← Lesson 0011</a>
+        <a href="../reference/weather-smalltalk-cheatsheet.html">Reference · weather small talk</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
