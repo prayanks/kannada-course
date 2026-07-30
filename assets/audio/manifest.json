@@ -156,6 +156,18 @@
       ]
     },
     {
+      "slug": "bandide",
+      "type": "word",
+      "roman": "Bandide",
+      "kannada": "ಬಂದಿದೆ",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "bandide.mp3"
+      ]
+    },
+    {
       "slug": "banni",
       "type": "word",
       "roman": "banni",
@@ -165,6 +177,18 @@
       ],
       "files": [
         "banni.mp3"
+      ]
+    },
+    {
+      "slug": "barthidare",
+      "type": "word",
+      "roman": "barthidare",
+      "kannada": "ಬರ್ತಿದ್ದಾರೆ",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "barthidare.mp3"
       ]
     },
     {
@@ -360,6 +384,30 @@
       ]
     },
     {
+      "slug": "flat-ge",
+      "type": "word",
+      "roman": "flat-ge",
+      "kannada": "ಫ್ಲಾಟ್‌ಗೆ",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "flat-ge.mp3"
+      ]
+    },
+    {
+      "slug": "friend",
+      "type": "word",
+      "roman": "friend",
+      "kannada": "ಫ್ರೆಂಡ್",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "friend.mp3"
+      ]
+    },
+    {
       "slug": "gante",
       "type": "word",
       "roman": "gante",
@@ -369,6 +417,18 @@
       ],
       "files": [
         "gante.mp3"
+      ]
+    },
+    {
+      "slug": "garbage",
+      "type": "word",
+      "roman": "Garbage",
+      "kannada": "ಗಾರ್ಬೇಜ್",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "garbage.mp3"
       ]
     },
     {
@@ -418,6 +478,18 @@
       ],
       "files": [
         "gottu.mp3"
+      ]
+    },
+    {
+      "slug": "guest",
+      "type": "word",
+      "roman": "guest",
+      "kannada": "ಗೆಸ್ಟ್",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "guest.mp3"
       ]
     },
     {
@@ -745,6 +817,18 @@
       ]
     },
     {
+      "slug": "kelage",
+      "type": "word",
+      "roman": "kelage",
+      "kannada": "ಕೆಳಗೆ",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "kelage.mp3"
+      ]
+    },
+    {
       "slug": "kelasa",
       "type": "word",
       "roman": "kelasa",
@@ -778,6 +862,18 @@
       ],
       "files": [
         "kshamisi.mp3"
+      ]
+    },
+    {
+      "slug": "lift",
+      "type": "word",
+      "roman": "lift",
+      "kannada": "ಲಿಫ್ಟ್",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "lift.mp3"
       ]
     },
     {
@@ -862,6 +958,18 @@
       ],
       "files": [
         "matte.mp3"
+      ]
+    },
+    {
+      "slug": "mele",
+      "type": "word",
+      "roman": "mele",
+      "kannada": "ಮೇಲೆ",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "mele.mp3"
       ]
     },
     {
@@ -1117,6 +1225,18 @@
       ],
       "files": [
         "oota.mp3"
+      ]
+    },
+    {
+      "slug": "parking",
+      "type": "word",
+      "roman": "Parking",
+      "kannada": "ಪಾರ್ಕಿಂಗ್",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "parking.mp3"
       ]
     },
     {
@@ -1423,6 +1543,20 @@
       ]
     },
     {
+      "slug": "amazon_parcel",
+      "type": "sentence",
+      "roman": "Amazon parcel",
+      "kannada": "ಅಮೆಜಾನ್ ಪಾರ್ಸೆಲ್",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "amazon_parcel_slow.mp3",
+        "amazon_parcel_nat.mp3"
+      ]
+    },
+    {
       "slug": "avaru_eega_illa",
       "type": "sentence",
       "roman": "Avaru eega illa",
@@ -1565,6 +1699,20 @@
       ]
     },
     {
+      "slug": "dayavittu_door_open_maadi",
+      "type": "sentence",
+      "roman": "Dayavittu door open maadi",
+      "kannada": "ದಯವಿಟ್ಟು ಡೋರ್ ಓಪನ್ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "dayavittu_door_open_maadi_slow.mp3",
+        "dayavittu_door_open_maadi_nat.mp3"
+      ]
+    },
+    {
       "slug": "dayavittu_sahaya_maadi_bag_beelitu",
       "type": "sentence",
       "roman": "Dayavittu sahaya maadi — bag beelitu.",
@@ -1576,6 +1724,20 @@
       "files": [
         "dayavittu_sahaya_maadi_bag_beelitu_slow.mp3",
         "dayavittu_sahaya_maadi_bag_beelitu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "dhanyavadagalu_2",
+      "type": "sentence",
+      "roman": "Dhanyavadagalu.",
+      "kannada": "ಧನ್ಯವಾದಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "dhanyavadagalu_2_slow.mp3",
+        "dhanyavadagalu_2_nat.mp3"
       ]
     },
     {
@@ -1776,6 +1938,20 @@
       ]
     },
     {
+      "slug": "friend_barthidare",
+      "type": "sentence",
+      "roman": "Friend barthidare",
+      "kannada": "ಫ್ರೆಂಡ್ ಬರ್ತಿದ್ದಾರೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "friend_barthidare_slow.mp3",
+        "friend_barthidare_nat.mp3"
+      ]
+    },
+    {
       "slug": "gothaytu_dhanyavadagalu",
       "type": "sentence",
       "roman": "Gothaytu. Dhanyavadagalu.",
@@ -1803,6 +1979,34 @@
       "files": [
         "gothaytu_tumba_dhanyavadagalu_slow.mp3",
         "gothaytu_tumba_dhanyavadagalu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "guest_barthidare",
+      "type": "sentence",
+      "roman": "Guest barthidare",
+      "kannada": "ಗೆಸ್ಟ್ ಬರ್ತಿದ್ದಾರೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "guest_barthidare_slow.mp3",
+        "guest_barthidare_nat.mp3"
+      ]
+    },
+    {
+      "slug": "guest_barthidare_nanage_kare_maadi",
+      "type": "sentence",
+      "roman": "Guest barthidare. Nanage kare maadi.",
+      "kannada": "ಗೆಸ್ಟ್ ಬರ್ತಿದ್ದಾರೆ. ನನಗೆ ಕರೆ ಮಾಡಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "guest_barthidare_nanage_kare_maadi_slow.mp3",
+        "guest_barthidare_nanage_kare_maadi_nat.mp3"
       ]
     },
     {
@@ -2002,6 +2206,20 @@
       ]
     },
     {
+      "slug": "haudu_nimma_hesaru",
+      "type": "sentence",
+      "roman": "Haudu. Nimma hesaru?",
+      "kannada": "ಹೌದು. ನಿಮ್ಮ ಹೆಸರು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "haudu_nimma_hesaru_slow.mp3",
+        "haudu_nimma_hesaru_nat.mp3"
+      ]
+    },
+    {
       "slug": "heghe_hogbeku",
       "type": "sentence",
       "roman": "Heghe hogbeku?",
@@ -2027,6 +2245,20 @@
       "files": [
         "hegiddiri_2_slow.mp3",
         "hegiddiri_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "help_aytu",
+      "type": "sentence",
+      "roman": "help aytu",
+      "kannada": "ಹೆಲ್ಪ್ ಆಯ್ತು",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "help_aytu_slow.mp3",
+        "help_aytu_nat.mp3"
       ]
     },
     {
@@ -2268,6 +2500,20 @@
       ]
     },
     {
+      "slug": "key_beku",
+      "type": "sentence",
+      "roman": "Key beku",
+      "kannada": "ಕೀ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "key_beku_slow.mp3",
+        "key_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "koramangala-ge_eshtu",
       "type": "sentence",
       "roman": "Koramangala-ge eshtu?",
@@ -2293,6 +2539,20 @@
       "files": [
         "kshamisi_maadi_slow.mp3",
         "kshamisi_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "kshamisi_amazon_parcel_ide_na",
+      "type": "sentence",
+      "roman": "Kshamisi. Amazon parcel ide na?",
+      "kannada": "ಕ್ಷಮಿಸಿ. ಅಮೆಜಾನ್ ಪಾರ್ಸೆಲ್ ಇದೆ ನಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "kshamisi_amazon_parcel_ide_na_slow.mp3",
+        "kshamisi_amazon_parcel_ide_na_nat.mp3"
       ]
     },
     {
@@ -2335,6 +2595,20 @@
       "files": [
         "late_aytu_slow.mp3",
         "late_aytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "lift_elli_ide",
+      "type": "sentence",
+      "roman": "Lift elli ide?",
+      "kannada": "ಲಿಫ್ಟ್ ಎಲ್ಲಿ ಇದೆ?",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "lift_elli_ide_slow.mp3",
+        "lift_elli_ide_nat.mp3"
       ]
     },
     {
@@ -2391,6 +2665,20 @@
       "files": [
         "matte_sigona_slow.mp3",
         "matte_sigona_nat.mp3"
+      ]
+    },
+    {
+      "slug": "mele_hogi",
+      "type": "sentence",
+      "roman": "Mele hogi",
+      "kannada": "ಮೇಲೆ ಹೋಗಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "mele_hogi_slow.mp3",
+        "mele_hogi_nat.mp3"
       ]
     },
     {
@@ -2592,6 +2880,20 @@
       ]
     },
     {
+      "slug": "namaskara_nanna_hesaru_prayank_flat_302",
+      "type": "sentence",
+      "roman": "Namaskara. Nanna hesaru Prayank. Flat 302.",
+      "kannada": "ನಮಸ್ಕಾರ ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್ ಫ್ಲಾಟ್ 302",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "namaskara_nanna_hesaru_prayank_flat_302_slow.mp3",
+        "namaskara_nanna_hesaru_prayank_flat_302_nat.mp3"
+      ]
+    },
+    {
       "slug": "namaskara_shubha_sayankala",
       "type": "sentence",
       "roman": "Namaskara. Shubha sayankala.",
@@ -2603,6 +2905,20 @@
       "files": [
         "namaskara_shubha_sayankala_slow.mp3",
         "namaskara_shubha_sayankala_nat.mp3"
+      ]
+    },
+    {
+      "slug": "namaskara_yaaru",
+      "type": "sentence",
+      "roman": "Namaskara. Yaaru?",
+      "kannada": "ನಮಸ್ಕಾರ. ಯಾರು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "namaskara_yaaru_slow.mp3",
+        "namaskara_yaaru_nat.mp3"
       ]
     },
     {
@@ -2626,11 +2942,26 @@
       "kannada": "ನನಗೆ ಕರೆ ಮಾಡಿ",
       "kind": "phrase",
       "lessons": [
-        "0010"
+        "0010",
+        "0011"
       ],
       "files": [
         "nanage_kare_maadi_slow.mp3",
         "nanage_kare_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nanna_flat-ge_kodri",
+      "type": "sentence",
+      "roman": "Nanna flat-ge kodri",
+      "kannada": "ನನ್ನ ಫ್ಲಾಟ್‌ಗೆ ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "nanna_flat-ge_kodri_slow.mp3",
+        "nanna_flat-ge_kodri_nat.mp3"
       ]
     },
     {
@@ -2660,6 +2991,20 @@
       "files": [
         "nanna_hesaru_prayank_dhanyavadagalu_slow.mp3",
         "nanna_hesaru_prayank_dhanyavadagalu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nanna_hesaru_prayank_flat_302",
+      "type": "sentence",
+      "roman": "Nanna hesaru Prayank. Flat 302.",
+      "kannada": "ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್. ಫ್ಲಾಟ್ 302",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "nanna_hesaru_prayank_flat_302_slow.mp3",
+        "nanna_hesaru_prayank_flat_302_nat.mp3"
       ]
     },
     {
@@ -2831,6 +3176,20 @@
       ]
     },
     {
+      "slug": "parcel_ide_na",
+      "type": "sentence",
+      "roman": "Parcel ide na?",
+      "kannada": "ಪಾರ್ಸೆಲ್ ಇದೆ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "parcel_ide_na_slow.mp3",
+        "parcel_ide_na_nat.mp3"
+      ]
+    },
+    {
       "slug": "parcel_maadi",
       "type": "sentence",
       "roman": "Parcel maadi",
@@ -2842,6 +3201,20 @@
       "files": [
         "parcel_maadi_slow.mp3",
         "parcel_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "prayank_nanna_flat-ge_kodri_mele_hogi_302",
+      "type": "sentence",
+      "roman": "Prayank. Nanna flat-ge kodri. Mele hogi — 302.",
+      "kannada": "ಪ್ರಯಾಂಕ್. ನನ್ನ ಫ್ಲಾಟ್‌ಗೆ ಕೊಡ್ರಿ. ಮೇಲೆ ಹೋಗಿ — 302",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "prayank_nanna_flat-ge_kodri_mele_hogi_302_slow.mp3",
+        "prayank_nanna_flat-ge_kodri_mele_hogi_302_nat.mp3"
       ]
     },
     {
@@ -2915,6 +3288,20 @@
       ]
     },
     {
+      "slug": "sari_hogi_2",
+      "type": "sentence",
+      "roman": "Sari, hogi.",
+      "kannada": "ಸರಿ, ಹೋಗಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "sari_hogi_2_slow.mp3",
+        "sari_hogi_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "sari_nodona",
       "type": "sentence",
       "roman": "Sari, nodona",
@@ -2926,6 +3313,34 @@
       "files": [
         "sari_nodona_slow.mp3",
         "sari_nodona_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_thank_you",
+      "type": "sentence",
+      "roman": "Sari, thank you",
+      "kannada": "ಸರಿ, ಥ್ಯಾಂಕ್ ಯೂ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "sari_thank_you_slow.mp3",
+        "sari_thank_you_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_2",
+      "type": "sentence",
+      "roman": "Sari.",
+      "kannada": "ಸರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "sari_2_slow.mp3",
+        "sari_2_nat.mp3"
       ]
     },
     {
@@ -3143,6 +3558,20 @@
       ]
     },
     {
+      "slug": "soft_aagilla",
+      "type": "sentence",
+      "roman": "Soft aagilla",
+      "kannada": "ಸಾಫ್ಟ್ ಆಗಿಲ್ಲ",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "soft_aagilla_slow.mp3",
+        "soft_aagilla_nat.mp3"
+      ]
+    },
+    {
       "slug": "strong_maadi",
       "type": "sentence",
       "roman": "Strong maadi",
@@ -3311,6 +3740,34 @@
       ]
     },
     {
+      "slug": "tumba_help_aytu",
+      "type": "sentence",
+      "roman": "Tumba help aytu",
+      "kannada": "ತುಂಬಾ ಹೆಲ್ಪ್ ಆಯ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "tumba_help_aytu_slow.mp3",
+        "tumba_help_aytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "tumba_help_aytu_dhanyavadagalu",
+      "type": "sentence",
+      "roman": "Tumba help aytu. Dhanyavadagalu.",
+      "kannada": "ತುಂಬಾ ಹೆಲ್ಪ್ ಆಯ್ತು. ಧನ್ಯವಾದಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "tumba_help_aytu_dhanyavadagalu_slow.mp3",
+        "tumba_help_aytu_dhanyavadagalu_nat.mp3"
+      ]
+    },
+    {
       "slug": "tumba_late_aytu",
       "type": "sentence",
       "roman": "Tumba late aytu",
@@ -3373,11 +3830,26 @@
       "kannada": "ತುಂಬಾ ಥ್ಯಾಂಕ್ಸ್",
       "kind": "dialogue",
       "lessons": [
-        "0006"
+        "0006",
+        "0011"
       ],
       "files": [
         "tumba_thanks_2_slow.mp3",
         "tumba_thanks_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "water_can",
+      "type": "sentence",
+      "roman": "Water can",
+      "kannada": "ವಾಟರ್ ಕ್ಯಾನ್",
+      "kind": "phrase",
+      "lessons": [
+        "0011"
+      ],
+      "files": [
+        "water_can_slow.mp3",
+        "water_can_nat.mp3"
       ]
     },
     {
