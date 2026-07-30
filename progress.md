@@ -2,16 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A1+ unit review complete — ready to deepen weak stages.
+A1+/A2 emerging — street shop quantities added.
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–14 | Core street/society kit | Ready | `0001`…`0014` |
-| 15 | Review mission guest→gate→auto→shop | **Ready** | `0015-review-mission-guest-to-shop.html` |
+| 1–15 | Core + review mission | Ready | `0001`…`0015` |
+| 16 | Shopping quantities | **Ready** | `0016-shopping-quantities.html` |
 
-## L15 glue
-aaytu · barthini · tumba busy · matte heli
+## L16 core
+ardha/ondu kilo · packet · piece/number · innu swalpa kodri · idhe sari · bas · fresh/chennagi ide na?
 
 ## Next candidates
-Deepen weakest review stage · shopping quantities · pharmacy · nidhana heli (slow down)
+Pharmacy · nidhana heli (slow down) · hotel · deeper vegetable names

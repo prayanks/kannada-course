@@ -54,7 +54,8 @@
       "kannada": "ಆಯ್ತು",
       "lessons": [
         "0014",
-        "0015"
+        "0015",
+        "0016"
       ],
       "files": [
         "aaytu.mp3"
@@ -127,7 +128,8 @@
       "kannada": "ಅರ್ಧ",
       "lessons": [
         "0009",
-        "0014"
+        "0014",
+        "0016"
       ],
       "files": [
         "ardha.mp3"
@@ -215,6 +217,18 @@
       ],
       "files": [
         "barthini.mp3"
+      ]
+    },
+    {
+      "slug": "bas",
+      "type": "word",
+      "roman": "Bas",
+      "kannada": "ಬಸ್",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "bas.mp3"
       ]
     },
     {
@@ -479,6 +493,18 @@
       ],
       "files": [
         "friend.mp3"
+      ]
+    },
+    {
+      "slug": "full",
+      "type": "word",
+      "roman": "full",
+      "kannada": "ಫುಲ್",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "full.mp3"
       ]
     },
     {
@@ -860,7 +886,8 @@
       "roman": "innu",
       "kannada": "ಇನ್ನೂ",
       "lessons": [
-        "0005"
+        "0005",
+        "0016"
       ],
       "files": [
         "innu.mp3"
@@ -932,7 +959,8 @@
       "roman": "kammi",
       "kannada": "ಕಮ್ಮಿ",
       "lessons": [
-        "0003"
+        "0003",
+        "0016"
       ],
       "files": [
         "kammi.mp3"
@@ -972,6 +1000,18 @@
       ],
       "files": [
         "kelasa.mp3"
+      ]
+    },
+    {
+      "slug": "kilo",
+      "type": "word",
+      "roman": "kilo",
+      "kannada": "ಕಿಲೋ",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "kilo.mp3"
       ]
     },
     {
@@ -1357,7 +1397,8 @@
       "roman": "number",
       "kannada": "ನಂಬರ್",
       "lessons": [
-        "0010"
+        "0010",
+        "0016"
       ],
       "files": [
         "number.mp3"
@@ -1393,7 +1434,8 @@
       "roman": "ondu",
       "kannada": "ಒಂದು",
       "lessons": [
-        "0003"
+        "0003",
+        "0016"
       ],
       "files": [
         "ondu.mp3"
@@ -1409,6 +1451,18 @@
       ],
       "files": [
         "oota.mp3"
+      ]
+    },
+    {
+      "slug": "packet",
+      "type": "word",
+      "roman": "packet",
+      "kannada": "ಪ್ಯಾಕೆಟ್",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "packet.mp3"
       ]
     },
     {
@@ -1433,6 +1487,18 @@
       ],
       "files": [
         "phone.mp3"
+      ]
+    },
+    {
+      "slug": "piece",
+      "type": "word",
+      "roman": "piece",
+      "kannada": "ಪೀಸ್",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "piece.mp3"
       ]
     },
     {
@@ -1478,7 +1544,8 @@
       "kannada": "ಸರಿ",
       "lessons": [
         "0001",
-        "0003"
+        "0003",
+        "0016"
       ],
       "files": [
         "sari.mp3"
@@ -1550,7 +1617,8 @@
       "roman": "swalpa",
       "kannada": "ಸ್ವಲ್ಪ",
       "lessons": [
-        "0003"
+        "0003",
+        "0016"
       ],
       "files": [
         "swalpa.mp3"
@@ -1617,6 +1685,18 @@
       ]
     },
     {
+      "slug": "weight",
+      "type": "word",
+      "roman": "weight",
+      "kannada": "ವೇಟ್",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "weight.mp3"
+      ]
+    },
+    {
       "slug": "yaaru",
       "type": "word",
       "roman": "yaaru",
@@ -1650,6 +1730,20 @@
       ],
       "files": [
         "yedakke.mp3"
+      ]
+    },
+    {
+      "slug": "aaytu_bera_eshtu_aytu_hadinaidu",
+      "type": "sentence",
+      "roman": "Aaytu. Bera eshtu aytu — hadinaidu.",
+      "kannada": "ಆಯ್ತು. ಬೇರೆ ಎಷ್ಟು ಆಯ್ತು — ಹದಿನೈದು",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "aaytu_bera_eshtu_aytu_hadinaidu_slow.mp3",
+        "aaytu_bera_eshtu_aytu_hadinaidu_nat.mp3"
       ]
     },
     {
@@ -1851,6 +1945,48 @@
       ]
     },
     {
+      "slug": "ardha_kilo",
+      "type": "sentence",
+      "roman": "ardha kilo",
+      "kannada": "ಅರ್ಧ ಕಿಲೋ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "ardha_kilo_slow.mp3",
+        "ardha_kilo_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ardha_kilo_kodri",
+      "type": "sentence",
+      "roman": "Ardha kilo kodri",
+      "kannada": "ಅರ್ಧ ಕಿಲೋ ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "ardha_kilo_kodri_slow.mp3",
+        "ardha_kilo_kodri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ardha_kilo_kodri_fresh_ide_na",
+      "type": "sentence",
+      "roman": "Ardha kilo kodri. Fresh ide na?",
+      "kannada": "ಅರ್ಧ ಕಿಲೋ ಕೊಡ್ರಿ. ಫ್ರೆಶ್ ಇದೆ ನಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "ardha_kilo_kodri_fresh_ide_na_slow.mp3",
+        "ardha_kilo_kodri_fresh_ide_na_nat.mp3"
+      ]
+    },
+    {
       "slug": "avaru_eega_illa",
       "type": "sentence",
       "roman": "Avaru eega illa",
@@ -1960,6 +2096,20 @@
       "files": [
         "change_ide_na_slow.mp3",
         "change_ide_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "chennagi_ide_na",
+      "type": "sentence",
+      "roman": "Chennagi ide na?",
+      "kannada": "ಚೆನ್ನಾಗಿ ಇದೆ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "chennagi_ide_na_slow.mp3",
+        "chennagi_ide_na_nat.mp3"
       ]
     },
     {
@@ -2178,6 +2328,20 @@
       ]
     },
     {
+      "slug": "eggs_aaru_number_kodri_aaytu_bill_kodri",
+      "type": "sentence",
+      "roman": "Eggs — aaru number kodri. Aaytu. Bill kodri.",
+      "kannada": "ಎಗ್ಸ್ — ಆರು ನಂಬರ್ ಕೊಡ್ರಿ. ಆಯ್ತು. ಬಿಲ್ ಕೊಡ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "eggs_aaru_number_kodri_aaytu_bill_kodri_slow.mp3",
+        "eggs_aaru_number_kodri_aaytu_bill_kodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "elli_hogtiddiri",
       "type": "sentence",
       "roman": "Elli hogtiddiri?",
@@ -2318,6 +2482,34 @@
       ]
     },
     {
+      "slug": "eradu_kilo",
+      "type": "sentence",
+      "roman": "Eradu kilo",
+      "kannada": "ಎರಡು ಕಿಲೋ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "eradu_kilo_slow.mp3",
+        "eradu_kilo_nat.mp3"
+      ]
+    },
+    {
+      "slug": "eradu_packet",
+      "type": "sentence",
+      "roman": "Eradu packet",
+      "kannada": "ಎರಡು ಪ್ಯಾಕೆಟ್",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "eradu_packet_slow.mp3",
+        "eradu_packet_nat.mp3"
+      ]
+    },
+    {
       "slug": "eshtu_aytu",
       "type": "sentence",
       "roman": "Eshtu aytu?",
@@ -2400,6 +2592,20 @@
       "files": [
         "fresh_ide_slow.mp3",
         "fresh_ide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "fresh_ide_na",
+      "type": "sentence",
+      "roman": "Fresh ide na?",
+      "kannada": "ಫ್ರೆಶ್ ಇದೆ ನಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "fresh_ide_na_slow.mp3",
+        "fresh_ide_na_nat.mp3"
       ]
     },
     {
@@ -2741,6 +2947,20 @@
       ]
     },
     {
+      "slug": "hattu_rupayi_kilo",
+      "type": "sentence",
+      "roman": "Hattu rupayi kilo.",
+      "kannada": "ಹತ್ತು ರೂಪಾಯಿ ಕಿಲೋ",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "hattu_rupayi_kilo_slow.mp3",
+        "hattu_rupayi_kilo_nat.mp3"
+      ]
+    },
+    {
       "slug": "hattu_rupayi_sari",
       "type": "sentence",
       "roman": "Hattu rupayi sari.",
@@ -2881,6 +3101,20 @@
       ]
     },
     {
+      "slug": "haudu_nodri",
+      "type": "sentence",
+      "roman": "Haudu. Nodri.",
+      "kannada": "ಹೌದು. ನೋಡ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "haudu_nodri_slow.mp3",
+        "haudu_nodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "heghe_hogbeku",
       "type": "sentence",
       "roman": "Heghe hogbeku?",
@@ -2990,6 +3224,20 @@
       "files": [
         "idhe_na_slow.mp3",
         "idhe_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "idhe_sari",
+      "type": "sentence",
+      "roman": "Idhe sari",
+      "kannada": "ಇದೇ ಸರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "idhe_sari_slow.mp3",
+        "idhe_sari_nat.mp3"
       ]
     },
     {
@@ -3231,6 +3479,48 @@
       ]
     },
     {
+      "slug": "innu_swalpa",
+      "type": "sentence",
+      "roman": "innu swalpa",
+      "kannada": "ಇನ್ನೂ ಸ್ವಲ್ಪ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "innu_swalpa_slow.mp3",
+        "innu_swalpa_nat.mp3"
+      ]
+    },
+    {
+      "slug": "innu_swalpa_kodri",
+      "type": "sentence",
+      "roman": "Innu swalpa kodri",
+      "kannada": "ಇನ್ನೂ ಸ್ವಲ್ಪ ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "innu_swalpa_kodri_slow.mp3",
+        "innu_swalpa_kodri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "innu_swalpa_kodri_sari_idhe_sari_onion_ondu_kilo_kodri",
+      "type": "sentence",
+      "roman": "Innu swalpa kodri. Sari, idhe sari. Onion ondu kilo kodri",
+      "kannada": "ಇನ್ನೂ ಸ್ವಲ್ಪ ಕೊಡ್ರಿ. ಸರಿ, ಇದೇ ಸರಿ. ಈರುಳ್ಳಿ ಒಂದು ಕಿಲೋ ಕೊಡ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "innu_swalpa_kodri_sari_idhe_sari_onion_ondu_kilo_kodri_slow.mp3",
+        "innu_swalpa_kodri_sari_idhe_sari_onion_ondu_kilo_kodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "ippatthu_rupayi_sari_na",
       "type": "sentence",
       "roman": "Ippatthu rupayi sari na?",
@@ -3354,6 +3644,20 @@
       "files": [
         "key_beku_slow.mp3",
         "key_beku_nat.mp3"
+      ]
+    },
+    {
+      "slug": "khaali_packet",
+      "type": "sentence",
+      "roman": "Khaali packet",
+      "kannada": "ಖಾಲಿ ಪ್ಯಾಕೆಟ್",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "khaali_packet_slow.mp3",
+        "khaali_packet_nat.mp3"
       ]
     },
     {
@@ -3651,6 +3955,20 @@
       ]
     },
     {
+      "slug": "milk_eradu_packet_beku_bread_ondu",
+      "type": "sentence",
+      "roman": "Milk eradu packet beku. Bread ondu.",
+      "kannada": "ಮಿಲ್ಕ್ ಎರಡು ಪ್ಯಾಕೆಟ್ ಬೇಕು. ಬ್ರೆಡ್ ಒಂದು",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "milk_eradu_packet_beku_bread_ondu_slow.mp3",
+        "milk_eradu_packet_beku_bread_ondu_nat.mp3"
+      ]
+    },
+    {
       "slug": "mooru_gante",
       "type": "sentence",
       "roman": "Mooru gante",
@@ -3662,6 +3980,20 @@
       "files": [
         "mooru_gante_slow.mp3",
         "mooru_gante_nat.mp3"
+      ]
+    },
+    {
+      "slug": "mooru_number",
+      "type": "sentence",
+      "roman": "Mooru number",
+      "kannada": "ಮೂರು ನಂಬರ್",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "mooru_number_slow.mp3",
+        "mooru_number_nat.mp3"
       ]
     },
     {
@@ -3889,6 +4221,20 @@
       "files": [
         "namaskara_shubha_sayankala_slow.mp3",
         "namaskara_shubha_sayankala_nat.mp3"
+      ]
+    },
+    {
+      "slug": "namaskara_tomato_eshtu",
+      "type": "sentence",
+      "roman": "Namaskara. Tomato eshtu?",
+      "kannada": "ನಮಸ್ಕಾರ. ಟೊಮೆಟೊ ಎಷ್ಟು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "namaskara_tomato_eshtu_slow.mp3",
+        "namaskara_tomato_eshtu_nat.mp3"
       ]
     },
     {
@@ -4203,6 +4549,34 @@
       ]
     },
     {
+      "slug": "olle_samanya",
+      "type": "sentence",
+      "roman": "Olle samanya",
+      "kannada": "ಒಳ್ಳೆ ಸಾಮಾನ್ಯ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "olle_samanya_slow.mp3",
+        "olle_samanya_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_kilo",
+      "type": "sentence",
+      "roman": "Ondu kilo",
+      "kannada": "ಒಂದು ಕಿಲೋ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "ondu_kilo_slow.mp3",
+        "ondu_kilo_nat.mp3"
+      ]
+    },
+    {
       "slug": "ondu_nimisha_kaayri",
       "type": "sentence",
       "roman": "Ondu nimisha kaayri",
@@ -4214,6 +4588,34 @@
       "files": [
         "ondu_nimisha_kaayri_slow.mp3",
         "ondu_nimisha_kaayri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_packet",
+      "type": "sentence",
+      "roman": "Ondu packet",
+      "kannada": "ಒಂದು ಪ್ಯಾಕೆಟ್",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "ondu_packet_slow.mp3",
+        "ondu_packet_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_piece",
+      "type": "sentence",
+      "roman": "Ondu piece",
+      "kannada": "ಒಂದು ಪೀಸ್",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "ondu_piece_slow.mp3",
+        "ondu_piece_nat.mp3"
       ]
     },
     {
@@ -4483,7 +4885,8 @@
         "0010",
         "0012",
         "0013",
-        "0015"
+        "0015",
+        "0016"
       ],
       "files": [
         "sari_dhanyavadagalu_slow.mp3",
@@ -4544,6 +4947,20 @@
       "files": [
         "sari_hogona_slow.mp3",
         "sari_hogona_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_ippatthu_rupayi",
+      "type": "sentence",
+      "roman": "Sari. Ippatthu rupayi",
+      "kannada": "ಸರಿ. ಇಪ್ಪತ್ತು ರೂಪಾಯಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "sari_ippatthu_rupayi_slow.mp3",
+        "sari_ippatthu_rupayi_nat.mp3"
       ]
     },
     {
@@ -4847,7 +5264,8 @@
       "kannada": "ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ",
       "kind": "phrase",
       "lessons": [
-        "0003"
+        "0003",
+        "0016"
       ],
       "files": [
         "swalpa_kammi_maadi_slow.mp3",
@@ -5147,6 +5565,20 @@
       "files": [
         "water_can_slow.mp3",
         "water_can_nat.mp3"
+      ]
+    },
+    {
+      "slug": "weight_kammi",
+      "type": "sentence",
+      "roman": "Weight kammi",
+      "kannada": "ವೇಟ್ ಕಮ್ಮಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0016"
+      ],
+      "files": [
+        "weight_kammi_slow.mp3",
+        "weight_kammi_nat.mp3"
       ]
     },
     {
