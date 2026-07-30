@@ -2,16 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A1+ — clock through minutes; street + society scripts.
+A1+ unit review complete — ready to deepen weak stages.
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–13 | Prior lessons | Ready | `0001`…`0013` |
-| 14 | Minutes past the hour | **Ready** | `0014-minutes-past-the-hour.html` |
+| 1–14 | Core street/society kit | Ready | `0001`…`0014` |
+| 15 | Review mission guest→gate→auto→shop | **Ready** | `0015-review-mission-guest-to-shop.html` |
 
-## L14 core
-kaalu (:15) · ardha (:30) · N nimisha · munche / nantara · late · innu … nimisha ide · schedule -ge
+## L15 glue
+aaytu · barthini · tumba busy · matte heli
 
 ## Next candidates
-Shopping quantities · doctor/pharmacy · hotel/check-in
+Deepen weakest review stage · shopping quantities · pharmacy · nidhana heli (slow down)

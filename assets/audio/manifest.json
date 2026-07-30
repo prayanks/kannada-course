@@ -53,7 +53,8 @@
       "roman": "aaytu",
       "kannada": "ಆಯ್ತು",
       "lessons": [
-        "0014"
+        "0014",
+        "0015"
       ],
       "files": [
         "aaytu.mp3"
@@ -202,6 +203,18 @@
       ],
       "files": [
         "barthidare.mp3"
+      ]
+    },
+    {
+      "slug": "barthini",
+      "type": "word",
+      "roman": "Barthini",
+      "kannada": "ಬರ್ತೀನಿ",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "barthini.mp3"
       ]
     },
     {
@@ -1782,6 +1795,20 @@
       ]
     },
     {
+      "slug": "aivattu_2",
+      "type": "sentence",
+      "roman": "Aivattu.",
+      "kannada": "ಐವತ್ತು",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "aivattu_2_slow.mp3",
+        "aivattu_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "alli_eshtu",
       "type": "sentence",
       "roman": "Alli eshtu?",
@@ -1964,6 +1991,20 @@
       ]
     },
     {
+      "slug": "chennagidini_ivattu_tumba_bisi",
+      "type": "sentence",
+      "roman": "Chennagidini. Ivattu tumba bisi!",
+      "kannada": "ಚೆನ್ನಾಗಿದ್ದೀನಿ. ಇವತ್ತು ತುಂಬಾ ಬಿಸಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "chennagidini_ivattu_tumba_bisi_slow.mp3",
+        "chennagidini_ivattu_tumba_bisi_nat.mp3"
+      ]
+    },
+    {
       "slug": "chennagidini_ivattu_tumba_bisi_sari_na",
       "type": "sentence",
       "roman": "Chennagidini. Ivattu tumba bisi, sari na?",
@@ -2071,7 +2112,8 @@
       "kannada": "ಧನ್ಯವಾದಗಳು",
       "kind": "dialogue",
       "lessons": [
-        "0011"
+        "0011",
+        "0015"
       ],
       "files": [
         "dhanyavadagalu_2_slow.mp3",
@@ -2105,6 +2147,20 @@
       "files": [
         "eduru_hogi_nantara_balakke_slow.mp3",
         "eduru_hogi_nantara_balakke_nat.mp3"
+      ]
+    },
+    {
+      "slug": "eega_barthini_hattu_nimisha",
+      "type": "sentence",
+      "roman": "Eega barthini — hattu nimisha.",
+      "kannada": "ಈಗ ಬರ್ತೀನಿ — ಹತ್ತು ನಿಮಿಷ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "eega_barthini_hattu_nimisha_slow.mp3",
+        "eega_barthini_hattu_nimisha_nat.mp3"
       ]
     },
     {
@@ -2503,6 +2559,20 @@
       ]
     },
     {
+      "slug": "halo_nanna_hesaru_prayank_flat_302_guest_barthidare_nanage_kare_maadi",
+      "type": "sentence",
+      "roman": "Halo. Nanna hesaru Prayank, flat 302. Guest barthidare. Nanage kare maadi.",
+      "kannada": "ಹಲೋ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್, ಫ್ಲಾಟ್ 302. ಗೆಸ್ಟ್ ಬರ್ತಿದ್ದಾರೆ. ನನಗೆ ಕರೆ ಮಾಡಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "halo_nanna_hesaru_prayank_flat_302_guest_barthidare_nanage_kare_maadi_slow.mp3",
+        "halo_nanna_hesaru_prayank_flat_302_guest_barthidare_nanage_kare_maadi_nat.mp3"
+      ]
+    },
+    {
       "slug": "halo_nanna_hesaru_prayank",
       "type": "sentence",
       "roman": "Halo. Nanna hesaru Prayank.",
@@ -2671,6 +2741,20 @@
       ]
     },
     {
+      "slug": "hattu_rupayi_sari",
+      "type": "sentence",
+      "roman": "Hattu rupayi sari.",
+      "kannada": "ಹತ್ತು ರೂಪಾಯಿ ಸರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "hattu_rupayi_sari_slow.mp3",
+        "hattu_rupayi_sari_nat.mp3"
+      ]
+    },
+    {
       "slug": "hattu_rupayi",
       "type": "sentence",
       "roman": "Hattu rupayi.",
@@ -2699,6 +2783,20 @@
       ]
     },
     {
+      "slug": "haudu_sari_coffee_beku_na",
+      "type": "sentence",
+      "roman": "Haudu sari. Coffee beku na?",
+      "kannada": "ಹೌದು ಸರಿ. ಕಾಫಿ ಬೇಕಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "haudu_sari_coffee_beku_na_slow.mp3",
+        "haudu_sari_coffee_beku_na_nat.mp3"
+      ]
+    },
+    {
       "slug": "haudu_sir_careful",
       "type": "sentence",
       "roman": "Haudu sir. Careful.",
@@ -2710,6 +2808,20 @@
       "files": [
         "haudu_sir_careful_slow.mp3",
         "haudu_sir_careful_nat.mp3"
+      ]
+    },
+    {
+      "slug": "haudu_dhanyavadagalu",
+      "type": "sentence",
+      "roman": "Haudu. Dhanyavadagalu.",
+      "kannada": "ಹೌದು. ಧನ್ಯವಾದಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "haudu_dhanyavadagalu_slow.mp3",
+        "haudu_dhanyavadagalu_nat.mp3"
       ]
     },
     {
@@ -2906,6 +3018,20 @@
       "files": [
         "idhu_eshtu_slow.mp3",
         "idhu_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "idhu_eshtu_eradu_kodri_swalpa_kammi_maadi",
+      "type": "sentence",
+      "roman": "Idhu eshtu? Eradu kodri. Swalpa kammi maadi.",
+      "kannada": "ಇದು ಎಷ್ಟು? ಎರಡು ಕೊಡ್ರಿ. ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "idhu_eshtu_eradu_kodri_swalpa_kammi_maadi_slow.mp3",
+        "idhu_eshtu_eradu_kodri_swalpa_kammi_maadi_nat.mp3"
       ]
     },
     {
@@ -3427,6 +3553,20 @@
       ]
     },
     {
+      "slug": "market-ge_hogona_meter_haki",
+      "type": "sentence",
+      "roman": "Market-ge hogona. Meter haki.",
+      "kannada": "ಮಾರ್ಕೆಟ್‌ಗೆ ಹೋಗೋಣ. ಮೀಟರ್ ಹಾಕಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "market-ge_hogona_meter_haki_slow.mp3",
+        "market-ge_hogona_meter_haki_nat.mp3"
+      ]
+    },
+    {
       "slug": "market-ge_neevu",
       "type": "sentence",
       "roman": "Market-ge. Neevu?",
@@ -3452,6 +3592,20 @@
       "files": [
         "masala_dosa_ondu_kodri_slow.mp3",
         "masala_dosa_ondu_kodri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "matte_heli",
+      "type": "sentence",
+      "roman": "Matte heli",
+      "kannada": "ಮತ್ತೆ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "matte_heli_slow.mp3",
+        "matte_heli_nat.mp3"
       ]
     },
     {
@@ -3606,6 +3760,20 @@
       "files": [
         "naanu_phone_maadtini_slow.mp3",
         "naanu_phone_maadtini_nat.mp3"
+      ]
+    },
+    {
+      "slug": "namaskara_hegiddiri_banni",
+      "type": "sentence",
+      "roman": "Namaskara! Hegiddiri? Banni.",
+      "kannada": "ನಮಸ್ಕಾರ! ಹೇಗಿದ್ದೀರಿ? ಬನ್ನಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "namaskara_hegiddiri_banni_slow.mp3",
+        "namaskara_hegiddiri_banni_nat.mp3"
       ]
     },
     {
@@ -4265,11 +4433,26 @@
       "kannada": "ಸರಿ",
       "kind": "dialogue",
       "lessons": [
-        "0011"
+        "0011",
+        "0015"
       ],
       "files": [
         "sari_2_slow.mp3",
         "sari_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_bill_kodri_aaytu_manege_hogtidini",
+      "type": "sentence",
+      "roman": "Sari. Bill kodri. . Aaytu. Manege hogtidini",
+      "kannada": "ಸರಿ. ಬಿಲ್ ಕೊಡ್ರಿ. ಆಯ್ತು. ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "sari_bill_kodri_aaytu_manege_hogtidini_slow.mp3",
+        "sari_bill_kodri_aaytu_manege_hogtidini_nat.mp3"
       ]
     },
     {
@@ -4299,7 +4482,8 @@
         "0008",
         "0010",
         "0012",
-        "0013"
+        "0013",
+        "0015"
       ],
       "files": [
         "sari_dhanyavadagalu_slow.mp3",
@@ -4629,6 +4813,20 @@
       ]
     },
     {
+      "slug": "swalpa_eduru_balakke_illi_nilsi_eshtu_aytu",
+      "type": "sentence",
+      "roman": "Swalpa eduru. balakke. Illi nilsi. Eshtu aytu?",
+      "kannada": "ಸ್ವಲ್ಪ ಎದುರು. ಬಲಕ್ಕೆ. ಇಲ್ಲಿ ನಿಲ್ಸಿ. ಎಷ್ಟು ಆಯ್ತು",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "swalpa_eduru_balakke_illi_nilsi_eshtu_aytu_slow.mp3",
+        "swalpa_eduru_balakke_illi_nilsi_eshtu_aytu_nat.mp3"
+      ]
+    },
+    {
       "slug": "swalpa_eduru_nantara_balakke_gate_hattira",
       "type": "sentence",
       "roman": "Swalpa eduru. nantara balakke. Gate hattira",
@@ -4794,6 +4992,20 @@
       "files": [
         "traffic_jaasti_slow.mp3",
         "traffic_jaasti_nat.mp3"
+      ]
+    },
+    {
+      "slug": "tumba_busy",
+      "type": "sentence",
+      "roman": "Tumba busy",
+      "kannada": "ತುಂಬಾ ಬಿಜಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "tumba_busy_slow.mp3",
+        "tumba_busy_nat.mp3"
       ]
     },
     {
@@ -4963,6 +5175,20 @@
       "files": [
         "yaaru_maatadtiddira_slow.mp3",
         "yaaru_maatadtiddira_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yaavaaga_barthini",
+      "type": "sentence",
+      "roman": "Yaavaaga barthini?",
+      "kannada": "ಯಾವಾಗ ಬರ್ತೀನಿ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0015"
+      ],
+      "files": [
+        "yaavaaga_barthini_slow.mp3",
+        "yaavaaga_barthini_nat.mp3"
       ]
     },
     {

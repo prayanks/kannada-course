@@ -596,7 +596,49 @@ KN: dict[str, str] = {
     "sari. gothaytu.": "ಸರಿ. ಗೊತ್ತಾಯ್ತು",
     "muvattu nimisha": "ಮೂವತ್ತು ನಿಮಿಷ",
     "aidu gante muvattu nimisha": "ಐದು ಗಂಟೆ ಮೂವತ್ತು ನಿಮಿಷ",
+    # L15 review mission glue + long lines
+    "aaytu": "ಆಯ್ತು",
+    "barthini": "ಬರ್ತೀನಿ",
+    "tumba busy": "ತುಂಬಾ ಬಿಜಿ",
+    "matte heli": "ಮತ್ತೆ ಹೇಳಿ",
+    "heli": "ಹೇಳಿ",
+    "matte": "ಮತ್ತೆ",
+    "coffee beku na": "ಕಾಫಿ ಬೇಕಾ",
+    "coffee beku na?": "ಕಾಫಿ ಬೇಕಾ?",
+    "haudu sari": "ಹೌದು ಸರಿ",
+    "market-ge hogona": "ಮಾರ್ಕೆಟ್‌ಗೆ ಹೋಗೋಣ",
+    "market-ge hogona. meter haki": "ಮಾರ್ಕೆಟ್‌ಗೆ ಹೋಗೋಣ. ಮೀಟರ್ ಹಾಕಿ",
+    "swalpa eduru… balakke. illi nilsi. eshtu aytu": "ಸ್ವಲ್ಪ ಎದುರು. ಬಲಕ್ಕೆ. ಇಲ್ಲಿ ನಿಲ್ಸಿ. ಎಷ್ಟು ಆಯ್ತು",
+    "swalpa eduru. balakke. illi nilsi. eshtu aytu": "ಸ್ವಲ್ಪ ಎದುರು. ಬಲಕ್ಕೆ. ಇಲ್ಲಿ ನಿಲ್ಸಿ. ಎಷ್ಟು ಆಯ್ತು",
+    "swalpa eduru… balakke. illi nilsi. eshtu aytu?": "ಸ್ವಲ್ಪ ಎದುರು. ಬಲಕ್ಕೆ. ಇಲ್ಲಿ ನಿಲ್ಸಿ. ಎಷ್ಟು ಆಯ್ತು?",
+    "idhu eshtu? eradu kodri. swalpa kammi maadi": "ಇದು ಎಷ್ಟು? ಎರಡು ಕೊಡ್ರಿ. ಸ್ವಲ್ಪ ಕಮ್ಮಿ ಮಾಡಿ",
+    "sari. bill kodri. … aaytu. manege hogtidini": "ಸರಿ. ಬಿಲ್ ಕೊಡ್ರಿ. ಆಯ್ತು. ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ",
+    "sari. bill kodri. aaytu. manege hogtidini": "ಸರಿ. ಬಿಲ್ ಕೊಡ್ರಿ. ಆಯ್ತು. ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ",
+    "yaavaaga barthini": "ಯಾವಾಗ ಬರ್ತೀನಿ",
+    "yaavaaga barthini?": "ಯಾವಾಗ ಬರ್ತೀನಿ?",
+    "eega barthini — hattu nimisha": "ಈಗ ಬರ್ತೀನಿ — ಹತ್ತು ನಿಮಿಷ",
+    "eega barthini — hattu nimisha.": "ಈಗ ಬರ್ತೀನಿ — ಹತ್ತು ನಿಮಿಷ",
+    "halo. nanna hesaru prayank, flat 302. guest barthidare. nanage kare maadi": (
+        "ಹಲೋ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್, ಫ್ಲಾಟ್ 302. ಗೆಸ್ಟ್ ಬರ್ತಿದ್ದಾರೆ. ನನಗೆ ಕರೆ ಮಾಡಿ"
+    ),
+    "halo. nanna hesaru prayank, flat 302. guest barthidare. nanage kare maadi.": (
+        "ಹಲೋ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್, ಫ್ಲಾಟ್ 302. ಗೆಸ್ಟ್ ಬರ್ತಿದ್ದಾರೆ. ನನಗೆ ಕರೆ ಮಾಡಿ"
+    ),
+    "namaskara! hegiddiri? banni": "ನಮಸ್ಕಾರ! ಹೇಗಿದ್ದೀರಿ? ಬನ್ನಿ",
+    "namaskara! hegiddiri? banni.": "ನಮಸ್ಕಾರ! ಹೇಗಿದ್ದೀರಿ? ಬನ್ನಿ",
+    "chennagidini. ivattu tumba bisi": "ಚೆನ್ನಾಗಿದ್ದೀನಿ. ಇವತ್ತು ತುಂಬಾ ಬಿಸಿ",
+    "chennagidini. ivattu tumba bisi!": "ಚೆನ್ನಾಗಿದ್ದೀನಿ. ಇವತ್ತು ತುಂಬಾ ಬಿಸಿ",
+    "haudu sari. coffee beku na": "ಹೌದು ಸರಿ. ಕಾಫಿ ಬೇಕಾ",
+    "haudu sari. coffee beku na?": "ಹೌದು ಸರಿ. ಕಾಫಿ ಬೇಕಾ?",
+    "haudu. dhanyavadagalu": "ಹೌದು. ಧನ್ಯವಾದಗಳು",
+    "haudu. dhanyavadagalu.": "ಹೌದು. ಧನ್ಯವಾದಗಳು",
+    "eradu kodri": "ಎರಡು ಕೊಡ್ರಿ",
+    "hattu rupayi sari": "ಹತ್ತು ರೂಪಾಯಿ ಸರಿ",
+    "hattu rupayi sari.": "ಹತ್ತು ರೂಪಾಯಿ ಸರಿ",
+    "sari. bill kodri. . aaytu. manege hogtidini": "ಸರಿ. ಬಿಲ್ ಕೊಡ್ರಿ. ಆಯ್ತು. ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ",
+    "sari. bill kodri. aaytu. manege hogtidini.": "ಸರಿ. ಬಿಲ್ ಕೊಡ್ರಿ. ಆಯ್ತು. ಮನೆಗೆ ಹೋಗ್ತಿದೀನಿ",
 }
+
 
 
 
