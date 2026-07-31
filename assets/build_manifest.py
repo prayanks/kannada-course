@@ -767,7 +767,55 @@ KN: dict[str, str] = {
     "times": "ಟೈಮ್ಸ್",
     "days": "ಡೇಸ್",
     "moodu": "ಮೂರು",
+    # L18 repair talk
+    "nidhana": "ನಿಧಾನ",
+    "nidhana heli": "ನಿಧಾನ ಹೇಳಿ",
+    "swalpa slow heli": "ಸ್ವಲ್ಪ ಸ್ಲೋ ಹೇಳಿ",
+    "nidhana heli · swalpa slow heli": "ನಿಧಾನ ಹೇಳಿ. ಸ್ವಲ್ಪ ಸ್ಲೋ ಹೇಳಿ",
+    "matte ondu sari heli": "ಮತ್ತೆ ಒಂದು ಸಾರಿ ಹೇಳಿ",
+    "matte heli · matte ondu sari heli": "ಮತ್ತೆ ಹೇಳಿ. ಮತ್ತೆ ಒಂದು ಸಾರಿ ಹೇಳಿ",
+    "ondu sari": "ಒಂದು ಸಾರಿ",
+    "gotthilla": "ಗೊತ್ತಿಲ್ಲ",
+    "nanage artha aagilla": "ನನಗೆ ಅರ್ಥ ಆಗಿಲ್ಲ",
+    "artha aagilla": "ಅರ್ಥ ಆಗಿಲ್ಲ",
+    "gotthilla · nanage artha aagilla": "ಗೊತ್ತಿಲ್ಲ. ನನಗೆ ಅರ್ಥ ಆಗಿಲ್ಲ",
+    "english nalli heli": "ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಹೇಳಿ",
+    "kannada nalli heli": "ಕನ್ನಡದಲ್ಲಿ ಹೇಳಿ",
+    "english nalli heli · kannada nalli heli": "ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಹೇಳಿ. ಕನ್ನಡದಲ್ಲಿ ಹೇಳಿ",
+    "nalli": "ನಲ್ಲಿ",
+    "kannada swalpa swalpa barutte": "ಕನ್ನಡ ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಬರುತ್ತೆ",
+    "idhu eshtu anta": "ಇದು ಎಷ್ಟು ಅಂತ",
+    "idhu eshtu anta?": "ಇದು ಎಷ್ಟು ಅಂತ?",
+    "yaavaaga anta": "ಯಾವಾಗ ಅಂತ",
+    "yaavaaga anta?": "ಯಾವಾಗ ಅಂತ?",
+    "idhu eshtu anta? · yaavaaga anta?": "ಇದು ಎಷ್ಟು ಅಂತ? ಯಾವಾಗ ಅಂತ?",
+    "sari, gothaytu": "ಸರಿ, ಗೊತ್ತಾಯ್ತು",
+    "thanks, clear aytu": "ಥ್ಯಾಂಕ್ಸ್, ಕ್ಲಿಯರ್ ಆಯ್ತು",
+    "sari, gothaytu · thanks, clear aytu": "ಸರಿ, ಗೊತ್ತಾಯ್ತು. ಥ್ಯಾಂಕ್ಸ್, ಕ್ಲಿಯರ್ ಆಯ್ತು",
+    "clear aytu": "ಕ್ಲಿಯರ್ ಆಯ್ತು",
+    "nooru aivattu — cash na card": "ನೂರು ಐವತ್ತು — ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್",
+    "nooru aivattu — cash na card?": "ನೂರು ಐವತ್ತು — ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್?",
+    "kshamisi — matte heli. nidhana heli": "ಕ್ಷಮಿಸಿ — ಮತ್ತೆ ಹೇಳಿ. ನಿಧಾನ ಹೇಳಿ",
+    "kshamisi — matte heli. nidhana heli.": "ಕ್ಷಮಿಸಿ — ಮತ್ತೆ ಹೇಳಿ. ನಿಧಾನ ಹೇಳಿ",
+    "nooru… aivattu. cash na card": "ನೂರು. ಐವತ್ತು. ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್",
+    "nooru… aivattu. cash na card?": "ನೂರು. ಐವತ್ತು. ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್?",
+    "nooru. aivattu. cash na card": "ನೂರು. ಐವತ್ತು. ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್",
+    "nooru. aivattu. cash na card?": "ನೂರು. ಐವತ್ತು. ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್?",
+    "sari, gothaytu. cash. eshtu aytu? nooru aivattu anta": (
+        "ಸರಿ, ಗೊತ್ತಾಯ್ತು. ಕ್ಯಾಶ್. ಎಷ್ಟು ಆಯ್ತು? ನೂರು ಐವತ್ತು ಅಂತ"
+    ),
+    "sari, gothaytu. cash. eshtu aytu? nooru aivattu anta?": (
+        "ಸರಿ, ಗೊತ್ತಾಯ್ತು. ಕ್ಯಾಶ್. ಎಷ್ಟು ಆಯ್ತು? ನೂರು ಐವತ್ತು ಅಂತ?"
+    ),
+    "sari, gothaytu. cash. nooru aivattu anta": "ಸರಿ, ಗೊತ್ತಾಯ್ತು. ಕ್ಯಾಶ್. ನೂರು ಐವತ್ತು ಅಂತ",
+    "sari, gothaytu. cash. nooru aivattu anta?": "ಸರಿ, ಗೊತ್ತಾಯ್ತು. ಕ್ಯಾಶ್. ನೂರು ಐವತ್ತು ಅಂತ?",
+    "nooru aivattu anta": "ನೂರು ಐವತ್ತು ಅಂತ",
+    "nooru aivattu anta?": "ನೂರು ಐವತ್ತು ಅಂತ?",
+    "swalpa slow": "ಸ್ವಲ್ಪ ಸ್ಲೋ",
+    "cash na card": "ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್",
+    "cash na card?": "ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್?",
 }
+
 
 
 

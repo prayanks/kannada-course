@@ -122,6 +122,18 @@
       ]
     },
     {
+      "slug": "anta",
+      "type": "word",
+      "roman": "anta?",
+      "kannada": "ಅಂತ",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "anta.mp3"
+      ]
+    },
+    {
       "slug": "ardha",
       "type": "word",
       "roman": "ardha",
@@ -597,7 +609,8 @@
       "roman": "Gothaytu",
       "kannada": "ಗೊತ್ತಾಯ್ತು",
       "lessons": [
-        "0004"
+        "0004",
+        "0018"
       ],
       "files": [
         "gothaytu.mp3"
@@ -613,6 +626,18 @@
       ],
       "files": [
         "gothilla.mp3"
+      ]
+    },
+    {
+      "slug": "gotthilla",
+      "type": "word",
+      "roman": "Gotthilla",
+      "kannada": "ಗೊತ್ತಿಲ್ಲ",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "gotthilla.mp3"
       ]
     },
     {
@@ -2094,6 +2119,20 @@
       ]
     },
     {
+      "slug": "anta_2",
+      "type": "sentence",
+      "roman": "anta?",
+      "kannada": "ಅಂತ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "anta_2_slow.mp3",
+        "anta_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "ardha_kilo",
       "type": "sentence",
       "roman": "ardha kilo",
@@ -2133,6 +2172,20 @@
       "files": [
         "ardha_kilo_kodri_fresh_ide_na_slow.mp3",
         "ardha_kilo_kodri_fresh_ide_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "artha_aagilla",
+      "type": "sentence",
+      "roman": "artha aagilla",
+      "kannada": "ಅರ್ಥ ಆಗಿಲ್ಲ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "artha_aagilla_slow.mp3",
+        "artha_aagilla_nat.mp3"
       ]
     },
     {
@@ -2349,6 +2402,20 @@
       ]
     },
     {
+      "slug": "clear_aytu",
+      "type": "sentence",
+      "roman": "clear aytu",
+      "kannada": "ಕ್ಲಿಯರ್ ಆಯ್ತು",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "clear_aytu_slow.mp3",
+        "clear_aytu_nat.mp3"
+      ]
+    },
+    {
       "slug": "coffee_ondu_kodri",
       "type": "sentence",
       "roman": "Coffee ondu kodri",
@@ -2454,7 +2521,8 @@
       "kind": "dialogue",
       "lessons": [
         "0011",
-        "0015"
+        "0015",
+        "0018"
       ],
       "files": [
         "dhanyavadagalu_2_slow.mp3",
@@ -2656,6 +2724,20 @@
       "files": [
         "elu_gante-ge_nantara_slow.mp3",
         "elu_gante-ge_nantara_nat.mp3"
+      ]
+    },
+    {
+      "slug": "english_nalli_heli",
+      "type": "sentence",
+      "roman": "English nalli heli",
+      "kannada": "ಇಂಗ್ಲಿಷ್‌ನಲ್ಲಿ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "english_nalli_heli_slow.mp3",
+        "english_nalli_heli_nat.mp3"
       ]
     },
     {
@@ -3265,6 +3347,20 @@
       ]
     },
     {
+      "slug": "haudu",
+      "type": "sentence",
+      "roman": "Haudu.",
+      "kannada": "ಹೌದು",
+      "kind": "dialogue",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "haudu_slow.mp3",
+        "haudu_nat.mp3"
+      ]
+    },
+    {
       "slug": "haudu_dhanyavadagalu",
       "type": "sentence",
       "roman": "Haudu. Dhanyavadagalu.",
@@ -3528,6 +3624,20 @@
       "files": [
         "idhu_correct_alla_slow.mp3",
         "idhu_correct_alla_nat.mp3"
+      ]
+    },
+    {
+      "slug": "idhu_eshtu_anta",
+      "type": "sentence",
+      "roman": "Idhu eshtu anta?",
+      "kannada": "ಇದು ಎಷ್ಟು ಅಂತ?",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "idhu_eshtu_anta_slow.mp3",
+        "idhu_eshtu_anta_nat.mp3"
       ]
     },
     {
@@ -3895,13 +4005,28 @@
       ]
     },
     {
+      "slug": "kannada_nalli_heli",
+      "type": "sentence",
+      "roman": "Kannada nalli heli",
+      "kannada": "ಕನ್ನಡದಲ್ಲಿ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "kannada_nalli_heli_slow.mp3",
+        "kannada_nalli_heli_nat.mp3"
+      ]
+    },
+    {
       "slug": "kannada_swalpa_swalpa_barutte",
       "type": "sentence",
       "roman": "Kannada swalpa swalpa barutte",
       "kannada": "ಕನ್ನಡ ಸ್ವಲ್ಪ ಸ್ವಲ್ಪ ಬರುತ್ತೆ",
       "kind": "phrase",
       "lessons": [
-        "0006"
+        "0006",
+        "0018"
       ],
       "files": [
         "kannada_swalpa_swalpa_barutte_slow.mp3",
@@ -3990,6 +4115,20 @@
       "files": [
         "kshamisi_maadi_slow.mp3",
         "kshamisi_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "kshamisi_matte_heli_nidhana_heli",
+      "type": "sentence",
+      "roman": "Kshamisi — matte heli. Nidhana heli.",
+      "kannada": "ಕ್ಷಮಿಸಿ — ಮತ್ತೆ ಹೇಳಿ. ನಿಧಾನ ಹೇಳಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "kshamisi_matte_heli_nidhana_heli_slow.mp3",
+        "kshamisi_matte_heli_nidhana_heli_nat.mp3"
       ]
     },
     {
@@ -4209,11 +4348,26 @@
       "kannada": "ಮತ್ತೆ ಹೇಳಿ",
       "kind": "phrase",
       "lessons": [
-        "0015"
+        "0015",
+        "0018"
       ],
       "files": [
         "matte_heli_slow.mp3",
         "matte_heli_nat.mp3"
+      ]
+    },
+    {
+      "slug": "matte_ondu_sari_heli",
+      "type": "sentence",
+      "roman": "Matte ondu sari heli",
+      "kannada": "ಮತ್ತೆ ಒಂದು ಸಾರಿ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "matte_ondu_sari_heli_slow.mp3",
+        "matte_ondu_sari_heli_nat.mp3"
       ]
     },
     {
@@ -4598,6 +4752,20 @@
       ]
     },
     {
+      "slug": "nanage_artha_aagilla",
+      "type": "sentence",
+      "roman": "Nanage artha aagilla",
+      "kannada": "ನನಗೆ ಅರ್ಥ ಆಗಿಲ್ಲ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "nanage_artha_aagilla_slow.mp3",
+        "nanage_artha_aagilla_nat.mp3"
+      ]
+    },
+    {
       "slug": "nanage_fever_ide",
       "type": "sentence",
       "roman": "Nanage fever ide",
@@ -4810,6 +4978,20 @@
       ]
     },
     {
+      "slug": "nidhana_heli",
+      "type": "sentence",
+      "roman": "Nidhana heli",
+      "kannada": "ನಿಧಾನ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "nidhana_heli_slow.mp3",
+        "nidhana_heli_nat.mp3"
+      ]
+    },
+    {
       "slug": "nimma_hesaru_enu",
       "type": "sentence",
       "roman": "Nimma hesaru enu?",
@@ -4835,6 +5017,20 @@
       "files": [
         "nimma_phone_number_eshtu_slow.mp3",
         "nimma_phone_number_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nooru_aivattu_cash_na_card",
+      "type": "sentence",
+      "roman": "Nooru aivattu — cash na card?",
+      "kannada": "ನೂರು ಐವತ್ತು — ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್?",
+      "kind": "dialogue",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "nooru_aivattu_cash_na_card_slow.mp3",
+        "nooru_aivattu_cash_na_card_nat.mp3"
       ]
     },
     {
@@ -4864,6 +5060,20 @@
       "files": [
         "nooru_2_slow.mp3",
         "nooru_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nooru_aivattu_cash_na_card_2",
+      "type": "sentence",
+      "roman": "Nooru. aivattu. Cash na card?",
+      "kannada": "ನೂರು. ಐವತ್ತು. ಕ್ಯಾಶ್ ನಾ ಕಾರ್ಡ್?",
+      "kind": "dialogue",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "nooru_aivattu_cash_na_card_2_slow.mp3",
+        "nooru_aivattu_cash_na_card_2_nat.mp3"
       ]
     },
     {
@@ -4951,6 +5161,20 @@
       ]
     },
     {
+      "slug": "ondu_nimisha",
+      "type": "sentence",
+      "roman": "Ondu nimisha",
+      "kannada": "ಒಂದು ನಿಮಿಷ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "ondu_nimisha_slow.mp3",
+        "ondu_nimisha_nat.mp3"
+      ]
+    },
+    {
       "slug": "ondu_nimisha_kaayri",
       "type": "sentence",
       "roman": "Ondu nimisha kaayri",
@@ -4990,6 +5214,20 @@
       "files": [
         "ondu_piece_slow.mp3",
         "ondu_piece_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_sari",
+      "type": "sentence",
+      "roman": "ondu sari",
+      "kannada": "ಒಂದು ಸಾರಿ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "ondu_sari_slow.mp3",
+        "ondu_sari_nat.mp3"
       ]
     },
     {
@@ -5175,6 +5413,34 @@
       ]
     },
     {
+      "slug": "sari_gothaytu",
+      "type": "sentence",
+      "roman": "Sari, gothaytu",
+      "kannada": "ಸರಿ, ಗೊತ್ತಾಯ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "sari_gothaytu_slow.mp3",
+        "sari_gothaytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_gothaytu_cash_eshtu_aytu_nooru_aivattu_anta",
+      "type": "sentence",
+      "roman": "Sari, gothaytu. Cash. Eshtu aytu? Nooru aivattu anta?",
+      "kannada": "ಸರಿ, ಗೊತ್ತಾಯ್ತು. ಕ್ಯಾಶ್. ಎಷ್ಟು ಆಯ್ತು? ನೂರು ಐವತ್ತು ಅಂತ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "sari_gothaytu_cash_eshtu_aytu_nooru_aivattu_anta_slow.mp3",
+        "sari_gothaytu_cash_eshtu_aytu_nooru_aivattu_anta_nat.mp3"
+      ]
+    },
+    {
       "slug": "sari_hadinaidu",
       "type": "sentence",
       "roman": "Sari, hadinaidu.",
@@ -5353,7 +5619,7 @@
       ]
     },
     {
-      "slug": "sari_gothaytu",
+      "slug": "sari_gothaytu_2",
       "type": "sentence",
       "roman": "Sari. Gothaytu.",
       "kannada": "ಸರಿ. ಗೊತ್ತಾಯ್ತು",
@@ -5362,8 +5628,8 @@
         "0014"
       ],
       "files": [
-        "sari_gothaytu_slow.mp3",
-        "sari_gothaytu_nat.mp3"
+        "sari_gothaytu_2_slow.mp3",
+        "sari_gothaytu_2_nat.mp3"
       ]
     },
     {
@@ -5788,6 +6054,34 @@
       ]
     },
     {
+      "slug": "swalpa_slow",
+      "type": "sentence",
+      "roman": "swalpa slow",
+      "kannada": "ಸ್ವಲ್ಪ ಸ್ಲೋ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "swalpa_slow_slow.mp3",
+        "swalpa_slow_nat.mp3"
+      ]
+    },
+    {
+      "slug": "swalpa_slow_heli",
+      "type": "sentence",
+      "roman": "Swalpa slow heli",
+      "kannada": "ಸ್ವಲ್ಪ ಸ್ಲೋ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "swalpa_slow_heli_slow.mp3",
+        "swalpa_slow_heli_nat.mp3"
+      ]
+    },
+    {
       "slug": "swalpa_thandi_ide",
       "type": "sentence",
       "roman": "Swalpa thandi ide",
@@ -5808,7 +6102,8 @@
       "kannada": "ಸ್ವಲ್ಪ ವೇಟ್ ಮಾಡಿ",
       "kind": "phrase",
       "lessons": [
-        "0006"
+        "0006",
+        "0018"
       ],
       "files": [
         "swalpa_wait_maadi_slow.mp3",
@@ -5841,6 +6136,20 @@
       "files": [
         "tappa_number_slow.mp3",
         "tappa_number_nat.mp3"
+      ]
+    },
+    {
+      "slug": "thanks_clear_aytu",
+      "type": "sentence",
+      "roman": "Thanks, clear aytu",
+      "kannada": "ಥ್ಯಾಂಕ್ಸ್, ಕ್ಲಿಯರ್ ಆಯ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "thanks_clear_aytu_slow.mp3",
+        "thanks_clear_aytu_nat.mp3"
       ]
     },
     {
@@ -6094,6 +6403,20 @@
       "files": [
         "yaaru_maatadtiddira_slow.mp3",
         "yaaru_maatadtiddira_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yaavaaga_anta",
+      "type": "sentence",
+      "roman": "Yaavaaga anta?",
+      "kannada": "ಯಾವಾಗ ಅಂತ?",
+      "kind": "phrase",
+      "lessons": [
+        "0018"
+      ],
+      "files": [
+        "yaavaaga_anta_slow.mp3",
+        "yaavaaga_anta_nat.mp3"
       ]
     },
     {

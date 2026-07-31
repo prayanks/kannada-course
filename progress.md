@@ -2,16 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A2 emerging — pharmacy/symptom script + comic enactment format introduced.
+A2 — repair talk unlocks longer real conversations.
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–16 | Prior | Ready | `0001`…`0016` |
-| 17 | Pharmacy & not feeling well (+ cartoon script) | **Ready** | `0017-pharmacy-not-feeling-well.html` |
+| 1–17 | Prior | Ready | `0001`…`0017` |
+| 18 | Say again / slow down (+ cartoon) | **Ready** | `0018-say-again-slow-down.html` |
 
-## L17 core
-nanage … ide · fever/cold/cough/pain · medicine beku · heghe tagobeku · after food · neeru jasti kudi · rest maadi
+## L18 core
+matte heli · nidhana heli · artha aagilla · english nalli heli · anta? · gothaytu · honesty line
 
 ## Next candidates
-Nidhana heli (slow down) · hotel · more comic-format lessons
+Hotel/check-in · bank/UPI · more comic lessons

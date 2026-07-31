@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0018 · Say again, slow down (repair talk)</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .comic-section { margin: 2.5rem 0 1rem; padding-top: 0.5rem; }
+    .comic-section > .label {
+      font-family: var(--sans); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .comic-strip { display: flex; flex-direction: column; gap: 1rem; }
+    .comic-panel {
+      border: 3px solid var(--ink, #1a1a1a); border-radius: 12px; background: #fffef7; color: #1a1a1a;
+      overflow: hidden; box-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      .comic-panel {
+        background: #1c1f26; color: #f0efe8; border-color: #c8c4b8; box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+      }
+    }
+    .comic-panel .panel-top { display: flex; align-items: stretch; min-height: 140px; }
+    .comic-panel .scene {
+      flex: 1; display: flex; align-items: flex-end; justify-content: space-around;
+      padding: 1rem 0.75rem 0.5rem; position: relative;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.04) 60%);
+    }
+    .comic-panel .scene-tag {
+      position: absolute; top: 0.5rem; left: 0.65rem;
+      font-family: var(--sans); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; background: #ffe566; color: #1a1a1a;
+      padding: 0.15rem 0.45rem; border-radius: 4px; border: 2px solid #1a1a1a;
+    }
+    .char { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; max-width: 42%; }
+    .char .avatar {
+      width: 64px; height: 64px; border-radius: 50%; border: 3px solid #1a1a1a;
+      display: grid; place-items: center; font-size: 1.75rem; background: #e8f4ff;
+      box-shadow: 2px 2px 0 #1a1a1a;
+    }
+    .char.local .avatar { background: #e8ffe8; }
+    .char.you .avatar { background: #ffe8f0; }
+    .char .name {
+      font-family: var(--sans); font-size: 0.7rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .bubble-col {
+      flex: 1.15; display: flex; flex-direction: column; justify-content: center;
+      padding: 0.85rem 1rem; gap: 0.55rem; border-left: 3px solid #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bubble-col { border-left-color: #c8c4b8; }
+      .char .avatar { border-color: #c8c4b8; box-shadow: 2px 2px 0 #000; }
+      .comic-panel .scene-tag { border-color: #c8c4b8; }
+    }
+    .speech {
+      position: relative; border: 2.5px solid currentColor; border-radius: 1rem;
+      padding: 0.55rem 0.75rem; font-family: var(--sans); background: #fff; color: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .speech { background: #2a2f3a; color: #f0efe8; border-color: #c8c4b8; }
+    }
+    .speech.you-side { border-bottom-left-radius: 0.25rem; }
+    .speech.other-side { border-bottom-right-radius: 0.25rem; margin-left: auto; }
+    .speech .kn-line { font-weight: 800; font-size: 1rem; line-height: 1.3; margin: 0; }
+    .speech .en-line { margin: 0.25rem 0 0; font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
+    .speech .who-mini {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; opacity: 0.55; margin: 0 0 0.2rem;
+    }
+    .comic-nav-note { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); margin: 0.75rem 0 0; }
+    @media (max-width: 640px) {
+      .comic-panel .panel-top { flex-direction: column; }
+      .bubble-col { border-left: none; border-top: 3px solid #1a1a1a; }
+      .char .avatar { width: 52px; height: 52px; font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0018</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~11 min</span>
+        </div>
+        <h1>Say again, slow down (repair talk)</h1>
+        <p class="lede">
+          Stay in the conversation when speech is fast — the meta-skill that unlocks every future lesson.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Smoothly use
+          <strong>Matte heli · Nidhana heli · Swalpa slow · Gotthilla · English nalli heli · Kannada swalpa swalpa barutte</strong>
+          without freezing into full English panic.
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review:</strong>
+        Kshamisi · Dayavittu · Matte heli (L15) · Nanage gothilla · Kannada swalpa swalpa barutte (L6)
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        You already generate shop, auto, and society lines. Real locals speak faster than lessons.
+        <strong>Repair talk</strong> keeps the channel open: ask again, slow down, admit limits, switch lanes politely.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>heli</em> (say / tell)</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Matte heli</strong> = say again<br />
+          <strong>Nidhana heli</strong> = say slowly<br />
+          <strong>English nalli heli</strong> = say it in English<br />
+          Stack with <strong>dayavittu / kshamisi</strong> for softness.
+        </p>
+      </div>
+
+      <h2><span class="num">03</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Matte heli · Matte ondu sari heli</p>
+        <div class="audio-block" data-slug="matte_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/matte_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/matte_heli_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="matte_ondu_sari_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/matte_ondu_sari_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/matte_ondu_sari_heli_nat.mp3"></audio></span></div>
+        <p class="en">Say again · Say one more time</p>
+        <p class="hi">≈ Phir se boliye</p>
+        <div class="meta">L15 glue upgraded. <strong>ondu sari</strong> = one time.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nidhana heli · Swalpa slow heli</p>
+        <div class="audio-block" data-slug="nidhana_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nidhana_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nidhana_heli_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="swalpa_slow_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_slow_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_slow_heli_nat.mp3"></audio></span></div>
+        <p class="en">Say slowly · Speak a bit slow</p>
+        <p class="hi">≈ Dheere boliye</p>
+        <div class="meta"><strong>nidhana</strong> = slow/slowly. EN slow is also fine in Bengaluru.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Gotthilla · Nanage artha aagilla</p>
+        <div class="audio-block" data-slug="gotthilla"><audio controls preload="none" src="../assets/audio/gotthilla.mp3"></audio></div>
+        <div class="audio-block" data-slug="nanage_artha_aagilla"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanage_artha_aagilla_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanage_artha_aagilla_nat.mp3"></audio></span></div>
+        <p class="en">I don’t get it · I didn’t understand</p>
+        <p class="hi">≈ Samajh nahi aaya</p>
+        <div class="meta"><strong>artha aagilla</strong> ≈ meaning didn’t happen / didn’t understand.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">English nalli heli · Kannada nalli heli</p>
+        <div class="audio-block" data-slug="english_nalli_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/english_nalli_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/english_nalli_heli_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="kannada_nalli_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kannada_nalli_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kannada_nalli_heli_nat.mp3"></audio></span></div>
+        <p class="en">Say it in English · Say it in Kannada</p>
+        <p class="hi">≈ English mein bolo · Kannada mein bolo</p>
+        <div class="meta"><strong>nalli</strong> = in (location/medium). Escape hatch without shame.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Kannada swalpa swalpa barutte</p>
+        <div class="audio-block" data-slug="kannada_swalpa_swalpa_barutte"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kannada_swalpa_swalpa_barutte_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kannada_swalpa_swalpa_barutte_nat.mp3"></audio></span></div>
+        <p class="en">I know a little Kannada</p>
+        <p class="hi">≈ Kannada thodi aati hai</p>
+        <div class="meta">Recycle L6 honesty line — sets expectations.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Swalpa wait maadi · Ondu nimisha</p>
+        <div class="audio-block" data-slug="swalpa_wait_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_wait_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_wait_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="ondu_nimisha"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_nimisha_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_nimisha_nat.mp3"></audio></span></div>
+        <p class="en">Please wait a bit · One minute</p>
+        <p class="hi">≈ Ek minute rukiye</p>
+        <div class="meta">Buy thinking time (L6 + L10).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Idhu eshtu anta? · Yaavaaga anta?</p>
+        <div class="audio-block" data-slug="idhu_eshtu_anta"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idhu_eshtu_anta_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idhu_eshtu_anta_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="yaavaaga_anta"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yaavaaga_anta_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yaavaaga_anta_nat.mp3"></audio></span></div>
+        <p class="en">You said how much? · You said when?</p>
+        <p class="hi">≈ Kitna bola? · Kab bola?</p>
+        <div class="meta"><strong>anta</strong> ≈ “that / so / you said” particle — pins what you heard.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Sari, gothaytu · Thanks, clear aytu</p>
+        <div class="audio-block" data-slug="sari_gothaytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_gothaytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_gothaytu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="thanks_clear_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/thanks_clear_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/thanks_clear_aytu_nat.mp3"></audio></span></div>
+        <p class="en">Okay, got it · Thanks, it’s clear</p>
+        <p class="hi">≈ Samajh gaya</p>
+        <div class="meta">Close the repair loop so they know you’re back on track.</div>
+      </div>
+
+      <h2><span class="num">04</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">matte heli</span><div class="audio-block" data-slug="matte_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/matte_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/matte_heli_nat.mp3"></audio></span></div><span>say again</span><span>phir se boliye</span></div>
+        <div class="row"><span class="kn">nidhana heli</span><div class="audio-block" data-slug="nidhana_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nidhana_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nidhana_heli_nat.mp3"></audio></span></div><span>say slowly</span><span>dheere boliye</span></div>
+        <div class="row"><span class="kn">gotthilla</span><div class="audio-block" data-slug="gotthilla"><audio controls preload="none" src="../assets/audio/gotthilla.mp3"></audio></div><span>don’t get it</span><span>samajh nahi</span></div>
+        <div class="row"><span class="kn">artha aagilla</span><div class="audio-block" data-slug="artha_aagilla"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/artha_aagilla_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/artha_aagilla_nat.mp3"></audio></span></div><span>didn’t understand</span><span>matlab nahi aaya</span></div>
+        <div class="row"><span class="kn">… nalli heli</span><span>say in …</span><span>… mein bolo</span></div>
+        <div class="row"><span class="kn">ondu sari</span><div class="audio-block" data-slug="ondu_sari"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_sari_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_sari_nat.mp3"></audio></span></div><span>one time</span><span>ek baar</span></div>
+        <div class="row"><span class="kn">anta?</span><div class="audio-block" data-slug="anta"><audio controls preload="none" src="../assets/audio/anta.mp3"></audio></div><span>you said…?</span><span>bola…?</span></div>
+        <div class="row"><span class="kn">gothaytu</span><div class="audio-block" data-slug="gothaytu"><audio controls preload="none" src="../assets/audio/gothaytu.mp3"></audio></div><span>got it</span><span>samajh gaya</span></div>
+        <div class="row"><span class="kn">clear aytu</span><div class="audio-block" data-slug="clear_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/clear_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/clear_aytu_nat.mp3"></audio></span></div><span>it’s clear</span><span>clear ho gaya</span></div>
+        <div class="row"><span class="kn">swalpa slow</span><div class="audio-block" data-slug="swalpa_slow"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_slow_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_slow_nat.mp3"></audio></span></div><span>a bit slow</span><span>thoda slow</span></div>
+      </div>
+
+      <h2><span class="num">05</span> Model dialogue — fast shopkeeper</h2>
+      <div class="dialogue">
+        <p><span class="who">Shop</span><br /><span class="line">Nooru aivattu — cash na card?</span>
+        <div class="audio-block" data-slug="nooru_aivattu_cash_na_card"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nooru_aivattu_cash_na_card_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nooru_aivattu_cash_na_card_nat.mp3"></audio></span></div><br /><span class="gloss">(fast) Hundred fifty — cash or card?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Kshamisi — matte heli. Nidhana heli.</span>
+        <div class="audio-block" data-slug="kshamisi_matte_heli_nidhana_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kshamisi_matte_heli_nidhana_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kshamisi_matte_heli_nidhana_heli_nat.mp3"></audio></span></div><br /><span class="gloss">Sorry — say again. Slowly.</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Nooru… aivattu. Cash na card?</span>
+        <div class="audio-block" data-slug="nooru_aivattu_cash_na_card_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nooru_aivattu_cash_na_card_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nooru_aivattu_cash_na_card_2_nat.mp3"></audio></span></div><br /><span class="gloss">Hundred… fifty. Cash or card?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari, gothaytu. Cash. Eshtu aytu? Nooru aivattu anta?</span>
+        <div class="audio-block" data-slug="sari_gothaytu_cash_eshtu_aytu_nooru_aivattu_anta"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_gothaytu_cash_eshtu_aytu_nooru_aivattu_anta_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_gothaytu_cash_eshtu_aytu_nooru_aivattu_anta_nat.mp3"></audio></span></div><br /><span class="gloss">Okay, got it. Cash. How much? One fifty, you said?</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Haudu.</span>
+        <div class="audio-block" data-slug="haudu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_nat.mp3"></audio></span></div><br /><span class="gloss">Yes.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="dhanyavadagalu_2"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/dhanyavadagalu_2_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/dhanyavadagalu_2_nat.mp3"></audio></span></div><br /><span class="gloss">Thank you.</span></p>
+      </div>
+
+      <h2><span class="num">06</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Say again”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Matte heli</button>
+          <button type="button" data-answer="wrong">Matte hogona</button>
+          <button type="button" data-answer="wrong">Matte nilsi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “Say slowly”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Nidhana hogona</button>
+          <button type="button" data-answer="correct">Nidhana heli</button>
+          <button type="button" data-answer="wrong">Nidhana beku</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “I didn’t understand”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Nanage artha aagilla</button>
+          <button type="button" data-answer="wrong">Nanage artha hogona</button>
+          <button type="button" data-answer="wrong">Nanage artha kodri</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “Say it in English”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">English nalli nilsi</button>
+          <button type="button" data-answer="correct">English nalli heli</button>
+          <button type="button" data-answer="wrong">English nalli bisi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. Close the loop: “got it”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Gottila</button>
+          <button type="button" data-answer="correct">Gothaytu</button>
+          <button type="button" data-answer="wrong">Gotha?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced: “I know a little Kannada” (L6)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Kannada swalpa swalpa barutte</button>
+          <button type="button" data-answer="wrong">Kannada tumba barutte only</button>
+          <button type="button" data-answer="wrong">Kannada illa forever</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">07</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Sorry — say again. Slowly.</li>
+          <li>I didn’t understand.</li>
+          <li>Please say it in English.</li>
+          <li>I know a little Kannada.</li>
+          <li>Wait one minute.</li>
+          <li>Okay, got it. One fifty, you said?</li>
+        </ol>
+      </div>
+
+      <h2><span class="num">08</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">This week</div>
+        <ol>
+          <li>Use <strong>Matte heli</strong> or <strong>Nidhana heli</strong> once with a real human (shop, guard, auto).</li>
+          <li>Close with <strong>Sari, gothaytu</strong> so they know you’re tracking.</li>
+          <li>If still lost: <strong>English nalli heli</strong> — then retry one Kannada word on the way out.</li>
+        </ol>
+      </div>
+
+      <!-- cartoon -->
+      <section class="comic-section" aria-label="Cartoon dialogue enactment">
+        <h2><span class="num">09</span> Cartoon script — enact the repair</h2>
+        <p class="comic-nav-note">Act both roles. Cover English on pass two.</p>
+        <div class="label">Scene: kirana counter · busy evening</div>
+
+        <div class="comic-strip">
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 1 · Too fast</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">😮</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛒</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Shop</p>
+                  <p class="kn-line">Nooru aivattu — cash na card?</p>
+                  <p class="en-line">(fast) Hundred fifty — cash or card?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 2 · Repair</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙏</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛒</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Kshamisi — matte heli. Nidhana heli.</p>
+                  <p class="en-line">Sorry — say again. Slowly.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 3 · Slow replay</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛒</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Shop</p>
+                  <p class="kn-line">Nooru… aivattu. Cash na card?</p>
+                  <p class="en-line">Hundred… fifty. Cash or card?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 4 · Confirm</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛒</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Sari, gothaytu. Cash. Nooru aivattu anta?</p>
+                  <p class="en-line">Okay, got it. Cash. One fifty, you said?</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Shop</p>
+                  <p class="kn-line">Haudu.</p>
+                  <p class="en-line">Yes.</p>
+                </div>
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Dhanyavadagalu.</p>
+                  <p class="en-line">Thank you.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="comic-nav-note"><strong>Act it:</strong> stand up; second pass cover English glosses.</p>
+      </section>
+
+      <h2><span class="num">10</span> Primary source</h2>
+      <p class="cite">
+        Ears in the wild beat textbooks. Backup phrases:
+        <a href="https://en.wikibooks.org/wiki/Kannada/Conversational_Phrases">WikiBooks conversational phrases</a>.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Someone answered your repair line with a new phrase? Paste it — we’ll add a card.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0017-pharmacy-not-feeling-well.html">← Lesson 0017</a>
+        <a href="../reference/repair-talk-cheatsheet.html">Reference · repair talk</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
