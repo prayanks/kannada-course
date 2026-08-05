@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0019 · Karnataka regional food</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .menu-chip {
+      display: inline-block; font-family: var(--sans); font-size: 0.85rem;
+      border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.25rem 0.2rem 0; background: var(--bg-elevated);
+    }
+    .menu-chip b { color: var(--accent); }
+    .comic-section { margin: 2.5rem 0 1rem; padding-top: 0.5rem; }
+    .comic-section > .label {
+      font-family: var(--sans); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .comic-strip { display: flex; flex-direction: column; gap: 1rem; }
+    .comic-panel {
+      border: 3px solid var(--ink, #1a1a1a); border-radius: 12px; background: #fffef7; color: #1a1a1a;
+      overflow: hidden; box-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      .comic-panel {
+        background: #1c1f26; color: #f0efe8; border-color: #c8c4b8; box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+      }
+    }
+    .comic-panel .panel-top { display: flex; align-items: stretch; min-height: 140px; }
+    .comic-panel .scene {
+      flex: 1; display: flex; align-items: flex-end; justify-content: space-around;
+      padding: 1rem 0.75rem 0.5rem; position: relative;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.04) 60%);
+    }
+    .comic-panel .scene-tag {
+      position: absolute; top: 0.5rem; left: 0.65rem;
+      font-family: var(--sans); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; background: #ffe566; color: #1a1a1a;
+      padding: 0.15rem 0.45rem; border-radius: 4px; border: 2px solid #1a1a1a;
+    }
+    .char { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; max-width: 42%; }
+    .char .avatar {
+      width: 64px; height: 64px; border-radius: 50%; border: 3px solid #1a1a1a;
+      display: grid; place-items: center; font-size: 1.75rem; background: #e8f4ff;
+      box-shadow: 2px 2px 0 #1a1a1a;
+    }
+    .char.local .avatar { background: #e8ffe8; }
+    .char.you .avatar { background: #ffe8f0; }
+    .char .name {
+      font-family: var(--sans); font-size: 0.7rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .bubble-col {
+      flex: 1.15; display: flex; flex-direction: column; justify-content: center;
+      padding: 0.85rem 1rem; gap: 0.55rem; border-left: 3px solid #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bubble-col { border-left-color: #c8c4b8; }
+      .char .avatar { border-color: #c8c4b8; box-shadow: 2px 2px 0 #000; }
+      .comic-panel .scene-tag { border-color: #c8c4b8; }
+    }
+    .speech {
+      position: relative; border: 2.5px solid currentColor; border-radius: 1rem;
+      padding: 0.55rem 0.75rem; font-family: var(--sans); background: #fff; color: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .speech { background: #2a2f3a; color: #f0efe8; border-color: #c8c4b8; }
+    }
+    .speech.you-side { border-bottom-left-radius: 0.25rem; }
+    .speech.other-side { border-bottom-right-radius: 0.25rem; margin-left: auto; }
+    .speech .kn-line { font-weight: 800; font-size: 1rem; line-height: 1.3; margin: 0; }
+    .speech .en-line { margin: 0.25rem 0 0; font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
+    .speech .who-mini {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; opacity: 0.55; margin: 0 0 0.2rem;
+    }
+    .comic-nav-note { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); margin: 0.75rem 0 0; }
+    @media (max-width: 640px) {
+      .comic-panel .panel-top { flex-direction: column; }
+      .bubble-col { border-left: none; border-top: 3px solid #1a1a1a; }
+      .char .avatar { width: 52px; height: 52px; font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0019</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~12 min</span>
+        </div>
+        <h1>Karnataka regional food</h1>
+        <p class="lede">
+          Order state specialties beyond idli-dosa — ask what’s special, say what you like, tune the spice.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          At a Karnataka meals / udupi-style counter, run:
+          <strong>Yen special ide? → [dish] ondu kodri → Khara kammi · Nanage tumba ishta → Bill kodri</strong>
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review (L5):</strong>
+        … kodri · … beku · Parcel maadi · Iggade · Neeru kodri · Bill kodri · Eshtu aytu?
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        L5 got you through tea, idli, and the bill. Locals and hotel boards push
+        <strong>bisi bele bath, ragi mudde, neer dosa, akki rotti, vangi bath, mysore pak</strong>.
+        You need dish names + one ask (“what’s special?”) + one taste line (“I like it”) so you don’t freeze into English-only.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>ishta</em> + <em>yen special ide?</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Yen special ide?</strong> = what’s the special / recommendation?<br />
+          <strong>Nanage … ishta</strong> = I like … (≈ mujhe … pasand)<br />
+          <strong>Tumba ishta</strong> = like it a lot<br />
+          Order still uses L5: <strong>[dish] ondu kodri</strong> / <strong>[dish] beku</strong>
+        </p>
+      </div>
+      <p>
+        <em>Bisi</em> here is the dish word “hot” (as in hot lentil rice) — same root you heard for weather heat in L12, different context.
+      </p>
+
+      <h2><span class="num">03</span> Regional plate board (recognition)</h2>
+      <p>
+        <span class="menu-chip"><b>bisi bele bath</b></span>
+        <span class="menu-chip"><b>ragi mudde</b></span>
+        <span class="menu-chip"><b>neer dosa</b></span>
+        <span class="menu-chip"><b>akki rotti</b></span>
+        <span class="menu-chip"><b>vangi bath</b></span>
+        <span class="menu-chip"><b>mysore pak</b></span>
+        <span class="menu-chip"><b>saaru</b></span>
+        <span class="menu-chip"><b>khara</b></span>
+      </p>
+      <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+        <strong>Bisi bele bath</strong> = hot lentil-rice one-pot. <strong>Ragi mudde</strong> = finger-millet balls (often with saaru).
+        <strong>Neer dosa</strong> = thin rice crepe. <strong>Akki rotti</strong> = rice flatbread.
+        <strong>Vangi bath</strong> = brinjal rice. <strong>Mysore pak</strong> = ghee-besan sweet.
+        Dish names stay hybrid EN/KN on boards — that’s normal.
+      </p>
+
+      <h2><span class="num">04</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Yen special ide?</p>
+        <div class="audio-block" data-slug="yen_special_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yen_special_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yen_special_ide_nat.mp3"></audio></span></div>
+        <p class="en">What’s special? / What do you recommend?</p>
+        <p class="hi">≈ Kya special hai?</p>
+        <div class="meta"><strong>yen</strong> = what (spoken). <strong>ide</strong> = is/there is. Opens the counter chat.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Bisi bele bath ondu kodri</p>
+        <div class="audio-block" data-slug="bisi_bele_bath_ondu_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_ondu_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_ondu_kodri_nat.mp3"></audio></span></div>
+        <p class="en">One bisi bele bath, please</p>
+        <p class="hi">≈ Ek bisi bele bath dijiye</p>
+        <div class="meta">L5 order frame. Swap any dish name in the same slot.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Ragi mudde matte saaru beku</p>
+        <div class="audio-block" data-slug="ragi_mudde_matte_saaru_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ragi_mudde_matte_saaru_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ragi_mudde_matte_saaru_beku_nat.mp3"></audio></span></div>
+        <p class="en">I want ragi mudde and saaru</p>
+        <p class="hi">≈ Ragi mudde aur saaru chahiye</p>
+        <div class="meta"><strong>matte</strong> ≈ and/also (you know from repair “matte heli”). <strong>saaru</strong> = thin spiced gravy (often with mudde).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Neer dosa eradu kodri · Akki rotti ondu beku</p>
+        <div class="audio-block" data-slug="neer_dosa_eradu_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/neer_dosa_eradu_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/neer_dosa_eradu_kodri_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="akki_rotti_ondu_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/akki_rotti_ondu_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/akki_rotti_ondu_beku_nat.mp3"></audio></span></div>
+        <p class="en">Two neer dosas please · One akki rotti</p>
+        <p class="hi">≈ Do neer dosa · Ek akki rotti</p>
+        <div class="meta">Numbers from L3. Same counter muscle as idli/dosa.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Khara kammi maadi · Swalpa less spicy</p>
+        <div class="audio-block" data-slug="khara_kammi_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/khara_kammi_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/khara_kammi_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="swalpa_less_spicy"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/swalpa_less_spicy_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/swalpa_less_spicy_nat.mp3"></audio></span></div>
+        <p class="en">Make it less spicy · A bit less spicy</p>
+        <p class="hi">≈ Teekha kam karo</p>
+        <div class="meta"><strong>khara</strong> = spicy/hot (chilli heat, not temperature). Mix KN + EN is native Bengaluru.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanage tumba ishta · Olledu</p>
+        <div class="audio-block" data-slug="nanage_tumba_ishta"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanage_tumba_ishta_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanage_tumba_ishta_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="olledu"><audio controls preload="none" src="../assets/audio/olledu.mp3"></audio></div>
+        <p class="en">I like it a lot · It’s good / nice</p>
+        <p class="hi">≈ Mujhe bahut pasand · Achha hai</p>
+        <div class="meta">Taste feedback to staff or friends. <strong>olledu</strong> ≈ good thing / nice.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Vangi bath parcel maadi · Mysore pak ondu kodri</p>
+        <div class="audio-block" data-slug="vangi_bath_parcel_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/vangi_bath_parcel_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/vangi_bath_parcel_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="mysore_pak_ondu_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/mysore_pak_ondu_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/mysore_pak_ondu_kodri_nat.mp3"></audio></span></div>
+        <p class="en">Pack vangi bath · One mysore pak please</p>
+        <p class="hi">≈ Vangi bath parcel · Ek mysore pak</p>
+        <div class="meta">Sweet close + L5 parcel. Great takeaway stack.</div>
+      </div>
+
+      <h2><span class="num">05</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">yen special ide?</span><div class="audio-block" data-slug="yen_special_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yen_special_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yen_special_ide_nat.mp3"></audio></span></div><span>what’s special?</span><span>kya special?</span></div>
+        <div class="row"><span class="kn">bisi bele bath</span><div class="audio-block" data-slug="bisi_bele_bath"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_nat.mp3"></audio></span></div><span>hot lentil rice</span><span>bisi bele bath</span></div>
+        <div class="row"><span class="kn">ragi mudde</span><div class="audio-block" data-slug="ragi_mudde"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ragi_mudde_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ragi_mudde_nat.mp3"></audio></span></div><span>ragi balls</span><span>ragi mudde</span></div>
+        <div class="row"><span class="kn">saaru</span><div class="audio-block" data-slug="saaru"><audio controls preload="none" src="../assets/audio/saaru.mp3"></audio></div><span>thin gravy</span><span>rasam-like</span></div>
+        <div class="row"><span class="kn">neer dosa</span><div class="audio-block" data-slug="neer_dosa"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/neer_dosa_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/neer_dosa_nat.mp3"></audio></span></div><span>thin rice crepe</span><span>neer dosa</span></div>
+        <div class="row"><span class="kn">akki rotti</span><div class="audio-block" data-slug="akki_rotti"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/akki_rotti_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/akki_rotti_nat.mp3"></audio></span></div><span>rice flatbread</span><span>akki roti</span></div>
+        <div class="row"><span class="kn">vangi bath</span><div class="audio-block" data-slug="vangi_bath"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/vangi_bath_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/vangi_bath_nat.mp3"></audio></span></div><span>brinjal rice</span><span>baingan rice</span></div>
+        <div class="row"><span class="kn">mysore pak</span><div class="audio-block" data-slug="mysore_pak"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/mysore_pak_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/mysore_pak_nat.mp3"></audio></span></div><span>ghee sweet</span><span>mysore pak</span></div>
+        <div class="row"><span class="kn">khara</span><div class="audio-block" data-slug="khara"><audio controls preload="none" src="../assets/audio/khara.mp3"></audio></div><span>spicy</span><span>teekha</span></div>
+        <div class="row"><span class="kn">ishta</span><div class="audio-block" data-slug="ishta"><audio controls preload="none" src="../assets/audio/ishta.mp3"></audio></div><span>like / liking</span><span>pasand</span></div>
+        <div class="row"><span class="kn">tumba ishta</span><div class="audio-block" data-slug="tumba_ishta"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/tumba_ishta_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/tumba_ishta_nat.mp3"></audio></span></div><span>like a lot</span><span>bahut pasand</span></div>
+        <div class="row"><span class="kn">olledu</span><div class="audio-block" data-slug="olledu"><audio controls preload="none" src="../assets/audio/olledu.mp3"></audio></div><span>good / nice</span><span>achha</span></div>
+      </div>
+
+      <h2><span class="num">06</span> Model dialogue — meals counter</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Yen special ide?</span>
+        <div class="audio-block" data-slug="namaskara_yen_special_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_yen_special_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_yen_special_ide_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. What’s special?</span></p>
+        <p><span class="who">Counter</span><br /><span class="line">Bisi bele bath, ragi mudde, neer dosa — ella ide.</span>
+        <div class="audio-block" data-slug="bisi_bele_bath_ragi_mudde_neer_dosa_ella_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_ragi_mudde_neer_dosa_ella_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_ragi_mudde_neer_dosa_ella_ide_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Bisi bele bath, ragi mudde, neer dosa — all are there.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Bisi bele bath ondu kodri. Khara kammi maadi.</span>
+        <div class="audio-block" data-slug="bisi_bele_bath_ondu_kodri_khara_kammi_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_ondu_kodri_khara_kammi_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bisi_bele_bath_ondu_kodri_khara_kammi_maadi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">One bisi bele bath please. Less spicy.</span></p>
+        <p><span class="who">Counter</span><br /><span class="line">Sari. Iggade na parcel?</span>
+        <div class="audio-block" data-slug="sari_iggade_na_parcel"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_iggade_na_parcel_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_iggade_na_parcel_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Here or parcel?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Iggade. Mysore pak ondu kodri.</span>
+        <div class="audio-block" data-slug="iggade_mysore_pak_ondu_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/iggade_mysore_pak_ondu_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/iggade_mysore_pak_ondu_kodri_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Here. One mysore pak please.</span></p>
+        <p><span class="who">You (after tasting)</span><br /><span class="line">Olledu — nanage tumba ishta. Bill kodri.</span>
+        <div class="audio-block" data-slug="olledu_nanage_tumba_ishta_bill_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/olledu_nanage_tumba_ishta_bill_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/olledu_nanage_tumba_ishta_bill_kodri_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Nice — I like it a lot. Bill please.</span></p>
+      </div>
+
+      <h2><span class="num">07</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “What’s special?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Yen special ide?</button>
+          <button type="button" data-answer="wrong">Yen special hogi?</button>
+          <button type="button" data-answer="wrong">Yen special beda?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. One bisi bele bath, please</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Bisi bele bath ondu beda</button>
+          <button type="button" data-answer="correct">Bisi bele bath ondu kodri</button>
+          <button type="button" data-answer="wrong">Bisi bele bath ondu elli</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “Less spicy”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Khara kammi maadi</button>
+          <button type="button" data-answer="wrong">Khara jaasti maadi</button>
+          <button type="button" data-answer="wrong">Khara neeru maadi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “I like it a lot”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Nanage tumba beda</button>
+          <button type="button" data-answer="wrong">Nanage tumba eshtu</button>
+          <button type="button" data-answer="correct">Nanage tumba ishta</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. Ragi mudde + gravy order</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Ragi mudde matte bill beku</button>
+          <button type="button" data-answer="correct">Ragi mudde matte saaru beku</button>
+          <button type="button" data-answer="wrong">Ragi mudde matte gate beku</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced (L5): “Bill please”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Bill kodri</button>
+          <button type="button" data-answer="wrong">Bill hogona</button>
+          <button type="button" data-answer="wrong">Bill nilsi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">08</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>What’s special today?</li>
+          <li>One bisi bele bath, less spicy.</li>
+          <li>Ragi mudde and saaru.</li>
+          <li>Two neer dosas + one mysore pak parcel.</li>
+          <li>It’s good — I like it a lot. Bill please.</li>
+        </ol>
+        <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted);margin-top:0.75rem">
+          Cover English; speak out loud. If stuck, repair with <strong>Matte heli / Nidhana heli</strong> (L18).
+        </p>
+      </div>
+
+      <h2><span class="num">09</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">This week</div>
+        <ol>
+          <li>At any Karnataka / Udupi / meals place, ask <strong>Yen special ide?</strong> once (even if you already know).</li>
+          <li>Order one regional plate from this lesson with <strong>… kodri</strong> or <strong>… beku</strong>.</li>
+          <li>Close with taste line: <strong>Olledu</strong> or <strong>Nanage tumba ishta</strong> — then <strong>Bill kodri</strong>.</li>
+        </ol>
+      </div>
+
+      <!-- cartoon -->
+      <section class="comic-section" aria-label="Cartoon dialogue enactment">
+        <h2><span class="num">10</span> Cartoon script — order the regional plate</h2>
+        <p class="comic-nav-note">Act both roles. Cover English on pass two.</p>
+        <div class="label">Scene: lunch counter · steam + steel plates</div>
+
+        <div class="comic-strip">
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 1 · Ask</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🍛</div><span class="name">Counter</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Namaskara. Yen special ide?</p>
+                  <p class="en-line">Hello. What’s special?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 2 · Board</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🍛</div><span class="name">Counter</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Counter</p>
+                  <p class="kn-line">Bisi bele bath, ragi mudde, neer dosa — ella ide.</p>
+                  <p class="en-line">Those three — all available.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 3 · Order</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙏</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🍛</div><span class="name">Counter</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Bisi bele bath ondu kodri. Khara kammi maadi.</p>
+                  <p class="en-line">One bisi bele bath. Less spicy.</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Counter</p>
+                  <p class="kn-line">Sari. Iggade na?</p>
+                  <p class="en-line">Okay. Here?</p>
+                </div>
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Iggade. Mysore pak ondu kodri.</p>
+                  <p class="en-line">Here. One mysore pak.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 4 · Taste</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">😋</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🍛</div><span class="name">Counter</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Olledu — nanage tumba ishta. Bill kodri.</p>
+                  <p class="en-line">Nice — I like it a lot. Bill please.</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Counter</p>
+                  <p class="kn-line">Sari. Dhanyavadagalu!</p>
+                  <p class="en-line">Okay. Thanks!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="comic-nav-note"><strong>Act it:</strong> stand up; second pass cover English glosses.</p>
+      </section>
+
+      <h2><span class="num">11</span> Primary source</h2>
+      <p class="cite">
+        Dish meanings (bisi = hot, bele = lentils, bath = rice mix) and classic plate list:
+        <a href="https://www.vegrecipesofindia.com/bisi-bele-bath-recipe/">Veg Recipes of India — Bisi Bele Bath</a>
+        · ears in the wild still win for board names and spice levels.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Heard a dish name on a board you couldn’t order? Paste the Roman spelling — we’ll add a card.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0018-say-again-slow-down.html">← Lesson 0018</a>
+        <a href="../reference/regional-food-cheatsheet.html">Reference · regional food</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

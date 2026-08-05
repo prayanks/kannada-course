@@ -979,6 +979,18 @@
       ]
     },
     {
+      "slug": "ishta",
+      "type": "word",
+      "roman": "ishta",
+      "kannada": "ಇಷ್ಟ",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "ishta.mp3"
+      ]
+    },
+    {
       "slug": "ivattu",
       "type": "word",
       "roman": "Ivattu",
@@ -1073,6 +1085,18 @@
       ],
       "files": [
         "kelasa.mp3"
+      ]
+    },
+    {
+      "slug": "khara",
+      "type": "word",
+      "roman": "khara",
+      "kannada": "ಖಾರ",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "khara.mp3"
       ]
     },
     {
@@ -1502,6 +1526,18 @@
       ]
     },
     {
+      "slug": "olledu",
+      "type": "word",
+      "roman": "Olledu",
+      "kannada": "ಒಳ್ಳೇದು",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "olledu.mp3"
+      ]
+    },
+    {
       "slug": "olleyadagali",
       "type": "word",
       "roman": "Olleyadagali",
@@ -1644,6 +1680,18 @@
       ],
       "files": [
         "rupayi.mp3"
+      ]
+    },
+    {
+      "slug": "saaru",
+      "type": "word",
+      "roman": "saaru",
+      "kannada": "ಸಾರು",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "saaru.mp3"
       ]
     },
     {
@@ -2077,6 +2125,34 @@
       ]
     },
     {
+      "slug": "akki_rotti",
+      "type": "sentence",
+      "roman": "akki rotti",
+      "kannada": "ಅಕ್ಕಿ ರೊಟ್ಟಿ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "akki_rotti_slow.mp3",
+        "akki_rotti_nat.mp3"
+      ]
+    },
+    {
+      "slug": "akki_rotti_ondu_beku",
+      "type": "sentence",
+      "roman": "Akki rotti ondu beku",
+      "kannada": "ಅಕ್ಕಿ ರೊಟ್ಟಿ ಒಂದು ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "akki_rotti_ondu_beku_slow.mp3",
+        "akki_rotti_ondu_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "alli_eshtu",
       "type": "sentence",
       "roman": "Alli eshtu?",
@@ -2270,6 +2346,62 @@
       "files": [
         "bill_kodri_eshtu_aytu_slow.mp3",
         "bill_kodri_eshtu_aytu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "bisi_bele_bath",
+      "type": "sentence",
+      "roman": "bisi bele bath",
+      "kannada": "ಬಿಸಿ ಬೇಳೆ ಬಾತ್",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "bisi_bele_bath_slow.mp3",
+        "bisi_bele_bath_nat.mp3"
+      ]
+    },
+    {
+      "slug": "bisi_bele_bath_ondu_kodri",
+      "type": "sentence",
+      "roman": "Bisi bele bath ondu kodri",
+      "kannada": "ಬಿಸಿ ಬೇಳೆ ಬಾತ್ ಒಂದು ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "bisi_bele_bath_ondu_kodri_slow.mp3",
+        "bisi_bele_bath_ondu_kodri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "bisi_bele_bath_ondu_kodri_khara_kammi_maadi",
+      "type": "sentence",
+      "roman": "Bisi bele bath ondu kodri. Khara kammi maadi.",
+      "kannada": "ಬಿಸಿ ಬೇಳೆ ಬಾತ್ ಒಂದು ಕೊಡ್ರಿ. ಖಾರ ಕಮ್ಮಿ ಮಾಡಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "bisi_bele_bath_ondu_kodri_khara_kammi_maadi_slow.mp3",
+        "bisi_bele_bath_ondu_kodri_khara_kammi_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "bisi_bele_bath_ragi_mudde_neer_dosa_ella_ide",
+      "type": "sentence",
+      "roman": "Bisi bele bath, ragi mudde, neer dosa — ella ide.",
+      "kannada": "ಬಿಸಿ ಬೇಳೆ ಬಾತ್, ರಾಗಿ ಮುದ್ದೆ, ನೀರ್ ದೋಸೆ — ಎಲ್ಲಾ ಇದೆ",
+      "kind": "dialogue",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "bisi_bele_bath_ragi_mudde_neer_dosa_ella_ide_slow.mp3",
+        "bisi_bele_bath_ragi_mudde_neer_dosa_ella_ide_nat.mp3"
       ]
     },
     {
@@ -3725,6 +3857,20 @@
       ]
     },
     {
+      "slug": "iggade_mysore_pak_ondu_kodri",
+      "type": "sentence",
+      "roman": "Iggade. Mysore pak ondu kodri.",
+      "kannada": "ಇಗ್ಗಡೆ. ಮೈಸೂರು ಪಾಕ್ ಒಂದು ಕೊಡ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "iggade_mysore_pak_ondu_kodri_slow.mp3",
+        "iggade_mysore_pak_ondu_kodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "iggade_neeru_kodri",
       "type": "sentence",
       "roman": "Iggade. Neeru kodri.",
@@ -4087,6 +4233,20 @@
       "files": [
         "khaali_packet_slow.mp3",
         "khaali_packet_nat.mp3"
+      ]
+    },
+    {
+      "slug": "khara_kammi_maadi",
+      "type": "sentence",
+      "roman": "Khara kammi maadi",
+      "kannada": "ಖಾರ ಕಮ್ಮಿ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "khara_kammi_maadi_slow.mp3",
+        "khara_kammi_maadi_nat.mp3"
       ]
     },
     {
@@ -4483,6 +4643,34 @@
       ]
     },
     {
+      "slug": "mysore_pak",
+      "type": "sentence",
+      "roman": "mysore pak",
+      "kannada": "ಮೈಸೂರು ಪಾಕ್",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "mysore_pak_slow.mp3",
+        "mysore_pak_nat.mp3"
+      ]
+    },
+    {
+      "slug": "mysore_pak_ondu_kodri",
+      "type": "sentence",
+      "roman": "Mysore pak ondu kodri",
+      "kannada": "ಮೈಸೂರು ಪಾಕ್ ಒಂದು ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "mysore_pak_ondu_kodri_slow.mp3",
+        "mysore_pak_ondu_kodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "naale_beligge_elu_gante-ge",
       "type": "sentence",
       "roman": "Naale beligge elu gante-ge.",
@@ -4752,6 +4940,20 @@
       ]
     },
     {
+      "slug": "namaskara_yen_special_ide",
+      "type": "sentence",
+      "roman": "Namaskara. Yen special ide?",
+      "kannada": "ನಮಸ್ಕಾರ. ಏನ್ ಸ್ಪೆಷಲ್ ಇದೆ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "namaskara_yen_special_ide_slow.mp3",
+        "namaskara_yen_special_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "nanage_artha_aagilla",
       "type": "sentence",
       "roman": "Nanage artha aagilla",
@@ -4806,6 +5008,20 @@
       "files": [
         "nanage_kare_maadi_slow.mp3",
         "nanage_kare_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nanage_tumba_ishta",
+      "type": "sentence",
+      "roman": "Nanage tumba ishta",
+      "kannada": "ನನಗೆ ತುಂಬಾ ಇಷ್ಟ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "nanage_tumba_ishta_slow.mp3",
+        "nanage_tumba_ishta_nat.mp3"
       ]
     },
     {
@@ -4933,6 +5149,34 @@
       "files": [
         "nantara_nanage_kare_maadi_slow.mp3",
         "nantara_nanage_kare_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "neer_dosa",
+      "type": "sentence",
+      "roman": "neer dosa",
+      "kannada": "ನೀರ್ ದೋಸೆ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "neer_dosa_slow.mp3",
+        "neer_dosa_nat.mp3"
+      ]
+    },
+    {
+      "slug": "neer_dosa_eradu_kodri",
+      "type": "sentence",
+      "roman": "Neer dosa eradu kodri",
+      "kannada": "ನೀರ್ ದೋಸೆ ಎರಡು ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "neer_dosa_eradu_kodri_slow.mp3",
+        "neer_dosa_eradu_kodri_nat.mp3"
       ]
     },
     {
@@ -5147,6 +5391,20 @@
       ]
     },
     {
+      "slug": "olledu_nanage_tumba_ishta_bill_kodri",
+      "type": "sentence",
+      "roman": "Olledu — nanage tumba ishta. Bill kodri.",
+      "kannada": "ಒಳ್ಳೇದು — ನನಗೆ ತುಂಬಾ ಇಷ್ಟ. ಬಿಲ್ ಕೊಡ್ರಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "olledu_nanage_tumba_ishta_bill_kodri_slow.mp3",
+        "olledu_nanage_tumba_ishta_bill_kodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "ondu_kilo",
       "type": "sentence",
       "roman": "Ondu kilo",
@@ -5298,6 +5556,34 @@
       "files": [
         "prayank_nanna_flat-ge_kodri_mele_hogi_302_slow.mp3",
         "prayank_nanna_flat-ge_kodri_mele_hogi_302_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ragi_mudde",
+      "type": "sentence",
+      "roman": "ragi mudde",
+      "kannada": "ರಾಗಿ ಮುದ್ದೆ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "ragi_mudde_slow.mp3",
+        "ragi_mudde_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ragi_mudde_matte_saaru_beku",
+      "type": "sentence",
+      "roman": "Ragi mudde matte saaru beku",
+      "kannada": "ರಾಗಿ ಮುದ್ದೆ ಮತ್ತೆ ಸಾರು ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "ragi_mudde_matte_saaru_beku_slow.mp3",
+        "ragi_mudde_matte_saaru_beku_nat.mp3"
       ]
     },
     {
@@ -5644,6 +5930,20 @@
       "files": [
         "sari_hogona_slow.mp3",
         "sari_hogona_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_iggade_na_parcel",
+      "type": "sentence",
+      "roman": "Sari. Iggade na parcel?",
+      "kannada": "ಸರಿ. ಇಗ್ಗಡೆ ನಾ ಪಾರ್ಸೆಲ್?",
+      "kind": "dialogue",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "sari_iggade_na_parcel_slow.mp3",
+        "sari_iggade_na_parcel_nat.mp3"
       ]
     },
     {
@@ -6040,6 +6340,20 @@
       ]
     },
     {
+      "slug": "swalpa_less_spicy",
+      "type": "sentence",
+      "roman": "Swalpa less spicy",
+      "kannada": "ಸ್ವಲ್ಪ ಲೆಸ್ ಸ್ಪೈಸಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "swalpa_less_spicy_slow.mp3",
+        "swalpa_less_spicy_nat.mp3"
+      ]
+    },
+    {
       "slug": "swalpa_less_sweet",
       "type": "sentence",
       "roman": "Swalpa less sweet",
@@ -6251,6 +6565,20 @@
       ]
     },
     {
+      "slug": "tumba_ishta",
+      "type": "sentence",
+      "roman": "tumba ishta",
+      "kannada": "ತುಂಬಾ ಇಷ್ಟ",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "tumba_ishta_slow.mp3",
+        "tumba_ishta_nat.mp3"
+      ]
+    },
+    {
       "slug": "tumba_late_aytu",
       "type": "sentence",
       "roman": "Tumba late aytu",
@@ -6333,6 +6661,34 @@
       "files": [
         "umbrella_beku_slow.mp3",
         "umbrella_beku_nat.mp3"
+      ]
+    },
+    {
+      "slug": "vangi_bath",
+      "type": "sentence",
+      "roman": "vangi bath",
+      "kannada": "ವಾಂಗಿ ಬಾತ್",
+      "kind": "vocab_phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "vangi_bath_slow.mp3",
+        "vangi_bath_nat.mp3"
+      ]
+    },
+    {
+      "slug": "vangi_bath_parcel_maadi",
+      "type": "sentence",
+      "roman": "Vangi bath parcel maadi",
+      "kannada": "ವಾಂಗಿ ಬಾತ್ ಪಾರ್ಸೆಲ್ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "vangi_bath_parcel_maadi_slow.mp3",
+        "vangi_bath_parcel_maadi_nat.mp3"
       ]
     },
     {
@@ -6474,6 +6830,20 @@
       "files": [
         "yaavaaga_2_slow.mp3",
         "yaavaaga_2_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yen_special_ide",
+      "type": "sentence",
+      "roman": "Yen special ide?",
+      "kannada": "ಏನ್ ಸ್ಪೆಷಲ್ ಇದೆ?",
+      "kind": "phrase",
+      "lessons": [
+        "0019"
+      ],
+      "files": [
+        "yen_special_ide_slow.mp3",
+        "yen_special_ide_nat.mp3"
       ]
     }
   ]
