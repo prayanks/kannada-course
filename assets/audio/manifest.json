@@ -24,6 +24,18 @@
       ]
     },
     {
+      "slug": "inda",
+      "type": "word",
+      "roman": "-inda",
+      "kannada": "ಇಂದ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "inda.mp3"
+      ]
+    },
+    {
       "slug": "aagide",
       "type": "word",
       "roman": "aagide",
@@ -268,6 +280,18 @@
       ]
     },
     {
+      "slug": "belagavi",
+      "type": "word",
+      "roman": "Belagavi",
+      "kannada": "ಬೆಳಗಾವಿ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "belagavi.mp3"
+      ]
+    },
+    {
       "slug": "beligge",
       "type": "word",
       "roman": "beligge",
@@ -277,6 +301,18 @@
       ],
       "files": [
         "beligge.mp3"
+      ]
+    },
+    {
+      "slug": "bengaluru",
+      "type": "word",
+      "roman": "Bengaluru",
+      "kannada": "ಬೆಂಗಳೂರು",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "bengaluru.mp3"
       ]
     },
     {
@@ -457,6 +493,18 @@
       ],
       "files": [
         "elli.mp3"
+      ]
+    },
+    {
+      "slug": "ellinda",
+      "type": "word",
+      "roman": "ellinda?",
+      "kannada": "ಎಲ್ಲಿಂದ?",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "ellinda.mp3"
       ]
     },
     {
@@ -894,6 +942,18 @@
       ]
     },
     {
+      "slug": "hubballi",
+      "type": "word",
+      "roman": "Hubballi",
+      "kannada": "ಹುಬ್ಬಳ್ಳಿ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "hubballi.mp3"
+      ]
+    },
+    {
       "slug": "idhu",
       "type": "word",
       "roman": "idhu",
@@ -1039,6 +1099,18 @@
       ]
     },
     {
+      "slug": "kalaburagi",
+      "type": "word",
+      "roman": "Kalaburagi",
+      "kannada": "ಕಲಬುರಗಿ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "kalaburagi.mp3"
+      ]
+    },
+    {
       "slug": "kammi",
       "type": "word",
       "roman": "kammi",
@@ -1052,6 +1124,18 @@
       ]
     },
     {
+      "slug": "karavali",
+      "type": "word",
+      "roman": "Karavali",
+      "kannada": "ಕರಾವಳಿ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "karavali.mp3"
+      ]
+    },
+    {
       "slug": "kare",
       "type": "word",
       "roman": "kare",
@@ -1061,6 +1145,18 @@
       ],
       "files": [
         "kare.mp3"
+      ]
+    },
+    {
+      "slug": "karnataka",
+      "type": "word",
+      "roman": "Karnataka",
+      "kannada": "ಕರ್ನಾಟಕ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "karnataka.mp3"
       ]
     },
     {
@@ -1109,6 +1205,18 @@
       ],
       "files": [
         "kilo.mp3"
+      ]
+    },
+    {
+      "slug": "kodagu",
+      "type": "word",
+      "roman": "Kodagu",
+      "kannada": "ಕೊಡಗು",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "kodagu.mp3"
       ]
     },
     {
@@ -1232,6 +1340,18 @@
       ]
     },
     {
+      "slug": "malenadu",
+      "type": "word",
+      "roman": "Malenadu",
+      "kannada": "ಮಲೆನಾಡು",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "malenadu.mp3"
+      ]
+    },
+    {
       "slug": "mane",
       "type": "word",
       "roman": "mane",
@@ -1253,6 +1373,18 @@
       ],
       "files": [
         "manege.mp3"
+      ]
+    },
+    {
+      "slug": "mangaluru",
+      "type": "word",
+      "roman": "Mangaluru",
+      "kannada": "ಮಂಗಳೂರು",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "mangaluru.mp3"
       ]
     },
     {
@@ -1313,6 +1445,18 @@
       ],
       "files": [
         "munche.mp3"
+      ]
+    },
+    {
+      "slug": "mysuru",
+      "type": "word",
+      "roman": "Mysuru",
+      "kannada": "ಮೈಸೂರು",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "mysuru.mp3"
       ]
     },
     {
@@ -1572,6 +1716,18 @@
       ],
       "files": [
         "ondu.mp3"
+      ]
+    },
+    {
+      "slug": "ooru",
+      "type": "word",
+      "roman": "ooru",
+      "kannada": "ಊರು",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "ooru.mp3"
       ]
     },
     {
@@ -1866,6 +2022,18 @@
       ]
     },
     {
+      "slug": "udupi",
+      "type": "word",
+      "roman": "Udupi",
+      "kannada": "ಉಡುಪಿ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "udupi.mp3"
+      ]
+    },
+    {
       "slug": "umba",
       "type": "word",
       "roman": "Umba",
@@ -1899,6 +2067,18 @@
       ],
       "files": [
         "yaaru.mp3"
+      ]
+    },
+    {
+      "slug": "yaava",
+      "type": "word",
+      "roman": "yaava",
+      "kannada": "ಯಾವ",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "yaava.mp3"
       ]
     },
     {
@@ -2803,6 +2983,20 @@
       ]
     },
     {
+      "slug": "ellinda_2",
+      "type": "sentence",
+      "roman": "ellinda?",
+      "kannada": "ಎಲ್ಲಿಂದ?",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "ellinda_2_slow.mp3",
+        "ellinda_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "elu_gante",
       "type": "sentence",
       "roman": "Elu gante",
@@ -3549,6 +3743,20 @@
       ]
     },
     {
+      "slug": "haudu_naanu_bengaluru-alli_iddini_olle_dinagalu",
+      "type": "sentence",
+      "roman": "Haudu. Naanu Bengaluru-alli iddini. Olle dinagalu!",
+      "kannada": "ಹೌದು. ನಾನು ಬೆಂಗಳೂರಲ್ಲಿ ಇದ್ದೀನಿ. ಒಳ್ಳೆ ದಿನಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "haudu_naanu_bengaluru-alli_iddini_olle_dinagalu_slow.mp3",
+        "haudu_naanu_bengaluru-alli_iddini_olle_dinagalu_nat.mp3"
+      ]
+    },
+    {
       "slug": "haudu_neeru_jasti_kudi_rest_maadi",
       "type": "sentence",
       "roman": "Haudu. Neeru jasti kudi. Rest maadi.",
@@ -3896,6 +4104,20 @@
       "files": [
         "illave_medicine_beku_swalpa_soft_slow.mp3",
         "illave_medicine_beku_swalpa_soft_nat.mp3"
+      ]
+    },
+    {
+      "slug": "illi_kelasa",
+      "type": "sentence",
+      "roman": "Illi kelasa",
+      "kannada": "ಇಲ್ಲಿ ಕೆಲಸ",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "illi_kelasa_slow.mp3",
+        "illi_kelasa_nat.mp3"
       ]
     },
     {
@@ -4446,6 +4668,20 @@
       ]
     },
     {
+      "slug": "mangaluru_neevu_illi_kelasa_na",
+      "type": "sentence",
+      "roman": "Mangaluru. Neevu illi kelasa na?",
+      "kannada": "ಮಂಗಳೂರು. ನೀವು ಇಲ್ಲಿ ಕೆಲಸ ನಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "mangaluru_neevu_illi_kelasa_na_slow.mp3",
+        "mangaluru_neevu_illi_kelasa_na_nat.mp3"
+      ]
+    },
+    {
       "slug": "map_nodri",
       "type": "sentence",
       "roman": "Map nodri",
@@ -4713,6 +4949,20 @@
       ]
     },
     {
+      "slug": "naanu_bengaluru-alli_iddini",
+      "type": "sentence",
+      "roman": "Naanu Bengaluru-alli iddini",
+      "kannada": "ನಾನು ಬೆಂಗಳೂರಲ್ಲಿ ಇದ್ದೀನಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "naanu_bengaluru-alli_iddini_slow.mp3",
+        "naanu_bengaluru-alli_iddini_nat.mp3"
+      ]
+    },
+    {
       "slug": "naanu_manege_hogtidini",
       "type": "sentence",
       "roman": "Naanu manege hogtidini",
@@ -4738,6 +4988,48 @@
       "files": [
         "naanu_manege_hogtidini_naale_nodona_slow.mp3",
         "naanu_manege_hogtidini_naale_nodona_nat.mp3"
+      ]
+    },
+    {
+      "slug": "naanu_mangaluru-inda",
+      "type": "sentence",
+      "roman": "Naanu Mangaluru-inda",
+      "kannada": "ನಾನು ಮಂಗಳೂರಿಂದ",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "naanu_mangaluru-inda_slow.mp3",
+        "naanu_mangaluru-inda_nat.mp3"
+      ]
+    },
+    {
+      "slug": "naanu_mangaluru-inda_karavali",
+      "type": "sentence",
+      "roman": "Naanu Mangaluru-inda. Karavali.",
+      "kannada": "ನಾನು ಮಂಗಳೂರಿಂದ. ಕರಾವಳಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "naanu_mangaluru-inda_karavali_slow.mp3",
+        "naanu_mangaluru-inda_karavali_nat.mp3"
+      ]
+    },
+    {
+      "slug": "naanu_mysuru-inda",
+      "type": "sentence",
+      "roman": "Naanu Mysuru-inda",
+      "kannada": "ನಾನು ಮೈಸೂರಿಂದ",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "naanu_mysuru-inda_slow.mp3",
+        "naanu_mysuru-inda_nat.mp3"
       ]
     },
     {
@@ -4895,6 +5187,34 @@
       "files": [
         "namaskara_nanna_hesaru_prayank_flat_302_slow.mp3",
         "namaskara_nanna_hesaru_prayank_flat_302_nat.mp3"
+      ]
+    },
+    {
+      "slug": "namaskara_nanna_ooru_bengaluru_nimma_ooru_elli",
+      "type": "sentence",
+      "roman": "Namaskara. Nanna ooru Bengaluru. Nimma ooru elli?",
+      "kannada": "ನಮಸ್ಕಾರ. ನನ್ನ ಊರು ಬೆಂಗಳೂರು. ನಿಮ್ಮ ಊರು ಎಲ್ಲಿ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "namaskara_nanna_ooru_bengaluru_nimma_ooru_elli_slow.mp3",
+        "namaskara_nanna_ooru_bengaluru_nimma_ooru_elli_nat.mp3"
+      ]
+    },
+    {
+      "slug": "namaskara_neevu_ellinda",
+      "type": "sentence",
+      "roman": "Namaskara. Neevu ellinda?",
+      "kannada": "ನಮಸ್ಕಾರ. ನೀವು ಎಲ್ಲಿಂದ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "namaskara_neevu_ellinda_slow.mp3",
+        "namaskara_neevu_ellinda_nat.mp3"
       ]
     },
     {
@@ -5110,6 +5430,20 @@
       ]
     },
     {
+      "slug": "nanna_ooru_bengaluru",
+      "type": "sentence",
+      "roman": "Nanna ooru Bengaluru",
+      "kannada": "ನನ್ನ ಊರು ಬೆಂಗಳೂರು",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "nanna_ooru_bengaluru_slow.mp3",
+        "nanna_ooru_bengaluru_nat.mp3"
+      ]
+    },
+    {
       "slug": "nantara_balakke",
       "type": "sentence",
       "roman": "Nantara balakke",
@@ -5208,6 +5542,20 @@
       ]
     },
     {
+      "slug": "neevu_ellinda",
+      "type": "sentence",
+      "roman": "Neevu ellinda?",
+      "kannada": "ನೀವು ಎಲ್ಲಿಂದ?",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "neevu_ellinda_slow.mp3",
+        "neevu_ellinda_nat.mp3"
+      ]
+    },
+    {
       "slug": "neevu_2",
       "type": "sentence",
       "roman": "Neevu?",
@@ -5247,6 +5595,20 @@
       "files": [
         "nimma_hesaru_enu_slow.mp3",
         "nimma_hesaru_enu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "nimma_ooru_elli",
+      "type": "sentence",
+      "roman": "Nimma ooru elli?",
+      "kannada": "ನಿಮ್ಮ ಊರು ಎಲ್ಲಿ?",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "nimma_ooru_elli_slow.mp3",
+        "nimma_ooru_elli_nat.mp3"
       ]
     },
     {
@@ -6059,6 +6421,20 @@
       ]
     },
     {
+      "slug": "sari_yaava_ooru_mangaluru_na_udupi",
+      "type": "sentence",
+      "roman": "Sari. Yaava ooru — Mangaluru na Udupi?",
+      "kannada": "ಸರಿ. ಯಾವ ಊರು — ಮಂಗಳೂರು ನಾ ಉಡುಪಿ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "sari_yaava_ooru_mangaluru_na_udupi_slow.mp3",
+        "sari_yaava_ooru_mangaluru_na_udupi_nat.mp3"
+      ]
+    },
+    {
       "slug": "shubha_dinavagali",
       "type": "sentence",
       "roman": "Shubha dinavagali",
@@ -6664,6 +7040,20 @@
       ]
     },
     {
+      "slug": "uttara_karnataka",
+      "type": "sentence",
+      "roman": "Uttara Karnataka",
+      "kannada": "ಉತ್ತರ ಕರ್ನಾಟಕ",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "uttara_karnataka_slow.mp3",
+        "uttara_karnataka_nat.mp3"
+      ]
+    },
+    {
       "slug": "vangi_bath",
       "type": "sentence",
       "roman": "vangi bath",
@@ -6759,6 +7149,20 @@
       "files": [
         "yaaru_maatadtiddira_slow.mp3",
         "yaaru_maatadtiddira_nat.mp3"
+      ]
+    },
+    {
+      "slug": "yaava_ooru",
+      "type": "sentence",
+      "roman": "Yaava ooru?",
+      "kannada": "ಯಾವ ಊರು?",
+      "kind": "phrase",
+      "lessons": [
+        "0020"
+      ],
+      "files": [
+        "yaava_ooru_slow.mp3",
+        "yaava_ooru_nat.mp3"
       ]
     },
     {

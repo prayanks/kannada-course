@@ -2,16 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A2 — repair talk + regional food menus unlock real restaurant loops.
+A2 — hometown / city map talk + regional food unlock neighbour identity chat.
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–18 | Prior | Ready | `0001`…`0018` |
-| 19 | Karnataka regional food (+ cartoon) | **Ready** | `0019-karnataka-regional-food.html` |
+| 1–19 | Prior | Ready | `0001`…`0019` |
+| 20 | Karnataka regions & cities (+ cartoon) | **Ready** | `0020-karnataka-regions-cities.html` |
 
-## L19 core
-yen special ide? · bisi bele bath · ragi mudde + saaru · neer dosa · akki rotti · vangi bath · mysore pak · khara kammi · tumba ishta · olledu
+## L20 core
+ooru · neevu ellinda? · nimma ooru elli? · nanna ooru X · X-inda · yaava ooru? · Bengaluru · Mysuru · Mangaluru · Udupi · Hubballi · Belagavi · karavali · malenadu
 
 ## Next candidates
-Hotel/check-in · bank/UPI · coastal/non-veg food · more comic lessons
+Hotel/check-in · bank/UPI · coastal/non-veg food · bus/train station · more comic lessons

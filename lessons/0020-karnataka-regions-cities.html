@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0020 · Karnataka regions &amp; cities</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .menu-chip {
+      display: inline-block; font-family: var(--sans); font-size: 0.85rem;
+      border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.25rem 0.2rem 0; background: var(--bg-elevated);
+    }
+    .menu-chip b { color: var(--accent); }
+    .region-map {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin: 1rem 0 1.25rem;
+    }
+    @media (max-width: 640px) { .region-map { grid-template-columns: 1fr; } }
+    .region-card {
+      border: 1px solid var(--rule); border-radius: var(--radius-sm);
+      padding: 0.75rem 0.85rem; background: var(--bg-elevated); font-family: var(--sans); font-size: 0.9rem;
+    }
+    .region-card .title { font-weight: 800; color: var(--accent); margin: 0 0 0.25rem; }
+    .region-card .hint { margin: 0; color: var(--muted); font-size: 0.85rem; }
+    .comic-section { margin: 2.5rem 0 1rem; padding-top: 0.5rem; }
+    .comic-section > .label {
+      font-family: var(--sans); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .comic-strip { display: flex; flex-direction: column; gap: 1rem; }
+    .comic-panel {
+      border: 3px solid var(--ink, #1a1a1a); border-radius: 12px; background: #fffef7; color: #1a1a1a;
+      overflow: hidden; box-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      .comic-panel {
+        background: #1c1f26; color: #f0efe8; border-color: #c8c4b8; box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+      }
+    }
+    .comic-panel .panel-top { display: flex; align-items: stretch; min-height: 140px; }
+    .comic-panel .scene {
+      flex: 1; display: flex; align-items: flex-end; justify-content: space-around;
+      padding: 1rem 0.75rem 0.5rem; position: relative;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.04) 60%);
+    }
+    .comic-panel .scene-tag {
+      position: absolute; top: 0.5rem; left: 0.65rem;
+      font-family: var(--sans); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; background: #ffe566; color: #1a1a1a;
+      padding: 0.15rem 0.45rem; border-radius: 4px; border: 2px solid #1a1a1a;
+    }
+    .char { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; max-width: 42%; }
+    .char .avatar {
+      width: 64px; height: 64px; border-radius: 50%; border: 3px solid #1a1a1a;
+      display: grid; place-items: center; font-size: 1.75rem; background: #e8f4ff;
+      box-shadow: 2px 2px 0 #1a1a1a;
+    }
+    .char.local .avatar { background: #e8ffe8; }
+    .char.you .avatar { background: #ffe8f0; }
+    .char .name {
+      font-family: var(--sans); font-size: 0.7rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .bubble-col {
+      flex: 1.15; display: flex; flex-direction: column; justify-content: center;
+      padding: 0.85rem 1rem; gap: 0.55rem; border-left: 3px solid #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bubble-col { border-left-color: #c8c4b8; }
+      .char .avatar { border-color: #c8c4b8; box-shadow: 2px 2px 0 #000; }
+      .comic-panel .scene-tag { border-color: #c8c4b8; }
+    }
+    .speech {
+      position: relative; border: 2.5px solid currentColor; border-radius: 1rem;
+      padding: 0.55rem 0.75rem; font-family: var(--sans); background: #fff; color: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .speech { background: #2a2f3a; color: #f0efe8; border-color: #c8c4b8; }
+    }
+    .speech.you-side { border-bottom-left-radius: 0.25rem; }
+    .speech.other-side { border-bottom-right-radius: 0.25rem; margin-left: auto; }
+    .speech .kn-line { font-weight: 800; font-size: 1rem; line-height: 1.3; margin: 0; }
+    .speech .en-line { margin: 0.25rem 0 0; font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
+    .speech .who-mini {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; opacity: 0.55; margin: 0 0 0.2rem;
+    }
+    .comic-nav-note { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); margin: 0.75rem 0 0; }
+    @media (max-width: 640px) {
+      .comic-panel .panel-top { flex-direction: column; }
+      .bubble-col { border-left: none; border-top: 3px solid #1a1a1a; }
+      .char .avatar { width: 52px; height: 52px; font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0020</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~12 min</span>
+        </div>
+        <h1>Karnataka regions &amp; cities</h1>
+        <p class="lede">
+          Ask someone’s hometown, name major cities, and place them on the state’s mental map — neighbour small talk gold.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Run the hometown loop:
+          <strong>Neevu ellinda? → Nanna ooru Bengaluru → Nimma ooru elli? → Mysuru / Mangaluru / Hubballi…</strong>
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review (L2 + L1):</strong>
+        Elli hogtiddiri? · Manege / office-ge · Illi · Alli · Namaskara · Hegiddiri? · Nanna hesaru…
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        After “where are you going?” (L2), the next neighbour question is almost always
+        <strong>where are you from?</strong> Locals use official city names
+        (<strong>Bengaluru, Mysuru, Mangaluru, Belagavi, Hubballi</strong>) more than old English spellings on the street.
+        Karnataka has ~31 districts in four admin divisions — you don’t need the roster; you need
+        <em>hometown talk</em> + a few region labels so “I’m from the coast / north” lands.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>ooru</em> + <em>ellinda</em> + place-<em>inda</em></h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>Ooru</strong> = hometown / town / city (≈ “merā shahar / gaon” feeling — belonging, not just GPS)<br />
+          <strong>Neevu ellinda?</strong> = where are you from? (polite)<br />
+          <strong>Nanna ooru X</strong> = my place is X<br />
+          <strong>X-inda</strong> = from X · <strong>Naanu Mysuru-inda</strong> = I’m from Mysuru<br />
+          <strong>Yaava ooru?</strong> = which city/town?
+        </p>
+      </div>
+      <p>
+        Same politeness stack as always: default <strong>neevu / nimma</strong> with neighbours.
+        Hindi bridge: <em>Aap kahan se hain?</em> → <strong>Neevu ellinda?</strong>
+      </p>
+
+      <h2><span class="num">03</span> City board (say these out loud)</h2>
+      <p>
+        <span class="menu-chip"><b>Bengaluru</b></span>
+        <span class="menu-chip"><b>Mysuru</b></span>
+        <span class="menu-chip"><b>Mangaluru</b></span>
+        <span class="menu-chip"><b>Udupi</b></span>
+        <span class="menu-chip"><b>Hubballi</b></span>
+        <span class="menu-chip"><b>Belagavi</b></span>
+        <span class="menu-chip"><b>Kalaburagi</b></span>
+        <span class="menu-chip"><b>Kodagu</b></span>
+      </p>
+      <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+        Capital <strong>Bengaluru</strong>. Palace/heritage hub <strong>Mysuru</strong>.
+        Coast pair <strong>Mangaluru · Udupi</strong>. North commercial twin-city side <strong>Hubballi</strong> (often Hubballi–Dharwad).
+        Northwest <strong>Belagavi</strong>. Northeast <strong>Kalaburagi</strong> (older English: Gulbarga).
+        Hills/coffee district people often just say <strong>Kodagu</strong> (Coorg).
+      </p>
+
+      <h2><span class="num">04</span> Region pocket map (spoken labels)</h2>
+      <div class="region-map">
+        <div class="region-card">
+          <p class="title">Karavali</p>
+          <p class="hint">Coast — Mangaluru, Udupi side. Fish, neer dosa country.</p>
+        </div>
+        <div class="region-card">
+          <p class="title">Malenadu</p>
+          <p class="hint">Western Ghats belt — rainy hills, coffee, Kodagu / Chikkamagaluru vibes.</p>
+        </div>
+        <div class="region-card">
+          <p class="title">Uttara Karnataka</p>
+          <p class="hint">North Karnataka — Belagavi, Hubballi, Kalaburagi belt in casual talk.</p>
+        </div>
+        <div class="region-card">
+          <p class="title">Mysuru / south side</p>
+          <p class="hint">Mysuru, Mandya, Hassan area people often say “Mysuru side” in mixed KN–EN.</p>
+        </div>
+      </div>
+      <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+        Admin fact (for orientation only): districts sit under four divisions —
+        Belagavi, Bengaluru, Kalaburagi, Mysuru. You won’t quiz that; the chips above are what people <em>say</em>.
+      </p>
+
+      <h2><span class="num">05</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Neevu ellinda?</p>
+        <div class="audio-block" data-slug="neevu_ellinda"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/neevu_ellinda_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/neevu_ellinda_nat.mp3"></audio></span></div>
+        <p class="en">Where are you from? (polite)</p>
+        <p class="hi">≈ Aap kahan se hain?</p>
+        <div class="meta"><strong>ellinda</strong> = from where. Core opener after names.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nimma ooru elli?</p>
+        <div class="audio-block" data-slug="nimma_ooru_elli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nimma_ooru_elli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nimma_ooru_elli_nat.mp3"></audio></span></div>
+        <p class="en">Where is your hometown / place?</p>
+        <p class="hi">≈ Aapka shehar / gaon kahan hai?</p>
+        <div class="meta"><strong>ooru</strong> carries belonging. Softer than listing a GPS pin.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanna ooru Bengaluru</p>
+        <div class="audio-block" data-slug="nanna_ooru_bengaluru"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_ooru_bengaluru_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_ooru_bengaluru_nat.mp3"></audio></span></div>
+        <p class="en">My place is Bengaluru</p>
+        <p class="hi">≈ Mera shehar Bengaluru hai</p>
+        <div class="meta">Swap any city: <strong>Nanna ooru Mysuru / Mangaluru / Hubballi</strong>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Naanu Mysuru-inda · Naanu Mangaluru-inda</p>
+        <div class="audio-block" data-slug="naanu_mysuru-inda"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_mysuru-inda_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_mysuru-inda_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="naanu_mangaluru-inda"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_mangaluru-inda_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_mangaluru-inda_nat.mp3"></audio></span></div>
+        <p class="en">I’m from Mysuru · I’m from Mangaluru</p>
+        <p class="hi">≈ Main Mysuru se · Main Mangaluru se</p>
+        <div class="meta"><strong>-inda</strong> = from (ablative). Glue to any place name.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Yaava ooru?</p>
+        <div class="audio-block" data-slug="yaava_ooru"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/yaava_ooru_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/yaava_ooru_nat.mp3"></audio></span></div>
+        <p class="en">Which city / town?</p>
+        <p class="hi">≈ Kaunsa shehar?</p>
+        <div class="meta">Follow-up when someone says a region only (“north side”).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Karavali · Malenadu · Uttara Karnataka</p>
+        <div class="audio-block" data-slug="karavali"><audio controls preload="none" src="../assets/audio/karavali.mp3"></audio></div>
+        <div class="audio-block" data-slug="malenadu"><audio controls preload="none" src="../assets/audio/malenadu.mp3"></audio></div>
+        <div class="audio-block" data-slug="uttara_karnataka"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/uttara_karnataka_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/uttara_karnataka_nat.mp3"></audio></span></div>
+        <p class="en">Coast · Malnad hills · North Karnataka</p>
+        <p class="hi">≈ Coastal / pahadi belt / uttar Karnataka</p>
+        <div class="meta">Region labels for “roughly where” before you pin a city.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Naanu Bengaluru-alli iddini · Illi kelasa</p>
+        <div class="audio-block" data-slug="naanu_bengaluru-alli_iddini"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_bengaluru-alli_iddini_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_bengaluru-alli_iddini_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="illi_kelasa"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/illi_kelasa_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/illi_kelasa_nat.mp3"></audio></span></div>
+        <p class="en">I live / am in Bengaluru · Work is here</p>
+        <p class="hi">≈ Main Bengaluru mein hoon · Yahan kaam</p>
+        <div class="meta">Separates <em>hometown</em> (ooru) from <em>current base</em> (alli / illi) — very common in Bengaluru.</div>
+      </div>
+
+      <h2><span class="num">06</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">ooru</span><div class="audio-block" data-slug="ooru"><audio controls preload="none" src="../assets/audio/ooru.mp3"></audio></div><span>hometown / town</span><span>shehar / gaon feel</span></div>
+        <div class="row"><span class="kn">ellinda?</span><div class="audio-block" data-slug="ellinda"><audio controls preload="none" src="../assets/audio/ellinda.mp3"></audio></div><span>from where?</span><span>kahan se?</span></div>
+        <div class="row"><span class="kn">yaava</span><div class="audio-block" data-slug="yaava"><audio controls preload="none" src="../assets/audio/yaava.mp3"></audio></div><span>which</span><span>kaunsa</span></div>
+        <div class="row"><span class="kn">-inda</span><div class="audio-block" data-slug="inda"><audio controls preload="none" src="../assets/audio/inda.mp3"></audio></div><span>from (place)</span><span>se</span></div>
+        <div class="row"><span class="kn">Karnataka</span><div class="audio-block" data-slug="karnataka"><audio controls preload="none" src="../assets/audio/karnataka.mp3"></audio></div><span>Karnataka</span><span>Karnataka</span></div>
+        <div class="row"><span class="kn">Bengaluru</span><div class="audio-block" data-slug="bengaluru"><audio controls preload="none" src="../assets/audio/bengaluru.mp3"></audio></div><span>Bengaluru</span><span>Bengaluru</span></div>
+        <div class="row"><span class="kn">Mysuru</span><div class="audio-block" data-slug="mysuru"><audio controls preload="none" src="../assets/audio/mysuru.mp3"></audio></div><span>Mysuru</span><span>Mysore</span></div>
+        <div class="row"><span class="kn">Mangaluru</span><div class="audio-block" data-slug="mangaluru"><audio controls preload="none" src="../assets/audio/mangaluru.mp3"></audio></div><span>Mangaluru</span><span>Mangalore</span></div>
+        <div class="row"><span class="kn">Udupi</span><div class="audio-block" data-slug="udupi"><audio controls preload="none" src="../assets/audio/udupi.mp3"></audio></div><span>Udupi</span><span>Udupi</span></div>
+        <div class="row"><span class="kn">Hubballi</span><div class="audio-block" data-slug="hubballi"><audio controls preload="none" src="../assets/audio/hubballi.mp3"></audio></div><span>Hubballi</span><span>Hubli</span></div>
+        <div class="row"><span class="kn">Belagavi</span><div class="audio-block" data-slug="belagavi"><audio controls preload="none" src="../assets/audio/belagavi.mp3"></audio></div><span>Belagavi</span><span>Belgaum</span></div>
+        <div class="row"><span class="kn">Kalaburagi</span><div class="audio-block" data-slug="kalaburagi"><audio controls preload="none" src="../assets/audio/kalaburagi.mp3"></audio></div><span>Kalaburagi</span><span>Gulbarga</span></div>
+        <div class="row"><span class="kn">Kodagu</span><div class="audio-block" data-slug="kodagu"><audio controls preload="none" src="../assets/audio/kodagu.mp3"></audio></div><span>Kodagu (Coorg)</span><span>Coorg</span></div>
+        <div class="row"><span class="kn">karavali</span><div class="audio-block" data-slug="karavali"><audio controls preload="none" src="../assets/audio/karavali.mp3"></audio></div><span>coast</span><span>coastal belt</span></div>
+        <div class="row"><span class="kn">malenadu</span><div class="audio-block" data-slug="malenadu"><audio controls preload="none" src="../assets/audio/malenadu.mp3"></audio></div><span>Malnad hills</span><span>hilly belt</span></div>
+      </div>
+
+      <h2><span class="num">07</span> Model dialogue — neighbour courtyard</h2>
+      <div class="dialogue">
+        <p><span class="who">Neighbour</span><br /><span class="line">Namaskara. Neevu ellinda?</span>
+        <div class="audio-block" data-slug="namaskara_neevu_ellinda"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_neevu_ellinda_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_neevu_ellinda_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. Where are you from?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Nanna ooru Bengaluru. Nimma ooru elli?</span>
+        <div class="audio-block" data-slug="namaskara_nanna_ooru_bengaluru_nimma_ooru_elli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_nanna_ooru_bengaluru_nimma_ooru_elli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_nanna_ooru_bengaluru_nimma_ooru_elli_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. My place is Bengaluru. Where’s yours?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Naanu Mangaluru-inda. Karavali.</span>
+        <div class="audio-block" data-slug="naanu_mangaluru-inda_karavali"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/naanu_mangaluru-inda_karavali_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/naanu_mangaluru-inda_karavali_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">I’m from Mangaluru. Coast.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Yaava ooru — Mangaluru na Udupi?</span>
+        <div class="audio-block" data-slug="sari_yaava_ooru_mangaluru_na_udupi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_yaava_ooru_mangaluru_na_udupi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_yaava_ooru_mangaluru_na_udupi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Which town — Mangaluru or Udupi?</span></p>
+        <p><span class="who">Neighbour</span><br /><span class="line">Mangaluru. Neevu illi kelasa na?</span>
+        <div class="audio-block" data-slug="mangaluru_neevu_illi_kelasa_na"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/mangaluru_neevu_illi_kelasa_na_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/mangaluru_neevu_illi_kelasa_na_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Mangaluru. You work here?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Haudu. Naanu Bengaluru-alli iddini. Olle dinagalu!</span>
+        <div class="audio-block" data-slug="haudu_naanu_bengaluru-alli_iddini_olle_dinagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_naanu_bengaluru-alli_iddini_olle_dinagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_naanu_bengaluru-alli_iddini_olle_dinagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Yes. I’m based in Bengaluru. Good day!</span></p>
+      </div>
+
+      <h2><span class="num">08</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Where are you from?” (polite)</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Neevu elli hogtiddiri?</button>
+          <button type="button" data-answer="correct">Neevu ellinda?</button>
+          <button type="button" data-answer="wrong">Neevu eshtu ide?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “My hometown is Mysuru”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Nanna ooru Mysuru</button>
+          <button type="button" data-answer="wrong">Nanna mane Mysuru</button>
+          <button type="button" data-answer="wrong">Nanna hesaru Mysuru</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “I’m from Mangaluru”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Naanu Mangaluru-ge</button>
+          <button type="button" data-answer="wrong">Naanu Mangaluru-alli</button>
+          <button type="button" data-answer="correct">Naanu Mangaluru-inda</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. Coastal belt word</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Karavali</button>
+          <button type="button" data-answer="wrong">Malenadu</button>
+          <button type="button" data-answer="wrong">Kalaburagi</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Which town/city?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Yaava gante?</button>
+          <button type="button" data-answer="correct">Yaava ooru?</button>
+          <button type="button" data-answer="wrong">Yaava eshtu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced (L2): “Where are you going?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Elli iddiri?</button>
+          <button type="button" data-answer="correct">Elli hogtiddiri?</button>
+          <button type="button" data-answer="wrong">Ellinda bande?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">09</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Where are you from? (polite)</li>
+          <li>My place is Bengaluru.</li>
+          <li>I’m from Hubballi.</li>
+          <li>Coast — Mangaluru.</li>
+          <li>Which town — Mysuru or Kodagu?</li>
+          <li>I live / work here in Bengaluru.</li>
+        </ol>
+        <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted);margin-top:0.75rem">
+          Cover English; speak out loud. Repair with <strong>Matte heli / Nidhana heli</strong> (L18) if needed.
+        </p>
+      </div>
+
+      <h2><span class="num">10</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">This week</div>
+        <ol>
+          <li>Ask one person <strong>Neevu ellinda?</strong> or <strong>Nimma ooru elli?</strong> (neighbour, guard, colleague — anyone safe).</li>
+          <li>Answer with your real stack: <strong>Nanna ooru …</strong> and, if different, <strong>Naanu Bengaluru-alli iddini</strong>.</li>
+          <li>Name three cities from the board from memory while looking at a blank Karnataka outline (phone map is fine).</li>
+        </ol>
+      </div>
+
+      <!-- cartoon -->
+      <section class="comic-section" aria-label="Cartoon dialogue enactment">
+        <h2><span class="num">11</span> Cartoon script — hometown chat</h2>
+        <p class="comic-nav-note">Act both roles. Cover English on pass two.</p>
+        <div class="label">Scene: society courtyard · evening chai air</div>
+
+        <div class="comic-strip">
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 1 · Open</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🧓</div><span class="name">Neighbour</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Neighbour</p>
+                  <p class="kn-line">Namaskara. Neevu ellinda?</p>
+                  <p class="en-line">Hello. Where are you from?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 2 · Answer</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🧓</div><span class="name">Neighbour</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Nanna ooru Bengaluru. Nimma ooru elli?</p>
+                  <p class="en-line">My place is Bengaluru. Yours?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 3 · Coast</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙂</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🌊</div><span class="name">Neighbour</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Neighbour</p>
+                  <p class="kn-line">Naanu Mangaluru-inda. Karavali.</p>
+                  <p class="en-line">From Mangaluru. Coast.</p>
+                </div>
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Sari. Yaava ooru — Mangaluru na Udupi?</p>
+                  <p class="en-line">Okay. Mangaluru or Udupi?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 4 · Close</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙏</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🧓</div><span class="name">Neighbour</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Neighbour</p>
+                  <p class="kn-line">Mangaluru. Illi kelasa na?</p>
+                  <p class="en-line">Mangaluru. Work here?</p>
+                </div>
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Haudu. Bengaluru-alli iddini. Olle dinagalu!</p>
+                  <p class="en-line">Yes. Based in Bengaluru. Good day!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="comic-nav-note"><strong>Act it:</strong> stand up; second pass cover English glosses.</p>
+      </section>
+
+      <h2><span class="num">12</span> Primary source</h2>
+      <p class="cite">
+        Districts + four divisions + geographic belts (coast / Malenadu / plains):
+        <a href="https://en.wikipedia.org/wiki/List_of_districts_of_Karnataka">Wikipedia — List of districts of Karnataka</a>
+        · for ears, listen how neighbours say city names (Bengaluru not “Bangalore”) on the street.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Want a card for your actual ooru or a less-common district name? Paste the Roman spelling — we’ll add audio next.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0019-karnataka-regional-food.html">← Lesson 0019</a>
+        <a href="../reference/regions-cities-cheatsheet.html">Reference · regions &amp; cities</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>
