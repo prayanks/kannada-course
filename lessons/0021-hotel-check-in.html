@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0021 · Hotel check-in</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .menu-chip {
+      display: inline-block; font-family: var(--sans); font-size: 0.85rem;
+      border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.25rem 0.2rem 0; background: var(--bg-elevated);
+    }
+    .menu-chip b { color: var(--accent); }
+    .desk-loop {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin: 1rem 0 1.25rem;
+    }
+    @media (max-width: 640px) { .desk-loop { grid-template-columns: 1fr; } }
+    .desk-card {
+      border: 1px solid var(--rule); border-radius: var(--radius-sm);
+      padding: 0.75rem 0.85rem; background: var(--bg-elevated); font-family: var(--sans); font-size: 0.9rem;
+    }
+    .desk-card .title { font-weight: 800; color: var(--accent); margin: 0 0 0.25rem; }
+    .desk-card .hint { margin: 0; color: var(--muted); font-size: 0.85rem; }
+    .comic-section { margin: 2.5rem 0 1rem; padding-top: 0.5rem; }
+    .comic-section > .label {
+      font-family: var(--sans); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .comic-strip { display: flex; flex-direction: column; gap: 1rem; }
+    .comic-panel {
+      border: 3px solid var(--ink, #1a1a1a); border-radius: 12px; background: #fffef7; color: #1a1a1a;
+      overflow: hidden; box-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      .comic-panel {
+        background: #1c1f26; color: #f0efe8; border-color: #c8c4b8; box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+      }
+    }
+    .comic-panel .panel-top { display: flex; align-items: stretch; min-height: 140px; }
+    .comic-panel .scene {
+      flex: 1; display: flex; align-items: flex-end; justify-content: space-around;
+      padding: 1rem 0.75rem 0.5rem; position: relative;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.04) 60%);
+    }
+    .comic-panel .scene-tag {
+      position: absolute; top: 0.5rem; left: 0.65rem;
+      font-family: var(--sans); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; background: #ffe566; color: #1a1a1a;
+      padding: 0.15rem 0.45rem; border-radius: 4px; border: 2px solid #1a1a1a;
+    }
+    .char { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; max-width: 42%; }
+    .char .avatar {
+      width: 64px; height: 64px; border-radius: 50%; border: 3px solid #1a1a1a;
+      display: grid; place-items: center; font-size: 1.75rem; background: #e8f4ff;
+      box-shadow: 2px 2px 0 #1a1a1a;
+    }
+    .char.local .avatar { background: #e8ffe8; }
+    .char.you .avatar { background: #ffe8f0; }
+    .char .name {
+      font-family: var(--sans); font-size: 0.7rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .bubble-col {
+      flex: 1.15; display: flex; flex-direction: column; justify-content: center;
+      padding: 0.85rem 1rem; gap: 0.55rem; border-left: 3px solid #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bubble-col { border-left-color: #c8c4b8; }
+      .char .avatar { border-color: #c8c4b8; box-shadow: 2px 2px 0 #000; }
+      .comic-panel .scene-tag { border-color: #c8c4b8; }
+    }
+    .speech {
+      position: relative; border: 2.5px solid currentColor; border-radius: 1rem;
+      padding: 0.55rem 0.75rem; font-family: var(--sans); background: #fff; color: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .speech { background: #2a2f3a; color: #f0efe8; border-color: #c8c4b8; }
+    }
+    .speech.you-side { border-bottom-left-radius: 0.25rem; }
+    .speech.other-side { border-bottom-right-radius: 0.25rem; margin-left: auto; }
+    .speech .kn-line { font-weight: 800; font-size: 1rem; line-height: 1.3; margin: 0; }
+    .speech .en-line { margin: 0.25rem 0 0; font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
+    .speech .who-mini {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; opacity: 0.55; margin: 0 0 0.2rem;
+    }
+    .comic-nav-note { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); margin: 0.75rem 0 0; }
+    @media (max-width: 640px) {
+      .comic-panel .panel-top { flex-direction: column; }
+      .bubble-col { border-left: none; border-top: 3px solid #1a1a1a; }
+      .char .avatar { width: 52px; height: 52px; font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0021</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~12 min</span>
+        </div>
+        <h1>Hotel check-in</h1>
+        <p class="lede">
+          Walk up to a lodge desk, claim a booking or ask for a vacant room, get the key, and close with check-out + bill.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Run the front-desk loop:
+          <strong>Khali room ideya? → Ondu raatri beku → Nanna booking ide → Key kodri → Check-out yaavaaga? → Bill kodri</strong>
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review (L20 + L3 + L9):</strong>
+        Neevu ellinda? · Nanna ooru… · Eshtu? · Ondu / eradu · Eshtu gante? · Namaskara · Dhanyavadagalu
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        After hometown talk (L20), travel talk is next. At a Karnataka lodge or hotel desk you’ll hear heavy
+        <strong>Kannada–English mix</strong>: <em>room, booking, check-in, check-out, WiFi, key</em> sit inside Kannada frames.
+        One trap: on the street <strong>hotel</strong> often means a <em>restaurant / meals place</em>; for sleep people also say
+        <strong>lodge</strong> or just <strong>room</strong>. Today you handle the desk without freezing.
+      </p>
+
+      <h2><span class="num">02</span> One lever: <em>ideya?</em> + duration + desk loans</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>… ideya?</strong> = is there / do you have…? (availability)<br />
+          <strong>Khali room ideya?</strong> = is a vacant room available?<br />
+          <strong>Ondu raatri / eradu raatri</strong> = one night / two nights<br />
+          <strong>Nanna booking ide</strong> = I have a booking<br />
+          <strong>Key kodri · Bill kodri</strong> = please give key / bill (same polite <em>kodri</em> as food L5)
+        </p>
+      </div>
+      <p>
+        Hindi bridge: <em>Khali room hai?</em> → <strong>Khali room ideya?</strong> ·
+        <em>Ek raat ke liye</em> → <strong>Ondu raatri-ge</strong> ·
+        <em>Key dijiye</em> → <strong>Key kodri</strong>.
+      </p>
+
+      <h2><span class="num">03</span> Desk board (say these out loud)</h2>
+      <p>
+        <span class="menu-chip"><b>room</b></span>
+        <span class="menu-chip"><b>lodge</b></span>
+        <span class="menu-chip"><b>khali</b></span>
+        <span class="menu-chip"><b>booking</b></span>
+        <span class="menu-chip"><b>key</b></span>
+        <span class="menu-chip"><b>check-in</b></span>
+        <span class="menu-chip"><b>check-out</b></span>
+        <span class="menu-chip"><b>WiFi</b></span>
+        <span class="menu-chip"><b>single</b></span>
+        <span class="menu-chip"><b>double</b></span>
+        <span class="menu-chip"><b>raatri</b></span>
+        <span class="menu-chip"><b>baadige</b></span>
+      </p>
+      <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+        <strong>Khali</strong> = empty / vacant. <strong>Raatri</strong> = night (stay length).
+        <strong>Baadige</strong> = rent / room charge. Single/double are usually English at the desk.
+      </p>
+
+      <h2><span class="num">04</span> Front-desk pocket map</h2>
+      <div class="desk-loop">
+        <div class="desk-card">
+          <p class="title">1 · Arrive</p>
+          <p class="hint">Namaskara → booking OR khali room?</p>
+        </div>
+        <div class="desk-card">
+          <p class="title">2 · Stay length</p>
+          <p class="hint">Ondu raatri / eradu raatri beku</p>
+        </div>
+        <div class="desk-card">
+          <p class="title">3 · Price + type</p>
+          <p class="hint">Room eshtu? · Single / double</p>
+        </div>
+        <div class="desk-card">
+          <p class="title">4 · Close</p>
+          <p class="hint">Key · WiFi · check-out · bill</p>
+        </div>
+      </div>
+
+      <h2><span class="num">05</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">Khali room ideya?</p>
+        <div class="audio-block" data-slug="khali_room_ideya"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/khali_room_ideya_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/khali_room_ideya_nat.mp3"></audio></span></div>
+        <p class="en">Is there a vacant room?</p>
+        <p class="hi">≈ Khali room hai kya?</p>
+        <div class="meta"><strong>ideya?</strong> = is there? Core availability ask. Also: <strong>Room ideya?</strong></div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Ondu room beku · Ondu raatri beku</p>
+        <div class="audio-block" data-slug="ondu_room_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_room_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_room_beku_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="ondu_raatri_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_raatri_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_raatri_beku_nat.mp3"></audio></span></div>
+        <p class="en">I need one room · I need one night</p>
+        <p class="hi">≈ Ek room chahiye · Ek raat chahiye</p>
+        <div class="meta">Same <strong>beku</strong> as food (L5). Swap <strong>eradu raatri</strong> for two nights.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanna booking ide · Nanna hesaru Prayank</p>
+        <div class="audio-block" data-slug="nanna_booking_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_booking_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_booking_ide_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="nanna_hesaru_prayank"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanna_hesaru_prayank_nat.mp3"></audio></span></div>
+        <p class="en">I have a booking · My name is Prayank</p>
+        <p class="hi">≈ Meri booking hai · Mera naam Prayank</p>
+        <div class="meta">Name frame from L1. Staff often reply in English; your Kannada still opens the door.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Room eshtu? · Ondu raatri-ge eshtu?</p>
+        <div class="audio-block" data-slug="room_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/room_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/room_eshtu_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="ondu_raatri-ge_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_raatri-ge_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_raatri-ge_eshtu_nat.mp3"></audio></span></div>
+        <p class="en">How much is the room? · How much for one night?</p>
+        <p class="hi">≈ Room kitna? · Ek raat ka kitna?</p>
+        <div class="meta"><strong>-ge</strong> on duration = “for …”. Reuses L3 <strong>eshtu</strong>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Key kodri · WiFi password heli</p>
+        <div class="audio-block" data-slug="key_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/key_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/key_kodri_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="wifi_password_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/wifi_password_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/wifi_password_heli_nat.mp3"></audio></span></div>
+        <p class="en">Please give the key · Tell me the WiFi password</p>
+        <p class="hi">≈ Key dijiye · WiFi password bataiye</p>
+        <div class="meta"><strong>kodri</strong> = give (polite). <strong>heli</strong> = tell (from repair talk L18 family).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Check-out yaavaaga? · Check-out eshtu gante?</p>
+        <div class="audio-block" data-slug="check-out_yaavaaga"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/check-out_yaavaaga_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/check-out_yaavaaga_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="check-out_eshtu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/check-out_eshtu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/check-out_eshtu_gante_nat.mp3"></audio></span></div>
+        <p class="en">When is check-out? · What time is check-out?</p>
+        <p class="hi">≈ Check-out kab hai? · Kitne baje check-out?</p>
+        <div class="meta">Clock frame from L9. Loanword <strong>check-out</strong> is normal desk speech.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Bill kodri · Room clean maadi</p>
+        <div class="audio-block" data-slug="bill_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bill_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bill_kodri_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="room_clean_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/room_clean_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/room_clean_maadi_nat.mp3"></audio></span></div>
+        <p class="en">Please give the bill · Please clean the room</p>
+        <p class="hi">≈ Bill dijiye · Room saaf kar dijiye</p>
+        <div class="meta">Checkout close + housekeeping ask. <strong>maadi</strong> = do (polite).</div>
+      </div>
+
+      <h2><span class="num">06</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">room</span><div class="audio-block" data-slug="room"><audio controls preload="none" src="../assets/audio/room.mp3"></audio></div><span>room</span><span>room</span></div>
+        <div class="row"><span class="kn">lodge</span><div class="audio-block" data-slug="lodge"><audio controls preload="none" src="../assets/audio/lodge.mp3"></audio></div><span>lodge / stay hotel</span><span>lodge</span></div>
+        <div class="row"><span class="kn">khali</span><div class="audio-block" data-slug="khali"><audio controls preload="none" src="../assets/audio/khali.mp3"></audio></div><span>vacant / empty</span><span>khali</span></div>
+        <div class="row"><span class="kn">ideya?</span><div class="audio-block" data-slug="ideya"><audio controls preload="none" src="../assets/audio/ideya.mp3"></audio></div><span>is there?</span><span>hai kya?</span></div>
+        <div class="row"><span class="kn">booking</span><div class="audio-block" data-slug="booking"><audio controls preload="none" src="../assets/audio/booking.mp3"></audio></div><span>reservation</span><span>booking</span></div>
+        <div class="row"><span class="kn">raatri</span><div class="audio-block" data-slug="raatri"><audio controls preload="none" src="../assets/audio/raatri.mp3"></audio></div><span>night</span><span>raat</span></div>
+        <div class="row"><span class="kn">baadige</span><div class="audio-block" data-slug="baadige"><audio controls preload="none" src="../assets/audio/baadige.mp3"></audio></div><span>rent / room charge</span><span>kiraya</span></div>
+        <div class="row"><span class="kn">key</span><div class="audio-block" data-slug="key"><audio controls preload="none" src="../assets/audio/key.mp3"></audio></div><span>key / key card</span><span>chaabi / key</span></div>
+        <div class="row"><span class="kn">check-in</span><div class="audio-block" data-slug="check-in"><audio controls preload="none" src="../assets/audio/check-in.mp3"></audio></div><span>check-in</span><span>check-in</span></div>
+        <div class="row"><span class="kn">check-out</span><div class="audio-block" data-slug="check-out"><audio controls preload="none" src="../assets/audio/check-out.mp3"></audio></div><span>check-out</span><span>check-out</span></div>
+        <div class="row"><span class="kn">single</span><div class="audio-block" data-slug="single"><audio controls preload="none" src="../assets/audio/single.mp3"></audio></div><span>single room</span><span>single</span></div>
+        <div class="row"><span class="kn">double</span><div class="audio-block" data-slug="double"><audio controls preload="none" src="../assets/audio/double.mp3"></audio></div><span>double room</span><span>double</span></div>
+        <div class="row"><span class="kn">WiFi</span><div class="audio-block" data-slug="wifi"><audio controls preload="none" src="../assets/audio/wifi.mp3"></audio></div><span>Wi‑Fi</span><span>WiFi</span></div>
+        <div class="row"><span class="kn">password</span><div class="audio-block" data-slug="password"><audio controls preload="none" src="../assets/audio/password.mp3"></audio></div><span>password</span><span>password</span></div>
+      </div>
+
+      <h2><span class="num">07</span> Model dialogue — lodge front desk</h2>
+      <div class="dialogue">
+        <p><span class="who">You</span><br /><span class="line">Namaskara. Nanna booking ide. Nanna hesaru Prayank.</span>
+        <div class="audio-block" data-slug="namaskara_nanna_booking_ide_nanna_hesaru_prayank"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/namaskara_nanna_booking_ide_nanna_hesaru_prayank_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/namaskara_nanna_booking_ide_nanna_hesaru_prayank_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Hello. I have a booking. My name is Prayank.</span></p>
+        <p><span class="who">Reception</span><br /><span class="line">Sari. Ondu raatri na eradu?</span>
+        <div class="audio-block" data-slug="sari_ondu_raatri_na_eradu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_ondu_raatri_na_eradu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_ondu_raatri_na_eradu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. One night or two?</span></p>
+        <p><span class="who">You</span><br /><span class="line">Ondu raatri beku. Room eshtu?</span>
+        <div class="audio-block" data-slug="ondu_raatri_beku_room_eshtu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/ondu_raatri_beku_room_eshtu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/ondu_raatri_beku_room_eshtu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">One night. How much is the room?</span></p>
+        <p><span class="who">Reception</span><br /><span class="line">Double room — eradu savira rupayi.</span>
+        <div class="audio-block" data-slug="double_room_eradu_savira_rupayi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/double_room_eradu_savira_rupayi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/double_room_eradu_savira_rupayi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Double room — two thousand rupees.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. Key kodri. WiFi password heli.</span>
+        <div class="audio-block" data-slug="sari_key_kodri_wifi_password_heli"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_key_kodri_wifi_password_heli_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_key_kodri_wifi_password_heli_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. Please give the key. Tell me the WiFi password.</span></p>
+        <p><span class="who">Reception</span><br /><span class="line">Idhu key. Check-out hattu gante.</span>
+        <div class="audio-block" data-slug="idhu_key_check-out_hattu_gante"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/idhu_key_check-out_hattu_gante_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/idhu_key_check-out_hattu_gante_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Here’s the key. Check-out is 10 o’clock.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Gothaytu. Dhanyavadagalu!</span>
+        <div class="audio-block" data-slug="gothaytu_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Got it. Thank you!</span></p>
+      </div>
+
+      <h2><span class="num">08</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Is there a vacant room?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Room elli ide?</button>
+          <button type="button" data-answer="correct">Khali room ideya?</button>
+          <button type="button" data-answer="wrong">Room beku ideya?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “I need one night”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Ondu raatri beku</button>
+          <button type="button" data-answer="wrong">Ondu gante beku</button>
+          <button type="button" data-answer="wrong">Ondu ooru beku</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “I have a booking”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Nanna booking beku</button>
+          <button type="button" data-answer="correct">Nanna booking ide</button>
+          <button type="button" data-answer="wrong">Nanna booking elli</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “Please give the key”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Key maadi</button>
+          <button type="button" data-answer="wrong">Key heli</button>
+          <button type="button" data-answer="correct">Key kodri</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “When is check-out?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Check-out yaavaaga?</button>
+          <button type="button" data-answer="wrong">Check-out ellinda?</button>
+          <button type="button" data-answer="wrong">Check-out hogtiddiri?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced (L3): “How much is this?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Idhu elli?</button>
+          <button type="button" data-answer="correct">Idhu eshtu?</button>
+          <button type="button" data-answer="wrong">Idhu enu?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">09</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Is there a vacant room?</li>
+          <li>I need one night / two nights.</li>
+          <li>I have a booking. My name is …</li>
+          <li>How much for one night?</li>
+          <li>Please give the key. WiFi password?</li>
+          <li>When is check-out? Bill please.</li>
+        </ol>
+        <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted);margin-top:0.75rem">
+          Cover English; speak out loud. Repair with <strong>Matte heli / Nidhana heli</strong> (L18) if the desk replies fast.
+        </p>
+      </div>
+
+      <h2><span class="num">10</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">This week</div>
+        <ol>
+          <li>Shadow the full desk dialogue once slow, once natural (audio below after retrofit).</li>
+          <li>At any reception-like counter (hotel, guest house, even co-working front desk), open with <strong>Namaskara</strong> and one frame: booking <em>or</em> <strong>Khali room ideya?</strong></li>
+          <li>Write your real stack on a phone note: name + ondu/eradu raatri + check-out ask.</li>
+        </ol>
+      </div>
+
+      <!-- cartoon -->
+      <section class="comic-section" aria-label="Cartoon dialogue enactment">
+        <h2><span class="num">11</span> Cartoon script — lodge desk</h2>
+        <p class="comic-nav-note">Act both roles. Cover English on pass two.</p>
+        <div class="label">Scene: small lodge lobby · evening arrival</div>
+
+        <div class="comic-strip">
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 1 · Arrive</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🧳</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛎️</div><span class="name">Desk</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Namaskara. Nanna booking ide.</p>
+                  <p class="en-line">Hello. I have a booking.</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Desk</p>
+                  <p class="kn-line">Sari. Nimma hesaru enu?</p>
+                  <p class="en-line">Okay. What’s your name?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 2 · Stay</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🧳</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛎️</div><span class="name">Desk</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Nanna hesaru Prayank. Ondu raatri beku.</p>
+                  <p class="en-line">My name is Prayank. One night.</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Desk</p>
+                  <p class="kn-line">Double room ide. Ondu raatri-ge eshtu helutini.</p>
+                  <p class="en-line">Double is free. I’ll tell the one-night price.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 3 · Key</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🧳</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛎️</div><span class="name">Desk</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Sari. Key kodri. WiFi password heli.</p>
+                  <p class="en-line">Okay. Key please. WiFi password?</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Desk</p>
+                  <p class="kn-line">Idhu key. Check-out hattu gante.</p>
+                  <p class="en-line">Here’s the key. Checkout 10.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 4 · Close</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🙏</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🛎️</div><span class="name">Desk</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Gothaytu. Beligge bill kodri. Dhanyavadagalu!</p>
+                  <p class="en-line">Got it. Bill in the morning. Thanks!</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Desk</p>
+                  <p class="kn-line">Sari sari. Olle dinagalu!</p>
+                  <p class="en-line">Okay okay. Good day!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="comic-nav-note"><strong>Act it:</strong> stand at an imaginary counter; second pass cover English glosses.</p>
+      </section>
+
+      <h2><span class="num">12</span> Primary source</h2>
+      <p class="cite">
+        Lodging phrase inventory (vacant room, nights, clean room, check-out):
+        <a href="https://en.wikivoyage.org/wiki/Kannada_phrasebook#Lodging">Wikivoyage — Kannada phrasebook · Lodging</a>
+        · street note: <em>hotel</em> often = meals place; desk staff still understand English loans
+        (<em>room, booking, check-out</em>) inside Kannada frames. Spot-check formality with what you hear at the desk.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Want a card for your real booking name, a guest-house vs resort split, or UPI-at-desk lines? Paste the situation — we’ll add audio next.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0020-karnataka-regions-cities.html">← Lesson 0020</a>
+        <a href="../reference/hotel-checkin-cheatsheet.html">Reference · hotel check-in</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

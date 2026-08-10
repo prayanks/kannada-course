@@ -175,9 +175,10 @@
       "slug": "baadige",
       "type": "word",
       "roman": "baadige",
-      "kannada": "ಬಾದಿಗೆ",
+      "kannada": "ಬಾಡಿಗೆ",
       "lessons": [
-        "0009"
+        "0009",
+        "0021"
       ],
       "files": [
         "baadige.mp3"
@@ -340,6 +341,18 @@
       ]
     },
     {
+      "slug": "booking",
+      "type": "word",
+      "roman": "booking",
+      "kannada": "ಬುಕಿಂಗ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "booking.mp3"
+      ]
+    },
+    {
       "slug": "cha",
       "type": "word",
       "roman": "cha",
@@ -361,6 +374,30 @@
       ],
       "files": [
         "chali.mp3"
+      ]
+    },
+    {
+      "slug": "check-in",
+      "type": "word",
+      "roman": "check-in",
+      "kannada": "ಚೆಕ್-ಇನ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "check-in.mp3"
+      ]
+    },
+    {
+      "slug": "check-out",
+      "type": "word",
+      "roman": "check-out",
+      "kannada": "ಚೆಕ್-ಔಟ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "check-out.mp3"
       ]
     },
     {
@@ -457,6 +494,18 @@
       ],
       "files": [
         "dooradalli.mp3"
+      ]
+    },
+    {
+      "slug": "double",
+      "type": "word",
+      "roman": "double",
+      "kannada": "ಡಬಲ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "double.mp3"
       ]
     },
     {
@@ -954,6 +1003,18 @@
       ]
     },
     {
+      "slug": "ideya",
+      "type": "word",
+      "roman": "ideya?",
+      "kannada": "ಇದೆಯಾ?",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "ideya.mp3"
+      ]
+    },
+    {
       "slug": "idhu",
       "type": "word",
       "roman": "idhu",
@@ -1184,6 +1245,30 @@
       ]
     },
     {
+      "slug": "key",
+      "type": "word",
+      "roman": "key",
+      "kannada": "ಕೀ",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "key.mp3"
+      ]
+    },
+    {
+      "slug": "khali",
+      "type": "word",
+      "roman": "khali",
+      "kannada": "ಖಾಲಿ",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "khali.mp3"
+      ]
+    },
+    {
       "slug": "khara",
       "type": "word",
       "roman": "khara",
@@ -1265,6 +1350,18 @@
       ],
       "files": [
         "lift.mp3"
+      ]
+    },
+    {
+      "slug": "lodge",
+      "type": "word",
+      "roman": "lodge",
+      "kannada": "ಲಾಡ್ಜ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "lodge.mp3"
       ]
     },
     {
@@ -1779,6 +1876,18 @@
       ]
     },
     {
+      "slug": "password",
+      "type": "word",
+      "roman": "password",
+      "kannada": "ಪಾಸ್‌ವರ್ಡ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "password.mp3"
+      ]
+    },
+    {
       "slug": "phone",
       "type": "word",
       "roman": "phone",
@@ -1815,6 +1924,18 @@
       ]
     },
     {
+      "slug": "raatri",
+      "type": "word",
+      "roman": "raatri",
+      "kannada": "ರಾತ್ರಿ",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "raatri.mp3"
+      ]
+    },
+    {
       "slug": "ratri",
       "type": "word",
       "roman": "ratri",
@@ -1824,6 +1945,18 @@
       ],
       "files": [
         "ratri.mp3"
+      ]
+    },
+    {
+      "slug": "room",
+      "type": "word",
+      "roman": "room",
+      "kannada": "ರೂಮ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "room.mp3"
       ]
     },
     {
@@ -1934,6 +2067,18 @@
       ],
       "files": [
         "sigona.mp3"
+      ]
+    },
+    {
+      "slug": "single",
+      "type": "word",
+      "roman": "single",
+      "kannada": "ಸಿಂಗಲ್",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "single.mp3"
       ]
     },
     {
@@ -2055,6 +2200,18 @@
       ],
       "files": [
         "weight.mp3"
+      ]
+    },
+    {
+      "slug": "wifi",
+      "type": "word",
+      "roman": "WiFi",
+      "kannada": "ವೈಫೈ",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "wifi.mp3"
       ]
     },
     {
@@ -2507,7 +2664,8 @@
       "kannada": "ಬಿಲ್ ಕೊಡ್ರಿ",
       "kind": "phrase",
       "lessons": [
-        "0005"
+        "0005",
+        "0021"
       ],
       "files": [
         "bill_kodri_slow.mp3",
@@ -2610,6 +2768,34 @@
       "files": [
         "change_ide_na_slow.mp3",
         "change_ide_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "check-out_eshtu_gante",
+      "type": "sentence",
+      "roman": "Check-out eshtu gante?",
+      "kannada": "ಚೆಕ್-ಔಟ್ ಎಷ್ಟು ಗಂಟೆ?",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "check-out_eshtu_gante_slow.mp3",
+        "check-out_eshtu_gante_nat.mp3"
+      ]
+    },
+    {
+      "slug": "check-out_yaavaaga",
+      "type": "sentence",
+      "roman": "Check-out yaavaaga?",
+      "kannada": "ಚೆಕ್-ಔಟ್ ಯಾವಾಗ?",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "check-out_yaavaaga_slow.mp3",
+        "check-out_yaavaaga_nat.mp3"
       ]
     },
     {
@@ -2867,6 +3053,20 @@
       "files": [
         "doctor_prescription_illa_slow.mp3",
         "doctor_prescription_illa_nat.mp3"
+      ]
+    },
+    {
+      "slug": "double_room_eradu_savira_rupayi",
+      "type": "sentence",
+      "roman": "Double room — eradu savira rupayi.",
+      "kannada": "ಡಬಲ್ ರೂಮ್ — ಎರಡು ಸಾವಿರ ರೂಪಾಯಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "double_room_eradu_savira_rupayi_slow.mp3",
+        "double_room_eradu_savira_rupayi_nat.mp3"
       ]
     },
     {
@@ -3295,6 +3495,20 @@
     {
       "slug": "gothaytu_dhanyavadagalu",
       "type": "sentence",
+      "roman": "Gothaytu. Dhanyavadagalu!",
+      "kannada": "ಗೊತ್ತಾಯ್ತು. ಧನ್ಯವಾದಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "gothaytu_dhanyavadagalu_slow.mp3",
+        "gothaytu_dhanyavadagalu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "gothaytu_dhanyavadagalu_2",
+      "type": "sentence",
       "roman": "Gothaytu. Dhanyavadagalu.",
       "kannada": "ಗೊತ್ತಾಯ್ತು. ಧನ್ಯವಾದಗಳು",
       "kind": "dialogue",
@@ -3304,8 +3518,8 @@
         "0010"
       ],
       "files": [
-        "gothaytu_dhanyavadagalu_slow.mp3",
-        "gothaytu_dhanyavadagalu_nat.mp3"
+        "gothaytu_dhanyavadagalu_2_slow.mp3",
+        "gothaytu_dhanyavadagalu_2_nat.mp3"
       ]
     },
     {
@@ -3925,6 +4139,20 @@
       ]
     },
     {
+      "slug": "ideya_2",
+      "type": "sentence",
+      "roman": "ideya?",
+      "kannada": "ಇದೆಯಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "ideya_2_slow.mp3",
+        "ideya_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "idhe_na",
       "type": "sentence",
       "roman": "Idhe na?",
@@ -4006,6 +4234,20 @@
       "files": [
         "idhu_eshtu_eradu_kodri_swalpa_kammi_maadi_slow.mp3",
         "idhu_eshtu_eradu_kodri_swalpa_kammi_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "idhu_key_check-out_hattu_gante",
+      "type": "sentence",
+      "roman": "Idhu key. Check-out hattu gante.",
+      "kannada": "ಇದು ಕೀ. ಚೆಕ್-ಔಟ್ ಹತ್ತು ಗಂಟೆ",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "idhu_key_check-out_hattu_gante_slow.mp3",
+        "idhu_key_check-out_hattu_gante_nat.mp3"
       ]
     },
     {
@@ -4444,6 +4686,20 @@
       ]
     },
     {
+      "slug": "key_kodri",
+      "type": "sentence",
+      "roman": "Key kodri",
+      "kannada": "ಕೀ ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "key_kodri_slow.mp3",
+        "key_kodri_nat.mp3"
+      ]
+    },
+    {
       "slug": "khaali_packet",
       "type": "sentence",
       "roman": "Khaali packet",
@@ -4455,6 +4711,20 @@
       "files": [
         "khaali_packet_slow.mp3",
         "khaali_packet_nat.mp3"
+      ]
+    },
+    {
+      "slug": "khali_room_ideya",
+      "type": "sentence",
+      "roman": "Khali room ideya?",
+      "kannada": "ಖಾಲಿ ರೂಮ್ ಇದೆಯಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "khali_room_ideya_slow.mp3",
+        "khali_room_ideya_nat.mp3"
       ]
     },
     {
@@ -5176,6 +5446,20 @@
       ]
     },
     {
+      "slug": "namaskara_nanna_booking_ide_nanna_hesaru_prayank",
+      "type": "sentence",
+      "roman": "Namaskara. Nanna booking ide. Nanna hesaru Prayank.",
+      "kannada": "ನಮಸ್ಕಾರ. ನನ್ನ ಬುಕಿಂಗ್ ಇದೆ. ನನ್ನ ಹೆಸರು ಪ್ರಯಾಂಕ್",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "namaskara_nanna_booking_ide_nanna_hesaru_prayank_slow.mp3",
+        "namaskara_nanna_booking_ide_nanna_hesaru_prayank_nat.mp3"
+      ]
+    },
+    {
       "slug": "namaskara_nanna_hesaru_prayank_flat_302",
       "type": "sentence",
       "roman": "Namaskara. Nanna hesaru Prayank. Flat 302.",
@@ -5345,6 +5629,20 @@
       ]
     },
     {
+      "slug": "nanna_booking_ide",
+      "type": "sentence",
+      "roman": "Nanna booking ide",
+      "kannada": "ನನ್ನ ಬುಕಿಂಗ್ ಇದೆ",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "nanna_booking_ide_slow.mp3",
+        "nanna_booking_ide_nat.mp3"
+      ]
+    },
+    {
       "slug": "nanna_flat-ge_kodri",
       "type": "sentence",
       "roman": "Nanna flat-ge kodri",
@@ -5366,7 +5664,8 @@
       "kind": "phrase",
       "lessons": [
         "0001",
-        "0010"
+        "0010",
+        "0021"
       ],
       "files": [
         "nanna_hesaru_prayank_slow.mp3",
@@ -5837,6 +6136,62 @@
       ]
     },
     {
+      "slug": "ondu_raatri_beku",
+      "type": "sentence",
+      "roman": "Ondu raatri beku",
+      "kannada": "ಒಂದು ರಾತ್ರಿ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "ondu_raatri_beku_slow.mp3",
+        "ondu_raatri_beku_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_raatri_beku_room_eshtu",
+      "type": "sentence",
+      "roman": "Ondu raatri beku. Room eshtu?",
+      "kannada": "ಒಂದು ರಾತ್ರಿ ಬೇಕು. ರೂಮ್ ಎಷ್ಟು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "ondu_raatri_beku_room_eshtu_slow.mp3",
+        "ondu_raatri_beku_room_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_raatri-ge_eshtu",
+      "type": "sentence",
+      "roman": "Ondu raatri-ge eshtu?",
+      "kannada": "ಒಂದು ರಾತ್ರಿಗೆ ಎಷ್ಟು?",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "ondu_raatri-ge_eshtu_slow.mp3",
+        "ondu_raatri-ge_eshtu_nat.mp3"
+      ]
+    },
+    {
+      "slug": "ondu_room_beku",
+      "type": "sentence",
+      "roman": "Ondu room beku",
+      "kannada": "ಒಂದು ರೂಮ್ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "ondu_room_beku_slow.mp3",
+        "ondu_room_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "ondu_sari",
       "type": "sentence",
       "roman": "ondu sari",
@@ -5988,6 +6343,34 @@
       "files": [
         "road_block_ide_slow.mp3",
         "road_block_ide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "room_clean_maadi",
+      "type": "sentence",
+      "roman": "Room clean maadi",
+      "kannada": "ರೂಮ್ ಕ್ಲೀನ್ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "room_clean_maadi_slow.mp3",
+        "room_clean_maadi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "room_eshtu",
+      "type": "sentence",
+      "roman": "Room eshtu?",
+      "kannada": "ರೂಮ್ ಎಷ್ಟು?",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "room_eshtu_slow.mp3",
+        "room_eshtu_nat.mp3"
       ]
     },
     {
@@ -6323,6 +6706,20 @@
       ]
     },
     {
+      "slug": "sari_key_kodri_wifi_password_heli",
+      "type": "sentence",
+      "roman": "Sari. Key kodri. WiFi password heli.",
+      "kannada": "ಸರಿ. ಕೀ ಕೊಡ್ರಿ. ವೈಫೈ ಪಾಸ್‌ವರ್ಡ್ ಹೇಳಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "sari_key_kodri_wifi_password_heli_slow.mp3",
+        "sari_key_kodri_wifi_password_heli_nat.mp3"
+      ]
+    },
+    {
       "slug": "sari_naale_nodona",
       "type": "sentence",
       "roman": "Sari. Naale nodona.",
@@ -6390,6 +6787,20 @@
       "files": [
         "sari_ondu_nimisha_kaayri_slow.mp3",
         "sari_ondu_nimisha_kaayri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_ondu_raatri_na_eradu",
+      "type": "sentence",
+      "roman": "Sari. Ondu raatri na eradu?",
+      "kannada": "ಸರಿ. ಒಂದು ರಾತ್ರಿ ನಾ ಎರಡು?",
+      "kind": "dialogue",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "sari_ondu_raatri_na_eradu_slow.mp3",
+        "sari_ondu_raatri_na_eradu_nat.mp3"
       ]
     },
     {
@@ -7107,6 +7518,20 @@
       "files": [
         "weight_kammi_slow.mp3",
         "weight_kammi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "wifi_password_heli",
+      "type": "sentence",
+      "roman": "WiFi password heli",
+      "kannada": "ವೈಫೈ ಪಾಸ್‌ವರ್ಡ್ ಹೇಳಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0021"
+      ],
+      "files": [
+        "wifi_password_heli_slow.mp3",
+        "wifi_password_heli_nat.mp3"
       ]
     },
     {

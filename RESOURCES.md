@@ -14,6 +14,10 @@
 - [Wikipedia — List of districts of Karnataka](https://en.wikipedia.org/wiki/List_of_districts_of_Karnataka) — 31 districts, 4 divisions (Belagavi, Bengaluru, Kalaburagi, Mysuru); coast / Malenadu / plains geography.
 - [Preply — basic Kannada phrases](https://preply.com/en/blog/basic-words-in-kannada-70-phrases/) — *Neevu ellinda?* “Where are you from?” for neighbour small-talk frame.
 
+### Hotel / lodging (L21 grounding)
+- [Wikivoyage — Kannada phrasebook · Lodging](https://en.wikivoyage.org/wiki/Kannada_phrasebook#Lodging) — vacant room, nights, clean room, check-out; heavy KN–EN mix matches desk speech.
+- [Preply — basic Kannada phrases](https://preply.com/en/blog/basic-words-in-kannada-70-phrases/) — street note: *hotel* often = restaurant/meals place; lodging also *lodge* / *room*.
+
 ### Grammar parallels (Hindi bridge)
 - Treat SOV order and T–V politeness (*tu / aap* ↔ *neenu / neevu*) as the bridge from Hindi — not a substitute for listening to locals.
 
