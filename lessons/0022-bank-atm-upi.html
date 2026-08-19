@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>0022 · Bank, ATM &amp; UPI</title>
+  <link rel="stylesheet" href="../assets/lesson.css" />
+  <style>
+    .phrase {
+      border: 1px solid var(--rule); background: var(--bg-elevated); border-radius: var(--radius);
+      padding: 1rem 1.1rem; margin: 1rem 0; box-shadow: var(--shadow-sm);
+    }
+    .phrase .kn { font-family: var(--sans); font-weight: 700; font-size: 1.35rem; color: var(--accent); margin: 0 0 0.35rem; }
+    .phrase .en { margin: 0; font-weight: 600; }
+    .phrase .hi { margin: 0.2rem 0 0; color: var(--ink-soft); font-size: 0.95rem; }
+    .phrase .meta {
+      margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule);
+      font-family: var(--sans); font-size: 0.88rem; color: var(--muted);
+    }
+    .phrase .meta strong { color: var(--ink-soft); }
+    .dialogue { border-left: 3px solid var(--accent); padding: 0.25rem 0 0.25rem 1rem; margin: 1.25rem 0; }
+    .dialogue p { margin: 0.55rem 0; }
+    .dialogue .who { font-family: var(--sans); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+    .dialogue .line { font-family: var(--sans); font-weight: 600; font-size: 1.05rem; }
+    .dialogue .gloss { color: var(--muted); font-size: 0.9rem; }
+    .vocab-grid { display: grid; gap: 0.5rem; margin: 1rem 0 1.5rem; }
+    .vocab-grid .row {
+      display: grid; grid-template-columns: 1.1fr 1fr 1fr; gap: 0.5rem;
+      font-family: var(--sans); font-size: 0.9rem; padding: 0.55rem 0.65rem;
+      border-radius: var(--radius-sm); background: var(--bg-elevated); border: 1px solid var(--rule);
+    }
+    .vocab-grid .row.head {
+      background: transparent; border: none; color: var(--muted);
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding-bottom: 0;
+    }
+    .vocab-grid .kn { font-weight: 700; color: var(--accent); }
+    @media (max-width: 640px) {
+      .vocab-grid .row { grid-template-columns: 1fr; gap: 0.15rem; }
+      .vocab-grid .row.head { display: none; }
+    }
+    .task-box {
+      border: 1px solid var(--rule-strong); border-radius: var(--radius);
+      padding: 1rem 1.1rem; background: var(--accent-soft);
+    }
+    .task-box ol { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    .review {
+      font-family: var(--sans); font-size: 0.92rem; color: var(--ink-soft);
+      border: 1px dashed var(--rule-strong); border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem; margin: 1rem 0;
+    }
+    .menu-chip {
+      display: inline-block; font-family: var(--sans); font-size: 0.85rem;
+      border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.65rem;
+      margin: 0.2rem 0.25rem 0.2rem 0; background: var(--bg-elevated);
+    }
+    .menu-chip b { color: var(--accent); }
+    .desk-loop {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin: 1rem 0 1.25rem;
+    }
+    @media (max-width: 640px) { .desk-loop { grid-template-columns: 1fr; } }
+    .desk-card {
+      border: 1px solid var(--rule); border-radius: var(--radius-sm);
+      padding: 0.75rem 0.85rem; background: var(--bg-elevated); font-family: var(--sans); font-size: 0.9rem;
+    }
+    .desk-card .title { font-weight: 800; color: var(--accent); margin: 0 0 0.25rem; }
+    .desk-card .hint { margin: 0; color: var(--muted); font-size: 0.85rem; }
+    .comic-section { margin: 2.5rem 0 1rem; padding-top: 0.5rem; }
+    .comic-section > .label {
+      font-family: var(--sans); font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.75rem;
+    }
+    .comic-strip { display: flex; flex-direction: column; gap: 1rem; }
+    .comic-panel {
+      border: 3px solid var(--ink, #1a1a1a); border-radius: 12px; background: #fffef7; color: #1a1a1a;
+      overflow: hidden; box-shadow: 4px 4px 0 rgba(0,0,0,0.12);
+    }
+    @media (prefers-color-scheme: dark) {
+      .comic-panel {
+        background: #1c1f26; color: #f0efe8; border-color: #c8c4b8; box-shadow: 4px 4px 0 rgba(0,0,0,0.4);
+      }
+    }
+    .comic-panel .panel-top { display: flex; align-items: stretch; min-height: 140px; }
+    .comic-panel .scene {
+      flex: 1; display: flex; align-items: flex-end; justify-content: space-around;
+      padding: 1rem 0.75rem 0.5rem; position: relative;
+      background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.04) 60%);
+    }
+    .comic-panel .scene-tag {
+      position: absolute; top: 0.5rem; left: 0.65rem;
+      font-family: var(--sans); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; background: #ffe566; color: #1a1a1a;
+      padding: 0.15rem 0.45rem; border-radius: 4px; border: 2px solid #1a1a1a;
+    }
+    .char { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; max-width: 42%; }
+    .char .avatar {
+      width: 64px; height: 64px; border-radius: 50%; border: 3px solid #1a1a1a;
+      display: grid; place-items: center; font-size: 1.75rem; background: #e8f4ff;
+      box-shadow: 2px 2px 0 #1a1a1a;
+    }
+    .char.local .avatar { background: #e8ffe8; }
+    .char.you .avatar { background: #ffe8f0; }
+    .char .name {
+      font-family: var(--sans); font-size: 0.7rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .bubble-col {
+      flex: 1.15; display: flex; flex-direction: column; justify-content: center;
+      padding: 0.85rem 1rem; gap: 0.55rem; border-left: 3px solid #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .bubble-col { border-left-color: #c8c4b8; }
+      .char .avatar { border-color: #c8c4b8; box-shadow: 2px 2px 0 #000; }
+      .comic-panel .scene-tag { border-color: #c8c4b8; }
+    }
+    .speech {
+      position: relative; border: 2.5px solid currentColor; border-radius: 1rem;
+      padding: 0.55rem 0.75rem; font-family: var(--sans); background: #fff; color: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      .speech { background: #2a2f3a; color: #f0efe8; border-color: #c8c4b8; }
+    }
+    .speech.you-side { border-bottom-left-radius: 0.25rem; }
+    .speech.other-side { border-bottom-right-radius: 0.25rem; margin-left: auto; }
+    .speech .kn-line { font-weight: 800; font-size: 1rem; line-height: 1.3; margin: 0; }
+    .speech .en-line { margin: 0.25rem 0 0; font-size: 0.82rem; opacity: 0.75; font-weight: 500; }
+    .speech .who-mini {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.06em;
+      text-transform: uppercase; opacity: 0.55; margin: 0 0 0.2rem;
+    }
+    .comic-nav-note { font-family: var(--sans); font-size: 0.88rem; color: var(--muted); margin: 0.75rem 0 0; }
+    @media (max-width: 640px) {
+      .comic-panel .panel-top { flex-direction: column; }
+      .bubble-col { border-left: none; border-top: 3px solid #1a1a1a; }
+      .char .avatar { width: 52px; height: 52px; font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="page-inner">
+      <header class="course-header">
+        <div class="meta-row">
+          <span class="badge">Lesson 0022</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>Spoken Kannada</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>~12 min</span>
+        </div>
+        <h1>Bank, ATM &amp; UPI</h1>
+        <p class="lede">
+          Find an ATM, ask for cash, and pay at a shop counter with UPI, card, or cash — Bengaluru’s real money mix.
+        </p>
+      </header>
+
+            <div class="audio-disclaimer" role="note">
+        <strong>Audio:</strong> Machine-generated Kannada (edge-tts · kn-IN-SapnaNeural).
+        Helpful for rhythm and recognition — may not perfectly match native Bengaluru pronunciation.
+        Prefer what you hear from neighbours when the two differ.
+      </div>
+
+<div class="win">
+        <div class="label">Today’s win</div>
+        <p>
+          Run the money loop:
+          <strong>ATM elli ide? → Nanage cash beku → UPI maadi / UPI ideya? → Card tagontira? → Change kodri → Aaytu</strong>
+        </p>
+      </div>
+
+      <div class="review">
+        <strong>Spaced review (L21 + L18 + L3):</strong>
+        Khali room ideya? · Bill kodri · Cash na card? · Eshtu aytu? · Savira · Matte heli
+      </div>
+
+      <h2><span class="num">01</span> Why this matters</h2>
+      <p>
+        After hotel desk talk (L21), the next freeze point is money on the street: finding an
+        <strong>ATM</strong>, asking for <strong>cash</strong>, and choosing
+        <strong>UPI / card / cash</strong> at a shop. Bengaluru speech is heavy
+        <strong>Kannada–English mix</strong> here — <em>ATM, UPI, cash, card, QR, change, chiller</em>
+        sit inside Kannada frames like <strong>elli ide?</strong>, <strong>ideya?</strong>,
+        <strong>maadi</strong>, and <strong>tagontira?</strong>.
+      </p>
+
+      <h2><span class="num">02</span> One lever: place + pay-method frames</h2>
+      <div class="callout accent">
+        <div class="label">Pattern</div>
+        <p>
+          <strong>X elli ide?</strong> = where is X? (ATM / bank)<br />
+          <strong>X ideya?</strong> = is X available? (UPI / cash)<br />
+          <strong>X maadi</strong> = please do X (UPI maadi · QR scan maadi)<br />
+          <strong>X tagontira?</strong> = do you take / accept X? (card / UPI)
+        </p>
+      </div>
+      <p>
+        Hindi bridge: <em>ATM kahan hai?</em> → <strong>ATM elli ide?</strong> ·
+        <em>UPI kar digiye</em> → <strong>UPI maadi</strong> ·
+        <em>Card lete ho?</em> → <strong>Card tagontira?</strong>.
+      </p>
+
+      <h2><span class="num">03</span> Money board (say these out loud)</h2>
+      <p>
+        <span class="menu-chip"><b>ATM</b></span>
+        <span class="menu-chip"><b>bank</b></span>
+        <span class="menu-chip"><b>duddu</b></span>
+        <span class="menu-chip"><b>rokka</b></span>
+        <span class="menu-chip"><b>cash</b></span>
+        <span class="menu-chip"><b>UPI</b></span>
+        <span class="menu-chip"><b>card</b></span>
+        <span class="menu-chip"><b>QR</b></span>
+        <span class="menu-chip"><b>scan</b></span>
+        <span class="menu-chip"><b>change</b></span>
+        <span class="menu-chip"><b>chiller</b></span>
+        <span class="menu-chip"><b>tagontira</b></span>
+      </p>
+      <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted)">
+        <strong>Duddu / rokka</strong> = money (Kannada). <strong>Cash</strong> is the street loan for notes.
+        <strong>Chiller</strong> = small change / loose notes (Bengaluru English inside KN talk).
+        <strong>Tagontira?</strong> = do you take/accept?
+      </p>
+
+      <h2><span class="num">04</span> Money pocket map</h2>
+      <div class="desk-loop">
+        <div class="desk-card">
+          <p class="title">1 · Find cash</p>
+          <p class="hint">ATM elli ide? · Bank elli ide?</p>
+        </div>
+        <div class="desk-card">
+          <p class="title">2 · Need amount</p>
+          <p class="hint">Nanage cash beku · savira amounts</p>
+        </div>
+        <div class="desk-card">
+          <p class="title">3 · Pay method</p>
+          <p class="hint">UPI maadi · Card tagontira? · Cash</p>
+        </div>
+        <div class="desk-card">
+          <p class="title">4 · Close</p>
+          <p class="hint">Change kodri · Aaytu · Dhanyavadagalu</p>
+        </div>
+      </div>
+
+      <h2><span class="num">05</span> Phrase cards</h2>
+
+      <div class="phrase">
+        <p class="kn">ATM elli ide? · Bank elli ide?</p>
+        <div class="audio-block" data-slug="atm_elli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/atm_elli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/atm_elli_ide_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="bank_elli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/bank_elli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/bank_elli_ide_nat.mp3"></audio></span></div>
+        <p class="en">Where is the ATM? · Where is the bank?</p>
+        <p class="hi">≈ ATM kahan hai? · Bank kahan hai?</p>
+        <div class="meta">Same place frame as L4 <strong>elli ide?</strong>. You can also hear <strong>ATM ellide?</strong> (compressed).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Nanage cash beku · Aivattu savira beku</p>
+        <div class="audio-block" data-slug="nanage_cash_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/nanage_cash_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/nanage_cash_beku_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="aivattu_savira_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/aivattu_savira_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/aivattu_savira_beku_nat.mp3"></audio></span></div>
+        <p class="en">I need cash · I need fifty thousand</p>
+        <p class="hi">≈ Mujhe cash chahiye · Pachaas hazaar chahiye</p>
+        <div class="meta"><strong>Nanage … beku</strong> = I need … Swap any amount you already know (L3/L8 + <strong>savira</strong>).</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">UPI maadi · UPI ideya?</p>
+        <div class="audio-block" data-slug="upi_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/upi_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/upi_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="upi_ideya"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/upi_ideya_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/upi_ideya_nat.mp3"></audio></span></div>
+        <p class="en">Please do UPI · Is UPI available?</p>
+        <p class="hi">≈ UPI kar dijiye · UPI hai kya?</p>
+        <div class="meta">Default shop ask in Bengaluru. Pair with <strong>QR scan maadi</strong> when they point at the code.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Card tagontira? · Cash na UPI?</p>
+        <div class="audio-block" data-slug="card_tagontira"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/card_tagontira_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/card_tagontira_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="cash_na_upi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/cash_na_upi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/cash_na_upi_nat.mp3"></audio></span></div>
+        <p class="en">Do you take card? · Cash or UPI?</p>
+        <p class="hi">≈ Card lete ho? · Cash ya UPI?</p>
+        <div class="meta">Wikivoyage uses <em>tagontira / iskontira</em> for “accept”. Street also: <strong>Card ideya?</strong></div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">QR scan maadi · Payment aytu</p>
+        <div class="audio-block" data-slug="qr_scan_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/qr_scan_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/qr_scan_maadi_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="payment_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/payment_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/payment_aytu_nat.mp3"></audio></span></div>
+        <p class="en">Please scan the QR · Payment is done</p>
+        <p class="hi">≈ QR scan kar digiye · Payment ho gaya</p>
+        <div class="meta"><strong>Aytu</strong> = done/finished (you already use this with bills). Also: <strong>Paisa aytu</strong>.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Change kodri · Chiller beku</p>
+        <div class="audio-block" data-slug="change_kodri"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/change_kodri_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/change_kodri_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="chiller_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/chiller_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/chiller_beku_nat.mp3"></audio></span></div>
+        <p class="en">Please give change · I need small change</p>
+        <p class="hi">≈ Change dijiye · Chhutta chahiye</p>
+        <div class="meta">After a big note. L13 already had <strong>change ide na?</strong> for autos — same word, shop use now.</div>
+      </div>
+
+      <div class="phrase">
+        <p class="kn">Duddu illa · Rokka beku</p>
+        <div class="audio-block" data-slug="duddu_illa"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/duddu_illa_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/duddu_illa_nat.mp3"></audio></span></div>
+        <div class="audio-block" data-slug="rokka_beku"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/rokka_beku_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/rokka_beku_nat.mp3"></audio></span></div>
+        <p class="en">No money · I need money/cash</p>
+        <p class="hi">≈ Paise nahi hain · Paise chahiye</p>
+        <div class="meta">Kannada money words under the English loans. <strong>Duddu</strong> is the everyday one you’ll hear most.</div>
+      </div>
+
+      <h2><span class="num">06</span> Mini vocab bank</h2>
+      <div class="vocab-grid">
+        <div class="row head"><span>Kannada</span><span>English</span><span>Hindi bridge</span></div>
+        <div class="row"><span class="kn">ATM</span><div class="audio-block" data-slug="atm"><audio controls preload="none" src="../assets/audio/atm.mp3"></audio></div><span>cash machine</span><span>ATM</span></div>
+        <div class="row"><span class="kn">bank</span><div class="audio-block" data-slug="bank"><audio controls preload="none" src="../assets/audio/bank.mp3"></audio></div><span>bank</span><span>bank</span></div>
+        <div class="row"><span class="kn">duddu</span><div class="audio-block" data-slug="duddu"><audio controls preload="none" src="../assets/audio/duddu.mp3"></audio></div><span>money</span><span>paise / paisa</span></div>
+        <div class="row"><span class="kn">rokka</span><div class="audio-block" data-slug="rokka"><audio controls preload="none" src="../assets/audio/rokka.mp3"></audio></div><span>money / cash (alt.)</span><span>rokad</span></div>
+        <div class="row"><span class="kn">cash</span><div class="audio-block" data-slug="cash"><audio controls preload="none" src="../assets/audio/cash.mp3"></audio></div><span>cash / notes</span><span>cash</span></div>
+        <div class="row"><span class="kn">UPI</span><div class="audio-block" data-slug="upi"><audio controls preload="none" src="../assets/audio/upi.mp3"></audio></div><span>UPI payment</span><span>UPI</span></div>
+        <div class="row"><span class="kn">card</span><div class="audio-block" data-slug="card"><audio controls preload="none" src="../assets/audio/card.mp3"></audio></div><span>debit/credit card</span><span>card</span></div>
+        <div class="row"><span class="kn">QR</span><div class="audio-block" data-slug="qr"><audio controls preload="none" src="../assets/audio/qr.mp3"></audio></div><span>QR code</span><span>QR</span></div>
+        <div class="row"><span class="kn">scan</span><div class="audio-block" data-slug="scan"><audio controls preload="none" src="../assets/audio/scan.mp3"></audio></div><span>scan</span><span>scan</span></div>
+        <div class="row"><span class="kn">change</span><div class="audio-block" data-slug="change"><audio controls preload="none" src="../assets/audio/change.mp3"></audio></div><span>change (return money)</span><span>change / chhutta</span></div>
+        <div class="row"><span class="kn">chiller</span><div class="audio-block" data-slug="chiller"><audio controls preload="none" src="../assets/audio/chiller.mp3"></audio></div><span>small change / loose notes</span><span>chhutta</span></div>
+        <div class="row"><span class="kn">tagontira?</span><div class="audio-block" data-slug="tagontira"><audio controls preload="none" src="../assets/audio/tagontira.mp3"></audio></div><span>do you take/accept?</span><span>lete ho?</span></div>
+      </div>
+
+      <h2><span class="num">07</span> Model dialogue — shop counter (cash short → UPI)</h2>
+      <div class="dialogue">
+        <p><span class="who">Shop</span><br /><span class="line">Eshtu aytu? Nooru aivattu.</span>
+        <div class="audio-block" data-slug="eshtu_aytu_nooru_aivattu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_nooru_aivattu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eshtu_aytu_nooru_aivattu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">How much did it come to? One hundred fifty.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Kshamisi. Nanage cash kammi. UPI ideya?</span>
+        <div class="audio-block" data-slug="kshamisi_nanage_cash_kammi_upi_ideya"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/kshamisi_nanage_cash_kammi_upi_ideya_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/kshamisi_nanage_cash_kammi_upi_ideya_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Sorry. I’m short on cash. Is UPI available?</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Haudu. QR scan maadi.</span>
+        <div class="audio-block" data-slug="haudu_qr_scan_maadi"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/haudu_qr_scan_maadi_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/haudu_qr_scan_maadi_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Yes. Please scan the QR.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Sari. UPI maadtidini… Payment aytu.</span>
+        <div class="audio-block" data-slug="sari_upi_maadtidini_payment_aytu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_upi_maadtidini_payment_aytu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_upi_maadtidini_payment_aytu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay. I’m doing UPI… Payment done.</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Sari sari. Dhanyavadagalu.</span>
+        <div class="audio-block" data-slug="sari_sari_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/sari_sari_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/sari_sari_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Okay okay. Thank you.</span></p>
+        <p><span class="who">You</span><br /><span class="line">ATM elli ide? Nantara cash tegiyona.</span>
+        <div class="audio-block" data-slug="atm_elli_ide_nantara_cash_tegiyona"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/atm_elli_ide_nantara_cash_tegiyona_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/atm_elli_ide_nantara_cash_tegiyona_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Where is the ATM? I’ll take cash after that.</span></p>
+        <p><span class="who">Shop</span><br /><span class="line">Eduru bank. ATM alli ide.</span>
+        <div class="audio-block" data-slug="eduru_bank_atm_alli_ide"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/eduru_bank_atm_alli_ide_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/eduru_bank_atm_alli_ide_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Bank opposite. ATM is there.</span></p>
+        <p><span class="who">You</span><br /><span class="line">Gothaytu. Dhanyavadagalu!</span>
+        <div class="audio-block" data-slug="gothaytu_dhanyavadagalu"><span class="audio-pair"><span class="audio-label">slow</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_slow.mp3"></audio></span><span class="audio-pair"><span class="audio-label">natural</span><audio controls preload="none" src="../assets/audio/gothaytu_dhanyavadagalu_nat.mp3"></audio></span></div>
+        <br /><span class="gloss">Got it. Thank you!</span></p>
+      </div>
+
+      <h2><span class="num">08</span> Retrieval practice</h2>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">1. “Where is the ATM?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">ATM eshtu ide?</button>
+          <button type="button" data-answer="correct">ATM elli ide?</button>
+          <button type="button" data-answer="wrong">ATM beku ide?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">2. “I need cash”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Nanage cash beku</button>
+          <button type="button" data-answer="wrong">Nanage cash elli</button>
+          <button type="button" data-answer="wrong">Nanage cash aytu</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">3. “Please do UPI”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">UPI kodri</button>
+          <button type="button" data-answer="correct">UPI maadi</button>
+          <button type="button" data-answer="wrong">UPI heli</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">4. “Do you take card?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Card maadtira?</button>
+          <button type="button" data-answer="wrong">Card elli ide?</button>
+          <button type="button" data-answer="correct">Card tagontira?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">5. “Please give change”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="correct">Change kodri</button>
+          <button type="button" data-answer="wrong">Change maadi</button>
+          <button type="button" data-answer="wrong">Change heli</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <div class="quiz" data-quiz>
+        <div class="quiz-q">6. Spaced (L21): “Is there a vacant room?”</div>
+        <div class="quiz-options">
+          <button type="button" data-answer="wrong">Khali room elli?</button>
+          <button type="button" data-answer="correct">Khali room ideya?</button>
+          <button type="button" data-answer="wrong">Khali room beku?</button>
+        </div>
+        <div class="quiz-feedback" hidden></div>
+      </div>
+
+      <h2><span class="num">09</span> Production</h2>
+      <div class="card">
+        <ol>
+          <li>Where is the ATM / bank?</li>
+          <li>I need cash. Fifty thousand.</li>
+          <li>Is UPI available? Please do UPI.</li>
+          <li>Do you take card? Cash or UPI?</li>
+          <li>Please scan the QR. Payment done.</li>
+          <li>Please give change / I need chiller.</li>
+        </ol>
+        <p style="font-family:var(--sans);font-size:0.9rem;color:var(--muted);margin-top:0.75rem">
+          Cover English; speak out loud. If the cashier is fast: <strong>Matte heli / Nidhana heli</strong> (L18).
+        </p>
+      </div>
+
+      <h2><span class="num">10</span> Real-world task</h2>
+      <div class="task-box">
+        <div class="label">This week</div>
+        <ol>
+          <li>At one real shop, open payment with Kannada: <strong>UPI ideya?</strong> or <strong>Cash na UPI?</strong></li>
+          <li>Ask one person <strong>ATM elli ide?</strong> near a market or petrol bunk (even if you already know).</li>
+          <li>Phone note your stack: amount you often withdraw + default pay line (UPI maadi / card tagontira?).</li>
+        </ol>
+      </div>
+
+      <!-- cartoon -->
+      <section class="comic-section" aria-label="Cartoon dialogue enactment">
+        <h2><span class="num">11</span> Cartoon script — counter + ATM</h2>
+        <p class="comic-nav-note">Act both roles. Cover English on pass two.</p>
+        <div class="label">Scene: neighbourhood store · evening</div>
+
+        <div class="comic-strip">
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 1 · Bill</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🛒</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🧾</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Shop</p>
+                  <p class="kn-line">Nooru aivattu aytu.</p>
+                  <p class="en-line">It’s one fifty.</p>
+                </div>
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">UPI ideya?</p>
+                  <p class="en-line">UPI available?</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 2 · Pay</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">📱</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🧾</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech other-side">
+                  <p class="who-mini">Shop</p>
+                  <p class="kn-line">Haudu. QR scan maadi.</p>
+                  <p class="en-line">Yes. Scan the QR.</p>
+                </div>
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Payment aytu. Dhanyavadagalu.</p>
+                  <p class="en-line">Paid. Thanks.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 3 · ATM</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">🏧</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🧾</div><span class="name">Shop</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">ATM elli ide?</p>
+                  <p class="en-line">Where’s the ATM?</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">Shop</p>
+                  <p class="kn-line">Eduru bank. ATM alli ide.</p>
+                  <p class="en-line">Bank opposite. ATM there.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="comic-panel">
+            <div class="panel-top">
+              <div class="scene">
+                <span class="scene-tag">Panel 4 · Cash</span>
+                <div class="char you"><div class="avatar" aria-hidden="true">💵</div><span class="name">You</span></div>
+                <div class="char local"><div class="avatar" aria-hidden="true">🏧</div><span class="name">ATM</span></div>
+              </div>
+              <div class="bubble-col">
+                <div class="speech you-side">
+                  <p class="who-mini">You</p>
+                  <p class="kn-line">Nanage cash beku. Aivattu savira.</p>
+                  <p class="en-line">I need cash. Fifty thousand.</p>
+                </div>
+                <div class="speech other-side">
+                  <p class="who-mini">You (self)</p>
+                  <p class="kn-line">Aaytu. Gothaytu!</p>
+                  <p class="en-line">Done. Got it!</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="comic-nav-note"><strong>Act it:</strong> phone in hand for UPI; second pass cover English glosses.</p>
+      </section>
+
+      <h2><span class="num">12</span> Primary source</h2>
+      <p class="cite">
+        Money / ATM / cards inventory:
+        <a href="https://en.wikivoyage.org/wiki/Kannada_phrasebook#Money">Wikivoyage — Kannada phrasebook · Money</a>
+        · <em>ATM ellide</em>, <em>duddu / rokka</em>, <em>card tagontira / iskontira</em>.
+        UPI/QR frames are modern street loans on the same pattern as desk English in L21 — spot-check with what cashiers say near you.
+      </p>
+
+      <div class="callout good">
+        <div class="label">Ask your teacher</div>
+        <p>Want a bank-counter deposit line, PIN/OTP panic phrases, or “machine not working” repair talk? Paste the situation — we’ll add audio next.</p>
+      </div>
+
+      <div class="nav-links">
+        <a href="0021-hotel-check-in.html">← Lesson 0021</a>
+        <a href="../reference/bank-atm-upi-cheatsheet.html">Reference · bank / ATM / UPI</a>
+        <a href="../index.html">Course index</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll("[data-quiz]").forEach((quiz) => {
+      const feedback = quiz.querySelector(".quiz-feedback");
+      const buttons = [...quiz.querySelectorAll(".quiz-options button")];
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          if (btn.disabled) return;
+          const ok = btn.dataset.answer === "correct";
+          buttons.forEach((b) => {
+            b.disabled = true;
+            if (b.dataset.answer === "correct") b.classList.add("correct");
+          });
+          if (!ok) btn.classList.add("wrong");
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback " + (ok ? "ok" : "no");
+          feedback.textContent = ok ? "Nice — locked in." : "Not that one — correct option is highlighted.";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

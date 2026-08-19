@@ -160,6 +160,18 @@
       ]
     },
     {
+      "slug": "atm",
+      "type": "word",
+      "roman": "ATM",
+      "kannada": "ಎಟಿಎಂ",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "atm.mp3"
+      ]
+    },
+    {
       "slug": "avaru",
       "type": "word",
       "roman": "avaru",
@@ -206,6 +218,18 @@
       ],
       "files": [
         "bandide.mp3"
+      ]
+    },
+    {
+      "slug": "bank",
+      "type": "word",
+      "roman": "bank",
+      "kannada": "ಬ್ಯಾಂಕ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "bank.mp3"
       ]
     },
     {
@@ -353,6 +377,30 @@
       ]
     },
     {
+      "slug": "card",
+      "type": "word",
+      "roman": "card",
+      "kannada": "ಕಾರ್ಡ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "card.mp3"
+      ]
+    },
+    {
+      "slug": "cash",
+      "type": "word",
+      "roman": "cash",
+      "kannada": "ಕ್ಯಾಶ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "cash.mp3"
+      ]
+    },
+    {
       "slug": "cha",
       "type": "word",
       "roman": "cha",
@@ -374,6 +422,18 @@
       ],
       "files": [
         "chali.mp3"
+      ]
+    },
+    {
+      "slug": "change",
+      "type": "word",
+      "roman": "change",
+      "kannada": "ಚೇಂಜ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "change.mp3"
       ]
     },
     {
@@ -410,6 +470,18 @@
       ],
       "files": [
         "chennagidini.mp3"
+      ]
+    },
+    {
+      "slug": "chiller",
+      "type": "word",
+      "roman": "chiller",
+      "kannada": "ಚಿಲ್ಲರ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "chiller.mp3"
       ]
     },
     {
@@ -506,6 +578,18 @@
       ],
       "files": [
         "double.mp3"
+      ]
+    },
+    {
+      "slug": "duddu",
+      "type": "word",
+      "roman": "duddu",
+      "kannada": "ದುಡ್ಡು",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "duddu.mp3"
       ]
     },
     {
@@ -1924,6 +2008,18 @@
       ]
     },
     {
+      "slug": "qr",
+      "type": "word",
+      "roman": "QR",
+      "kannada": "ಕ್ಯೂಆರ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "qr.mp3"
+      ]
+    },
+    {
       "slug": "raatri",
       "type": "word",
       "roman": "raatri",
@@ -1945,6 +2041,18 @@
       ],
       "files": [
         "ratri.mp3"
+      ]
+    },
+    {
+      "slug": "rokka",
+      "type": "word",
+      "roman": "rokka",
+      "kannada": "ರೊಕ್ಕ",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "rokka.mp3"
       ]
     },
     {
@@ -2019,6 +2127,18 @@
       ],
       "files": [
         "sayankala.mp3"
+      ]
+    },
+    {
+      "slug": "scan",
+      "type": "word",
+      "roman": "scan",
+      "kannada": "ಸ್ಕ್ಯಾನ್",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "scan.mp3"
       ]
     },
     {
@@ -2107,6 +2227,18 @@
       ]
     },
     {
+      "slug": "tagontira",
+      "type": "word",
+      "roman": "tagontira?",
+      "kannada": "ತಗೊಣ್ತೀರ?",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "tagontira.mp3"
+      ]
+    },
+    {
       "slug": "tappa",
       "type": "word",
       "roman": "tappa",
@@ -2188,6 +2320,18 @@
       ],
       "files": [
         "umba.mp3"
+      ]
+    },
+    {
+      "slug": "upi",
+      "type": "word",
+      "roman": "UPI",
+      "kannada": "ಯುಪಿಐ",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "upi.mp3"
       ]
     },
     {
@@ -2448,6 +2592,20 @@
       ]
     },
     {
+      "slug": "aivattu_savira_beku",
+      "type": "sentence",
+      "roman": "Aivattu savira beku",
+      "kannada": "ಐವತ್ತು ಸಾವಿರ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "aivattu_savira_beku_slow.mp3",
+        "aivattu_savira_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "aivattu_2",
       "type": "sentence",
       "roman": "Aivattu.",
@@ -2602,6 +2760,34 @@
       ]
     },
     {
+      "slug": "atm_elli_ide",
+      "type": "sentence",
+      "roman": "ATM elli ide?",
+      "kannada": "ಎಟಿಎಂ ಎಲ್ಲಿ ಇದೆ?",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "atm_elli_ide_slow.mp3",
+        "atm_elli_ide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "atm_elli_ide_nantara_cash_tegiyona",
+      "type": "sentence",
+      "roman": "ATM elli ide? Nantara cash tegiyona.",
+      "kannada": "ಎಟಿಎಂ ಎಲ್ಲಿ ಇದೆ? ನಂತರ ಕ್ಯಾಶ್ ತೆಗಿಯೋಣ",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "atm_elli_ide_nantara_cash_tegiyona_slow.mp3",
+        "atm_elli_ide_nantara_cash_tegiyona_nat.mp3"
+      ]
+    },
+    {
       "slug": "avaru_eega_illa",
       "type": "sentence",
       "roman": "Avaru eega illa",
@@ -2641,6 +2827,20 @@
       "files": [
         "balakke_thirgi_slow.mp3",
         "balakke_thirgi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "bank_elli_ide",
+      "type": "sentence",
+      "roman": "Bank elli ide?",
+      "kannada": "ಬ್ಯಾಂಕ್ ಎಲ್ಲಿ ಇದೆ?",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "bank_elli_ide_slow.mp3",
+        "bank_elli_ide_nat.mp3"
       ]
     },
     {
@@ -2743,6 +2943,34 @@
       ]
     },
     {
+      "slug": "card_tagontira",
+      "type": "sentence",
+      "roman": "Card tagontira?",
+      "kannada": "ಕಾರ್ಡ್ ತಗೊಣ್ತೀರ?",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "card_tagontira_slow.mp3",
+        "card_tagontira_nat.mp3"
+      ]
+    },
+    {
+      "slug": "cash_na_upi",
+      "type": "sentence",
+      "roman": "Cash na UPI?",
+      "kannada": "ಕ್ಯಾಶ್ ನಾ ಯುಪಿಐ?",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "cash_na_upi_slow.mp3",
+        "cash_na_upi_nat.mp3"
+      ]
+    },
+    {
       "slug": "chali_bartha_ide",
       "type": "sentence",
       "roman": "Chali bartha ide",
@@ -2768,6 +2996,20 @@
       "files": [
         "change_ide_na_slow.mp3",
         "change_ide_na_nat.mp3"
+      ]
+    },
+    {
+      "slug": "change_kodri",
+      "type": "sentence",
+      "roman": "Change kodri",
+      "kannada": "ಚೇಂಜ್ ಕೊಡ್ರಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "change_kodri_slow.mp3",
+        "change_kodri_nat.mp3"
       ]
     },
     {
@@ -2897,6 +3139,20 @@
       "files": [
         "chennagidini_sari_hogi_banni_shubha_dinavagali_slow.mp3",
         "chennagidini_sari_hogi_banni_shubha_dinavagali_nat.mp3"
+      ]
+    },
+    {
+      "slug": "chiller_beku",
+      "type": "sentence",
+      "roman": "Chiller beku",
+      "kannada": "ಚಿಲ್ಲರ್ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "chiller_beku_slow.mp3",
+        "chiller_beku_nat.mp3"
       ]
     },
     {
@@ -3067,6 +3323,34 @@
       "files": [
         "double_room_eradu_savira_rupayi_slow.mp3",
         "double_room_eradu_savira_rupayi_nat.mp3"
+      ]
+    },
+    {
+      "slug": "duddu_illa",
+      "type": "sentence",
+      "roman": "Duddu illa",
+      "kannada": "ದುಡ್ಡು ಇಲ್ಲ",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "duddu_illa_slow.mp3",
+        "duddu_illa_nat.mp3"
+      ]
+    },
+    {
+      "slug": "eduru_bank_atm_alli_ide",
+      "type": "sentence",
+      "roman": "Eduru bank. ATM alli ide.",
+      "kannada": "ಎದುರು ಬ್ಯಾಂಕ್. ಎಟಿಎಂ ಅಲ್ಲಿ ಇದೆ",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "eduru_bank_atm_alli_ide_slow.mp3",
+        "eduru_bank_atm_alli_ide_nat.mp3"
       ]
     },
     {
@@ -3367,6 +3651,20 @@
       ]
     },
     {
+      "slug": "eshtu_aytu_nooru_aivattu",
+      "type": "sentence",
+      "roman": "Eshtu aytu? Nooru aivattu.",
+      "kannada": "ಎಷ್ಟು ಆಯ್ತು? ನೂರು ಐವತ್ತು",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "eshtu_aytu_nooru_aivattu_slow.mp3",
+        "eshtu_aytu_nooru_aivattu_nat.mp3"
+      ]
+    },
+    {
       "slug": "eshtu_gante_aytu",
       "type": "sentence",
       "roman": "Eshtu gante aytu?",
@@ -3499,7 +3797,8 @@
       "kannada": "ಗೊತ್ತಾಯ್ತು. ಧನ್ಯವಾದಗಳು",
       "kind": "dialogue",
       "lessons": [
-        "0021"
+        "0021",
+        "0022"
       ],
       "files": [
         "gothaytu_dhanyavadagalu_slow.mp3",
@@ -4010,6 +4309,20 @@
       "files": [
         "haudu_nodri_slow.mp3",
         "haudu_nodri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "haudu_qr_scan_maadi",
+      "type": "sentence",
+      "roman": "Haudu. QR scan maadi.",
+      "kannada": "ಹೌದು. ಕ್ಯೂಆರ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "haudu_qr_scan_maadi_slow.mp3",
+        "haudu_qr_scan_maadi_nat.mp3"
       ]
     },
     {
@@ -4826,6 +5139,20 @@
       ]
     },
     {
+      "slug": "kshamisi_nanage_cash_kammi_upi_ideya",
+      "type": "sentence",
+      "roman": "Kshamisi. Nanage cash kammi. UPI ideya?",
+      "kannada": "ಕ್ಷಮಿಸಿ. ನನಗೆ ಕ್ಯಾಶ್ ಕಮ್ಮಿ. ಯುಪಿಐ ಇದೆಯಾ?",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "kshamisi_nanage_cash_kammi_upi_ideya_slow.mp3",
+        "kshamisi_nanage_cash_kammi_upi_ideya_nat.mp3"
+      ]
+    },
+    {
       "slug": "late_aytu",
       "type": "sentence",
       "roman": "late aytu",
@@ -5572,6 +5899,20 @@
       ]
     },
     {
+      "slug": "nanage_cash_beku",
+      "type": "sentence",
+      "roman": "Nanage cash beku",
+      "kannada": "ನನಗೆ ಕ್ಯಾಶ್ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "nanage_cash_beku_slow.mp3",
+        "nanage_cash_beku_nat.mp3"
+      ]
+    },
+    {
       "slug": "nanage_fever_ide",
       "type": "sentence",
       "roman": "Nanage fever ide",
@@ -6262,6 +6603,20 @@
       ]
     },
     {
+      "slug": "payment_aytu",
+      "type": "sentence",
+      "roman": "Payment aytu",
+      "kannada": "ಪೇಮೆಂಟ್ ಆಯ್ತು",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "payment_aytu_slow.mp3",
+        "payment_aytu_nat.mp3"
+      ]
+    },
+    {
       "slug": "prayank_nanna_flat-ge_kodri_mele_hogi_302",
       "type": "sentence",
       "roman": "Prayank. Nanna flat-ge kodri. Mele hogi — 302.",
@@ -6273,6 +6628,20 @@
       "files": [
         "prayank_nanna_flat-ge_kodri_mele_hogi_302_slow.mp3",
         "prayank_nanna_flat-ge_kodri_mele_hogi_302_nat.mp3"
+      ]
+    },
+    {
+      "slug": "qr_scan_maadi",
+      "type": "sentence",
+      "roman": "QR scan maadi",
+      "kannada": "ಕ್ಯೂಆರ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "qr_scan_maadi_slow.mp3",
+        "qr_scan_maadi_nat.mp3"
       ]
     },
     {
@@ -6343,6 +6712,20 @@
       "files": [
         "road_block_ide_slow.mp3",
         "road_block_ide_nat.mp3"
+      ]
+    },
+    {
+      "slug": "rokka_beku",
+      "type": "sentence",
+      "roman": "Rokka beku",
+      "kannada": "ರೊಕ್ಕ ಬೇಕು",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "rokka_beku_slow.mp3",
+        "rokka_beku_nat.mp3"
       ]
     },
     {
@@ -6427,6 +6810,20 @@
       "files": [
         "sari_sari_slow.mp3",
         "sari_sari_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_sari_dhanyavadagalu",
+      "type": "sentence",
+      "roman": "Sari sari. Dhanyavadagalu.",
+      "kannada": "ಸರಿ ಸರಿ. ಧನ್ಯವಾದಗಳು",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "sari_sari_dhanyavadagalu_slow.mp3",
+        "sari_sari_dhanyavadagalu_nat.mp3"
       ]
     },
     {
@@ -6815,6 +7212,20 @@
       "files": [
         "sari_shubharatri_slow.mp3",
         "sari_shubharatri_nat.mp3"
+      ]
+    },
+    {
+      "slug": "sari_upi_maadtidini_payment_aytu",
+      "type": "sentence",
+      "roman": "Sari. UPI maadtidini. Payment aytu",
+      "kannada": "ಸರಿ. ಯುಪಿಐ ಮಾಡ್ತಿದೀನಿ. ಪೇಮೆಂಟ್ ಆಯ್ತು",
+      "kind": "dialogue",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "sari_upi_maadtidini_payment_aytu_slow.mp3",
+        "sari_upi_maadtidini_payment_aytu_nat.mp3"
       ]
     },
     {
@@ -7226,6 +7637,20 @@
       ]
     },
     {
+      "slug": "tagontira_2",
+      "type": "sentence",
+      "roman": "tagontira?",
+      "kannada": "ತಗೊಣ್ತೀರ?",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "tagontira_2_slow.mp3",
+        "tagontira_2_nat.mp3"
+      ]
+    },
+    {
       "slug": "tappa_number",
       "type": "sentence",
       "roman": "Tappa number",
@@ -7448,6 +7873,34 @@
       "files": [
         "umbrella_beku_slow.mp3",
         "umbrella_beku_nat.mp3"
+      ]
+    },
+    {
+      "slug": "upi_ideya",
+      "type": "sentence",
+      "roman": "UPI ideya?",
+      "kannada": "ಯುಪಿಐ ಇದೆಯಾ?",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "upi_ideya_slow.mp3",
+        "upi_ideya_nat.mp3"
+      ]
+    },
+    {
+      "slug": "upi_maadi",
+      "type": "sentence",
+      "roman": "UPI maadi",
+      "kannada": "ಯುಪಿಐ ಮಾಡಿ",
+      "kind": "phrase",
+      "lessons": [
+        "0022"
+      ],
+      "files": [
+        "upi_maadi_slow.mp3",
+        "upi_maadi_nat.mp3"
       ]
     },
     {

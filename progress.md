@@ -2,16 +2,16 @@
 **Learner:** Prayank (Bengaluru) · Hindi + English · Roman only · Started 2026-07-15
 
 ## Level
-A2 — hometown talk + hotel desk unlock travel stay.
+A2 — hometown + hotel desk + street money (ATM/UPI).
 
 ## Lessons
 | # | Outcome | Status | File |
 |---|---------|--------|------|
-| 1–20 | Prior | Ready | `0001`…`0020` |
-| 21 | Hotel check-in (+ cartoon) | **Ready** | `0021-hotel-check-in.html` |
+| 1–21 | Prior | Ready | `0001`…`0021` |
+| 22 | Bank / ATM / UPI (+ cartoon) | **Ready** | `0022-bank-atm-upi.html` |
 
-## L21 core
-khali room ideya? · ondu room beku · ondu/eradu raatri · nanna booking ide · room eshtu · raatri-ge eshtu · key kodri · WiFi password heli · check-out yaavaaga / eshtu gante · bill kodri · room clean maadi · lodge vs hotel note
+## L22 core
+ATM/bank elli ide? · nanage cash beku · aivattu savira · UPI maadi / UPI ideya? · card tagontira? · cash na UPI? · QR scan maadi · payment aytu · change kodri · chiller beku · duddu / rokka
 
 ## Next candidates
-Bank/UPI · bus/train station · coastal/non-veg food · more comic lessons
+Bus/train station · coastal/non-veg food · bank-counter deposit/OTP panic · more comic lessons
